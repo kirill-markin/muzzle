@@ -14,3 +14,7 @@
 
 * Email: [markinkirill@gmail.com](mailto:markinkirill@gmail.com)
 * Phone: [+359 87 990 6085](tel:+359879906085)
+
+## Actions
+
+* [Save contact to phonebook](/data/kirill-markin.vcf)

@@ -1,0 +1,31 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Kirill Markin
+N:Markin;Kirill;;;
+EMAIL;TYPE=INTERNET;TYPE=HOME:markinkirill@gmail.com
+item1.TEL:+359 
+item1.X-ABLabel:87 990 6085
+ADR;TYPE=HOME:;;;Amsterdam;;1054GJ;NL;1054GJ Amsterdam\nNL
+item2.ORG:ozma.io
+item2.X-ABLabel:
+item3.TITLE:Founder
+item3.X-ABLabel:
+BDAY:19930102
+item4.URL:https\://kirillmarkin.com/
+item4.X-ABLabel:homePage
+item5.URL:linkedin.com/in/kirmark/
+item5.X-ABLabel:linkedin
+item6.URL:https\://www.instagram.com/kirkirakiro/
+item6.X-ABLabel:instagram
+item7.URL:https\://www.facebook.com/markinkirill
+item7.X-ABLabel:facebook
+item8.URL:https\://twitter.com/kirkirakiro
+item8.X-ABLabel:twitter
+item9.URL:https\://t.me/kirmark
+item9.X-ABLabel:Telegram
+item10.URL:https\://api.whatsapp.com/send?phone=359879906085
+item10.X-ABLabel:WhatsApp
+PHOTO:https://lh3.googleusercontent.com/contacts/AKUYANSU26TTy3qcjRplTX_EUV
+ eUMEyyr7_jWGGjJLKzpvNxDx8Vat88
+CATEGORIES:myContacts
+END:VCARD
