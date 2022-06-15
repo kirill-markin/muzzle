@@ -1,3 +1,5 @@
 theme: jekyll-theme-slate
 title: Kirill Markin
-# description: Contacts
+description: Contacts
+github:
+  is_project_page: false
