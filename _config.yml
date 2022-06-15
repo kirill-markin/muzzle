@@ -1,9 +1,5 @@
 theme: jekyll-theme-slate
 title: Kirill Markin
-header: /data/kirill.jpg
 description: Contacts
-site-footer-credits: test
-site_footer_credits: test
 github:
   is_project_page: false
-  site_footer_credits: test

@@ -1,6 +1,3 @@
----
-header: /data/kirill.jpg
----
 ## Actions
 
 * [Save contact to phonebook](/data/kirill-markin.vcf)
