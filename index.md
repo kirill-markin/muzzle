@@ -18,5 +18,6 @@
 
 ### Other
 
+* Ozma Inc.: [ozma.io](https://ozma.io)
 * Email: [markinkirill@gmail.com](mailto:markinkirill@gmail.com)
 * Phone: [+359 87 990 6085](tel:+359879906085)
