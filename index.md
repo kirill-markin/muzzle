@@ -6,15 +6,15 @@
 
 ### Social media
 
-* linkedin: [linkedin.com/in/kirmark/](https://www.linkedin.com/in/kirmark/)
-* Instagram: [@kirkirakiro](https://www.instagram.com/kirkirakiro/)
-* Facebook: [fb.com/markinkirill](https://www.facebook.com/markinkirill)
-* Twitter: [@kirkirakiro](https://twitter.com/kirkirakiro)
+* linkedin: [linkedin.com/in/kirmark/](https://www.linkedin.com/in/kirmark/){:target="_blank"}
+* Instagram: [@kirkirakiro](https://www.instagram.com/kirkirakiro/){:target="_blank"}
+* Facebook: [fb.com/markinkirill](https://www.facebook.com/markinkirill){:target="_blank"}
+* Twitter: [@kirkirakiro](https://twitter.com/kirkirakiro){:target="_blank"}
 
 ### Messengers
 
-* Telegram: [@kirmark](https://t.me/kirmark)
-* WhatsApp: [+359879906085](https://api.whatsapp.com/send?phone=359879906085)
+* Telegram: [@kirmark](https://t.me/kirmark){:target="_blank"}
+* WhatsApp: [+359879906085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
 
 ### Other
 
