@@ -1,6 +1,6 @@
 ## Actions
 
-[![Save contact to phonebook](/data/kirill-markin.vcf)]
+![Save contact to phonebook](/data/kirill-markin.vcf)
 
 ## URLs
 
