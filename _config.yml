@@ -1,5 +1,6 @@
 theme: jekyll-theme-slate
 title: Kirill Markin
+header: data/kirill.jpg
 description: Contacts
 github:
   is_project_page: false
