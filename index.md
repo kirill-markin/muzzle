@@ -24,6 +24,7 @@
 ## Company Ozma Inc.
 
 * Website: [ozma.io](https://ozma.io){:target="_blank"}
+* Linkedin: [linkedin.com/company/ozma-io](https://linkedin.com/company/ozma-io){:target="_blank"}
+* Twitter: [@ozma_io](https://twitter.com/ozma_io)
 * Email: [sales@ozma.io](mailto:sales@ozma.io)
 * Discord: [Join Discord group](https://discord.gg/tJYDhqrwFj){:target="_blank"}
-* Linkedin: [linkedin.com/company/ozma-io](https://linkedin.com/company/ozma-io){:target="_blank"}
