@@ -6,7 +6,7 @@
 
 ### Social media
 
-* linkedin: [linkedin.com/in/kirmark/](https://www.linkedin.com/in/kirmark/){:target="_blank"}
+* Linkedin: [linkedin.com/in/kirmark/](https://www.linkedin.com/in/kirmark/){:target="_blank"}
 * Twitter: [@kirkirakiro](https://twitter.com/kirkirakiro){:target="_blank"}
 * Instagram: [@kirkirakiro](https://www.instagram.com/kirkirakiro/){:target="_blank"}
 * Facebook: [fb.com/markinkirill](https://www.facebook.com/markinkirill){:target="_blank"}
