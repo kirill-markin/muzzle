@@ -1,6 +1,6 @@
 # Kirill (Kira) Markin
 
-Founder [ozma.io](https://ozma.io){:target="_blank"}
+Founder of [ozma.io](https://ozma.io){:target="_blank"}
 
 👉 [Save contact to phonebook](/data/kirill-markin.vcf){:target="_blank"}
 
