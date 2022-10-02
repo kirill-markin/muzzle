@@ -6,12 +6,12 @@ Founder of [ozma.io](https://ozma.io){:target="_blank"}
 
 ## Personal contacts
 
-* WhatsApp: [+359879906085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
-* Email: [markinkirill@gmail.com](mailto:markinkirill@gmail.com)
 * Linkedin: [linkedin.com/in/kirmark/](https://www.linkedin.com/in/kirmark/){:target="_blank"}
 * Twitter: [@kirkirakiro](https://twitter.com/kirkirakiro){:target="_blank"}
 * Instagram: [@kirkirakiro](https://www.instagram.com/kirkirakiro/){:target="_blank"}
 * Facebook: [fb.com/markinkirill](https://www.facebook.com/markinkirill){:target="_blank"}
+* WhatsApp: [+359879906085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
+* Email: [markinkirill@gmail.com](mailto:markinkirill@gmail.com)
 * Telegram: [@kirmark](https://t.me/kirmark){:target="_blank"}
 * Phone: [+359 87 990 6085](tel:+359879906085)
 
