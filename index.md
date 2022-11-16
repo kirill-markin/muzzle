@@ -2,7 +2,7 @@
 
 💾 [Save contact to phonebook](/data/kirill-markin.vcf){:target="_blank"}
 
-## 👨‍🔧 Kirill Markin contacts
+## 💁‍♂️ Kirill Markin contacts
 
 * Linkedin: [linkedin.com/in/kirmark/](https://www.linkedin.com/in/kirmark/){:target="_blank"}
 * Twitter: [@kirkirakiro](https://twitter.com/kirkirakiro){:target="_blank"}
@@ -13,7 +13,7 @@
 * Telegram: [@kirmark](https://t.me/kirmark){:target="_blank"}
 * Phone: [+359 87 990 6085](tel:+359879906085)
 
-## 💼 Company Ozma Inc. contacts
+## 💼 Ozma Inc. contacts
 
 * Website: [ozma.io](https://ozma.io){:target="_blank"}
 * Email: [sales@ozma.io](mailto:sales@ozma.io)
