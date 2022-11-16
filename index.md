@@ -1,6 +1,6 @@
 # Kirill Markin — Founder of&nbsp;Ozma&nbsp;Inc.: contacts, media
 
-👉 [Save contact to phonebook](/data/kirill-markin.vcf){:target="_blank"}
+💾 [Save contact to phonebook](/data/kirill-markin.vcf){:target="_blank"}
 
 ## 👨‍🔧 Kirill Markin contacts
 
