@@ -1,6 +1,6 @@
 {% include gtm.html %}
 
-# Kirill Markin <br/>founder of&nbsp;Ozma&nbsp;Inc
+# Kirill Markin <br/>founder of&nbsp;Ozma&nbsp;Inc.
 
 [Save contact to phonebook 💾](/data/kirill-markin.vcf){:target="_blank"}
 
