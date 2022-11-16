@@ -1,10 +1,10 @@
-# Kirill (Kira) Markin
+# Kirill Markin contacts, media and other URLs
 
 Founder of [ozma.io](https://ozma.io){:target="_blank"}
 
 👉 [Save contact to phonebook](/data/kirill-markin.vcf){:target="_blank"}
 
-## Personal contacts
+## Kirill Markin contacts
 
 * Linkedin: [linkedin.com/in/kirmark/](https://www.linkedin.com/in/kirmark/){:target="_blank"}
 * Twitter: [@kirkirakiro](https://twitter.com/kirkirakiro){:target="_blank"}
@@ -23,7 +23,7 @@ Founder of [ozma.io](https://ozma.io){:target="_blank"}
 * Twitter: [@ozma_io](https://twitter.com/ozma_io)
 * Discord: [Join Discord group](https://discord.gg/tJYDhqrwFj){:target="_blank"}
 
-## Media with Kirill Markin
+## Kirill Markin media
 
 ### Articles (English)
 
@@ -34,7 +34,7 @@ Founder of [ozma.io](https://ozma.io){:target="_blank"}
   * Publisher: Ozma Inc.
   * Date: 2022-08-27
 
-### Articles (Russian)
+### Articles (Ru)
 
 * [CRM-система: как сэкономить деньги и выбрать наилучший вариант](https://rb.ru/opinion/best-crm/)
   * Publisher: Rusbase
@@ -58,7 +58,7 @@ Founder of [ozma.io](https://ozma.io){:target="_blank"}
   * Publisher: Ozma Inc.
   * Date: 2022-02-21
 
-### Video (Russian)
+### Video (Ru)
 
 * [Мастер-класс "Программирование в управлении. История одного студента Бауманки" (К. Маркин)](https://www.youtube.com/watch?v=FYT9nm6ryGc)
   * Publisher: VK group
