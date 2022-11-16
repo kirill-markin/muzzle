@@ -1,6 +1,4 @@
-# Kirill Markin contacts, media and other URLs
-
-Founder of [ozma.io](https://ozma.io){:target="_blank"}
+# Kirill Markin — Founder of Ozma Inc: contacts, media and other URLs
 
 👉 [Save contact to phonebook](/data/kirill-markin.vcf){:target="_blank"}
 
