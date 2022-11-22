@@ -27,42 +27,42 @@
 
 ### Articles (English)
 
-* [CRM in Excel — Benefits and Differences](https://ozma.io/articles/crm-in-excel-benefits-and-differences/)
+* [CRM in Excel — Benefits and Differences](https://ozma.io/articles/crm-in-excel-benefits-and-differences/){:target="_blank"}
   * Publisher: Ozma Inc.
   * Date: 2022-10-03
-* [Custom CRM from scratch on low-code platform ozma.io](https://ozma.io/articles/custom-crm-from-scratch-on-low-code-platform-ozma-io/)
+* [Custom CRM from scratch on low-code platform ozma.io](https://ozma.io/articles/custom-crm-from-scratch-on-low-code-platform-ozma-io/){:target="_blank"}
   * Publisher: Ozma Inc.
   * Date: 2022-08-27
 
 ### Articles (Ru)
 
-* [CRM-система: как сэкономить деньги и выбрать наилучший вариант](https://rb.ru/opinion/best-crm/)
+* [CRM-система: как сэкономить деньги и выбрать наилучший вариант](https://rb.ru/opinion/best-crm/){:target="_blank"}
   * Publisher: Rusbase
   * Date: 2021-03-12
-* [Как сделать таск-трекер под себя на low-code конструкторе](https://habr.com/ru/post/673874/)
+* [Как сделать таск-трекер под себя на low-code конструкторе](https://habr.com/ru/post/673874/){:target="_blank"}
   * Publisher: Habr
   * Date: 2022-07-12
-* [Лекции Технопарка. Программирование в управлении. История одного студента Бауманки](https://habr.com/ru/company/vk/blog/250593/)
+* [Лекции Технопарка. Программирование в управлении. История одного студента Бауманки](https://habr.com/ru/company/vk/blog/250593/){:target="_blank"}
   * Publisher: VK group
   * Date: 2015-02-15
-* [Автоматизация процессов с помощью CRM: как проще всего это сделать?](https://vc.ru/marketing/212774-avtomatizaciya-processov-s-pomoshchyu-crm-kak-proshche-vsego-eto-sdelat)
+* [Автоматизация процессов с помощью CRM: как проще всего это сделать?](https://vc.ru/marketing/212774-avtomatizaciya-processov-s-pomoshchyu-crm-kak-proshche-vsego-eto-sdelat){:target="_blank"}
   * Publisher: VC.RU
   * Date: 2021-02-24
-* [«Жизнь после диплома» — интервью с Кириллом Маркиным](https://vk.com/@bmstu1830-zhizn-posle-diploma-intervu-s-kirillom-markinym)
+* [«Жизнь после диплома» — интервью с Кириллом Маркиным](https://vk.com/@bmstu1830-zhizn-posle-diploma-intervu-s-kirillom-markinym){:target="_blank"}
   * Publisher: Bauman Moscow state technical University
   * Date: 2021-10-28
-* [CRM для школы актёрского мастерства Gogol School: пример внедрения ozma.io](https://ozma.io/ru/articles/crm-dlya-shkoly-aktyorskogo-masterstva/)
+* [CRM для школы актёрского мастерства Gogol School: пример внедрения ozma.io](https://ozma.io/ru/articles/crm-dlya-shkoly-aktyorskogo-masterstva/){:target="_blank"}
   * Publisher: Ozma Inc.
   * Date: 2022-02-21
-* [CRM для провайдера: пример внедрения ozma.io](https://ozma.io/ru/articles/crm-dlya-provajdera/)
+* [CRM для провайдера: пример внедрения ozma.io](https://ozma.io/ru/articles/crm-dlya-provajdera/){:target="_blank"}
   * Publisher: Ozma Inc.
   * Date: 2022-02-21
 
 ### Video (Ru)
 
-* [Мастер-класс "Программирование в управлении. История одного студента Бауманки" (К. Маркин)](https://www.youtube.com/watch?v=FYT9nm6ryGc)
+* [Мастер-класс "Программирование в управлении. История одного студента Бауманки" (К. Маркин)](https://www.youtube.com/watch?v=FYT9nm6ryGc){:target="_blank"}
   * Publisher: VK group
   * Date: 2015-02-23
-* [LOW CODE - тренд на "упрощенку"](https://fb.watch/gQTOBzSR1j/)
+* [LOW CODE - тренд на "упрощенку"](https://fb.watch/gQTOBzSR1j/){:target="_blank"}
   * Publisher: TAGES
   * Date: 2021-05-19
