@@ -6,10 +6,10 @@
 
 ## 💁‍♂️ Kirill Markin contacts
 
-* Linkedin: [linkedin.com/in/kirmark/](https://www.linkedin.com/in/kirmark/){:target="_blank"}
+* Linkedin: [linkedin.com/in/kirill-markin/](https://www.linkedin.com/in/kirill-markin){:target="_blank"}
 * Twitter: [@kirkirakiro](https://twitter.com/kirkirakiro){:target="_blank"}
-* Instagram: [@kirkirakiro](https://www.instagram.com/kirkirakiro/){:target="_blank"}
-* Facebook: [fb.com/markinkirill](https://www.facebook.com/markinkirill){:target="_blank"}
+* Instagram: [@kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
+* Facebook: [fb.com/kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
 * WhatsApp: [+359879906085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
 * Email: [markinkirill@gmail.com](mailto:markinkirill@gmail.com)
 * Telegram: [@kirmark](https://t.me/kirmark){:target="_blank"}
