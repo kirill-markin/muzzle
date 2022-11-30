@@ -10,10 +10,12 @@
 * Twitter: [@kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
 * Instagram: [@kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
 * Facebook: [fb.com/kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
-* WhatsApp: [+359879906085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
 * Email: [markinkirill@gmail.com](mailto:markinkirill@gmail.com)
 * Telegram: [@kirmark](https://t.me/kirmark){:target="_blank"}
-* Phone: [+359 87 990 6085](tel:+359879906085)
+* WhatsApp 1: [+15624573895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
+* Phone 1: [+1 562 457 3895](tel:+15624573895)
+* WhatsApp 2: [+359879906085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
+* Phone 2: [+359 87 990 6085](tel:+359879906085)
 
 ## 💼 Ozma Inc. contacts
 
