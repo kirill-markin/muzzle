@@ -2,7 +2,7 @@
 {% include favicon.html %}
 {% include gtm.html %}
 
-# Kirill Markin <br/>founder of&nbsp;Ozma&nbsp;Inc. <br/>Lead Data Scientist
+# Kirill Markin <br/>Founder of&nbsp;Ozma&nbsp;Inc. <br/>Lead Data Scientist
 
 [Save contact to phonebook 💾](/data/kirill-markin.vcf){:target="_blank"}
 
