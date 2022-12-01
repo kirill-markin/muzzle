@@ -14,9 +14,9 @@
 * Facebook: [fb.com/kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
 * Email: [markinkirill@gmail.com](mailto:markinkirill@gmail.com)
 * Telegram: [@kirmark](https://t.me/kirmark){:target="_blank"}
-* WhatsApp 1: [+15624573895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
+* WhatsApp 1: [+1 562 457 3895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
 * Phone 1: [+1 562 457 3895](tel:+15624573895)
-* WhatsApp 2: [+359879906085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
+* WhatsApp 2: [+359 87 990 6085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
 * Phone 2: [+359 87 990 6085](tel:+359879906085)
 
 ## 💼 Ozma Inc. contacts
@@ -26,7 +26,7 @@
 * Linkedin: [linkedin.com/company/ozma-io](https://linkedin.com/company/ozma-io){:target="_blank"}
 * Twitter: [@ozma_io](https://twitter.com/ozma_io)
 * Discord: [Join Discord group](https://discord.gg/tJYDhqrwFj){:target="_blank"}
-* WhatsApp: [+15624573895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
+* WhatsApp: [+1 562 457 3895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
 * Phone: [+1 562 457 3895](tel:+15624573895)
 
 ## 📰 Kirill Markin media
