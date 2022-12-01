@@ -1,3 +1,5 @@
+
+{% include favicon.html %}
 {% include gtm.html %}
 
 # Kirill Markin <br/>founder of&nbsp;Ozma&nbsp;Inc.
