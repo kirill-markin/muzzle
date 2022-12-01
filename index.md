@@ -26,6 +26,8 @@
 * Linkedin: [linkedin.com/company/ozma-io](https://linkedin.com/company/ozma-io){:target="_blank"}
 * Twitter: [@ozma_io](https://twitter.com/ozma_io)
 * Discord: [Join Discord group](https://discord.gg/tJYDhqrwFj){:target="_blank"}
+* WhatsApp: [+15624573895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
+* Phone: [+1 562 457 3895](tel:+15624573895)
 
 ## 📰 Kirill Markin media
 
