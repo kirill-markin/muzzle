@@ -4,7 +4,7 @@
 
 # Kirill Markin <br/>Founder of&nbsp;Ozma&nbsp;Inc. <br/>Lead Data Scientist
 
-[Save contact to phonebook 💾](/data/kirill-markin.vcf){:target="_blank"}
+[Save contact to phonebook 💾](/data/kirill-markin.vcf){:target="_blank"}  
 [Book a meeting by calendly 📆](https://calendly.com/kirill-markin/30min){:target="_blank"}
 
 ## 💁‍♂️ Kirill Markin contacts
