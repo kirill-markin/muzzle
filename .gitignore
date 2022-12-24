@@ -1,3 +1,13 @@
 # Mac files
-
 *DS_Store
+
+# Config files
+Gemfile
+Gemfile.lock
+
+# Generated content
+_site/*
+
+# Cache files
+.jekyll-cache/*
+.sass-cache/*
