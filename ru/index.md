@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Kirill Markin | founder ozma.io | contacts, media
-description: Contacts and related URLs to Kirill Markin. Social media profiles, instagram, Linkedin, email and phone.
-lang: en
+title: Кирилл Маркин | основатель ozma.io | контакты, медиа
+description: Контакты и ссылки на социальные сети Кирилла Маркина. Ссылки на профили в Linkedin, Instagram, Twitter, Facebook, Telegram, WhatsApp, Discord, Email.
+lang: ru
 lang-ref: contacts-media
 ---
 
-# Kirill Markin <br/>Founder of&nbsp;Ozma&nbsp;Inc. <br/>Lead Data Scientist
+# Кирилл Маркин <br/>Основатель Ozma&nbsp;Inc. <br/>Lead Data Scientist
 
-[Save contact to phonebook 💾](/data/kirill-markin.vcf){:target="_blank"}  
-[Book a meeting by calendly 📆](https://calendly.com/kirill-markin/30min){:target="_blank"}
+[Сохранить контакт 💾](/data/kirill-markin.vcf){:target="_blank"}  
+[Запланировать встречу через calendly 📆](https://calendly.com/kirill-markin/30min){:target="_blank"}  
 
-## 💁‍♂️ Kirill Markin contacts
+## 💁‍♂️ Кирилл Маркин: контакты
 
 * Linkedin: [linkedin.com/in/kirill-markin/](https://www.linkedin.com/in/kirill-markin){:target="_blank"}
 * Twitter: [@kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
@@ -24,7 +24,7 @@ lang-ref: contacts-media
 * WhatsApp 2: [+359 87 990 6085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
 * Phone 2: [+359 87 990 6085](tel:+359879906085)
 
-## 💼 Ozma Inc. contacts
+## 💼 Ozma Inc. контакты
 
 * Website: [ozma.io](https://ozma.io){:target="_blank"}
 * Email: [sales@ozma.io](mailto:sales@ozma.io)
@@ -34,9 +34,9 @@ lang-ref: contacts-media
 * WhatsApp: [+1 562 457 3895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
 * Phone: [+1 562 457 3895](tel:+15624573895)
 
-## 📰 Kirill Markin media
+## 📰 Кирилл Маркин: медиа
 
-### Articles (English)
+### Статьи (На английском)
 
 * [CRM in Excel — Benefits and Differences](https://ozma.io/articles/crm-in-excel-benefits-and-differences/){:target="_blank"}
   * Publisher: Ozma Inc.
@@ -45,7 +45,7 @@ lang-ref: contacts-media
   * Publisher: Ozma Inc.
   * Date: 2022-08-27
 
-### Articles (Ru)
+### Статьи (На русском)
 
 * [CRM-система: как сэкономить деньги и выбрать наилучший вариант](https://rb.ru/opinion/best-crm/){:target="_blank"}
   * Publisher: Rusbase
@@ -69,7 +69,7 @@ lang-ref: contacts-media
   * Publisher: Ozma Inc.
   * Date: 2022-02-21
 
-### Video (Ru)
+### Видео (На русском)
 
 * [Мастер-класс "Программирование в управлении. История одного студента Бауманки" (К. Маркин)](https://www.youtube.com/watch?v=FYT9nm6ryGc){:target="_blank"}
   * Publisher: VK group
