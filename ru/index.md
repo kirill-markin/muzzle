@@ -1,26 +1,82 @@
 ---
-layout: default
+layout: org-and-person
 title: Кирилл Маркин | основатель ozma.io | контакты, медиа
 description: Контакты и ссылки на социальные сети Кирилла Маркина. Ссылки на профили в Linkedin, Instagram, Twitter, Facebook, Telegram, WhatsApp, Discord, Email.
 lang: ru
 lang-ref: contacts-media
+schema-org: {
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "telephone": "+1 (562) 457 3895",
+  "address" : {
+      "@type": "PostalAddress",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA",
+      "postalCode": "94114",
+      "streetAddress": "584 Castro Street #3020"
+  },
+  "sameAs": [
+      "https://fb.com/ozma.io"
+  ],
+  "image": "https://ozma.io/img/pc-interface.jpg",
+  "url": "https://ozma.io",
+  "email": "sales@ozma.io",
+  "areaServed": ["US", "GB", "DE", "NL", "RU"],
+  "brand": "ozma.io",
+  "legalName": "Ozma Inc.",
+  "name": "Ozma Inc.",
+  "alternateName": "ozma, ozma.io",
+  "description": "ozma.io — an enterprise-level CRM and ERP platform, less expensive than Salesforce and Microsoft, fully customizable by any developer in a few hours.",
+  "foundingDate": "2017-01-01T00:00:00+0000",
+  "logo": {
+      "@type": "ImageObject",
+      "name": "ozma.io logo",
+      "url": "https://ozma.io/img/ozma_logo_sq.png",
+      "@id": "https://ozma.io/img/ozma_logo_sq.png"
+  },
+  "@id": "https://ozma.io",
+  "founder": {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "email": "markinkirill@gmail.com",
+      "image": "https://kirill-markin.com/data/kirill.jpg",
+      "jobTitle": "Основатель Ozma Inc.",
+      "name": "Кирилл Маркин",
+      "alumniOf": "Bauman Moscow State Technical University",
+      "birthPlace": "Kolomna, Moscow Oblast, Russia",
+      "birthDate": "1993-01-02",
+      "height": "70 inches",
+      "gender": "male",
+      "nationality": "Bulgarian",
+      "telephone": "+1 (562) 457 3895",
+      "url": "https://kirill-markin.com/",
+      "sameAs" : [ 
+          "https://www.facebook.com/kirill.markin.kira",
+          "https://www.linkedin.com/in/kirill-markin",
+          "https://twitter.com/kirill_markin_",
+          "https://www.instagram.com/kirill.markin.kira/",
+          "https://t.me/kirmark"
+      ],
+      "@id": "https://kirill-markin.com/"
+  }
+}
 ---
 
-# Кирилл Маркин <br/>Основатель Ozma&nbsp;Inc. <br/>Lead Data Scientist
+# {{page.schema-org.founder.name}} <br/>{{page.schema-org.founder.jobTitle}} <br/>Lead Data Scientist
 
 [Сохранить контакт 💾](/data/kirill-markin.vcf){:target="_blank"}  
 [Запланировать встречу через calendly 📆](https://calendly.com/kirill-markin/30min){:target="_blank"}  
 
-## 💁‍♂️ Кирилл Маркин: контакты
+## 💁‍♂️ {{page.schema-org.founder.name}}: контакты
 
 * Linkedin: [linkedin.com/in/kirill-markin/](https://www.linkedin.com/in/kirill-markin){:target="_blank"}
 * Twitter: [@kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
 * Instagram: [@kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
 * Facebook: [fb.com/kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
-* Email: [markinkirill@gmail.com](mailto:markinkirill@gmail.com)
+* Email: [{{page.schema-org.founder.email}}](mailto:{{page.schema-org.founder.email}}){:itemprop="email"}
 * Telegram: [@kirmark](https://t.me/kirmark){:target="_blank"}
 * WhatsApp 1: [+1 562 457 3895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
-* Phone 1: [+1 562 457 3895](tel:+15624573895)
+* Phone 1: [+1 562 457 3895](tel:+15624573895){:itemprop="telephone"}
 * WhatsApp 2: [+359 87 990 6085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
 * Phone 2: [+359 87 990 6085](tel:+359879906085)
 
@@ -34,7 +90,7 @@ lang-ref: contacts-media
 * WhatsApp: [+1 562 457 3895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
 * Phone: [+1 562 457 3895](tel:+15624573895)
 
-## 📰 Кирилл Маркин: медиа
+## 📰 {{page.schema-org.founder.name}}: медиа
 
 ### Статьи (На английском)
 
