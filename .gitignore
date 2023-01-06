@@ -6,8 +6,8 @@ Gemfile
 Gemfile.lock
 
 # Generated content
-_site/*
+_site
 
 # Cache files
-.jekyll-cache/*
-.sass-cache/*
+.jekyll-cache
+.sass-cache
