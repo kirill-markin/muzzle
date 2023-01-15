@@ -69,26 +69,32 @@ schema-org: {
 
 ## 💁‍♂️ {{page.schema-org.founder.name}} contacts
 
-* Linkedin: [linkedin.com/in/kirill-markin/](https://www.linkedin.com/in/kirill-markin){:target="_blank"}
-* Twitter: [@kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
-* Instagram: [@kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
-* Facebook: [fb.com/kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
-* Email: [{{page.schema-org.founder.email}}](mailto:{{page.schema-org.founder.email}}){:itemprop="email"}
-* Telegram: [@kirmark](https://t.me/kirmark){:target="_blank"}
-* WhatsApp 1: [+1 562 457 3895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
-* Phone 1: [+1 562 457 3895](tel:+15624573895){:itemprop="telephone"}
-* WhatsApp 2: [+359 87 990 6085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
-* Phone 2: [+359 87 990 6085](tel:+359879906085)
+* Social
+  * Linkedin: [linkedin.com/in/kirill-markin/](https://www.linkedin.com/in/kirill-markin){:target="_blank"}
+  * Twitter: [@kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
+  * Instagram: [@kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
+  * Facebook: [fb.com/kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
+  * IndieHackers: [indiehackers.com/kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
+* Contacts
+  * Email: [{{page.schema-org.founder.email}}](mailto:{{page.schema-org.founder.email}}){:itemprop="email"}
+  * Telegram: [@kirmark](https://t.me/kirmark){:target="_blank"}
+  * WhatsApp 1: [+1 562 457 3895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
+  * Phone 1: [+1 562 457 3895](tel:+15624573895){:itemprop="telephone"}
+  * WhatsApp 2: [+359 87 990 6085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
+  * Phone 2: [+359 87 990 6085](tel:+359879906085)
 
 ## 💼 Ozma Inc. contacts
 
 * Website: [ozma.io](https://ozma.io){:target="_blank"}
-* Email: [sales@ozma.io](mailto:sales@ozma.io)
-* Linkedin: [linkedin.com/company/ozma-io](https://linkedin.com/company/ozma-io){:target="_blank"}
-* Twitter: [@ozma_io](https://twitter.com/ozma_io)
-* Discord: [Join Discord group](https://discord.gg/tJYDhqrwFj){:target="_blank"}
-* WhatsApp: [+1 562 457 3895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
-* Phone: [+1 562 457 3895](tel:+15624573895)
+* Social
+  * Linkedin: [linkedin.com/company/ozma-io](https://linkedin.com/company/ozma-io){:target="_blank"}
+  * Twitter: [@ozma_io](https://twitter.com/ozma_io){:target="_blank"}
+  * YouTube: [youtube.com/@ozma-io](https://www.youtube.com/@ozma-io){:target="_blank"}
+* Contacts
+  * Email: [sales@ozma.io](mailto:sales@ozma.io)
+  * Discord: [Join Discord group](https://discord.gg/tJYDhqrwFj){:target="_blank"}
+  * WhatsApp: [+1 562 457 3895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
+  * Phone: [+1 562 457 3895](tel:+15624573895)
 
 ## 📰 {{page.schema-org.founder.name}} media
 

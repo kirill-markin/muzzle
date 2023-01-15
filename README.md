@@ -13,5 +13,5 @@ gem "webrick"
 Run bundle install:
 
 ```bash
-bundle exec jekyll serve
+sudo bundle exec jekyll serve
 ```
