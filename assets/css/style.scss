@@ -46,11 +46,16 @@ footer {
 
       @media screen and (max-width: 768px) {
           width: 95%;
+          padding: 0;
       }
   }
 }
 
 .img-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   img {
     border: none;
     width: 90%;
