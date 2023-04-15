@@ -5,6 +5,10 @@ sitemap:
 
 @import "{{ site.theme }}";
 
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+
 header {
   display: none;
 }
@@ -34,6 +38,7 @@ footer {
 
         @media screen and (max-width: 768px) {
             width: 95%;
+            
             display: flex;
             justify-content: center;
         }
@@ -43,6 +48,10 @@ footer {
       width: 70%;
       margin: 0;
       padding: 10px;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
       @media screen and (max-width: 768px) {
           width: 95%;
@@ -55,7 +64,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   img {
     border: none;
     width: 90%;
@@ -63,4 +72,9 @@ footer {
     max-width: 20vh;
     margin: 0;
   }
+}
+
+h1 {
+  // size between lines
+  line-height: 1.2;
 }
