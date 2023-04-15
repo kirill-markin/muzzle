@@ -9,6 +9,53 @@ header {
   display: none;
 }
 
+.outer {
+  border-top-width: 0px!important;
+  border-bottom-width: 0px!important;
+}
+
 footer {
     color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    .col-md-3 {
+        width: 30%;
+        margin: 0;
+        padding: 10px;
+
+        @media screen and (max-width: 768px) {
+            width: 95%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .col-md-9 {
+      width: 70%;
+      margin: 0;
+      padding: 10px;
+
+      @media screen and (max-width: 768px) {
+          width: 95%;
+      }
+  }
+}
+
+.img-header-container {
+  img {
+    border: none;
+    width: 90%;
+    border-radius: 30px;
+    max-width: 20vh;
+    margin: 0;
+  }
 }

@@ -62,7 +62,17 @@ schema-org: {
 }
 ---
 
-# {{page.schema-org.founder.name}} <br/>{{page.schema-org.founder.jobTitle}} <br/>Lead Data Scientist
+<div class="row">
+  <div class="col-md-3 img-header-container">
+    <img 
+      src="{{page.schema-org.founder.image}}" 
+      alt="{{page.schema-org.founder.name}}"
+    >
+  </div>
+  <div class="col-md-9">
+    <h1>{{page.schema-org.founder.name}} <br/>{{page.schema-org.founder.jobTitle}} <br/>Lead Data Scientist</h1>
+  </div>
+</div>
 
 [Save contact to phonebook 💾](/data/kirill-markin.vcf){:target="_blank"}  
 [Book a meeting by calendly 📆](https://calendly.com/kirill-markin/30min){:target="_blank"}
