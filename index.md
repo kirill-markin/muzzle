@@ -152,3 +152,6 @@ schema-org: {
 * [LOW CODE - тренд на "упрощенку"](https://fb.watch/gQTOBzSR1j/){:target="_blank"}
   * Publisher: TAGES
   * Date: 2021-05-19
+* [ЗА ЖИЗНЬ: актер и IT-специалист о бомжевании и мнениях других людей](https://youtu.be/VD-ZF4wNT-E){:target="_blank"}
+  * Publisher: tanyarybakova
+  * Date: 2018-08-05
