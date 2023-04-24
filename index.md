@@ -74,11 +74,9 @@ schema-org: {
   </div>
 </div>
 
-[Save contact to phonebook 💾](/data/kirill-markin.vcf){:target="_blank"}  
-
-**📆 Book a meeting by calendly:**
-* [Book a 30 minutes meeting](https://calendly.com/kirill-markin/30min){:target="_blank"}
-* [Book a 1 hour meeting](https://calendly.com/kirill-markin/1-hour-meeting){:target="_blank"}
+Actions:
+* [📆 Book a meeting by calendly](https://calendly.com/kirill-markin){:target="_blank"}  
+* [💾 Save contact to phonebook](/data/kirill-markin.vcf){:target="_blank"}  
 
 ## 💁‍♂️ {{page.schema-org.founder.name}} contacts
 

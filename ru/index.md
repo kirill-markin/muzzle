@@ -74,11 +74,9 @@ schema-org: {
   </div>
 </div>
 
-[💾 Сохранить контакт](/data/kirill-markin.vcf){:target="_blank"}  
-
-**📆 Запланировать встречу через calendly:**
-* [Запланировать на 30 минут](https://calendly.com/kirill-markin/30min){:target="_blank"}
-* [Запланировать на 1 час](https://calendly.com/kirill-markin/1-hour-meeting){:target="_blank"}
+Действия:
+* [📆 Запланировать встречу через calendly](https://calendly.com/kirill-markin){:target="_blank"}  
+* [💾 Сохранить контакт](/data/kirill-markin.vcf){:target="_blank"}  
 
 ## 💁‍♂️ {{page.schema-org.founder.name}}: контакты
 
