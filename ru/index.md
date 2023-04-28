@@ -100,15 +100,25 @@ schema-org: {
 ## 💼 Ozma Inc. контакты
 
 * Website: [ozma.io](https://ozma.io){:target="_blank"}
-* Social
-  * Linkedin: [linkedin.com/company/ozma-io](https://linkedin.com/company/ozma-io){:target="_blank"}
-  * Twitter: [@ozma_io](https://twitter.com/ozma_io){:target="_blank"}
-  * YouTube: [youtube.com/@ozma-io](https://www.youtube.com/@ozma-io){:target="_blank"}
 * Contacts
   * Email: [sales@ozma.io](mailto:sales@ozma.io)
   * Discord: [Join Discord group](https://discord.gg/tJYDhqrwFj){:target="_blank"}
   * WhatsApp: [+1 562 457 3895](https://api.whatsapp.com/send?phone=15624573895){:target="_blank"}
   * Phone: [+1 562 457 3895](tel:+15624573895)
+* Social
+  * [Twitter ozma.io page](https://twitter.com/ozma_io){:target="_blank"}
+  * [LinkedIn ozma.io page](https://linkedin.com/company/ozma-io){:target="_blank"}
+  * [YouTube ozma.io page](https://www.youtube.com/@ozma-io){:target="_blank"}
+  * [Reddit ozma.io page](https://www.reddit.com/r/ozma_io/){:target="_blank"}
+  * [Facebook ozma.io page](https://www.facebook.com/ozma.io/){:target="_blank"}
+  * [Instagram ozma.io page](https://www.instagram.com/ozma.io/){:target="_blank"}
+  * [IndieHackers ozma.io page](https://www.indiehackers.com/product/ozma-io){:target="_blank"}
+  * [Google Maps ozma.io page](https://goo.gl/maps/qGQpQsErsT73pWBXA){:target="_blank"}
+  * [Pinterest ozma.io page](https://pinterest.com/kirill_markin/ozmaio/){:target="_blank"}
+  * [Product Hunt ozma.io page](https://www.producthunt.com/products/ozma-io){:target="_blank"}
+  * [Y Combinator: ozma.io startup school graduate](https://www.startupschool.org/companies/ozma-io){:target="_blank"}
+  * [Crunchbase ozma.io page](https://www.crunchbase.com/organization/ozma-8c74){:target="_blank"}
+  * [AngelList ozma.io page](https://wellfound.com/company/ozma-io){:target="_blank"}
 
 ## 📰 {{page.schema-org.founder.name}}: медиа
 
