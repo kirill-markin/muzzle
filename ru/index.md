@@ -80,12 +80,6 @@ schema-org: {
 
 ## 💁‍♂️ {{page.schema-org.founder.name}}: контакты
 
-* Social
-  * Linkedin: [linkedin.com/in/kirill-markin/](https://www.linkedin.com/in/kirill-markin){:target="_blank"}
-  * Twitter: [@kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
-  * Instagram: [@kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
-  * Facebook: [fb.com/kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
-  * IndieHackers: [indiehackers.com/kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
 * Contacts
   * Email: [{{page.schema-org.founder.email}}](mailto:{{page.schema-org.founder.email}}){:itemprop="email"}
   * Telegram: [@kirmark](https://t.me/kirmark){:target="_blank"}
@@ -93,6 +87,15 @@ schema-org: {
   * Phone 1: [+1 562 457 3895](tel:+15624573895){:itemprop="telephone"}
   * WhatsApp 2: [+359 87 990 6085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
   * Phone 2: [+359 87 990 6085](tel:+359879906085)
+* Social
+  * Linkedin: [linkedin.com/in/kirill-markin/](https://www.linkedin.com/in/kirill-markin){:target="_blank"}
+  * Twitter: [@kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
+  * Instagram: [@kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
+  * Facebook: [fb.com/kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
+  * Reddit: [reddit.com/user/Kirmark](https://www.reddit.com/user/Kirmark){:target="_blank"}
+  * IndieHackers: [indiehackers.com/kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
+  * Product Hunt: [producthunt.com/@kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
+  * Google Maps: [goo.gl/maps/vQE39MpVfVSi3RVL9](https://goo.gl/maps/vQE39MpVfVSi3RVL9){:target="_blank"}
 
 ## 💼 Ozma Inc. контакты
 
