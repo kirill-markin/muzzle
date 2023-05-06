@@ -96,6 +96,7 @@ schema-org: {
   * IndieHackers: [indiehackers.com/kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
   * Product Hunt: [producthunt.com/@kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
   * Google Maps: [goo.gl/maps/vQE39MpVfVSi3RVL9](https://goo.gl/maps/vQE39MpVfVSi3RVL9){:target="_blank"}
+  * [qwoted account](https://app.qwoted.com/sources/kirill-markin){:target="_blank"}
 
 ## 💼 Ozma Inc. контакты
 
