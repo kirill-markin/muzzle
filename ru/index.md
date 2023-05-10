@@ -40,7 +40,7 @@ schema-org: {
       "@type": "Person",
       "email": "markinkirill@gmail.com",
       "image": "https://kirill-markin.com/data/kirill.jpg",
-      "jobTitle": "Основатель Ozma Inc.",
+      "jobTitle": "Основатель ozma.io",
       "name": "Кирилл Маркин",
       "alumniOf": "Bauman Moscow State Technical University",
       "birthPlace": "Kolomna, Moscow Oblast, Russia",
@@ -166,5 +166,5 @@ schema-org: {
   * Publisher: TAGES
   * Date: 2021-05-19
 * [ЗА ЖИЗНЬ: актер и IT-специалист о бомжевании и мнениях других людей](https://youtu.be/VD-ZF4wNT-E){:target="_blank"}
-  * Publisher: tanyarybakova
+  * Publisher: Blogger Tanya Rybakova
   * Date: 2018-08-05
