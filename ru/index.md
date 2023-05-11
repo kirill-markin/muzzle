@@ -98,6 +98,8 @@ schema-org: {
   * Google Maps: [goo.gl/maps/vQE39MpVfVSi3RVL9](https://goo.gl/maps/vQE39MpVfVSi3RVL9){:target="_blank"}
   * [qwoted profile](https://app.qwoted.com/sources/kirill-markin){:target="_blank"}
   * [publito.co.uk profile](https://app.publito.co.uk/haj-source-profile/NCbiSRWj07){:target="_blank"}
+  * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
+  * [HuggingFace account @kirill-markin](https://huggingface.co/kirill-markin){:target="_blank"}
 
 ## 💼 Ozma Inc. контакты
 
