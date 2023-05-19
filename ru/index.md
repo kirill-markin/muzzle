@@ -100,6 +100,8 @@ schema-org: {
   * [publito.co.uk profile](https://app.publito.co.uk/haj-source-profile/NCbiSRWj07){:target="_blank"}
   * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
   * [HuggingFace account @kirill-markin](https://huggingface.co/kirill-markin){:target="_blank"}
+* Other
+  * [@kirillmarkin profile on hashnode.com](https://hashnode.com/@kirillmarkin){:target="_blank"}
 
 ## 💼 Ozma Inc. контакты
 
