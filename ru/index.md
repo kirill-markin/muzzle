@@ -95,12 +95,12 @@ schema-org: {
   * Reddit: [reddit.com/user/Kirmark](https://www.reddit.com/user/Kirmark){:target="_blank"}
   * IndieHackers: [indiehackers.com/kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
   * Product Hunt: [producthunt.com/@kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
+  * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
+* Other
   * Google Maps: [goo.gl/maps/vQE39MpVfVSi3RVL9](https://goo.gl/maps/vQE39MpVfVSi3RVL9){:target="_blank"}
   * [qwoted profile](https://app.qwoted.com/sources/kirill-markin){:target="_blank"}
   * [publito.co.uk profile](https://app.publito.co.uk/haj-source-profile/NCbiSRWj07){:target="_blank"}
-  * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
   * [HuggingFace account @kirill-markin](https://huggingface.co/kirill-markin){:target="_blank"}
-* Other
   * [@kirillmarkin profile on hashnode.com](https://hashnode.com/@kirillmarkin){:target="_blank"}
 
 ## 💼 Ozma Inc. контакты
