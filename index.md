@@ -88,13 +88,13 @@ Actions:
   * WhatsApp 2: [+359 87 990 6085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
   * Phone 2: [+359 87 990 6085](tel:+359879906085)
 * Social
-  * Linkedin: [linkedin.com/in/kirill-markin/](https://www.linkedin.com/in/kirill-markin){:target="_blank"}
-  * Twitter: [@kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
-  * Instagram: [@kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
-  * Facebook: [fb.com/kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
-  * Reddit: [reddit.com/user/Kirmark](https://www.reddit.com/user/Kirmark){:target="_blank"}
-  * IndieHackers: [indiehackers.com/kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
-  * Product Hunt: [producthunt.com/@kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
+  * [Linkedin @kirill-markin/](https://www.linkedin.com/in/kirill-markin){:target="_blank"}
+  * [Twitter @kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
+  * [Instagram @kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
+  * [Facebook @kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
+  * [Reddit @Kirmark](https://www.reddit.com/user/Kirmark){:target="_blank"}
+  * [IndieHackers kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
+  * [Product Hunt @kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
   * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
 * Other
   * [Medium @kirill-markin](https://medium.com/@kirill-markin){:target="_blank"}
