@@ -96,6 +96,7 @@ Actions:
   * [IndieHackers kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
   * [Product Hunt @kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
   * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
+  * [GitLab account @kirill-markin](https://gitlab.com/kirill-markin){:target="_blank"}
 * Other
   * [Medium @kirill-markin](https://medium.com/@kirill-markin){:target="_blank"}
   * [qwoted profile](https://app.qwoted.com/sources/kirill-markin){:target="_blank"}
