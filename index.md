@@ -131,7 +131,7 @@ Actions:
 
 ## 📰 {{page.schema-org.founder.name}} media
 
-### Articles
+### Articles and mentions
 
 * [DIY Voice-Controlled GPT Chat: A Step-by-Step Guide for Beginners](https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979){:target="_blank"}
   * Publisher: Medium
