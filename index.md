@@ -88,7 +88,7 @@ Actions:
   * WhatsApp 2: [+359 87 990 6085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
   * Phone 2: [+359 87 990 6085](tel:+359879906085)
 * Social
-  * [Linkedin @kirill-markin/](https://www.linkedin.com/in/kirill-markin){:target="_blank"}
+  * [Linkedin @kirill-markin](https://www.linkedin.com/in/kirill-markin){:target="_blank"}
   * [Twitter @kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
   * [Instagram @kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
   * [Facebook @kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
