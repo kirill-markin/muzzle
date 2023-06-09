@@ -131,7 +131,7 @@ schema-org: {
 
 ## 📰 {{page.schema-org.founder.name}}: медиа
 
-### Статьи (На английском)
+### Статьи и упоминания (На английском)
 
 * [DIY Voice-Controlled GPT Chat: A Step-by-Step Guide for Beginners](https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979){:target="_blank"}
   * Publisher: Medium
@@ -146,11 +146,14 @@ schema-org: {
   * Publisher: Ozma Inc.
   * Date: 2022-08-27
 
-### Статьи (На русском)
+### Статьи и упоминания (На русском)
 
 * [CRM-система: как сэкономить деньги и выбрать наилучший вариант](https://rb.ru/opinion/best-crm/){:target="_blank"}
   * Publisher: Rusbase
   * Date: 2021-03-12
+* [Не повторять! Ошибки в общении с клиентами, которые роняют продажи](https://e.gd.ru/1031609){:target="_blank"}
+  * Publisher: Журнал "Генеральный директор"
+  * Date: 2022-07-12
 * [Как сделать таск-трекер под себя на low-code конструкторе](https://habr.com/ru/post/673874/){:target="_blank"}
   * Publisher: Habr
   * Date: 2022-07-12
