@@ -129,9 +129,9 @@ Actions:
   * [Crunchbase ozma.io page](https://www.crunchbase.com/organization/ozma-8c74){:target="_blank"}
   * [AngelList ozma.io page](https://wellfound.com/company/ozma-io){:target="_blank"}
 
-## 📰 {{page.schema-org.founder.name}} media
+## <a name="media"></a>📰 {{page.schema-org.founder.name}} media
 
-### Articles and mentions
+### Articles and mentions in English
 
 * [DIY Voice-Controlled GPT Chat: A Step-by-Step Guide for Beginners](https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979){:target="_blank"}
   * Publisher: Medium
@@ -145,3 +145,5 @@ Actions:
 * [Custom CRM from scratch on low-code platform ozma.io](https://ozma.io/articles/custom-crm-from-scratch-on-low-code-platform-ozma-io/){:target="_blank"}
   * Publisher: Ozma Inc.
   * Date: 2022-08-27
+
+👉 [Check out more media mentions in other languages](/ru/#media-ru){:target="_blank"}

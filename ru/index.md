@@ -131,7 +131,7 @@ schema-org: {
 
 ## 📰 {{page.schema-org.founder.name}}: медиа
 
-### Статьи и упоминания (На английском)
+### <a name="media"></a>Статьи и упоминания (На английском)
 
 * [DIY Voice-Controlled GPT Chat: A Step-by-Step Guide for Beginners](https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979){:target="_blank"}
   * Publisher: Medium
@@ -146,7 +146,7 @@ schema-org: {
   * Publisher: Ozma Inc.
   * Date: 2022-08-27
 
-### Статьи, видео упоминания (На русском)
+### <a name="media-ru"></a>Статьи, видео упоминания (На русском)
 
 * [Как с помощью ChatGPT автоматизировать техподдержку за 2 дня](https://my.epicgrowth.io/programs/markin?category_id=135092){:target="_blank"}
   * Publisher: epicgrowth.io
