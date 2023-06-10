@@ -146,8 +146,12 @@ schema-org: {
   * Publisher: Ozma Inc.
   * Date: 2022-08-27
 
-### Статьи и упоминания (На русском)
+### Статьи, видео упоминания (На русском)
 
+* [Как с помощью ChatGPT автоматизировать техподдержку за 2 дня](https://my.epicgrowth.io/programs/markin?category_id=135092){:target="_blank"}
+  * Publisher: epicgrowth.io
+  * Date: 2023-06-08
+  * Type: Video
 * [CRM-система: как сэкономить деньги и выбрать наилучший вариант](https://rb.ru/opinion/best-crm/){:target="_blank"}
   * Publisher: Rusbase
   * Date: 2021-03-12
@@ -172,15 +176,15 @@ schema-org: {
 * [CRM для провайдера: пример внедрения ozma.io](https://ozma.io/ru/articles/crm-dlya-provajdera/){:target="_blank"}
   * Publisher: Ozma Inc.
   * Date: 2022-02-21
-
-### Видео (На русском)
-
-* [Мастер-класс "Программирование в управлении. История одного студента Бауманки" (К. Маркин)](https://www.youtube.com/watch?v=FYT9nm6ryGc){:target="_blank"}
-  * Publisher: VK group
-  * Date: 2015-02-23
 * [LOW CODE - тренд на "упрощенку"](https://fb.watch/gQTOBzSR1j/){:target="_blank"}
   * Publisher: TAGES
   * Date: 2021-05-19
+  * Type: Video
 * [ЗА ЖИЗНЬ: актер и IT-специалист о бомжевании и мнениях других людей](https://youtu.be/VD-ZF4wNT-E){:target="_blank"}
   * Publisher: Blogger Tanya Rybakova
   * Date: 2018-08-05
+  * Type: Video
+* [Мастер-класс "Программирование в управлении. История одного студента Бауманки" (К. Маркин)](https://www.youtube.com/watch?v=FYT9nm6ryGc){:target="_blank"}
+  * Publisher: VK group
+  * Date: 2015-02-23
+  * Type: Video
