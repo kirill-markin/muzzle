@@ -136,7 +136,7 @@ Actions:
 * [DIY Voice-Controlled GPT Chat: A Step-by-Step Guide for Beginners](https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979){:target="_blank"}
   * Publisher: Medium
   * Date: 2023-06-08
-* [Where CRM is used? Discovering the Applications of CRM: Company Size, Function, and Industry.](https://ozma.io/articles/where-crm-is-used-discovering-the-applications-of-crm-size-function-industry/){:target="_blank"}
+* [Where CRM is used? Discovering the Applications of CRM: Company Size, Function, and Industry](https://ozma.io/articles/where-crm-is-used-discovering-the-applications-of-crm-size-function-industry/){:target="_blank"}
   * Publisher: Ozma Inc.
   * Date: 2023-06-04
 * [CRM in Excel — Benefits and Differences](https://ozma.io/articles/crm-in-excel-benefits-and-differences/){:target="_blank"}
