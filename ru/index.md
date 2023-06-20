@@ -152,6 +152,9 @@ schema-org: {
   * Publisher: epicgrowth.io
   * Date: 2023-06-08
   * Type: Video
+* [Применение долгосрочной памяти в GPT-чатах для бизнеса: практические примеры и случаи использования](https://digital-report.ru/primenenie-dolgosrochnoj-pamjati-v-gpt-chatah-dlja-biznesa-prakticheskie-primery-i-sluchai-ispolzovanija/){:target="_blank"}
+  * Publisher: digital-report.ru
+  * Date: 2023-06-20
 * [CRM-система: как сэкономить деньги и выбрать наилучший вариант](https://rb.ru/opinion/best-crm/){:target="_blank"}
   * Publisher: Rusbase
   * Date: 2021-03-12
