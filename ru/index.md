@@ -155,6 +155,9 @@ schema-org: {
   * Publisher: epicgrowth.io
   * Date: 2023-06-08
   * Type: Video
+* [Голосовой чат GPT своими руками: пошаговое руководство для начинающих](https://vc.ru/chatgpt/734427-golosovoy-chat-gpt-svoimi-rukami-poshagovoe-rukovodstvo-dlya-nachinayushchih){:target="_blank"}
+  * Publisher: vc.ru
+  * Date: 2023-06-23
 * [Применение долгосрочной памяти в GPT-чатах для бизнеса: практические примеры и случаи использования](https://digital-report.ru/primenenie-dolgosrochnoj-pamjati-v-gpt-chatah-dlja-biznesa-prakticheskie-primery-i-sluchai-ispolzovanija/){:target="_blank"}
   * Publisher: digital-report.ru
   * Date: 2023-06-20
