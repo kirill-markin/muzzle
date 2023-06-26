@@ -133,7 +133,7 @@ schema-org: {
 
 ### <a name="media"></a>Статьи и упоминания (На английском)
 
-* [Creating a voice-enabled Telegram Bot for GPT Chat without DevOps: a comprehensive guide](https://medium.com/@kirill-markin/creating-a-voice-enabled-telegram-bot-for-gpt-chat-without-devops-a-comprehensive-guide-8a905241cb9c){:target="_blank"}
+* [Creating a voice-enabled Telegram Bot for GPT Chat without DevOps: a comprehensive guide](https://kirill-markin.medium.com/creating-a-voice-enabled-telegram-bot-for-gpt-chat-without-devops-a-comprehensive-guide-8a905241cb9c){:target="_blank"}
   * Publisher: Medium
   * Date: 2023-06-22
 * [DIY Voice-Controlled GPT Chat: A Step-by-Step Guide for Beginners](https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979){:target="_blank"}
