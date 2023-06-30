@@ -155,6 +155,9 @@ schema-org: {
   * Publisher: epicgrowth.io
   * Date: 2023-06-08
   * Type: Video
+* [Инцидент-менеджмент: как настроить процесс расследования без подключения data-аналитиков](https://www.itweek.ru/management/article/detail.php?ID=226693){:target="_blank"}
+  * Publisher: itWeek
+  * Date: 2023-06-30
 * [Голосовой чат GPT своими руками: пошаговое руководство для начинающих](https://vc.ru/chatgpt/734427-golosovoy-chat-gpt-svoimi-rukami-poshagovoe-rukovodstvo-dlya-nachinayushchih){:target="_blank"}
   * Publisher: vc.ru
   * Date: 2023-06-23
