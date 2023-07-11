@@ -151,6 +151,9 @@ schema-org: {
 
 ### <a name="media-ru"></a>Статьи, видео упоминания (На русском)
 
+* [Эволюция названия стартапа: 4 шага к идеальному имени](https://www.novostiitkanala.ru/news/detail.php?ID=170421){:target="_blank"}
+  * Publisher: IT Channel News
+  * Date: 2023-07-11
 * [Как с помощью ChatGPT автоматизировать техподдержку за 2 дня](https://my.epicgrowth.io/programs/markin?category_id=135092){:target="_blank"}
   * Publisher: epicgrowth.io
   * Date: 2023-06-08
