@@ -157,6 +157,13 @@ schema-org: {
 * [Не повторять! Ошибки в общении с клиентами, которые роняют продажи](https://e.gd.ru/1031609){:target="_blank"}
   * Publisher: Журнал "Генеральный директор"
   * Date: 2022-07-12
+* [Как с помощью ChatGPT автоматизировать техподдержку за 2 дня](https://my.epicgrowth.io/programs/markin?category_id=135092){:target="_blank"}
+  * Publisher: epicgrowth.io
+  * Date: 2023-06-08
+  * Type: Video
+* [Инцидент-менеджмент: как настроить процесс расследования без подключения data-аналитиков](https://www.itweek.ru/management/article/detail.php?ID=226693){:target="_blank"}
+  * Publisher: itWeek
+  * Date: 2023-06-30
 * [Лекции Технопарка. Программирование в управлении. История одного студента Бауманки](https://habr.com/ru/company/vk/blog/250593/){:target="_blank"}
   * Publisher: VK group
   * Date: 2015-02-15
@@ -167,13 +174,6 @@ schema-org: {
 * [ЗА ЖИЗНЬ: актер и IT-специалист о бомжевании и мнениях других людей](https://youtu.be/VD-ZF4wNT-E){:target="_blank"}
   * Publisher: Blogger Tanya Rybakova
   * Date: 2018-08-05
-  * Type: Video
-* [Инцидент-менеджмент: как настроить процесс расследования без подключения data-аналитиков](https://www.itweek.ru/management/article/detail.php?ID=226693){:target="_blank"}
-  * Publisher: itWeek
-  * Date: 2023-06-30
-* [Как с помощью ChatGPT автоматизировать техподдержку за 2 дня](https://my.epicgrowth.io/programs/markin?category_id=135092){:target="_blank"}
-  * Publisher: epicgrowth.io
-  * Date: 2023-06-08
   * Type: Video
 * [Применение долгосрочной памяти в GPT-чатах для бизнеса: практические примеры и случаи использования](https://digital-report.ru/primenenie-dolgosrochnoj-pamjati-v-gpt-chatah-dlja-biznesa-prakticheskie-primery-i-sluchai-ispolzovanija/){:target="_blank"}
   * Publisher: digital-report.ru
