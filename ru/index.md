@@ -161,6 +161,9 @@ schema-org: {
   * Publisher: epicgrowth.io
   * Date: 2023-06-08
   * Type: Video
+* [Грядущие продукты на основе Chat-GPT: что ожидать в наших приложениях и системах](https://www.comnews.ru/digital-economy/content/227470/2023-07-16/2023-w28/gryaduschie-produkty-osnove-chat-gpt-chto-ozhidat-nashikh-prilozheniyakh-i-sistemakh){:target="_blank"}
+  * Publisher: COMNEWS
+  * Date: 2023-07-18
 * [Инцидент-менеджмент: как настроить процесс расследования без подключения data-аналитиков](https://www.itweek.ru/management/article/detail.php?ID=226693){:target="_blank"}
   * Publisher: itWeek
   * Date: 2023-06-30
