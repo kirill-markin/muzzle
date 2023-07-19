@@ -164,6 +164,9 @@ schema-org: {
 * [Грядущие продукты на основе Chat-GPT: что ожидать в наших приложениях и системах](https://www.comnews.ru/digital-economy/content/227470/2023-07-16/2023-w28/gryaduschie-produkty-osnove-chat-gpt-chto-ozhidat-nashikh-prilozheniyakh-i-sistemakh){:target="_blank"}
   * Publisher: COMNEWS
   * Date: 2023-07-18
+* [Как CRM облегчает жизнь отдела продаж](https://www.it-world.ru/it-news/market/194728.html){:target="_blank"}
+  * Publisher: it-world
+  * Date: 2023-07-19
 * [Инцидент-менеджмент: как настроить процесс расследования без подключения data-аналитиков](https://www.itweek.ru/management/article/detail.php?ID=226693){:target="_blank"}
   * Publisher: itWeek
   * Date: 2023-06-30
