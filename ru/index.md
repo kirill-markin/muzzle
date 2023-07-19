@@ -193,6 +193,9 @@ schema-org: {
 * [Голосовой чат GPT своими руками: пошаговое руководство для начинающих](https://vc.ru/chatgpt/734427-golosovoy-chat-gpt-svoimi-rukami-poshagovoe-rukovodstvo-dlya-nachinayushchih){:target="_blank"}
   * Publisher: vc.ru
   * Date: 2023-06-23
+* [Создание бота Telegram с голосовой поддержкой для чата GPT без DevOps: подробный гайд](https://vc.ru/u/343006-kirill-markin/762087-sozdanie-bota-telegram-s-golosovoy-podderzhkoy-dlya-chata-gpt-bez-devops-podrobnyy-gayd){:target="_blank"}
+  * Publisher: vc.ru
+  * Date: 2023-07-18
 * [LOW CODE - тренд на "упрощенку"](https://fb.watch/gQTOBzSR1j/){:target="_blank"}
   * Publisher: TAGES
   * Date: 2021-05-19
