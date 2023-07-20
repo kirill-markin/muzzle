@@ -70,7 +70,7 @@ schema-org: {
     >
   </div>
   <div class="col-md-9">
-    <h1>{{page.schema-org.founder.name}} <br/>Head of AI Lab at SOAX <br/>{{page.schema-org.founder.jobTitle}} <br/>AI & Data констультант</h1>
+    <h1>{{page.schema-org.founder.name}} <br/>Head of AI Lab at SOAX <br/>{{page.schema-org.founder.jobTitle}} <br/>AI & Data консультант</h1>
   </div>
 </div>
 
