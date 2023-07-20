@@ -129,9 +129,9 @@ schema-org: {
   * [Crunchbase ozma.io page](https://www.crunchbase.com/organization/ozma-8c74){:target="_blank"}
   * [AngelList ozma.io page](https://wellfound.com/company/ozma-io){:target="_blank"}
 
-## 📰 {{page.schema-org.founder.name}}: медиа
+## <a name="media"></a>📰 {{page.schema-org.founder.name}}: медиа
 
-### <a name="media"></a>Статьи и упоминания (На английском)
+### Статьи и упоминания (На английском)
 
 * [Creating a voice-enabled Telegram Bot for GPT Chat without DevOps: a comprehensive guide](https://kirill-markin.medium.com/creating-a-voice-enabled-telegram-bot-for-gpt-chat-without-devops-a-comprehensive-guide-8a905241cb9c){:target="_blank"}
   * Publisher: Medium
