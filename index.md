@@ -133,6 +133,9 @@ Actions:
 
 ### Articles and mentions in English
 
+* [Conference Talk: How to handle a billion new records per day when migrating databases](https://verigram.ai/blog/Kazakhstan-AI-ML-community-is-delighted-with-VeriMeet){:target="_blank"}
+  * Publisher: verigram.ai
+  * Date: 2023-09-08
 * [Creating a voice-enabled Telegram Bot for GPT Chat without DevOps: a comprehensive guide](https://kirill-markin.medium.com/creating-a-voice-enabled-telegram-bot-for-gpt-chat-without-devops-a-comprehensive-guide-8a905241cb9c){:target="_blank"}
   * Publisher: Medium
   * Date: 2023-06-22
