@@ -154,6 +154,10 @@ schema-org: {
 
 ### <a name="media-ru"></a>Статьи, видео упоминания (На русском)
 
+* [ML-гайд: сколько стоит, как без ML, что учить, если ты продакт / Кирилл Маркин, AI & Data Monkey](https://youtu.be/-b1N4Si-CUQ?si=Pll8us45Eh5S0F7D){:target="_blank"}
+  * Publisher: Anna Podobrazhnykh youtube channel
+  * Date: 2023-09-16
+  * Type: Video
 * [CRM-система: как сэкономить деньги и выбрать наилучший вариант](https://rb.ru/opinion/best-crm/){:target="_blank"}
   * Publisher: Rusbase
   * Date: 2021-03-12
@@ -181,7 +185,7 @@ schema-org: {
   * Date: 2015-02-23
   * Type: Video
 * [ЗА ЖИЗНЬ: актер и IT-специалист о бомжевании и мнениях других людей](https://youtu.be/VD-ZF4wNT-E){:target="_blank"}
-  * Publisher: Blogger Tanya Rybakova
+  * Publisher: Blogger Tanya Rybakova youtube channel
   * Date: 2018-08-05
   * Type: Video
 * [Применение долгосрочной памяти в GPT-чатах для бизнеса: практические примеры и случаи использования](https://digital-report.ru/primenenie-dolgosrochnoj-pamjati-v-gpt-chatah-dlja-biznesa-prakticheskie-primery-i-sluchai-ispolzovanija/){:target="_blank"}
