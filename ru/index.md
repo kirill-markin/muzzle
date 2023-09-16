@@ -158,6 +158,10 @@ schema-org: {
   * Publisher: Anna Podobrazhnykh youtube channel
   * Date: 2023-09-16
   * Type: Video
+* [ML Product Day: Q&A session](https://youtu.be/wrW8N-G2L90?si=TY2UlYTXh5pOH65w){:target="_blank"}
+  * Publisher: Anna Podobrazhnykh youtube channel
+  * Date: 2023-09-16
+  * Type: Video
 * [CRM-система: как сэкономить деньги и выбрать наилучший вариант](https://rb.ru/opinion/best-crm/){:target="_blank"}
   * Publisher: Rusbase
   * Date: 2021-03-12
