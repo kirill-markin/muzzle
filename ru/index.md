@@ -195,6 +195,9 @@ schema-org: {
 * [Применение долгосрочной памяти в GPT-чатах для бизнеса: практические примеры и случаи использования](https://digital-report.ru/primenenie-dolgosrochnoj-pamjati-v-gpt-chatah-dlja-biznesa-prakticheskie-primery-i-sluchai-ispolzovanija/){:target="_blank"}
   * Publisher: digital-report.ru
   * Date: 2023-06-20
+* [Ошибки в общении с клиентами, которые роняют продажи](https://www.kom-dir.ru/article/4267-oshibki-v-obshchenii-s-klientami){:target="_blank"}
+  * Publisher: Журнал “Коммерческий директор”
+  * Date: 2023-08-29
 * [Эволюция названия стартапа: 4 шага к идеальному имени](https://www.novostiitkanala.ru/news/detail.php?ID=170421){:target="_blank"}
   * Publisher: IT Channel News
   * Date: 2023-07-11
