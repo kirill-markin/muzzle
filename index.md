@@ -133,6 +133,14 @@ Actions:
 
 ### Articles and mentions in English
 
+* [Conference Talk: Aggregation and analytics of data on a scale of the top three proxy providers in the world: from raw logs to insights.](https://www.linkedin.com/posts/kirill-markin_shining-on-noah-conference-activity-7141088778261094400-4kBQ){:target="_blank"}
+  * Publisher: noah-conference.com
+  * Date: 2023-12-14
+  * Event: [NOAH Conference 2023, Zurich](https://www.noah-conference.com/program-noah-zurich-conference-2023/){:target="_blank"}
+* [Conference Talk: Aggregation and analytics of data on a scale of the top three proxy providers in the world: from raw logs to insights.](https://www.linkedin.com/posts/kirill-markin_if-you-understand-russian-language-and-miss-activity-7121870977998684160-R25T){:target="_blank"}
+  * Publisher: matemarketing.ru
+  * Date: 2023-11-09
+  * Event: [Mate Marketing Conference 2023](https://matemarketing.ru/mm23){:target="_blank"}
 * [Conference Talk: How to handle a billion new records per day when migrating databases](https://verigram.ai/blog/Kazakhstan-AI-ML-community-is-delighted-with-VeriMeet){:target="_blank"}
   * Publisher: verigram.ai
   * Date: 2023-09-08
