@@ -102,6 +102,7 @@ schema-org: {
   * [qwoted profile](https://app.qwoted.com/sources/kirill-markin){:target="_blank"}
   * [publito.co.uk profile](https://app.publito.co.uk/haj-source-profile/NCbiSRWj07){:target="_blank"}
   * [GetMentor](https://getmentor.dev/mentor/kirill-markin-1308){:target="_blank"}
+  * [Вастрик x Клуб @kirill-markin](https://vas3k.club/user/kirill-markin/){:target="_blank"}
   * [HuggingFace account @kirill-markin](https://huggingface.co/kirill-markin){:target="_blank"}
   * [@kirillmarkin profile on hashnode.com](https://hashnode.com/@kirillmarkin){:target="_blank"}
   * [Google Maps Kirill Markin](https://goo.gl/maps/vQE39MpVfVSi3RVL9){:target="_blank"}
