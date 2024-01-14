@@ -109,7 +109,7 @@ Actions:
 
 ### Articles and mentions in English
 
-* [Conference Talk: Aggregation and analytics of data on a scale of the top three proxy providers in the world: from raw logs to insights.](https://www.linkedin.com/posts/kirill-markin_shining-on-noah-conference-activity-7141088778261094400-4kBQ){:target="_blank"}
+* [Conference Talk: Aggregation and analytics of data on a scale of the top three proxy providers in the world: from raw logs to insights.](https://youtu.be/QDFDTN30YOs?si=fpeSOig9h1el2zkK){:target="_blank"}
   * Publisher: noah-conference.com
   * Date: 2023-12-14
   * Event: [NOAH Conference 2023, Zurich](https://www.noah-conference.com/program-noah-zurich-conference-2023/){:target="_blank"}
