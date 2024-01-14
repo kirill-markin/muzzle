@@ -101,6 +101,7 @@ schema-org: {
   * [Medium @kirill-markin](https://medium.com/@kirill-markin){:target="_blank"}
   * [qwoted profile](https://app.qwoted.com/sources/kirill-markin){:target="_blank"}
   * [publito.co.uk profile](https://app.publito.co.uk/haj-source-profile/NCbiSRWj07){:target="_blank"}
+  * [GetMentor](https://getmentor.dev/mentor/kirill-markin-1308){:target="_blank"}
   * [HuggingFace account @kirill-markin](https://huggingface.co/kirill-markin){:target="_blank"}
   * [@kirillmarkin profile on hashnode.com](https://hashnode.com/@kirillmarkin){:target="_blank"}
   * [Google Maps Kirill Markin](https://goo.gl/maps/vQE39MpVfVSi3RVL9){:target="_blank"}
@@ -125,7 +126,6 @@ schema-org: {
   * [Product Hunt ozma.io page](https://www.producthunt.com/products/ozma-io){:target="_blank"}
 * Other
   * [Google Maps ozma.io page](https://goo.gl/maps/qGQpQsErsT73pWBXA){:target="_blank"}
-  * [Y Combinator: ozma.io startup school graduate](https://www.startupschool.org/companies/ozma-io){:target="_blank"}
   * [Crunchbase ozma.io page](https://www.crunchbase.com/organization/ozma-8c74){:target="_blank"}
   * [AngelList ozma.io page](https://wellfound.com/company/ozma-io){:target="_blank"}
 
