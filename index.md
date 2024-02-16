@@ -92,12 +92,12 @@ Actions:
   * [Twitter @kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
   * [Instagram @kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
   * [Facebook @kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
+* Other
   * [Reddit @Kirmark](https://www.reddit.com/user/Kirmark){:target="_blank"}
   * [IndieHackers kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
   * [Product Hunt @kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
   * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
   * [GitLab account @kirill-markin](https://gitlab.com/kirill-markin){:target="_blank"}
-* Other
   * [Medium @kirill-markin](https://medium.com/@kirill-markin){:target="_blank"}
   * [qwoted profile](https://app.qwoted.com/sources/kirill-markin){:target="_blank"}
   * [publito.co.uk profile](https://app.publito.co.uk/haj-source-profile/NCbiSRWj07){:target="_blank"}
