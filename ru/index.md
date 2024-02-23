@@ -90,6 +90,9 @@ schema-org: {
   * [Twitter @kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
   * [Instagram @kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
   * [Facebook @kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
+* Roles
+  * Founder of [ozma.io](https://ozma.io){:target="_blank"}
+  * Head of AI Lab at [SOAX](https://soax.com){:target="_blank"}
 * Other
   * [Reddit @Kirmark](https://www.reddit.com/user/Kirmark){:target="_blank"}
   * [IndieHackers kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
