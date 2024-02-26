@@ -88,6 +88,7 @@ Actions:
 * Social
   * [Linkedin @kirill-markin](https://www.linkedin.com/in/kirill-markin/){:target="_blank"}
   * [Twitter @kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
+  * [Youtube @kirill-markin](https://www.youtube.com/@kirill-markin){:target="_blank"}
   * [Instagram @kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
   * [Facebook @kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
 * Kirill's roles
