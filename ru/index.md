@@ -108,6 +108,8 @@ schema-org: {
   * [HuggingFace account @kirill-markin](https://huggingface.co/kirill-markin){:target="_blank"}
   * [@kirillmarkin profile on hashnode.com](https://hashnode.com/@kirillmarkin){:target="_blank"}
   * [Google Maps Kirill Markin](https://goo.gl/maps/vQE39MpVfVSi3RVL9){:target="_blank"}
+  * [StackOverflow @kirill-markin](https://stackoverflow.com/users/16246793/kirill-markin){:target="_blank"}
+  * [dev.to @kirill-markin](https://dev.to/kirill-markin){:target="_blank"}
 
 ## <a name="media"></a>📰 {{page.schema-org.founder.name}}: медиа
 
