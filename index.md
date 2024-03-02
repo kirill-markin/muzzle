@@ -107,6 +107,8 @@ Actions:
   * [@kirillmarkin profile on hashnode.com](https://hashnode.com/@kirillmarkin){:target="_blank"}
   * [Google Maps Kirill Markin](https://goo.gl/maps/vQE39MpVfVSi3RVL9){:target="_blank"}
   * [StackOverflow @kirill-markin](https://stackoverflow.com/users/16246793/kirill-markin){:target="_blank"}
+  * [Kaggle @kirmark](https://www.kaggle.com/kirmark){:target="_blank"}
+  * [LeetCode @kirill-markin](https://leetcode.com/kirill-markin/){:target="_blank"}
   * [dev.to @kirill-markin](https://dev.to/kirill-markin){:target="_blank"}
 
 ## <a name="media"></a>📰 {{page.schema-org.founder.name}} media
