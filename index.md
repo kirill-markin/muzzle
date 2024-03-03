@@ -110,6 +110,7 @@ Actions:
   * [Kaggle @kirmark](https://www.kaggle.com/kirmark){:target="_blank"}
   * [LeetCode @kirill-markin](https://leetcode.com/kirill-markin/){:target="_blank"}
   * [dev.to @kirill-markin](https://dev.to/kirill-markin){:target="_blank"}
+  * [Atlassian Community Kirill Markin](https://community.atlassian.com/t5/user/viewprofilepage/user-id/5415988){:target="_blank"}
 
 ## <a name="media"></a>📰 {{page.schema-org.founder.name}} media
 
