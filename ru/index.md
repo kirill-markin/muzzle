@@ -147,10 +147,11 @@ schema-org: {
 
 ### <a name="media-ru"></a>Статьи, видео упоминания на русском
 
-* [Hackathon Judge: ML TalentMatch](https://sense-group.ru/events)
+* [Hackathon Judge: ML TalentMatch](https://sense-group.ru/events){:target="_blank"}
   * Publisher: sense-group.ru
   * Dates: 2024-02-28 — 2024-03-01
   * Type: Event
+  * Additional info: [ML TalentMatch](https://www.zavodit.ru/ru/calendar/event/46){:target="_blank"}
 * [ML-гайд: сколько стоит, как без ML, что учить, если ты продакт / Кирилл Маркин, AI & Data Monkey](https://youtu.be/-b1N4Si-CUQ?si=Pll8us45Eh5S0F7D){:target="_blank"}
   * Publisher: Anna Podobrazhnykh youtube channel
   * Date: 2023-09-16
