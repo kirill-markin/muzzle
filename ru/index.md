@@ -116,7 +116,7 @@ schema-org: {
 
 ## <a name="media"></a>📰 {{page.schema-org.founder.name}}: медиа
 
-### Статьи и упоминания (На английском)
+### Статьи и упоминания на английском
 
 * [Conference Talk: AI web scraping - Data Collection reimagined with soax.com](https://youtu.be/QDFDTN30YOs?si=fpeSOig9h1el2zkK){:target="_blank"}
   * Publisher: noah-conference.com
@@ -145,7 +145,7 @@ schema-org: {
   * Publisher: Ozma Inc.
   * Date: 2022-08-27
 
-### <a name="media-ru"></a>Статьи, видео упоминания (На русском)
+### <a name="media-ru"></a>Статьи, видео упоминания на русском
 
 * [ML-гайд: сколько стоит, как без ML, что учить, если ты продакт / Кирилл Маркин, AI & Data Monkey](https://youtu.be/-b1N4Si-CUQ?si=Pll8us45Eh5S0F7D){:target="_blank"}
   * Publisher: Anna Podobrazhnykh youtube channel
