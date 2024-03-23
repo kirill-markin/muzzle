@@ -134,7 +134,7 @@ schema-org: {
   * Publisher: epicgrowth.io
   * Date: 2024-03-12
   * Event: [Epic AI Conference 2024](https://epicgrowth.io/ai-conference){:target="_blank"}
-* [Конференция: Агрегация и аналитика данных в масштабе ТОП-3 прокси-провайдера в мире: от сырых логов к инсайтам](https://matemarketing.ru/video?v=MTAwMTk4PzIjMzI5Nw){:target="_blank"}
+* [Агрегация и аналитика данных в масштабе ТОП-3 прокси-провайдера в мире: от сырых логов к инсайтам](https://matemarketing.ru/video?v=MTAwMTk4PzIjMzI5Nw){:target="_blank"}
   * Publisher: matemarketing.ru
   * Date: 2023-11-09
   * Event: [Матемаркетинг 2023](https://matemarketing.ru/mm23){:target="_blank"}
