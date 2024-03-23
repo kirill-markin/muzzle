@@ -134,6 +134,10 @@ schema-org: {
   * Publisher: epicgrowth.io
   * Date: 2024-03-12
   * Event: [Epic AI Conference 2024](https://epicgrowth.io/ai-conference){:target="_blank"}
+* [Как решить сложную большую задачу с помощью AI: пайплайны, агенты и другие шалости](https://podlodka.io/productcrew){:target="_blank"}
+  * Publisher: podlodka.io
+  * Date: 2024-03-21
+  * Event: [Podlodka Product Crew #5](https://podlodka.io/productcrew){:target="_blank"}
 * [Агрегация и аналитика данных в масштабе ТОП-3 прокси-провайдера в мире: от сырых логов к инсайтам](https://matemarketing.ru/video?v=MTAwMTk4PzIjMzI5Nw){:target="_blank"}
   * Publisher: matemarketing.ru
   * Date: 2023-11-09
