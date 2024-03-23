@@ -104,10 +104,6 @@ schema-org: {
   * Publisher: noah-conference.com
   * Date: 2023-12-14
   * Event: [NOAH Conference 2023, Zurich](https://www.noah-conference.com/program-noah-zurich-conference-2023/){:target="_blank"}
-* [Conference Talk: Aggregation and analytics of data on a scale of the top three proxy providers in the world: from raw logs to insights.](https://matemarketing.ru/video?v=MTAwMTk4PzIjMzI5Nw){:target="_blank"}
-  * Publisher: matemarketing.ru
-  * Date: 2023-11-09
-  * Event: [Mate Marketing Conference 2023](https://matemarketing.ru/mm23){:target="_blank"}
 * [Conference Talk: How to handle a billion new records per day when migrating databases](https://verigram.ai/blog/Kazakhstan-AI-ML-community-is-delighted-with-VeriMeet){:target="_blank"}
   * Publisher: verigram.ai
   * Date: 2023-09-08
@@ -134,6 +130,10 @@ schema-org: {
   * Dates: 2024-02-28 — 2024-03-01
   * Type: Event
   * Additional info: [ML TalentMatch](https://www.zavodit.ru/ru/calendar/event/46){:target="_blank"}
+* [Конференция: Агрегация и аналитика данных в масштабе ТОП-3 прокси-провайдера в мире: от сырых логов к инсайтам](https://matemarketing.ru/video?v=MTAwMTk4PzIjMzI5Nw){:target="_blank"}
+  * Publisher: matemarketing.ru
+  * Date: 2023-11-09
+  * Event: [Матемаркетинг 2023](https://matemarketing.ru/mm23){:target="_blank"}
 * [ML-гайд: сколько стоит, как без ML, что учить, если ты продакт / Кирилл Маркин, AI & Data Monkey](https://youtu.be/-b1N4Si-CUQ?si=Pll8us45Eh5S0F7D){:target="_blank"}
   * Publisher: Anna Podobrazhnykh youtube channel
   * Date: 2023-09-16
