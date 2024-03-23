@@ -95,23 +95,6 @@ Actions:
 * Kirill's roles
   * Founder of [ozma.io](https://ozma.io){:target="_blank"}
   * Head of AI Lab at [SOAX](https://soax.com){:target="_blank"}
-* Other
-  * [Reddit @Kirmark](https://www.reddit.com/user/Kirmark){:target="_blank"}
-  * [IndieHackers kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
-  * [Product Hunt @kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
-  * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
-  * [GitLab account @kirill-markin](https://gitlab.com/kirill-markin){:target="_blank"}
-  * [Medium @kirill-markin](https://medium.com/@kirill-markin){:target="_blank"}
-  * [qwoted profile](https://app.qwoted.com/sources/kirill-markin){:target="_blank"}
-  * [publito.co.uk profile](https://app.publito.co.uk/haj-source-profile/NCbiSRWj07){:target="_blank"}
-  * [HuggingFace account @kirill-markin](https://huggingface.co/kirill-markin){:target="_blank"}
-  * [@kirillmarkin profile on hashnode.com](https://hashnode.com/@kirillmarkin){:target="_blank"}
-  * [Google Maps Kirill Markin](https://goo.gl/maps/vQE39MpVfVSi3RVL9){:target="_blank"}
-  * [StackOverflow @kirill-markin](https://stackoverflow.com/users/16246793/kirill-markin){:target="_blank"}
-  * [Kaggle @kirmark](https://www.kaggle.com/kirmark){:target="_blank"}
-  * [LeetCode @kirill-markin](https://leetcode.com/kirill-markin/){:target="_blank"}
-  * [dev.to @kirill-markin](https://dev.to/kirill-markin){:target="_blank"}
-  * [Atlassian Community Kirill Markin](https://community.atlassian.com/t5/user/viewprofilepage/user-id/5415988){:target="_blank"}
 
 ## <a name="media"></a>📰 {{page.schema-org.founder.name}} media
 
@@ -145,3 +128,23 @@ Actions:
   * Date: 2022-08-27
 
 👉 [Check out more media mentions in other languages](/ru/#media-ru){:target="_blank"}
+
+
+## Other URLs
+
+* [Reddit @Kirmark](https://www.reddit.com/user/Kirmark){:target="_blank"}
+* [IndieHackers kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
+* [Product Hunt @kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
+* [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
+* [GitLab account @kirill-markin](https://gitlab.com/kirill-markin){:target="_blank"}
+* [Medium @kirill-markin](https://medium.com/@kirill-markin){:target="_blank"}
+* [qwoted profile](https://app.qwoted.com/sources/kirill-markin){:target="_blank"}
+* [publito.co.uk profile](https://app.publito.co.uk/haj-source-profile/NCbiSRWj07){:target="_blank"}
+* [HuggingFace account @kirill-markin](https://huggingface.co/kirill-markin){:target="_blank"}
+* [@kirillmarkin profile on hashnode.com](https://hashnode.com/@kirillmarkin){:target="_blank"}
+* [Google Maps Kirill Markin](https://goo.gl/maps/vQE39MpVfVSi3RVL9){:target="_blank"}
+* [StackOverflow @kirill-markin](https://stackoverflow.com/users/16246793/kirill-markin){:target="_blank"}
+* [Kaggle @kirmark](https://www.kaggle.com/kirmark){:target="_blank"}
+* [LeetCode @kirill-markin](https://leetcode.com/kirill-markin/){:target="_blank"}
+* [dev.to @kirill-markin](https://dev.to/kirill-markin){:target="_blank"}
+* [Atlassian Community Kirill Markin](https://community.atlassian.com/t5/user/viewprofilepage/user-id/5415988){:target="_blank"}
