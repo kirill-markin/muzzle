@@ -130,6 +130,10 @@ schema-org: {
   * Dates: 2024-02-28 — 2024-03-01
   * Type: Event
   * Additional info: [ML TalentMatch](https://www.zavodit.ru/ru/calendar/event/46){:target="_blank"}
+* [Как прикрутить AI к вашему продукту: пример на ozma.io](https://epicgrowth.io/ai-conference#agenda){:target="_blank"}
+  * Publisher: epicgrowth.io
+  * Date: 2024-03-12
+  * Event: [Epic AI Conference 2024](https://epicgrowth.io/ai-conference){:target="_blank"}
 * [Конференция: Агрегация и аналитика данных в масштабе ТОП-3 прокси-провайдера в мире: от сырых логов к инсайтам](https://matemarketing.ru/video?v=MTAwMTk4PzIjMzI5Nw){:target="_blank"}
   * Publisher: matemarketing.ru
   * Date: 2023-11-09
