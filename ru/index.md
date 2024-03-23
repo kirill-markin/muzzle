@@ -75,6 +75,7 @@ schema-org: {
 </div>
 
 Действия:
+* [💜 Donate: Boost Kirill's Awesomeness!](https://donate.stripe.com/dR6dUr7vyefkcHC147){:target="_blank"}  
 * [📆 Запланировать встречу через calendly](https://calendly.com/kirill-markin){:target="_blank"}  
 * [💾 Сохранить контакт](/data/kirill-markin.vcf){:target="_blank"}  
 
