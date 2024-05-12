@@ -95,7 +95,9 @@ schema-org: {
 * Roles
   * Founder of [ozma.io](https://ozma.io){:target="_blank"}
   * Head of AI Lab at [SOAX](https://soax.com){:target="_blank"}
-  * Mentor at [MentorCruise @kirillmarkin](https://mentorcruise.com/mentor/kirillmarkin/){:target="_blank"}
+  * Judge at [MassChallenge](https://masschallenge.org/){:target="_blank"}
+  * Mentor at [Founder Institute](https://fi.co/mentors/11022){:target="_blank"}
+  * Mentor at [MentorCruise](https://mentorcruise.com/mentor/kirillmarkin/){:target="_blank"}
 
 ## <a name="media"></a>📰 {{page.schema-org.founder.name}}: медиа
 
