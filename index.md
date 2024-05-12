@@ -95,6 +95,7 @@ Actions:
 * Kirill's roles
   * Founder of [ozma.io](https://ozma.io){:target="_blank"}
   * Head of AI Lab at [SOAX](https://soax.com){:target="_blank"}
+  * Mentor at [MentorCruise @kirillmarkin](https://mentorcruise.com/mentor/kirillmarkin/){:target="_blank"}
 
 ## <a name="media"></a>📰 {{page.schema-org.founder.name}} media
 
