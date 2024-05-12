@@ -238,6 +238,7 @@ schema-org: {
 * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
 * [GitLab account @kirill-markin](https://gitlab.com/kirill-markin){:target="_blank"}
 * [Medium @kirill-markin](https://medium.com/@kirill-markin){:target="_blank"}
+* [Crunchbase @kirill-markin](https://www.crunchbase.com/person/kirill-markin){:target="_blank"}
 * [qwoted profile](https://app.qwoted.com/sources/kirill-markin){:target="_blank"}
 * [publito.co.uk profile](https://app.publito.co.uk/haj-source-profile/NCbiSRWj07){:target="_blank"}
 * [GetMentor](https://getmentor.dev/mentor/kirill-markin-1308){:target="_blank"}
@@ -247,6 +248,6 @@ schema-org: {
 * [Google Maps Kirill Markin](https://goo.gl/maps/vQE39MpVfVSi3RVL9){:target="_blank"}
 * [StackOverflow @kirill-markin](https://stackoverflow.com/users/16246793/kirill-markin){:target="_blank"}
 * [Kaggle @kirmark](https://www.kaggle.com/kirmark){:target="_blank"}
-* [LeetCode @kirill-markin](https://leetcode.com/kirill-markin/){:target="_blank"}
+* [LeetCode @kirill-markin](https://leetcode.com/u/kirill-markin/){:target="_blank"}
 * [dev.to @kirill-markin](https://dev.to/kirill-markin){:target="_blank"}
 * [Atlassian Community Kirill Markin](https://community.atlassian.com/t5/user/viewprofilepage/user-id/5415988){:target="_blank"}
