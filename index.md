@@ -151,3 +151,4 @@ Actions:
 * [LeetCode @kirill-markin](https://leetcode.com/u/kirill-markin/){:target="_blank"}
 * [dev.to @kirill-markin](https://dev.to/kirill-markin){:target="_blank"}
 * [Atlassian Community Kirill Markin](https://community.atlassian.com/t5/user/viewprofilepage/user-id/5415988){:target="_blank"}
+* [Substack @kirillmarkin](https://substack.com/@kirillmarkin){:target="_blank"}
