@@ -253,3 +253,5 @@ schema-org: {
 * [Atlassian Community Kirill Markin](https://community.atlassian.com/t5/user/viewprofilepage/user-id/5415988){:target="_blank"}
 * [Substack @kirillmarkin](https://substack.com/@kirillmarkin){:target="_blank"}
 * [Frontiers @kirill-markin](https://loop.frontiersin.org/people/2727594/overview){:target="_blank"}
+* [ORCID @0009-0009-1737-3675](https://orcid.org/0009-0009-1737-3675){:target="_blank"}
+
