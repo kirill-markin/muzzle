@@ -233,6 +233,7 @@ schema-org: {
 ## Other URLs
 
 * [Reddit @Kirmark](https://www.reddit.com/user/Kirmark){:target="_blank"}
+* [Hacker News @MarkinK](https://news.ycombinator.com/user?id=MarkinK){:target="_blank"}
 * [IndieHackers kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
 * [Product Hunt @kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
 * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
