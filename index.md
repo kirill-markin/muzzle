@@ -49,7 +49,7 @@ schema-org: {
       "gender": "male",
       "nationality": "Bulgarian",
       "telephone": "+1 (562) 457 3895",
-      "url": "https://kirill-markin.com/",
+      "url": "https://kirill-markin.com",
       "sameAs" : [ 
           "https://www.facebook.com/kirill.markin.kira",
           "https://www.linkedin.com/in/kirill-markin/",
@@ -57,7 +57,7 @@ schema-org: {
           "https://www.instagram.com/kirill.markin.kira/",
           "https://t.me/kirmark"
       ],
-      "@id": "https://kirill-markin.com/"
+      "@id": "https://kirill-markin.com"
   }
 }
 ---
