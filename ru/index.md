@@ -132,7 +132,7 @@ schema-org: {
 
 ### <a name="media-ru"></a>Статьи, видео упоминания на русском
 
-* [Hackathon Judge: ML TalentMatch](https://sense-group.ru/events){:target="_blank"}
+* Hackathon Judge: ML TalentMatch
   * Publisher: sense-group.ru
   * Dates: 2024-02-28 — 2024-03-01
   * Type: Event
