@@ -180,7 +180,7 @@ schema-org: {
 * [Инцидент-менеджмент: как настроить процесс расследования без подключения data-аналитиков](https://www.itweek.ru/management/article/detail.php?ID=226693){:target="_blank"}
   * Publisher: itWeek
   * Date: 2023-06-30
-* [Лекции Технопарка. Программирование в управлении. История одного студента Бауманки](https://habr.com/ru/company/vk/blog/250593/){:target="_blank"}
+* [Лекции Технопарка. Программирование в управлении. История одного студента Бауманки](https://habr.com/ru/companies/vk/articles/250593/){:target="_blank"}
   * Publisher: VK group
   * Date: 2015-02-15
 * [Мастер-класс "Программирование в управлении. История одного студента Бауманки" (К. Маркин)](https://www.youtube.com/watch?v=FYT9nm6ryGc){:target="_blank"}
@@ -200,7 +200,7 @@ schema-org: {
 * [Эволюция названия стартапа: 4 шага к идеальному имени](https://www.novostiitkanala.ru/news/detail.php?ID=170421){:target="_blank"}
   * Publisher: IT Channel News
   * Date: 2023-07-11
-* [Как сделать таск-трекер под себя на low-code конструкторе](https://habr.com/ru/post/673874/){:target="_blank"}
+* [Как сделать таск-трекер под себя на low-code конструкторе](https://habr.com/ru/articles/673874/){:target="_blank"}
   * Publisher: Habr
   * Date: 2022-07-12
 * [«Жизнь после диплома» — интервью с Кириллом Маркиным](https://vk.com/@bmstu1830-zhizn-posle-diploma-intervu-s-kirillom-markinym){:target="_blank"}
@@ -212,7 +212,7 @@ schema-org: {
 * [Создание бота Telegram с голосовой поддержкой для чата GPT без DevOps: подробный гайд](https://vc.ru/u/343006-kirill-markin/762087-sozdanie-bota-telegram-s-golosovoy-podderzhkoy-dlya-chata-gpt-bez-devops-podrobnyy-gayd){:target="_blank"}
   * Publisher: vc.ru
   * Date: 2023-07-18
-* [LOW CODE - тренд на "упрощенку"](https://fb.watch/gQTOBzSR1j/){:target="_blank"}
+* [LOW CODE - тренд на "упрощенку"](https://www.facebook.com/watch/?v=2846719108881072&ref=sharing){:target="_blank"}
   * Publisher: TAGES
   * Date: 2021-05-19
   * Type: Video
@@ -238,7 +238,7 @@ schema-org: {
 * [Product Hunt @kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
 * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
 * [GitLab account @kirill-markin](https://gitlab.com/kirill-markin){:target="_blank"}
-* [Medium @kirill-markin](https://medium.com/@kirill-markin){:target="_blank"}
+* [Medium @kirill-markin](https://kirill-markin.medium.com/){:target="_blank"}
 * [Crunchbase @kirill-markin](https://www.crunchbase.com/person/kirill-markin){:target="_blank"}
 * [qwoted profile](https://app.qwoted.com/sources/kirill-markin){:target="_blank"}
 * [publito.co.uk profile](https://app.publito.co.uk/haj-source-profile/NCbiSRWj07){:target="_blank"}

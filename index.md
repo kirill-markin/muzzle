@@ -140,7 +140,7 @@ Actions:
 * [Product Hunt @kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
 * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
 * [GitLab account @kirill-markin](https://gitlab.com/kirill-markin){:target="_blank"}
-* [Medium @kirill-markin](https://medium.com/@kirill-markin){:target="_blank"}
+* [Medium @kirill-markin](https://kirill-markin.medium.com/){:target="_blank"}
 * [Crunchbase @kirill-markin](https://www.crunchbase.com/person/kirill-markin){:target="_blank"}
 * [qwoted profile](https://app.qwoted.com/sources/kirill-markin){:target="_blank"}
 * [publito.co.uk profile](https://app.publito.co.uk/haj-source-profile/NCbiSRWj07){:target="_blank"}
