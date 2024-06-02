@@ -3,7 +3,8 @@
 
   <head>
     {% include head-custom.html %}
-    {% seo %}
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% seo title=false %}
   </head>
 
   <body>
