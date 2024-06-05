@@ -89,9 +89,10 @@ Actions:
 * Social
   * [Linkedin @kirill-markin](https://www.linkedin.com/in/kirill-markin/){:target="_blank"}
   * [Twitter @kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
-  * [Youtube @kirill-markin](https://www.youtube.com/@kirill-markin){:target="_blank"}
   * [Instagram @kirill.markin.kira](https://www.instagram.com/kirill.markin.kira/){:target="_blank"}
+  * [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
   * [Facebook @kirill.markin.kira](https://www.facebook.com/kirill.markin.kira){:target="_blank"}
+  * [Youtube @kirill-markin](https://www.youtube.com/@kirill-markin){:target="_blank"}
 * Kirill's roles
   * Founder of [ozma.io](https://ozma.io){:target="_blank"}
   * Head of AI Lab at [SOAX](https://soax.com){:target="_blank"}
@@ -138,7 +139,6 @@ Actions:
 * [Hacker News @MarkinK](https://news.ycombinator.com/user?id=MarkinK){:target="_blank"}
 * [IndieHackers kirill_markin](https://www.indiehackers.com/kirill_markin){:target="_blank"}
 * [Product Hunt @kirill_markin](https://www.producthunt.com/@kirill_markin){:target="_blank"}
-* [Github account @kirill-markin](https://github.com/kirill-markin){:target="_blank"}
 * [GitLab account @kirill-markin](https://gitlab.com/kirill-markin){:target="_blank"}
 * [Medium @kirill-markin](https://kirill-markin.medium.com/){:target="_blank"}
 * [Crunchbase @kirill-markin](https://www.crunchbase.com/person/kirill-markin){:target="_blank"}
