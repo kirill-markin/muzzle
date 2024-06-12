@@ -76,8 +76,7 @@ schema-org: {
 
 Actions:
 * [💜 Donate: Boost Kirill's Awesomeness!](https://donate.stripe.com/dR6dUr7vyefkcHC147){:target="_blank"}  
-* [📆 Book a meeting by calendly](https://calendly.com/kirill-markin){:target="_blank"}  
-* [💾 Save contact to phonebook](/data/kirill-markin.vcf){:target="_blank"}  
+* [📆 Book a 15-minute meeting](https://calendar.app.google/pgnsq3MDbKkVwviV8){:target="_blank"}  
 
 ## 💁‍♂️ {{page.schema-org.founder.name}} contacts
 
