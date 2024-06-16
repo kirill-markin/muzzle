@@ -254,4 +254,4 @@ schema-org: {
 * [Substack @kirillmarkin](https://substack.com/@kirillmarkin){:target="_blank"}
 * [Frontiers @kirill-markin](https://loop.frontiersin.org/people/2727594/overview){:target="_blank"}
 * [ORCID @0009-0009-1737-3675](https://orcid.org/0009-0009-1737-3675){:target="_blank"}
-
+* [Railway @kirill-markin](https://railway.app/u/kirill-markin){:target="_blank"}
