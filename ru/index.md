@@ -216,7 +216,7 @@ schema-org: {
   * Publisher: TAGES
   * Date: 2021-05-19
   * Type: Video
-* [Автоматизация процессов с помощью CRM: как проще всего это сделать?](https://vc.ru/marketing/212774-avtomatizaciya-processov-s-pomoshchyu-crm-kak-proshche-vsego-eto-sdelat){:target="_blank"}
+* [Автоматизация процессов с помощью CRM: как проще всего это сделать?](https://vc.ru/marketing/212774-avtomatizaciya-processov-s-pomoshyu-crm-kak-proshe-vsego-eto-sdelat){:target="_blank"}
   * Publisher: VC.RU
   * Date: 2021-02-24
 * [ИИ-инструменты для агентов по недвижимости](https://www.youtube.com/live/utRAu4_f1mo?si=I2cyJL-ZqiV3dWrU){:target="_blank"}
