@@ -223,6 +223,38 @@ services:
     button_text: "Book a call"
     button_url: "____"
 
+  - service_id: "hire_ai_team"
+    category_id: "for_business"
+    name: "Hire an AI Team"
+    description: |
+      Build your AI team with the help of Kirill Markin. Leverage his expertise and network to find the right professionals for your AI projects and initiatives.
+
+      ### What We Offer:
+      - **Talent Search**: Access to a pool of qualified AI professionals.
+      - **Team Building**: Assistance in assembling a high-performing AI team.
+      - **Strategic Guidance**: Recommendations on team structure and roles.
+      - **Recruitment Support**: Help with the hiring process and candidate evaluation.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "hire_analytics_team"
+    category_id: "for_business"
+    name: "Hire an Analytics Team"
+    description: |
+      Build your analytics team with the help of Kirill Markin. Leverage his expertise and network to find the right professionals for your data analytics projects and initiatives.
+
+      ### What We Offer:
+      - **Talent Search**: Access to a pool of qualified analytics professionals.
+      - **Team Building**: Assistance in assembling a high-performing analytics team.
+      - **Strategic Guidance**: Recommendations on team structure and roles.
+      - **Recruitment Support**: Help with the hiring process and candidate evaluation.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
   - service_id: "consulting"
     category_id: "for_business"
     name: "AI & Data Expert Consulting Hours"
