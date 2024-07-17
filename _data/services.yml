@@ -1,0 +1,301 @@
+services:
+  # Category: For People
+  
+  - service_id: "startup_first_steps"
+    category_id: "for_people"
+    name: "Startup Launch Guidance"
+    description: |
+      Get expert advice and step-by-step guidance to successfully launch your startup. From ideation to execution, we cover all the essential steps.
+
+      ### Examples of Realized Projects:
+      - **Ozma.io**: Kirill Markin, founder of Ozma.io, led the company to success with innovative solutions and strategic planning.
+      - **R&D Leadership**: Kirill Markin has headed the R&D departments in several companies, launching new products from scratch, a process very similar to creating a startup.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "career_consulting"
+    category_id: "for_people"
+    name: "Professional Career Coaching"
+    description: |
+      Get personalized career coaching from Kirill Markin, who has hired and managed dozens of engineers. Benefit from his extensive experience in the tech industry.
+
+      ### What We Offer:
+      - **Top-of-Funnel Review**: Improve your LinkedIn profile and resume.
+      - **In-Depth Career Discussions**: Analyze your work experience and interview readiness.
+      - **Technical Interview Preparation**: Get ready for the technical aspects of your job interviews with practical advice and mock interviews.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "telegram_chatgpt_subscription"
+    category_id: "for_people"
+    name: "Telegram ChatGPT Subscription"
+    description: |
+      Subscribe to our Telegram ChatGPT service and get instant access to AI-powered assistance directly in your Telegram app. Perfect for quick answers, brainstorming sessions, and enhancing your productivity.
+
+      ### Features:
+      - **Instant Responses**: Get answers to your questions in real-time.
+      - **Versatile Use Cases**: From brainstorming ideas to getting quick information.
+      - **Easy Access**: Available directly in your Telegram app.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Try for free"
+    button_url: "https://t.me/chat_gpt_ai_open_source_bot"
+
+  - service_id: "find_tech_co_founder"
+    category_id: "for_people"
+    name: "Tech Co-Founder Matching"
+    description: |
+      Get expert assistance from Kirill Markin in finding the perfect tech co-founder for your startup. Leverage his vast network and experience to connect with potential partners who complement your vision and skills.
+
+      ### What We Offer:
+      - **Network Access**: Tap into Kirill's extensive network of tech professionals.
+      - **Matching Process**: Get matched with potential co-founders based on your needs and vision.
+      - **Strategic Advice**: Receive guidance on how to evaluate and select the right partner.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  # Category: For Business
+
+  - service_id: "welcome_meeting"
+    category_id: "for_business"
+    name: "Free 15-Minute Welcome Meeting"
+    description: |
+      Schedule a free 15-minute welcome meeting with me. Choose any convenient time slot, and I will be happy to meet you. Whether we decide to work together or simply get acquainted, this session is a great opportunity to connect.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+ - service_id: "analytics_department_audit"
+    category_id: "for_business"
+    name: "Analitycs Department Audit"
+    description: |
+      Get a comprehensive audit of your data department from Kirill Markin. Identify inefficiencies and receive actionable recommendations to enhance data management and utilization.
+
+      ### What You Will Receive:
+      - **Process Evaluation**: Detailed assessment of your current data processes and systems.
+      - **Team Review**: Evaluation of your team members and their roles.
+      - **Improvement Suggestions**: A list of practical improvements for processes and personnel.
+      - **Backlog Analysis**: Review of your data-related project backlog and ideas.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "rnd_department_audit"
+    category_id: "for_business"
+    name: "R&D Department Audit"
+    description: |
+      Receive a comprehensive audit of your R&D department from Kirill Markin. Discover areas for improvement and gain strategic insights to enhance innovation and productivity.
+
+      ### What You Will Receive:
+      - **Process Evaluation**: Thorough analysis of your current R&D processes and initiatives.
+      - **Team Review**: Evaluation of your R&D team and their contributions.
+      - **Improvement Suggestions**: A list of actionable improvements for processes and team members.
+      - **Backlog Analysis**: Review and assessment of your R&D project backlog and ideas.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "ai_product_support"
+    category_id: "for_business"
+    name: "AI Product Support"
+    description: |
+      Get expert support from Kirill Markin for your AI product development. From ideation to deployment, receive guidance and best practices to ensure your AI product's success.
+
+      ### What You Will Receive:
+      - **Development Guidance**: Assistance through all stages of AI product development.
+      - **Best Practices**: Recommendations on industry best practices for AI development.
+      - **Technical Support**: Help with technical challenges and problem-solving.
+      - **Deployment Assistance**: Support with deploying and scaling your AI product.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "training_for_programmers"
+    category_id: "for_business"
+    name: "AI and LLM Training for Programmers"
+    description: |
+      Join Kirill Markin for an in-depth lecture on how to effectively use AI and Large Language Models (LLM) in programming. Learn how to integrate AI into your development processes and enhance your team's productivity.
+
+      ### What You Will Learn:
+      - **AI Integration**: How to incorporate AI into your development workflow.
+      - **LLM Utilization**: Best practices for using Large Language Models in coding.
+      - **Automation**: Techniques for automating pipelines with AI.
+      - **Real-World Examples**: Case studies and practical applications.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "clickhouse_db_audit"
+    category_id: "for_business"
+    name: "Database Performance Audit"
+    description: |
+      Receive a comprehensive audit of your database performance from Kirill Markin. Identify bottlenecks, optimize queries, and improve the efficiency and speed of your data operations across various database systems.
+
+      ### What You Will Receive:
+      - **Performance Evaluation**: Detailed assessment of your database performance across different systems.
+      - **Bottleneck Identification**: Identification of performance bottlenecks and inefficiencies.
+      - **Optimization Recommendations**: Practical advice for optimizing database operations and query performance.
+      - **Performance Report**: Comprehensive report with findings and suggestions.
+
+      ### Examples of Realized Projects:
+      - **ClickHouse**: Audit and optimization of user queries, migration to an optimal cluster structure.
+      - **Google BigQuery**: Performance tuning and query optimization for large-scale data operations.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "ai_tech_support"
+    category_id: "for_business"
+    name: "AI for Tech Support"
+    description: "__"
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "financial_data_sync"
+    category_id: "for_business"
+    name: "Financial Data Synchronization and Dashboard"
+    description: |
+      Bring all your financial data, including transactions, forecasts, and budgets, into one place. I will help you gather and organize this data, providing you with custom dashboards to monitor your financial performance in real-time. Gain insights into your plan vs. actual performance across your company or multiple companies within your holding.
+
+      ### What You Will Receive:
+      - **Data Synchronization**: Integrate all transactions, forecasts, and budgets into one system.
+      - **Unified Storage**: Centralized storage for all your financial data.
+      - **Real-Time Dashboards**: Custom dashboards to monitor financial performance in real-time.
+      - **Plan vs. Actual Insights**: Visualize and compare planned vs. actual performance.
+      - **Cross-Company View**: View data across multiple companies within your holding.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "optimal_ai_setup"
+    category_id: "for_business"
+    name: "Optimal AI/LLM Implementation for Your Company"
+    description: |
+      Optimize the implementation of AI and Large Language Models (LLM) in your company. I will assess your current setup, recommend best practices, and help you integrate AI/LLM solutions tailored to your business needs.
+
+      ### What You Will Receive:
+      - **Current Setup Assessment**: Detailed evaluation of your existing AI/LLM infrastructure.
+      - **Best Practices Recommendations**: Suggestions for optimal AI/LLM implementation.
+      - **Custom Integration**: Tailored AI/LLM solutions to meet your specific business needs.
+      - **Performance Optimization**: Strategies to enhance the efficiency and effectiveness of your AI/LLM systems.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "implementation_project"
+    category_id: "for_business"
+    name: "AI & Data Implementation Project"
+    description: |
+      Successfully implement your AI and data projects with hands-on support from Kirill Markin. From project planning to execution, receive expert guidance to ensure your project's success.
+
+      ### What You Will Receive:
+      - **Project Planning**: Detailed project plan tailored to your business needs.
+      - **Hands-On Support**: Assistance throughout the entire implementation process.
+      - **Best Practices**: Recommendations on industry best practices for AI and data projects.
+      - **Performance Optimization**: Strategies to optimize the efficiency and effectiveness of your project.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "dashboards_and_alerts"
+    category_id: "for_business"
+    name: "Dashboards and Alerts"
+    description: "__"
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "consulting"
+    category_id: "for_business"
+    name: "AI & Data Expert Consulting Hours"
+    description: |
+      Book consulting hours with AI and data expert Kirill Markin to receive professional advice and guidance on your projects. Whether you need help with AI implementation, data management, or troubleshooting, Kirill's extensive experience will provide valuable insights and solutions.
+
+      ### What You Will Receive:
+      - **Strategic Advice**: Guidance on planning and executing your AI and data projects.
+      - **Implementation Support**: Help with implementing AI solutions and data strategies.
+      - **Troubleshooting**: Assistance with identifying and resolving issues in AI and data systems.
+      - **Personalized Feedback**: Tailored recommendations based on your specific needs.
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  # Category: For Journalists
+
+  - service_id: "welcome_meeting"
+    category_id: "for_journalists"
+    name: "Free 15-min Welcome Meeting"
+    description: "__"
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "conference"
+    category_id: "for_journalists"
+    name: "Conference"
+    description: "__"
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "article"
+    category_id: "for_journalists"
+    name: "Article"
+    description: "__"
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "podcast"
+    category_id: "for_journalists"
+    name: "Podcast"
+    description: "__"
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "comment_quote"
+    category_id: "for_journalists"
+    name: "Expert Comment/Quote"
+    description: |
+      Receive expert comments or quotes from Kirill Markin for your articles, podcasts, or reports. Leverage Kirill's extensive knowledge in AI, data, and technology to add valuable insights and credibility to your content.
+
+      ### References:
+      - **__**: __
+      - **__**: __
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
+
+  - service_id: "interview"
+    category_id: "for_journalists"
+    name: "Interview"
+    description: "__"
+    logo_url: ""
+    promo_text: ""
+    button_text: "Book a call"
+    button_url: "____"
