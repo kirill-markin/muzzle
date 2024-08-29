@@ -84,8 +84,8 @@ schema-org: {
 * Contacts
   * Email: [{{page.schema-org.founder.email}}](mailto:{{page.schema-org.founder.email}}){:itemprop="email"}
   * Telegram: [@kirmark](https://t.me/kirmark){:target="_blank"}
-  * WhatsApp: [+359 87 990 6085](https://api.whatsapp.com/send?phone=359879906085){:target="_blank"}
-  * Phone: [+359 87 990 6085](tel:+359879906085)
+  * WhatsApp: [+31 6 253 51137](https://api.whatsapp.com/send?phone=31625351137){:target="_blank"}
+  * Phone: [+31 6 253 51137](tel:+31625351137)
 * Social
   * [Linkedin @kirill-markin](https://www.linkedin.com/in/kirill-markin/){:target="_blank"}
   * [Twitter @kirill_markin_](https://twitter.com/kirill_markin_){:target="_blank"}
