@@ -70,7 +70,7 @@ schema-org: {
     >
   </div>
   <div class="col-md-9">
-    <h1>{{page.schema-org.founder.name}} <br/>{{page.schema-org.founder.jobTitle}} <br/>Head of AI Lab at SOAX <br/>AI & Data Engineer</h1>
+    <h1>{{page.schema-org.founder.name}} <br/>{{page.schema-org.founder.jobTitle}} <br/>Head of R&D Lab at SOAX <br/>AI & Data Engineer</h1>
   </div>
 </div>
 
@@ -95,7 +95,7 @@ Actions:
   * [Youtube @kirill-markin](https://www.youtube.com/@kirill-markin){:target="_blank"}
 * Kirill's roles
   * Founder of [ozma.io](https://ozma.io){:target="_blank"}
-  * Head of AI Lab at [SOAX](https://soax.com){:target="_blank"}
+  * Head of R&D Lab at [SOAX](https://soax.com){:target="_blank"}
   * Judge at [MassChallenge](https://masschallenge.org/){:target="_blank"}
   * Mentor at [Founder Institute](https://fi.co/mentors/11022){:target="_blank"}
   * Mentor at [MentorCruise](https://mentorcruise.com/mentor/kirillmarkin/){:target="_blank"}
