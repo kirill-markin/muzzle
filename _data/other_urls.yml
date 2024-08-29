@@ -1,0 +1,75 @@
+- name: Reddit
+  url: https://www.reddit.com/user/Kirmark
+  username: "@Kirmark"
+- name: Hacker News
+  url: https://news.ycombinator.com/user?id=MarkinK
+  username: "@MarkinK"
+- name: IndieHackers
+  url: https://www.indiehackers.com/kirill_markin
+  username: kirill_markin
+- name: Product Hunt
+  url: https://www.producthunt.com/@kirill_markin
+  username: "@kirill_markin"
+- name: GitLab
+  url: https://gitlab.com/kirill-markin
+  username: "@kirill-markin"
+- name: Medium
+  url: https://kirill-markin.medium.com/
+  username: "@kirill-markin"
+- name: Crunchbase
+  url: https://www.crunchbase.com/person/kirill-markin
+  username: "@kirill-markin"
+- name: Qwoted
+  url: https://app.qwoted.com/sources/kirill-markin
+  username: "Kirill Markin"
+- name: Publito
+  url: https://app.publito.co.uk/haj-source-profile/NCbiSRWj07
+  username: "Kirill Markin"
+- name: HuggingFace
+  url: https://huggingface.co/kirill-markin
+  username: "@kirill-markin"
+- name: Hashnode
+  url: https://hashnode.com/@kirillmarkin
+  username: "@kirillmarkin"
+- name: Google Maps
+  url: https://goo.gl/maps/vQE39MpVfVSi3RVL9
+  username: "Kirill Markin"
+- name: StackOverflow
+  url: https://stackoverflow.com/users/16246793/kirill-markin
+  username: "@kirill-markin"
+- name: Kaggle
+  url: https://www.kaggle.com/kirmark
+  username: "@kirmark"
+- name: LeetCode
+  url: https://leetcode.com/u/kirill-markin/
+  username: "@kirill-markin"
+- name: dev.to
+  url: https://dev.to/kirill-markin
+  username: "@kirill-markin"
+- name: Atlassian Community
+  url: https://community.atlassian.com/t5/user/viewprofilepage/user-id/5415988
+  username: "Kirill Markin"
+- name: Substack
+  url: https://substack.com/@kirillmarkin
+  username: "@kirillmarkin"
+- name: Frontiers
+  url: https://loop.frontiersin.org/people/2727594/overview
+  username: "@kirill-markin"
+- name: ORCID
+  url: https://orcid.org/0009-0009-1737-3675
+  username: "@0009-0009-1737-3675"
+- name: Railway
+  url: https://railway.app/u/kirill-markin
+  username: "@kirill-markin"
+- name: Discord
+  url: https://discordapp.com/users/kirmark#3933
+  username: "kirmark#3933"
+- name: AngelList
+  url: https://angel.co/u/kirill-markin
+  username: "@kirill-markin"
+- name: Y Combinator
+  url: https://www.ycombinator.com/companies/ozma
+  username: "Ozma"
+- name: Pinterest
+  url: https://www.pinterest.com/kirillmarkinkira/
+  username: "@kirillmarkinkira"

@@ -7,7 +7,20 @@
     {% seo title=false %}
 
     <script type="application/ld+json">
-      {{ page.schema-org | jsonify }}
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.data.personal_info.name }}",
+      "jobTitle": "{{ site.data.personal_info.job_title }}",
+      "email": "{{ site.data.social_links | where: 'name', 'Email' | map: 'username' | first }}",
+      "telephone": "{{ site.data.social_links | where: 'name', 'WhatsApp' | map: 'username' | first }}",
+      "url": "{{ site.url }}",
+      "sameAs": [
+        {% for link in site.data.social_links %}
+          "{{ link.url }}"{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }
     </script>
   </head>
 

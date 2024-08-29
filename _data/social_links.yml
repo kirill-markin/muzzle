@@ -1,0 +1,28 @@
+- name: Email
+  url: mailto:markinkirill@gmail.com
+  username: markinkirill@gmail.com
+- name: Telegram
+  url: https://t.me/kirmark
+  username: "@kirmark"
+- name: WhatsApp
+  url: https://api.whatsapp.com/send?phone=359879906085
+  username: "+359 87 990 6085"
+- name: LinkedIn
+  url: https://www.linkedin.com/in/kirill-markin/
+  username: "@kirill-markin"
+- name: Twitter
+  url: https://twitter.com/kirill_markin_
+  username: "@kirill_markin_"
+- name: Instagram
+  url: https://www.instagram.com/kirill.markin.kira/
+  username: "@kirill.markin.kira"
+- name: GitHub
+  url: https://github.com/kirill-markin
+  username: "@kirill-markin"
+- name: Facebook
+  url: https://www.facebook.com/kirill.markin.kira
+  username: "@kirill.markin.kira"
+- name: YouTube
+  url: https://www.youtube.com/@kirill-markin
+  username: "@kirill-markin"
+# Add other social links similarly
