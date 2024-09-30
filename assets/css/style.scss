@@ -57,7 +57,7 @@ footer {
           width: 95%;
           padding: 0;
       }
-  }
+    }
 }
 
 .img-header-container {
@@ -78,3 +78,30 @@ h1 {
   // size between lines
   line-height: 1.2;
 }
+
+/* main-page-content  container */
+.main-page-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Responsive layout for the resume page */
+  @media (min-width: 1081px) {
+  
+    .left-column {
+      width: 30%;
+      display: block;
+    }
+  
+    .right-column {
+      width: 70%;
+      display: block;
+    }
+    
+  }
+  
+  @media (max-width: 1080px) {
+    .left-column, .right-column {
+      width: 100%;
+    }
+  }
