@@ -75,7 +75,9 @@ schema-org: {
 </div>
 
 Действия:
+
 * [📆 Book a 15-minute meeting](https://calendar.app.google/pgnsq3MDbKkVwviV8){:target="_blank"}  
+* [🤖 Try to create new business app with AI from ozma.io](https://ozma.io/ai-business-app-builder/){:target="_blank"}  
 * [💜 Donate: Boost Kirill's Awesomeness!](https://donate.stripe.com/dR6dUr7vyefkcHC147){:target="_blank"}  
 <!-- * [🧧 Services from Kirill Markin](https://kirill-markin.com/services/){:target="_blank"}   -->
 
