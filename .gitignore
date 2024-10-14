@@ -1,10 +1,6 @@
 # Mac files
 *DS_Store
 
-# Config files
-Gemfile
-Gemfile.lock
-
 # Generated content
 _site
 

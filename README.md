@@ -2,15 +2,13 @@
 
 ## How to run localy
 
-Create Gemfile with following content:
+Run bundle install:
 
-```ruby
-gem "github-pages", group: :jekyll_plugins
-gem "webrick"
-
+```bash
+bundle install
 ```
 
-Run bundle install:
+Run jekyll:
 
 ```bash
 sudo bundle exec jekyll serve
