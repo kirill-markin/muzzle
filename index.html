@@ -1,0 +1,36 @@
+---
+layout: main
+---
+
+
+<!-- MAIN CONTENT -->
+<div id="main-page-content">
+  <div class="left-column">
+    <div class="personal-info">
+      <h2 class="personal-name">{{ site.data.personal_info.name }}</h2>
+      <div class="personal-titles">
+          <p>{{ site.data.personal_info.job_title }}</p>
+          <p>{{ site.data.personal_info.secondary_title }}</p>
+          <p class="tertiary-title">{{ site.data.personal_info.tertiary_title }}</p>
+      </div>
+    </div>
+    <div class="personal-contacts">
+      <img src="/data/kirill-200x200.jpg" alt="Picture of {{ site.data.personal_info.name }}" width="100%">
+      <h3>Contact</h3>
+      <h3>learn more</h3>
+    </div>
+  </div>
+
+  <div class="right-column">
+    <div class="articles">
+      <h2>Articles and mentions</h2>
+    </div>
+    <div class="other-language">
+      
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+{% include footer.html %}

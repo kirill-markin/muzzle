@@ -3,7 +3,10 @@ sitemap:
   exclude: 'yes'
 ---
 
-@import "{{ site.theme }}";
+// @import "{{ site.theme }}";
+html {
+    background-color: #D6D6D6;
+}
 
 * {
   font-family: "Roboto", sans-serif !important;
@@ -80,7 +83,7 @@ h1 {
 }
 
 /* main-page-content  container */
-.main-page-content {
+#main-page-content, #footer {
     display: flex;
     justify-content: space-between;
   }
@@ -88,7 +91,7 @@ h1 {
   /* Responsive layout for the resume page */
   @media (min-width: 1081px) {
   
-    .left-column {
+    .left-column, .footer-left-column {
       width: 30%;
       display: block;
     }
@@ -105,3 +108,58 @@ h1 {
       width: 100%;
     }
   }
+
+.personal-info, .personal-contacts {
+    border-right: 1px solid #232323;
+    padding: 20px;
+}
+.personal-info {
+    border-bottom: 1px solid #232323;
+}
+.articles, .other-language{
+    // border-right: 1px solid black;
+    padding: 20px;
+}
+.articles {
+    border-bottom: 1px solid #232323;
+}
+body{
+    margin: 0px;
+    color: #232323;
+}
+
+#footer {
+    background-color: #1A1A1A;
+    color: #BCBCBC;
+}
+
+.social-media-line {
+    background-color: #D4F361;
+}
+
+.personal-name {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 0.9;
+  }
+  
+.tertiary-title {
+    font-style: italic;
+    color: #232323;
+}
+.footer-personal-name, .footer-org-name {
+    text-transform: uppercase;
+    margin: 20px;   
+}
+.footer-name-box, .footer-org {
+    border-bottom: 1px solid #AAAAAA;
+}
+.footer-left-column {
+    border-right: 1px solid #AAAAAA;
+}
+
+.personal-contacts h3 {
+    text-transform: uppercase;
+}

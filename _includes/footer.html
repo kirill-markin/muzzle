@@ -1,20 +1,32 @@
-{% if page.layout != 'index' %}
-    {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-    {% if posts.size == 0 %}
-        {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-    {% endif %}
-    {% if posts.size > 1 %}
-    <footer class="inner lang-options">
-        <em>{{ site.data.translations['differentLanguage'][page.lang] }}:</em>
-        <ul>
-        {% for post in posts %}
-        <li><a 
-            href="{{ site.base-url }}{{ post.url }}" 
-            class="{{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }}" 
-            title="View in {{post.lang}}"
-        >{{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }}</a></li>
-        {% endfor %}
-        </ul>
-    </footer>
-    {% endif %}
-{% endif %}
+<div id="footer">
+    <div class="footer-left-column">
+      <div class="footer-personal">
+        <div class="footer-name-box">
+            <h2 class="footer-personal-name">{{ site.data.personal_info.name }}</h2>
+        </div>
+        <div class="footer-personal-titles">
+            <p>{{ site.data.personal_info.job_title }}</p>
+            <p>{{ site.data.personal_info.secondary_title }}</p>
+            <p>{{ site.data.personal_info.tertiary_title }}</p>
+        </div>
+      </div>
+      <div class="footer-personal-contacts">
+    
+      </div>
+      <div class="footer-personal-social">
+        
+      </div>
+    </div>
+  
+    <div class="right-column">
+      <div class="footer-org">
+        <h2 class="footer-org-name">Ozma io</h2>
+      </div>
+      
+    </div>
+
+    <div style="social-media-line">
+
+    </div>
+  
+</div>
