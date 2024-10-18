@@ -1,28 +1,41 @@
 - name: Email
   url: mailto:markinkirill@gmail.com
   username: markinkirill@gmail.com
+  social_logo_url: /data/social_logos/google.png
+  avatar_contact: true
 - name: Telegram
   url: https://t.me/kirmark
   username: "@kirmark"
+  social_logo_url: /data/social_logos/telegram.png
+  avatar_contact: true
 - name: WhatsApp
   url: https://api.whatsapp.com/send?phone=359879906085
   username: "+359 87 990 6085"
+  social_logo_url: /data/social_logos/whatsapp.png
+  avatar_contact: true
 - name: LinkedIn
   url: https://www.linkedin.com/in/kirill-markin/
   username: "@kirill-markin"
+  social_logo_url: /data/social_logos/linkedin.png
 - name: Twitter
   url: https://twitter.com/kirill_markin_
   username: "@kirill_markin_"
+  social_logo_url: /data/social_logos/xcom.png
 - name: Instagram
   url: https://www.instagram.com/kirill.markin.kira/
   username: "@kirill.markin.kira"
+  social_logo_url: /data/social_logos/instagram.png
+  avatar_contact: true
 - name: GitHub
   url: https://github.com/kirill-markin
   username: "@kirill-markin"
+  social_logo_url: /data/social_logos/github.png
 - name: Facebook
   url: https://www.facebook.com/kirill.markin.kira
   username: "@kirill.markin.kira"
+  social_logo_url: /data/social_logos/facebook.png
 - name: YouTube
   url: https://www.youtube.com/@kirill-markin
   username: "@kirill-markin"
+  social_logo_url: /data/social_logos/youtube.png
 # Add other social links similarly

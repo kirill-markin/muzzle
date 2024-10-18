@@ -1,6 +1,8 @@
 - name: Reddit
   url: https://www.reddit.com/user/Kirmark
   username: "@Kirmark"
+  avatar_contact: true
+  social_logo_url: /data/social_logos/reddit.png
 - name: Hacker News
   url: https://news.ycombinator.com/user?id=MarkinK
   username: "@MarkinK"
@@ -16,6 +18,8 @@
 - name: Medium
   url: https://kirill-markin.medium.com/
   username: "@kirill-markin"
+  avatar_contact: true
+  social_logo_url: /data/social_logos/medium.png
 - name: Crunchbase
   url: https://www.crunchbase.com/person/kirill-markin
   username: "@kirill-markin"

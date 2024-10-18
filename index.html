@@ -17,13 +17,50 @@ layout: main
     <div class="personal-contacts">
       <img src="/data/kirill-200x200.jpg" alt="Picture of {{ site.data.personal_info.name }}" width="100%">
       <h3>Contact</h3>
+      <div class="social-links">
+        {% for link in site.data.social_links %}
+          {% if link.avatar_contact == true %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
+              <img src="{{ link.social_logo_url }}" alt="{{ link.name }}" width="40" height="40">
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
       <h3>learn more</h3>
+      <div class="other-links">
+        {% for link in site.data.other_urls %}
+          {% if link.avatar_contact == true %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+              <img src="{{ link.social_logo_url }}" alt="{{ link.name }}" width="40" height="40">
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 
   <div class="right-column">
     <div class="articles">
       <h2>Articles and mentions</h2>
+      <div class="media-mentions">
+        {% for media_mention in site.data.media_mentions %}
+          {% if media_mention.language == "en" %}
+            <a href="{{ media_mention.url }}" target="_blank" rel="noopener noreferrer" class="media-mention">
+              <img class="media-mention-thumbnail" src="{{ media_mention.thumbnail_url }}" alt="{{ media_mention.title }}">
+              <div class="media-info">
+                <p>{{ media_mention.title }}</p>
+                <div class="media-info-bottom">
+                  <hr>
+                  <img src="{{ media_mention.website_logo_url }}" alt="Website Logo">
+                </div>
+              </div>  
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <hr>
+      {% assign en_mentions = site.data.media_mentions | where: "language", "en" %}
+      <button>more mentions and articles ({{ en_mentions | size }})</button>
     </div>
     <div class="other-language">
       
