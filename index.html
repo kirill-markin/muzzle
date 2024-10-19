@@ -7,7 +7,7 @@ layout: main
 <div id="main-page-content">
   <div class="left-column">
     <div class="personal-info">
-      <h2 class="personal-name">{{ site.data.personal_info.name }}</h2>
+      <h1 class="personal-name">{{ site.data.personal_info.name }}</h1>
       <div class="personal-titles">
           <p>{{ site.data.personal_info.job_title }}</p>
           <p>{{ site.data.personal_info.secondary_title }}</p>
@@ -21,11 +21,13 @@ layout: main
         {% for link in site.data.social_links %}
           {% if link.avatar_contact == true %}
             <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
-              <img src="{{ link.social_logo_url }}" alt="{{ link.name }}" width="40" height="40">
+              <img src="{{ link.social_logo_url_default }}" alt="{{ link.name }}" class="icon-default">
+              <img src="{{ link.social_logo_url_hover }}" alt="{{ link.name }}" class="icon-hover">
             </a>
           {% endif %}
         {% endfor %}
       </div>
+      
       <h3>learn more</h3>
       <div class="other-links">
         {% for link in site.data.social_links %}
@@ -68,6 +70,7 @@ layout: main
   </div>
 
 </div>
+
 
 <!-- FOOTER -->
 {% include footer.html %}

@@ -1,58 +1,68 @@
 - name: Email
   url: mailto:markinkirill@gmail.com
   username: markinkirill@gmail.com
-  social_logo_url: /data/social_logos/google.png
+  social_logo_url_default: /data/social_logos/google.svg
+  social_logo_url_hover: /data/social_logos/google_hover.svg
   avatar_contact: true
 - name: Telegram
   url: https://t.me/kirmark
   username: "@kirmark"
-  social_logo_url: /data/social_logos/telegram.png
+  social_logo_url_default: /data/social_logos/telgram.svg
+  social_logo_url_hover: /data/social_logos/telegram_hover.svg
   avatar_contact: true
   avatar_lime_footer: true
 - name: WhatsApp
   url: https://api.whatsapp.com/send?phone=359879906085
   username: "+359 87 990 6085"
-  social_logo_url: /data/social_logos/whatsapp.png
+  social_logo_url_default: /data/social_logos/whatsapp.svg
+  social_logo_url_hover: /data/social_logos/whatsapp_hover.svg
   avatar_contact: true
   avatar_lime_footer: true
 - name: LinkedIn
   url: https://www.linkedin.com/in/kirill-markin/
   username: "@kirill-markin"
-  social_logo_url: /data/social_logos/linkedin.png
+  social_logo_url_default: /data/social_logos/linkedin.svg
+  social_logo_url_hover: /data/social_logos/linkedin_hover.svg
   footer_bottom: true
 - name: Twitter
   url: https://twitter.com/kirill_markin_
   username: "@kirill_markin_"
-  social_logo_url: /data/social_logos/xcom.png
+  social_logo_url_default: /data/social_logos/xcom.svg
+  social_logo_url_hover: /data/social_logos/xcom_hover.svg
   footer_bottom: true
   avatar_learn_more: true
 - name: Instagram
   url: https://www.instagram.com/kirill.markin.kira/
   username: "@kirill.markin.kira"
-  social_logo_url: /data/social_logos/instagram.png
+  social_logo_url_default: /data/social_logos/instagram.svg
+  social_logo_url_hover: /data/social_logos/instagram_hover.svg
   avatar_contact: true
   footer_bottom: true
   avatar_lime_footer: true
 - name: GitHub
   url: https://github.com/kirill-markin
   username: "@kirill-markin"
-  social_logo_url: /data/social_logos/github.png
+  social_logo_url_default: /data/social_logos/github.svg
+  social_logo_url_hover: /data/social_logos/github_hover.svg
   footer_bottom: true
 - name: Facebook
   url: https://www.facebook.com/kirill.markin.kira
   username: "@kirill.markin.kira"
-  social_logo_url: /data/social_logos/facebook.png
+  social_logo_url_default: /data/social_logos/facebook.svg
+  social_logo_url_hover: /data/social_logos/facebook_hover.svg
   footer_bottom: true
 - name: YouTube
   url: https://www.youtube.com/@kirill-markin
   username: "@kirill-markin"
-  social_logo_url: /data/social_logos/youtube.png
+  social_logo_url_default: /data/social_logos/youtube.svg
+  social_logo_url_hover: /data/social_logos/youtube_hover.svg
   footer_bottom: true
 - name: Reddit
   url: https://www.reddit.com/user/Kirmark
   username: "@Kirmark"
   avatar_learn_more: true
-  social_logo_url: /data/social_logos/reddit.png
+  social_logo_url_default: /data/social_logos/reddit.svg
+  social_logo_url_hover: /data/social_logos/reddit_hover.svg
 - name: Hacker News
   url: https://news.ycombinator.com/user?id=MarkinK
   username: "@MarkinK"
@@ -69,7 +79,8 @@
   url: https://kirill-markin.medium.com/
   username: "@kirill-markin"
   avatar_learn_more: true
-  social_logo_url: /data/social_logos/medium.png
+  social_logo_url_default: /data/social_logos/medium.svg
+  social_logo_url_hover: /data/social_logos/medium_hover.svg
 - name: Crunchbase
   url: https://www.crunchbase.com/person/kirill-markin
   username: "@kirill-markin"
