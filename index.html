@@ -28,8 +28,8 @@ layout: main
       </div>
       <h3>learn more</h3>
       <div class="other-links">
-        {% for link in site.data.other_urls %}
-          {% if link.avatar_contact == true %}
+        {% for link in site.data.social_links %}
+          {% if link.avatar_learn_more == true %}
             <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
               <img src="{{ link.social_logo_url }}" alt="{{ link.name }}" width="40" height="40">
             </a>

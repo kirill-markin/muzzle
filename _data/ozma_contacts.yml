@@ -1,0 +1,27 @@
+Contacts:
+  website:
+    name: ozma.io
+    url: https://ozma.io
+  email: info@ozma.io
+  phone: +41 79 666 66 66
+More_info:
+  - name: Twitter
+    url: https://x.com/ozma_io
+  - name: LinkedIn
+    url: https://www.linkedin.com/company/ozma-io
+  - name: Facebook
+    url: https://www.facebook.com/ozma.io
+  - name: Instagram
+    url: https://www.instagram.com/ozma.io
+Media:
+  - name: Medium
+    url: https://medium.com/@ozma_io
+  - name: X
+    url: https://x.com/ozma_io
+  - name: YouTube
+    url: https://www.youtube.com/@ozma_io
+  - name: TikTok
+    url: https://www.tiktok.com/@ozma_io
+Other:
+  - name: Google Maps
+    url:

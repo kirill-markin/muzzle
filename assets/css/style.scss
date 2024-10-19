@@ -83,7 +83,7 @@ h1 {
 }
 
 /* main-page-content  container */
-#main-page-content, #footer {
+#main-page-content, .footer-column-container {
     display: flex;
     justify-content: space-between;
   }
@@ -163,7 +163,8 @@ body{
 }
 .footer-personal-name, .footer-org-name {
     text-transform: uppercase;
-    margin: 20px;   
+    margin: 20px;
+    color: #FFFFFF;
 }
 .footer-name-box, .footer-org {
     border-bottom: 1px solid #AAAAAA;
@@ -303,4 +304,222 @@ hr {
 .media-info h3 {
   text-decoration: none;
 
+}
+
+.footer-personal-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  color: #BCBCBC;
+  // gap: 4px;
+}
+
+.footer-personal-social a {
+  display: block;
+  color: #BCBCBC;
+  text-decoration: none;
+  margin-bottom: 10px;
+  flex: 1 1 calc(50% - 10px);
+}
+
+.footer-personal-social a:hover {
+  text-decoration: underline;
+}
+
+
+/* CSS for footer personal contacts */
+.footer-personal-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.footer-email,
+.footer-phone,
+.footer-site {
+  color: #BCBCBC;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-email img,
+.footer-phone img,
+.footer-site img {
+  margin-right: 8px;
+}
+
+.footer-email:hover,
+.footer-phone:hover,
+.footer-site:hover {
+  text-decoration: underline;
+  color: #BCBCBC;
+}
+
+.footer-personal-titles {
+  padding: 20px;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+
+.footer-personal-titles p {
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
+.footer-personal-titles p:nth-of-type(1) {
+  margin-bottom: 20px; // First <p>
+}
+
+.footer-personal-titles p:nth-of-type(2), .footer-personal-titles p:nth-of-type(3) {
+  margin-bottom: 0px; // Second <p>
+}
+
+.tertiary-title-footer {
+  margin-top: 5px;
+  color: #898989;
+  // opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+  .footer-left-column hr {
+    display: none;
+  }
+}
+
+.ozma-as-title-footer {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #D4F361;
+  text-decoration-thickness: 1px;
+}
+
+.social-media-line {
+  padding: 10px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+// footer org
+// general
+.footer-org-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer-org-contact-info,
+.footer-org-more-info,
+.footer-org-media,
+.footer-org-other {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-org-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-org-contact-info a {
+  margin-bottom: 10px;
+}
+
+
+// form
+.contact-form {
+  width: 280px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  // border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.question-input input {
+  width: 280px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 80px;
+  font-size: 14px;
+}
+
+.send-button button {
+  width: 100%;
+  padding: 10px;
+  background-color: #c6ff01;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+  color: #232323;
+  font-size: 16px;
+}
+
+.send-button button:hover {
+  background-color: #a8e600;
+}
+
+// h3
+.footer-org-info h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  .footer-org-contact-info h3 {
+    display: none;
+  }
+  .footer-org {
+    border-bottom: none;
+  }
+  .footer-org-name {
+    margin-bottom: 0px;
+  }
+}
+
+//links
+.footer-link {
+  display: block;
+  color: #BCBCBC;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+
+// mobile columns
+@media (max-width: 768px) {
+    #main-page-content, .footer-column-container {
+      flex-direction: column;
+  }
+
+  .left-column, .right-column,
+  .footer-left-column, .footer-right-column {
+      width: 100%;
+  }
+
+  .left-column, .footer-left-column {
+      order: 1;
+  }
+
+  .right-column, .footer-right-column {
+      order: 2;
+  }
+
+  .footer-left-column {
+      border-right: none;
+      border-bottom: 1px solid #AAAAAA;
+  }
 }

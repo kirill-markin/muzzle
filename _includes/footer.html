@@ -1,20 +1,35 @@
 <div id="footer">
+  <div class="footer-column-container">
     <div class="footer-left-column">
       <div class="footer-personal">
         <div class="footer-name-box">
             <h2 class="footer-personal-name">{{ site.data.personal_info.name }}</h2>
         </div>
         <div class="footer-personal-titles">
-            <p>{{ site.data.personal_info.job_title }}</p>
-            <p>{{ site.data.personal_info.secondary_title }}</p>
-            <p>{{ site.data.personal_info.tertiary_title }}</p>
-        </div>
+          <p>
+              {{ site.data.personal_info.job_title | replace: "OZMA.IO", "<span class='ozma-as-title-footer'>ozma.io</span>" | escape }}
+          </p>
+          <p>{{ site.data.personal_info.secondary_title }}</p>
+          <p class="tertiary-title-footer">{{ site.data.personal_info.tertiary_title }}</p>
+      </div>
       </div>
       <div class="footer-personal-contacts">
-    
+        <a href="mailto:{{ site.data.personal_info.email }}" class="footer-email">
+            <img src="data/icons/email.svg" alt="Email icon" class="footer-icon">
+            {{ site.data.personal_info.email }}
+        </a>
+        <a href="tel:{{ site.data.personal_info.phone }}" class="footer-phone">
+            <img src="data/icons/phone.svg" alt="Phone icon" class="footer-icon">
+            {{ site.data.personal_info.phone }}
+        </a>
       </div>
+      <hr>
       <div class="footer-personal-social">
-        
+        {% for link in site.data.social_links %}
+            {% if link.footer_bottom %}
+                <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+            {% endif %}
+        {% endfor %}
       </div>
     </div>
   
@@ -22,11 +37,74 @@
       <div class="footer-org">
         <h2 class="footer-org-name">Ozma inc</h2>
       </div>
-      
-    </div>
+      <div class="footer-org-info">
+        <div class="footer-org-contact-info">
+          <h3>Contact</h3>
+          <a href="mailto:{{ site.data.ozma_contacts.Contacts.website.url }}" class="footer-site">
+            <img src="data/icons/site.svg" alt="Website icon" class="footer-icon">
+            {{ site.data.ozma_contacts.Contacts.website.name }}
+          </a>
+          <a href="mailto:{{ site.data.ozma_contacts.Contacts.email }}" class="footer-email">
+            <img src="data/icons/email.svg" alt="Email icon" class="footer-icon">
+            {{ site.data.ozma_contacts.Contacts.email }}
+          </a>
+          <a href="tel:{{ site.data.ozma_contacts.Contacts.phone }}" class="footer-phone">
+            <img src="data/icons/phone.svg" alt="Phone icon" class="footer-icon">
+            {{ site.data.ozma_contacts.Contacts.phone }}
+          </a>
+        </div>  
+        
+        <div class="footer-org-more-info">
+          <h3>More info</h3>
+        {% for link in site.data.ozma_contacts.More_info %}
+          <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="footer-link">
+              {{ link.name }}
+            </a>
+          {% endfor %}
+        </div>
 
-    <div style="social-media-line">
+        <div class="footer-org-media">
+          <h3>Media</h3>
+          {% for link in site.data.ozma_contacts.Media %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="footer-link">
+                {{ link.name }}
+            </a>
+          {% endfor %}
+        </div>
 
+        <div class="footer-org-other">
+          <h3>Other</h3>
+          {% for link in site.data.ozma_contacts.Other %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="footer-link">
+                {{ link.name }}
+            </a>
+          {% endfor %}
+        </div>
+
+        <div class="footer-org-contact-form">
+          <div class="question-input">
+              <input type="text" placeholder="Do you have any questions?">
+          </div>
+          <div class="send-button">
+              <button>Send</button>
+          </div>
+        </div>  
+
+      </div>
     </div>
+  </div>
+
+
+  <div class="social-media-line">
+    <div class="social-links">
+      {% for link in site.data.social_links %}
+        {% if link.avatar_lime_footer == true %}
+          <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
+            <img src="{{ link.social_logo_url }}" alt="{{ link.name }}" width="40" height="40">
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
   
 </div>
