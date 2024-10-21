@@ -15,7 +15,7 @@ layout: main
       </div>
     </div>
     <div class="personal-contacts">
-      <img src="/data/kirill-200x200.jpg" alt="Picture of {{ site.data.personal_info.name }}" width="100%">
+      <!-- <img src="/data/kirill-200x200.jpg" alt="Picture of {{ site.data.personal_info.name }}" width="100%"> -->
       <h3>Contact</h3>
       <div class="social-links">
         {% for link in site.data.social_links %}
@@ -32,8 +32,9 @@ layout: main
       <div class="other-links">
         {% for link in site.data.social_links %}
           {% if link.avatar_learn_more == true %}
-            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-              <img src="{{ link.social_logo_url }}" alt="{{ link.name }}" width="40" height="40">
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
+              <img src="{{ link.social_logo_url_default }}" alt="{{ link.name }}" class="icon-default">
+              <img src="{{ link.social_logo_url_hover }}" alt="{{ link.name }}" class="icon-hover">
             </a>
           {% endif %}
         {% endfor %}
