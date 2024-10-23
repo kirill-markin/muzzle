@@ -8,15 +8,21 @@ layout: main
   <div class="left-column">
     <div class="personal-info">
       <h1 class="personal-name">{{ site.data.personal_info.name }}</h1>
-      <div class="personal-titles">
+      <!-- <div class="personal-titles">
           <p>{{ site.data.personal_info.job_title }}</p>
           <p>{{ site.data.personal_info.secondary_title }}</p>
           <p class="tertiary-title">{{ site.data.personal_info.tertiary_title }}</p>
-      </div>
+      </div> -->
     </div>
     <div class="personal-contacts">
-      <!-- <img src="/data/kirill-200x200.jpg" alt="Picture of {{ site.data.personal_info.name }}" width="100%"> -->
-      <h3>Contact</h3>
+      <img src="/data/kirill-200x200.jpg" alt="Picture of {{ site.data.personal_info.name }}" width="100%">
+      <div class="personal-titles">
+        <p>{{ site.data.personal_info.job_title }}</p>
+        <p>{{ site.data.personal_info.secondary_title }}</p>
+        <p class="tertiary-title">{{ site.data.personal_info.tertiary_title }}</p>
+      </div>
+      <button class="book-meeting-button">Book a meeting</button>
+      <!-- <h3>Contact</h3>
       <div class="social-links">
         {% for link in site.data.social_links %}
           {% if link.avatar_contact == true %}
@@ -38,7 +44,7 @@ layout: main
             </a>
           {% endif %}
         {% endfor %}
-      </div>
+      </div> -->
     </div>
   </div>
 

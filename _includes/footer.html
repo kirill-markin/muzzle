@@ -81,12 +81,9 @@
           {% endfor %}
         </div>
 
-        <div class="footer-org-contact-form">
-          <div class="question-input">
-              <input type="text" placeholder="Do you have any questions?">
-          </div>
-          <div class="send-button">
-              <button>Send</button>
+        <div class="footer-cta">
+          <div class="question-button">
+              <button>Ask me a question</button>
           </div>
         </div>  
 
@@ -98,9 +95,10 @@
   <div class="social-media-line">
     <div class="social-links">
       {% for link in site.data.social_links %}
-        {% if link.avatar_lime_footer == true %}
+        {% if link.footer_bottom == true %}
           <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
-            <img src="{{ link.social_logo_url }}" alt="{{ link.name }}" width="40" height="40">
+            <img src="{{ link.social_logo_url_default }}" alt="{{ link.name }}" class="icon-default">
+            <img src="{{ link.social_logo_url_hover }}" alt="{{ link.name }}" class="icon-hover">
           </a>
         {% endif %}
       {% endfor %}
