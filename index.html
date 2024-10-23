@@ -21,7 +21,7 @@ layout: main
         <p>{{ site.data.personal_info.secondary_title }}</p>
         <p class="tertiary-title">{{ site.data.personal_info.tertiary_title }}</p>
       </div>
-      <button class="book-meeting-button">Book a meeting</button>
+      <a href="https://calendar.app.google/pgnsq3MDbKkVwviV8" class="book-meeting-button" target="_blank" rel="noopener noreferrer">Book a meeting</a>
       <!-- <h3>Contact</h3>
       <div class="social-links">
         {% for link in site.data.social_links %}
@@ -52,27 +52,37 @@ layout: main
     <div class="articles">
       <h2>Articles and mentions</h2>
       <div class="media-mentions">
-        {% for media_mention in site.data.media_mentions %}
-          {% if media_mention.language == "en" %}
-            <a href="{{ media_mention.url }}" target="_blank" rel="noopener noreferrer" class="media-mention">
-              <img class="media-mention-thumbnail" src="{{ media_mention.thumbnail_url }}" alt="{{ media_mention.title }}">
-              <div class="media-info">
-                <p>{{ media_mention.title }}</p>
-                <div class="media-info-bottom">
-                  <hr>
-                  <img src="{{ media_mention.website_logo_url }}" alt="Website Logo">
-                </div>
-              </div>  
-            </a>
-          {% endif %}
+        {% assign en_mentions = site.data.media_mentions | where: "language", "en" | slice: 0, 8 %}
+        {% for media_mention in en_mentions %}
+          <a href="{{ media_mention.url }}" target="_blank" rel="noopener noreferrer" class="media-mention">
+            <img class="media-mention-thumbnail" src="{{ media_mention.thumbnail_url }}" alt="{{ media_mention.title }}">
+            <div class="media-info">
+              <p>{{ media_mention.title }}</p>
+              <div class="media-info-bottom">
+                <hr>
+                <img src="{{ media_mention.website_logo_url }}" alt="Website Logo">
+              </div>
+            </div>  
+          </a>
         {% endfor %}
       </div>
       <hr>
-      {% assign en_mentions = site.data.media_mentions | where: "language", "en" %}
-      <button>more mentions and articles ({{ en_mentions | size }})</button>
+      <!-- MORE MENTIONS. TODO: return when the mentions page is ready -->
+      <!-- {% assign en_mentions = site.data.media_mentions | where: "language", "en" %}
+      <button>more mentions and articles ({{ en_mentions | size }})</button> -->
     </div>
     <div class="other-language">
-      
+      <h2>In other languages</h2>
+      <div class="non-en-media-mentions">
+        {% assign non_en_mentions = site.data.media_mentions | where_exp: "item", "item.language != 'en'" | slice: 0, 4 %}
+        {% for media_mention in non_en_mentions %}
+          <a href="{{ media_mention.url }}" target="_blank" rel="noopener noreferrer" class="non-en-media-mention">
+            <img src="data/icons/arrow.svg" alt="Arrow icon" class="arrow-icon">
+            <span>{{ media_mention.title }}</span>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
     </div>
   </div>
 

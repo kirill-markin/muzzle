@@ -44,7 +44,7 @@ header {
 }
 
 footer {
-    color: var(--white);
+  color: var(--white);
 }
 
 hr {
@@ -153,31 +153,31 @@ h1 {
   }
 
 .personal-info, .personal-contacts {
-    // border-right: 1px solid #232323;
-    padding: 20px;
+  // border-right: 1px solid #232323;
+  padding: 20px;
 }
 .personal-info {
     border-bottom: 1px solid #232323;
 }
 .articles, .other-language{
-    // border-right: 1px solid black;
-    padding: 20px;
+  // border-right: 1px solid black;
+  padding: 20px;
 }
 .articles {
-    border-bottom: 1px solid #232323;
+  border-bottom: 1px solid #232323;
 }
 body{
-    margin: 0px;
-    color: var(--dark-gray);
+  margin: 0px;
+  color: var(--dark-gray);
 }
 
 #footer {
-    background-color: var(--black);
-    color: var(--gray);
+  background-color: var(--black);
+  color: var(--gray);
 }
 
 .social-media-line {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 
 .personal-name {
@@ -219,11 +219,16 @@ body{
   }
 }
 
-.personal-contacts h3 {
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 10px;
-  font-size: var(--font-size-medium);
+.personal-contacts {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: var(--font-size-medium);
+  }
 }
 
 // media mentions
@@ -245,7 +250,7 @@ h2 {
 }
 
 .book-meeting-button {
-  width: 100%;
+  // width: 100%;
   margin-top: 1.25rem;
   border-radius: 5rem;
   border: 1px solid var(--black);
@@ -257,6 +262,14 @@ h2 {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.book-meeting-button:hover {
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  color: var(--black);
 }
 
 // Media Mentions Grid
@@ -282,7 +295,7 @@ h2 {
 
     .media-mention-thumbnail {
       width: 100%;
-      height: 180px !important;
+      height: 130px !important;
       object-fit: cover;
     }
 
@@ -578,8 +591,8 @@ h2 {
   height: 2.8125rem;
 }
 
-.question-button button {
-  width: 100%;
+.question-button .footer-button {
+  // width: 100%;
   padding: 10px;
   background-color: var(--green);
   border: 1px solid var(--green);
@@ -591,9 +604,11 @@ h2 {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
 }
 
-.question-button button:hover {
+.question-button .footer-button:hover {
   color: var(--white);
   border: 1px solid var(--green);
   background: var(--black);
@@ -660,3 +675,45 @@ h2 {
 }
 
 
+
+.other-language {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  padding-top: 0px;
+
+  h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.non-en-media-mentions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.non-en-media-mention {
+  display: flex;
+  align-items: center;
+  margin-bottom: auto;
+  text-decoration: none;
+  color: var(--dark-gray);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.arrow-icon {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .non-en-media-mentions {
+    grid-template-columns: 1fr;
+  }
+}
