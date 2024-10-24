@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: "en-US" }}">
+
+  <head>
+    {% include head-custom.html %}
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% seo title=false %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <!-- <div id="header_wrap" class="outer">
+        <header class="inner">
+          
+        </header>
+    </div> -->
+
+    <!-- MAIN CONTENT -->
+    <div id="main-page-content">
+      <div class="left-column">
+        <h2> {{ site.data.personal_info.name }} </h2>
+    
+        {{ site.data.personal_info.job_title }} <br>
+        {{ site.data.personal_info.secondary_title }} <br>
+        {{ site.data.personal_info.tertiary_title }}
+        
+        <h2>Contact Information</h2>
+        
+        <div id="social-links-ul">
+          <ul>
+          {% for link in site.data.social_links %}
+          <li>{{ link.name }}: <a href="{{ link.url }}">{{ link.username }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+      
+      </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

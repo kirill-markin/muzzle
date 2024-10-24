@@ -1,0 +1,87 @@
+- title: "Conference Talk: AI web scraping - Data Collection reimagined with soax.com"
+  url: https://youtu.be/QDFDTN30YOs?si=fpeSOig9h1el2zkK
+  publisher: noah-conference.com
+  date: 2023-12-14
+  event: NOAH Conference 2023, Zurich
+  event_url: https://www.noah-conference.com/program-noah-zurich-conference-2023/
+  language: en
+  thumbnail_url: /data/articles_thumbnails/noah-2023-12-14.webp
+  website_logo_url: /data/webstie_logos/youtube.png
+- title: "Conference Talk: How to handle a billion new records per day when migrating databases"
+  url: https://verigram.ai/blog/Kazakhstan-AI-ML-community-is-delighted-with-VeriMeet
+  publisher: verigram.ai
+  date: 2023-09-08
+  language: en
+  thumbnail_url: /data/articles_thumbnails/verigram-2023-09-08.webp
+  website_logo_url: /data/webstie_logos/verigram.png
+- title: "Build with AI Custom ERP and CRM - No Code Required"
+  url: https://youtu.be/Una8_vv6mlY?si=oaPzSTpdla7tfXmF
+  publisher: ozma-io youtube channel
+  date: 2024-04-01
+  type: Video
+  language: en
+  thumbnail_url: /data/articles_thumbnails/ozma-2024-04-01.webp
+  website_logo_url: /data/webstie_logos/youtube.png
+- title: "Creating a voice-enabled Telegram Bot for GPT Chat without DevOps: a comprehensive guide"
+  url: https://kirill-markin.medium.com/creating-a-voice-enabled-telegram-bot-for-gpt-chat-without-devops-a-comprehensive-guide-8a905241cb9c
+  publisher: Medium
+  date: 2023-06-22
+  language: en
+  thumbnail_url: /data/articles_thumbnails/medium-2023-06-22.webp
+  website_logo_url: /data/webstie_logos/medium.png
+- title: "DIY Voice-Controlled GPT Chat: A Step-by-Step Guide for Beginners"
+  url: https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979
+  publisher: Medium
+  date: 2023-06-08
+  language: en
+  thumbnail_url: /data/articles_thumbnails/medium-2023-06-08.webp
+  website_logo_url: /data/webstie_logos/medium.png
+- title: "Where CRM is used? Discovering the Applications of CRM: Company Size, Function, and Industry"
+  url: https://ozma.io/articles/where-crm-is-used-discovering-the-applications-of-crm-size-function-industry/
+  publisher: Ozma Inc.
+  date: 2023-06-04
+  language: en
+  thumbnail_url: /data/articles_thumbnails/ozma-2023-06-04.webp
+  website_logo_url: /data/webstie_logos/ozma.svg
+- title: "CRM in Excel — Benefits and Differences"
+  url: https://ozma.io/articles/crm-in-excel-benefits-and-differences/
+  publisher: Ozma Inc.
+  date: 2022-10-03
+  language: en
+  thumbnail_url: /data/articles_thumbnails/ozma-2022-10-03.webp
+  website_logo_url: /data/webstie_logos/ozma.svg
+- title: "Custom CRM from scratch on low-code platform ozma.io"
+  url: https://ozma.io/articles/custom-crm-from-scratch-on-low-code-platform-ozma-io/
+  publisher: Ozma Inc.
+  date: 2022-08-27
+  language: en
+  thumbnail_url: /data/articles_thumbnails/ozma-2022-08-27.webp
+  website_logo_url: /data/webstie_logos/ozma.svg
+- title: "Как автоматизировать техподдержку за 2 дня с помощью GPT и Telegram"
+  url: https://habr.com/ru/articles/747984/
+  publisher: Habr
+  date: 2023-07-03
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/habr-2023-07-03.webp
+  website_logo_url: /data/webstie_logos/habr.png
+- title: "Как CRM делает жизнь отдела продаж проще"
+  url: https://ozma.io/ru/articles/kak-crm-delaet-zhizn-otdela-prodazh-proshche/
+  publisher: Ozma Inc.
+  date: 2023-06-04
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/ozma-2023-06-04.webp
+  website_logo_url: /data/webstie_logos/ozma.svg
+- title: "Инцидент-менеджмент: как настроить расследование инцидентов"
+  url: https://ozma.io/ru/articles/intsidentmenedzhment-kak-nastroit-rassledovanie-intsidentov/
+  publisher: Ozma Inc.
+  date: 2023-05-28
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/ozma-2023-05-28.webp
+  website_logo_url: /data/webstie_logos/ozma.svg
+- title: "Не повторяйте! Ошибки в общении с клиентами"
+  url: https://ozma.io/ru/articles/ne-povtoryayte-oshibki-v-obshchenii-s-klientami/
+  publisher: Ozma Inc.
+  date: 2023-05-21
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/ozma-2023-05-21.webp
+  website_logo_url: /data/webstie_logos/ozma.svg

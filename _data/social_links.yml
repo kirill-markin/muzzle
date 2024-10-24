@@ -1,0 +1,151 @@
+- name: Email
+  url: mailto:markinkirill@gmail.com
+  username: markinkirill@gmail.com
+  social_logo_url_default: /data/social_logos/google.png
+  social_logo_url_hover: /data/social_logos/google_hover.png
+  avatar_contact: true
+  footer_bottom: true
+  footer_bottom_green_line: true
+- name: Telegram
+  url: https://t.me/kirmark
+  username: "@kirmark"
+  social_logo_url_default: /data/social_logos/telegram.png
+  social_logo_url_hover: /data/social_logos/telegram_hover.png
+  avatar_contact: true
+  footer_bottom: true
+  footer_bottom_green_line: true
+- name: WhatsApp
+  url: https://api.whatsapp.com/send?phone=359879906085
+  username: "+359 87 990 6085"
+  social_logo_url_default: /data/social_logos/whatsapp.png
+  social_logo_url_hover: /data/social_logos/whatsapp_hover.png
+  avatar_contact: true
+  footer_bottom: true
+  footer_bottom_green_line: true
+- name: LinkedIn
+  url: https://www.linkedin.com/in/kirill-markin/
+  username: "@kirill-markin"
+  social_logo_url_default:
+  social_logo_url_hover:
+  footer_bottom: true
+- name: Twitter
+  url: https://twitter.com/kirill_markin_
+  username: "@kirill_markin_"
+  social_logo_url_default: /data/social_logos/xcom.png
+  social_logo_url_hover: /data/social_logos/xcom_hover.png
+  footer_bottom: true
+  avatar_learn_more: true
+  footer_bottom_green_line: true
+- name: Instagram
+  url: https://www.instagram.com/kirill.markin.kira/
+  username: "@kirill.markin.kira"
+  social_logo_url_default: /data/social_logos/instagram.png
+  social_logo_url_hover: /data/social_logos/instagram_hover.png
+  avatar_contact: true
+  footer_bottom: true
+  footer_bottom_green_line: true
+- name: GitHub
+  url: https://github.com/kirill-markin
+  username: "@kirill-markin"
+  social_logo_url_default:
+  social_logo_url_hover:
+  footer_bottom: true
+- name: Facebook
+  url: https://www.facebook.com/kirill.markin.kira
+  username: "@kirill.markin.kira"
+  social_logo_url_default:
+  social_logo_url_hover:
+  footer_bottom: true
+- name: YouTube
+  url: https://www.youtube.com/@kirill-markin
+  username: "@kirill-markin"
+  social_logo_url_default:
+  social_logo_url_hover:
+- name: Reddit
+  url: https://www.reddit.com/user/Kirmark
+  username: "@Kirmark"
+  avatar_learn_more: true
+  footer_bottom: true
+  footer_bottom_green_line: true
+  social_logo_url_default: /data/social_logos/reddit.png
+  social_logo_url_hover: /data/social_logos/reddit_hover.png
+- name: Hacker News
+  url: https://news.ycombinator.com/user?id=MarkinK
+  username: "@MarkinK"
+- name: IndieHackers
+  url: https://www.indiehackers.com/kirill_markin
+  username: kirill_markin
+  footer_bottom: true
+- name: Product Hunt
+  url: https://www.producthunt.com/@kirill_markin
+  username: "@kirill_markin"
+  footer_bottom: true
+- name: GitLab
+  url: https://gitlab.com/kirill-markin
+  username: "@kirill-markin"
+  footer_bottom: true
+- name: Medium
+  url: https://kirill-markin.medium.com/
+  username: "@kirill-markin"
+  avatar_learn_more: true
+  footer_bottom: true
+  footer_bottom_green_line: true
+  social_logo_url_default: /data/social_logos/medium.png
+  social_logo_url_hover: /data/social_logos/medium_hover.png
+- name: Crunchbase
+  url: https://www.crunchbase.com/person/kirill-markin
+  username: "@kirill-markin"
+- name: Qwoted
+  url: https://app.qwoted.com/sources/kirill-markin
+  username: "Kirill Markin"
+- name: Publito
+  url: https://app.publito.co.uk/haj-source-profile/NCbiSRWj07
+  username: "Kirill Markin"
+- name: HuggingFace
+  url: https://huggingface.co/kirill-markin
+  username: "@kirill-markin"
+- name: Hashnode
+  url: https://hashnode.com/@kirillmarkin
+  username: "@kirillmarkin"
+- name: Google Maps
+  url: https://goo.gl/maps/vQE39MpVfVSi3RVL9
+  username: "Kirill Markin"
+- name: StackOverflow
+  url: https://stackoverflow.com/users/16246793/kirill-markin
+  username: "@kirill-markin"
+- name: Kaggle
+  url: https://www.kaggle.com/kirmark
+  username: "@kirmark"
+- name: LeetCode
+  url: https://leetcode.com/u/kirill-markin/
+  username: "@kirill-markin"
+- name: dev.to
+  url: https://dev.to/kirill-markin
+  username: "@kirill-markin"
+- name: Atlassian Community
+  url: https://community.atlassian.com/t5/user/viewprofilepage/user-id/5415988
+  username: "Kirill Markin"
+- name: Substack
+  url: https://substack.com/@kirillmarkin
+  username: "@kirillmarkin"
+- name: Frontiers
+  url: https://loop.frontiersin.org/people/2727594/overview
+  username: "@kirill-markin"
+- name: ORCID
+  url: https://orcid.org/0009-0009-1737-3675
+  username: "@0009-0009-1737-3675"
+- name: Railway
+  url: https://railway.app/u/kirill-markin
+  username: "@kirill-markin"
+- name: Discord
+  url: https://discordapp.com/users/kirmark#3933
+  username: "kirmark#3933"
+- name: AngelList
+  url: https://angel.co/u/kirill-markin
+  username: "@kirill-markin"
+- name: Y Combinator
+  url: https://www.ycombinator.com/companies/ozma
+  username: "Ozma"
+- name: Pinterest
+  url: https://www.pinterest.com/kirillmarkinkira/
+  username: "@kirillmarkinkira"
