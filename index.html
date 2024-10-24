@@ -1,0 +1,93 @@
+---
+layout: main
+---
+
+
+<!-- MAIN CONTENT -->
+<div id="main-page-content">
+  <div class="left-column">
+    <div class="personal-info">
+      <h1 class="personal-name">{{ site.data.personal_info.name }}</h1>
+      <!-- <div class="personal-titles">
+          <p>{{ site.data.personal_info.job_title }}</p>
+          <p>{{ site.data.personal_info.secondary_title }}</p>
+          <p class="tertiary-title">{{ site.data.personal_info.tertiary_title }}</p>
+      </div> -->
+    </div>
+    <div class="personal-contacts">
+      <img src="/data/Kirill-Markin.webp" alt="Picture of {{ site.data.personal_info.name }}" width="100%">
+      <div class="personal-titles">
+        <p>{{ site.data.personal_info.job_title }}</p>
+        <p>{{ site.data.personal_info.secondary_title }}</p>
+        <p class="tertiary-title">{{ site.data.personal_info.tertiary_title }}</p>
+      </div>
+      <a href="https://calendar.app.google/pgnsq3MDbKkVwviV8" class="book-meeting-button" target="_blank" rel="noopener noreferrer">Book a meeting</a>
+      <!-- <h3>Contact</h3>
+      <div class="social-links">
+        {% for link in site.data.social_links %}
+          {% if link.avatar_contact == true %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
+              <img src="{{ link.social_logo_url_default }}" alt="{{ link.name }}" class="icon-default">
+              <img src="{{ link.social_logo_url_hover }}" alt="{{ link.name }}" class="icon-hover">
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      
+      <h3>learn more</h3>
+      <div class="other-links">
+        {% for link in site.data.social_links %}
+          {% if link.avatar_learn_more == true %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
+              <img src="{{ link.social_logo_url_default }}" alt="{{ link.name }}" class="icon-default">
+              <img src="{{ link.social_logo_url_hover }}" alt="{{ link.name }}" class="icon-hover">
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div> -->
+    </div>
+  </div>
+
+  <div class="right-column">
+    <div class="articles">
+      <h2>Articles and mentions</h2>
+      <div class="media-mentions">
+        {% assign en_mentions = site.data.media_mentions | where: "language", "en" | slice: 0, 8 %}
+        {% for media_mention in en_mentions %}
+          <a href="{{ media_mention.url }}" target="_blank" rel="noopener noreferrer" class="media-mention">
+            <img class="media-mention-thumbnail" src="{{ media_mention.thumbnail_url }}" alt="{{ media_mention.title }}">
+            <div class="media-info">
+              <p>{{ media_mention.title }}</p>
+              <div class="media-info-bottom">
+                <hr>
+                <img src="{{ media_mention.website_logo_url }}" alt="Website Logo">
+              </div>
+            </div>  
+          </a>
+        {% endfor %}
+      </div>
+      <hr>
+      <!-- MORE MENTIONS. TODO: return when the mentions page is ready -->
+      <!-- {% assign en_mentions = site.data.media_mentions | where: "language", "en" %}
+      <button>more mentions and articles ({{ en_mentions | size }})</button> -->
+    </div>
+    <div class="other-language">
+      <h2>In other languages</h2>
+      <div class="non-en-media-mentions">
+        {% assign non_en_mentions = site.data.media_mentions | where_exp: "item", "item.language != 'en'" | slice: 0, 4 %}
+        {% for media_mention in non_en_mentions %}
+          <a href="{{ media_mention.url }}" target="_blank" rel="noopener noreferrer" class="non-en-media-mention">
+            <img src="data/icons/arrow.svg" alt="Arrow icon" class="arrow-icon">
+            <span>{{ media_mention.title }}</span>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- FOOTER -->
+{% include footer.html %}

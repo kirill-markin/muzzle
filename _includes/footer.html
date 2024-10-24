@@ -1,20 +1,108 @@
-{% if page.layout != 'index' %}
-    {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-    {% if posts.size == 0 %}
-        {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-    {% endif %}
-    {% if posts.size > 1 %}
-    <footer class="inner lang-options">
-        <em>{{ site.data.translations['differentLanguage'][page.lang] }}:</em>
-        <ul>
-        {% for post in posts %}
-        <li><a 
-            href="{{ site.base-url }}{{ post.url }}" 
-            class="{{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }}" 
-            title="View in {{post.lang}}"
-        >{{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }}</a></li>
+<div id="footer">
+  <div class="footer-column-container">
+    <div class="footer-left-column">
+      <div class="footer-personal">
+        <div class="footer-name-box">
+            <h2 class="footer-personal-name">{{ site.data.personal_info.name }}</h2>
+        </div>
+        <div class="footer-personal-titles">
+          <p>
+              {{ site.data.personal_info.job_title | replace: "OZMA.IO", "<span class='ozma-as-title-footer'>ozma.io</span>" | escape }}
+          </p>
+          <p>{{ site.data.personal_info.secondary_title }}</p>
+          <p class="tertiary-title-footer">{{ site.data.personal_info.tertiary_title }}</p>
+      </div>
+      </div>
+      <div class="footer-personal-contacts">
+        <a href="mailto:{{ site.data.personal_info.email }}" class="footer-email">
+            <img src="data/icons/email.svg" alt="Email icon" class="footer-icon">
+            {{ site.data.personal_info.email }}
+        </a>
+        <a href="tel:{{ site.data.personal_info.phone }}" class="footer-phone">
+            <img src="data/icons/phone.svg" alt="Phone icon" class="footer-icon">
+            {{ site.data.personal_info.phone }}
+        </a>
+      </div>
+      <hr>
+      <div class="footer-personal-social">
+        {% for link in site.data.social_links %}
+            {% if link.footer_bottom %}
+                <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+            {% endif %}
         {% endfor %}
-        </ul>
-    </footer>
-    {% endif %}
-{% endif %}
+      </div>
+    </div>
+  
+    <div class="right-column">
+      <div class="footer-org">
+        <h2 class="footer-org-name">Ozma inc</h2>
+      </div>
+      <div class="footer-org-info">
+        <div class="footer-org-contact-info">
+          <h3>Contact</h3>
+          <a href="{{ site.data.ozma_contacts.Contacts.website.url }}" class="footer-site" target="_blank" rel="noopener noreferrer">
+            <img src="data/icons/site.svg" alt="Website icon" class="footer-icon">
+            {{ site.data.ozma_contacts.Contacts.website.name }}
+          </a>
+          <a href="mailto:{{ site.data.ozma_contacts.Contacts.email }}" class="footer-email">
+            <img src="data/icons/email.svg" alt="Email icon" class="footer-icon">
+            {{ site.data.ozma_contacts.Contacts.email }}
+          </a>
+          <a href="tel:{{ site.data.ozma_contacts.Contacts.phone }}" class="footer-phone">
+            <img src="data/icons/phone.svg" alt="Phone icon" class="footer-icon">
+            {{ site.data.ozma_contacts.Contacts.phone }}
+          </a>
+        </div>  
+        
+        <div class="footer-org-more-info">
+          <h3>More info</h3>
+        {% for link in site.data.ozma_contacts.More_info %}
+          <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="footer-link">
+              {{ link.name }}
+            </a>
+          {% endfor %}
+        </div>
+
+        <div class="footer-org-media">
+          <h3>Media</h3>
+          {% for link in site.data.ozma_contacts.Media %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="footer-link">
+                {{ link.name }}
+            </a>
+          {% endfor %}
+        </div>
+
+        <div class="footer-org-other">
+          <h3>Other</h3>
+          {% for link in site.data.ozma_contacts.Other %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="footer-link">
+                {{ link.name }}
+            </a>
+          {% endfor %}
+        </div>
+
+        <div class="footer-cta">
+          <div class="question-button">
+              <a href="https://calendar.app.google/pgnsq3MDbKkVwviV8" class="footer-button" target="_blank" rel="noopener noreferrer">Ask me a question</a>
+          </div>
+        </div>  
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="social-media-line">
+    <div class="social-links">
+      {% for link in site.data.social_links %}
+        {% if link.footer_bottom_green_line == true %}
+          <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
+            <img src="{{ link.social_logo_url_default }}" alt="{{ link.name }}" class="icon-default">
+            <img src="{{ link.social_logo_url_hover }}" alt="{{ link.name }}" class="icon-hover">
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  
+</div>

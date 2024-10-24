@@ -1,6 +1,6 @@
 services:
   # Category: For People
-  
+
   - service_id: "startup_first_steps"
     category_id: "for_people"
     name: "Startup Launch Guidance"
