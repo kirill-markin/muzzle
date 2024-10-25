@@ -15,8 +15,8 @@
   footer_bottom: true
   footer_bottom_green_line: true
 - name: WhatsApp
-  url: https://api.whatsapp.com/send?phone=359879906085
-  username: "+359 87 990 6085"
+  url: https://api.whatsapp.com/send?phone=31625351137
+  username: "+31 6 253 51137"
   social_logo_url_default: /data/social_logos/whatsapp.png
   social_logo_url_hover: /data/social_logos/whatsapp_hover.png
   avatar_contact: true

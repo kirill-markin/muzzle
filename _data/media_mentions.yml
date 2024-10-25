@@ -57,31 +57,227 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/ozma-2022-08-27.webp
   website_logo_url: /data/webstie_logos/ozma.svg
-- title: "Как автоматизировать техподдержку за 2 дня с помощью GPT и Telegram"
-  url: https://habr.com/ru/articles/747984/
+
+# БИТАЯ ССЫЛКА
+# - title: "Hackathon Judge: ML TalentMatch"
+#   url: https://www.zavodit.ru/ru/calendar/event/46
+#   publisher: sense-group.ru
+#   date: 2024-02-28
+#   type: Event
+#   language: ru
+#   thumbnail_url: /data/articles_thumbnails/sense-group-2024-02-28.webp
+
+- title: "Панельная дискуссия: Как мотивировать сотрудников использовать AI инструменты в работе"
+  url: https://epicgrowth.io/ai-conference#agenda
+  publisher: epicgrowth.io
+  date: 2024-03-14
+  event: Epic AI Conference 2024
+  event_url: https://epicgrowth.io/ai-conference
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/epicgrowth-2024-03-14.webp
+
+- title: "Conference Talk: Как прикрутить AI к вашему продукту: пример на ozma.io"
+  url: https://epicgrowth.io/ai-conference#agenda
+  publisher: epicgrowth.io
+  date: 2024-03-12
+  event: Epic AI Conference 2024
+  event_url: https://epicgrowth.io/ai-conference
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/epicgrowth-2024-03-12.webp
+
+- title: "Workshop: Как решить сложную большую задачу с помощью AI: пайплайны, агенты и другие шалости"
+  url: https://youtu.be/DLLqjrj4AME?si=3JFw1azmqDLXFgS6
+  publisher: podlodka.io
+  date: 2024-03-21
+  event: Podlodka Product Crew #5
+  event_url: https://podlodka.io/productcrew
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/podlodka-2024-03-21.webp
+
+- title: "Conference Talk: Агрегация и аналитика данных в масштабе ТОП-3 прокси-провайдера в мире: от сырых логов к инсайтам"
+  url: https://matemarketing.ru/video?v=MTAwMTk4PzIjMzI5Nw
+  publisher: matemarketing.ru
+  date: 2023-11-09
+  event: Матемаркетинг 2023
+  event_url: https://matemarketing.ru/mm23
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/matemarketing-2023-11-09.webp
+
+- title: "ML-гайд: сколько стоит, как без ML, что учить, если ты продакт / Кирилл Маркин, AI & Data Monkey"
+  url: https://youtu.be/-b1N4Si-CUQ?si=Pll8us45Eh5S0F7D
+  publisher: Anna Podobrazhnykh youtube channel
+  date: 2023-09-16
+  type: Video
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/anna-podobrazhnykh-2023-09-16.webp
+  website_logo_url: /data/webstie_logos/youtube.png
+
+- title: "ML Product Day: Q&A session"
+  url: https://youtu.be/wrW8N-G2L90?si=TY2UlYTXh5pOH65w
+  publisher: Anna Podobrazhnykh youtube channel
+  date: 2023-09-16
+  type: Video
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/anna-podobrazhnykh-2023-09-16-2.webp
+  website_logo_url: /data/webstie_logos/youtube.png
+
+- title: "CRM-система: как сэкономить деньги и выбрать наилучший вариант"
+  url: https://rb.ru/opinion/best-crm/
+  publisher: Rusbase
+  date: 2021-03-12
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/rusbase-2021-03-12.webp
+
+- title: "Не повторять! Ошибки в общении с клиентами, которые роняют продажи"
+  url: https://e.gd.ru/1031609
+  publisher: Журнал "Генеральный директор"
+  date: 2022-07-12
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/gd-2022-07-12.webp
+
+- title: "Как с помощью ChatGPT автоматизировать техподдержку за 2 дня"
+  url: https://my.epicgrowth.io/programs/markin?category_id=135092
+  publisher: epicgrowth.io
+  date: 2023-06-08
+  type: Video
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/epicgrowth-2023-06-08.webp
+
+- title: "Грядущие продукты на основе Chat-GPT: что ожидать в наших приложениях и системах"
+  url: https://www.comnews.ru/digital-economy/content/227470/2023-07-16/2023-w28/gryaduschie-produkty-osnove-chat-gpt-chto-ozhidat-nashikh-prilozheniyakh-i-sistemakh
+  publisher: COMNEWS
+  date: 2023-07-18
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/comnews-2023-07-18.webp
+
+- title: "Как CRM облегчает жизнь отдела продаж"
+  url: https://www.it-world.ru/it-news/market/194728.html
+  publisher: it-world
+  date: 2023-07-19
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/it-world-2023-07-19.webp
+
+- title: "Инцидент-менеджмент: как настроить процесс расследования без подключения data-аналитиков"
+  url: https://www.itweek.ru/management/article/detail.php?ID=226693
+  publisher: itWeek
+  date: 2023-06-30
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/itweek-2023-06-30.webp
+
+- title: "Лекции Технопарка. Программирование в управлении. История одного студента Бауманки"
+  url: https://habr.com/ru/companies/vk/articles/250593/
+  publisher: VK group
+  date: 2015-02-15
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/vk-2015-02-15.webp
+
+- title: 'Мастер-класс "Программирование в управлении. История одного студента Бауманки" (К. Маркин)'
+  url: https://www.youtube.com/watch?v=FYT9nm6ryGc
+  publisher: VK group
+  date: 2015-02-23
+  type: Video
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/vk-2015-02-23.webp
+  website_logo_url: /data/webstie_logos/youtube.png
+
+- title: "ЗА ЖИЗНЬ: актер и IT-специалист о бомжевании и мнениях других людей"
+  url: https://youtu.be/VD-ZF4wNT-E
+  publisher: Blogger Tanya Rybakova youtube channel
+  date: 2018-08-05
+  type: Video
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/tanya-rybakova-2018-08-05.webp
+  website_logo_url: /data/webstie_logos/youtube.png
+
+- title: "Применение долгосрочной памяти в GPT-чатах для бизнеса: практические примеры и случаи использования"
+  url: https://digital-report.ru/primenenie-dolgosrochnoj-pamjati-v-gpt-chatah-dlja-biznesa-prakticheskie-primery-i-sluchai-ispolzovanija/
+  publisher: digital-report.ru
+  date: 2023-06-20
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/digital-report-2023-06-20.webp
+
+- title: "Ошибки в общении с клиентами, которые роняют продажи"
+  url: https://www.kom-dir.ru/article/4267-oshibki-v-obshchenii-s-klientami
+  publisher: Журнал "Коммерческий директор"
+  date: 2023-08-29
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/kom-dir-2023-08-29.webp
+
+- title: "Эволюция названия стартапа: 4 шага к идеальному имени"
+  url: https://www.novostiitkanala.ru/news/detail.php?ID=170421
+  publisher: IT Channel News
+  date: 2023-07-11
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/it-channel-news-2023-07-11.webp
+
+- title: "Как сделать таск-трекер под себя на low-code конструкторе"
+  url: https://habr.com/ru/articles/673874/
   publisher: Habr
-  date: 2023-07-03
+  date: 2022-07-12
   language: ru
-  thumbnail_url: /data/articles_thumbnails/habr-2023-07-03.webp
+  thumbnail_url: /data/articles_thumbnails/habr-2022-07-12.webp
   website_logo_url: /data/webstie_logos/habr.png
-- title: "Как CRM делает жизнь отдела продаж проще"
-  url: https://ozma.io/ru/articles/kak-crm-delaet-zhizn-otdela-prodazh-proshche/
-  publisher: Ozma Inc.
-  date: 2023-06-04
+
+- title: "«Жизнь после диплома» — интервью с Кириллом Маркиным"
+  url: https://vk.com/@bmstu1830-zhizn-posle-diploma-intervu-s-kirillom-markinym
+  publisher: Bauman Moscow state technical University
+  date: 2021-10-28
   language: ru
-  thumbnail_url: /data/articles_thumbnails/ozma-2023-06-04.webp
+  thumbnail_url: /data/articles_thumbnails/bmstu-2021-10-28.webp
+
+- title: "Голосовой чат GPT своими руками: пошаговое руководство для начинающих"
+  url: https://vc.ru/chatgpt/734427-golosovoy-chat-gpt-svoimi-rukami-poshagovoe-rukovodstvo-dlya-nachinayushchih
+  publisher: vc.ru
+  date: 2023-06-23
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/vc-2023-06-23.webp
+
+- title: "Создание бота Telegram с голосовой поддержкой для чата GPT без DevOps: подробный гайд"
+  url: https://vc.ru/u/343006-kirill-markin/762087-sozdanie-bota-telegram-s-golosovoy-podderzhkoy-dlya-chata-gpt-bez-devops-podrobnyy-gayd
+  publisher: vc.ru
+  date: 2023-07-18
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/vc-2023-07-18.webp
+  website_logo_url: /data/webstie_logos/vc.png
+
+- title: 'LOW CODE - тренд на "упрощенку"'
+  url: https://www.facebook.com/watch/?v=2846719108881072&ref=sharing
+  publisher: TAGES
+  date: 2021-05-19
+  type: Video
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/tages-2021-05-19.webp
+  website_logo_url: /data/webstie_logos/facebook.png
+
+- title: "Автоматизация процессов с помощью CRM: как проще всего это сделать?"
+  url: https://vc.ru/marketing/212774-avtomatizaciya-processov-s-pomoshyu-crm-kak-proshe-vsego-eto-sdelat
+  publisher: VC.RU
+  date: 2021-02-24
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/vc-2021-02-24.webp
+  website_logo_url: /data/webstie_logos/vc.png
+
+- title: "ИИ-инструменты для агентов по недвижимости"
+  url: https://www.youtube.com/live/utRAu4_f1mo?si=I2cyJL-ZqiV3dWrU
+  publisher: Youtube
+  date: 2024-02-06
+  type: Video
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/youtube-2024-02-06.webp
+  website_logo_url: /data/webstie_logos/youtube.png
+
+- title: "CRM для школы актёрского мастерства Gogol School: пример внедрения ozma.io"
+  url: https://ozma.io/ru/articles/crm-dlya-shkoly-aktyorskogo-masterstva/
+  publisher: Ozma Inc.
+  date: 2022-02-21
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/ozma-2022-02-21.webp
   website_logo_url: /data/webstie_logos/ozma.svg
-- title: "Инцидент-менеджмент: как настроить расследование инцидентов"
-  url: https://ozma.io/ru/articles/intsidentmenedzhment-kak-nastroit-rassledovanie-intsidentov/
+
+- title: "CRM для провайдера: пример внедрения ozma.io"
+  url: https://ozma.io/ru/articles/crm-dlya-provajdera/
   publisher: Ozma Inc.
-  date: 2023-05-28
+  date: 2022-02-21
   language: ru
-  thumbnail_url: /data/articles_thumbnails/ozma-2023-05-28.webp
-  website_logo_url: /data/webstie_logos/ozma.svg
-- title: "Не повторяйте! Ошибки в общении с клиентами"
-  url: https://ozma.io/ru/articles/ne-povtoryayte-oshibki-v-obshchenii-s-klientami/
-  publisher: Ozma Inc.
-  date: 2023-05-21
-  language: ru
-  thumbnail_url: /data/articles_thumbnails/ozma-2023-05-21.webp
+  thumbnail_url: /data/articles_thumbnails/ozma-2022-02-21-2.webp
   website_logo_url: /data/webstie_logos/ozma.svg
