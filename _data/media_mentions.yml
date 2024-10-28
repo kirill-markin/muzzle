@@ -1,3 +1,19 @@
+- title: "Write article as programmer: IDE Cursor and LLM magic"
+  url: https://youtu.be/ySA8_aVqu5I?si=muBLOwv3Smjltt3u
+  publisher: Kirill Markin
+  date: 2024-09-04
+  type: Video
+  language: en
+  thumbnail_url: /data/articles_thumbnails/kirill-2024-09-04.webp
+  website_logo_url: /data/webstie_logos/youtube.png
+- title: "How to write code with AI, ChatGPT? From scratch to 68 GitHub stars"
+  url: https://youtu.be/9MyJJRMRCW0?si=T2o6DG8iSBheMFfG
+  publisher: Kirill Markin
+  date: 2024-01-21
+  type: Video
+  language: en
+  thumbnail_url: /data/articles_thumbnails/kirill-2024-01-21.webp
+  website_logo_url: /data/webstie_logos/youtube.png
 - title: "Conference Talk: AI web scraping - Data Collection reimagined with soax.com"
   url: https://youtu.be/QDFDTN30YOs?si=fpeSOig9h1el2zkK
   publisher: noah-conference.com
