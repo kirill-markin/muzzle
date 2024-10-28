@@ -18,6 +18,7 @@ sitemap:
   // font size variables
   --font-size-small: 0.875rem;  // 14px
   --font-size-base: 1rem;       // 16px
+  --font-size-base-plus: 1.125rem; // 18px
   --font-size-medium: 1.375rem; // 22px
   --font-size-large: 2.25rem;   // 36px
   --font-size-xlarge: 3.25rem;  // 52px
@@ -31,11 +32,21 @@ sitemap:
 
 
 html {
-  background-color: var(--light-gray);
+  background-color: var(--light-gray);;
 }
 
 header {
-  display: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 2.5rem;
+  padding: 0.3125rem;
+  border-bottom: 1px solid var(--dark-gray);
+}
+
+body{
+  margin: 0px;
+  color: var(--dark-gray);
 }
 
 .outer {
@@ -109,13 +120,18 @@ hr {
 
 h1 {
   color: var(--black);
-  font-size: clamp(var(--font-size-large), 5vw, var(--font-size-xxlarge));
+  font-size: var(--font-size-xlarge);
+  @media screen and (min-width: 768px) {
+    font-size: clamp(var(--font-size-large), 5vw, var(--font-size-xxlarge));
+  }
   font-style: normal;
   font-weight: 400;
   line-height: 81%;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 2.13rem;
+  @media screen and (min-width: 768px) {
+    margin-top: 0.87rem;
+  }
   word-wrap: break-word;
   hyphens: auto;
   max-width: 100%;
@@ -128,10 +144,10 @@ h1 {
   }
   
   /* Responsive layout for the resume page */
-  @media (min-width: 1081px) {
+  @media (min-width: 768px) {
 
     .left-column {
-      border-right: 1px solid #232323;
+      border-right: 1px solid var(--dark-gray);
     }
 
     .left-column, .footer-left-column {
@@ -146,7 +162,7 @@ h1 {
     
   }
   
-  @media (max-width: 1080px) {
+  @media (max-width: 768px) {
     .left-column, .right-column {
       width: 100%;
     }
@@ -165,10 +181,6 @@ h1 {
 }
 .articles {
   border-bottom: 1px solid #232323;
-}
-body{
-  margin: 0px;
-  color: var(--dark-gray);
 }
 
 #footer {
@@ -193,6 +205,11 @@ body{
   text-transform: uppercase;
   margin-bottom: 0px;
   font-size: var(--font-size-medium);
+  color: #232323;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 98.99%;
+  text-transform: uppercase;
 }
   
 .tertiary-title {
@@ -229,6 +246,22 @@ body{
     margin-bottom: 10px;
     font-size: var(--font-size-medium);
   }
+  @media screen and (max-width: 768px) { 
+    .personal-name {
+      // font-size: var(--font-size-xlarge);
+    }
+    .avatas-and-titils {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.9375rem;
+      width: 100%;
+      .personal-titles p:first-child {margin-top: 0;}
+      img {
+        width: 6.5625rem;
+        height: 6.5625rem;
+      }
+    }
+  }
 }
 
 // media mentions
@@ -240,10 +273,19 @@ body{
 }
 
 h2 {
-  margin-top: 2.13rem;
-  margin-bottom: 2.5rem;
+  margin-top: 0;
+  @media screen and (min-width: 768px) {
+    margin-top: 0.87rem;
+  }
+  margin-bottom: 1.2rem;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 2.5rem;
+  }
   color: var(--black);
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-medium);
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-size-large);
+  }
   font-style: normal;
   font-weight: 500;
   line-height: 81%;
@@ -275,9 +317,13 @@ h2 {
 // Media Mentions Grid
 .media-mentions {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   grid-auto-rows: 1fr;
   gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+  }
 
   .media-mention {
     margin: 10px 0;
@@ -336,89 +382,16 @@ h2 {
       }
     }
   }
+  .hidden-mention {
+    display: none;
+  }
 }
-
-// Commented out code
-
-// .media-mention {
-//   margin: 10px 0;
-//   overflow: hidden;
-//   transition: transform 0.3s;
-//   display: flex;
-//   flex-direction: column;
-//   height: 100%; // This makes all media mentions the same height
-// }
-
-// .media-mention img {
-//   width: 100%;
-//   height: auto;
-//   object-fit: cover; // Ensure the image covers the area without distortion
-// }
-
-// .media-mention:hover {
-//   text-decoration: underline;
-//   text-decoration-color: var(--dark-gray);
-// }
-
-// .media-mention img[alt="{{ media_mention.title }}"] {
-//   width: 100%;
-//   // height: auto;
-//   height: 180px;
-//   object-fit: cover;
-// }
-
-// .media-mention-thumbnail {
-//   width: 100%;
-//   height: 180px !important;
-//   object-fit: cover;
-// }
-
-// .media-info img {
-//   width: 100px;
-//   height: auto;
-//   margin: auto;
-// }
-
-// .media-info {
-//   padding: 10px;
-//   display: flex;
-//   flex-direction: column;
-//   flex-grow: 1; // Allow this to grow and take up remaining space
-// }
-// .media-mentions a {
-//   text-decoration: none;
-// }
-
-// .media-mention p {
-//   font-size: var(--font-size-base);
-//   margin-bottom: 10px;
-//   font-weight: 300;
-//   flex-grow: 1;
-//   color: var(--dark-gray);
-// }
-
-// .media-info-bottom {
-//   margin-top: auto;
-// }
-
-// .media-info-bottom img {
-//   display: block;
-//   margin: 10px auto;
-//   max-width: 100px;
-//   height: auto;
-//   margin-top: 16px;
-//   margin-right: 0px;
-// }
-
-// .media-info h3 {
-//   text-decoration: none;
-
-// }
 
 
 .articles button {
   display: block;
   width: 100%;
+  margin-top: 2.5rem;
   text-align: left;
   font-size: var(--font-size-medium);
   background-color: transparent;
@@ -427,7 +400,7 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
-  transition: background-color 0.1s, color 0.1s;
+  transition: font-weight 0.2s;
   font-weight: 400;
 }
 
@@ -435,14 +408,21 @@ h2 {
   font-weight: 600;
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
 .social-link {
-  display: inline-block;
+  display: inline-flex;
   text-decoration: none;
+  align-items: center;
 
   img {
     border: none;
-    width: 2.5625rem;
-    height: 2.5625rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    flex-shrink: 0;
   }
 }
 
@@ -453,7 +433,7 @@ h2 {
   display: none;
 }
 .social-link:hover .icon-hover {
-  display: block;
+  display: flex;
 }
 
 
@@ -471,7 +451,10 @@ h2 {
   color: var(--gray);
   text-decoration: none;
   margin-bottom: 10px;
-  flex: 1 1 calc(50% - 10px);
+  flex: 1 1 calc(33.333% - 10px);
+  @media (min-width: 768px) {
+    flex: 1 1 calc(50% - 10px);
+  }
 }
 
 .footer-personal-social a:hover {
@@ -553,7 +536,10 @@ h2 {
   padding: 10px;
   padding-right: 20px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+  }
 }
 
 
@@ -562,16 +548,24 @@ h2 {
 .footer-org-info {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 20px;
+  gap: 20px;
 }
 
-.footer-org-contact-info,
+// Mobile-first default styles
+.footer-org-contact-info {
+  width: 100%;
+}
+
 .footer-org-more-info,
 .footer-org-media,
 .footer-org-other {
-  flex: 1 1 11rem;
-  margin-bottom: 20px;
+  flex: 1 1 calc(33.333% - 14px); // Subtracting gap to ensure 3 columns fit
+  min-width: 120px; // Prevent columns from getting too narrow
+}
+
+.footer-cta {
+  width: 100%;
 }
 
 .footer-org-info div {
@@ -581,6 +575,20 @@ h2 {
   margin-bottom: 1.88rem;
 }
 
+// Desktop styles
+@media (min-width: 768px) {
+  .footer-org-info {
+    justify-content: space-between;
+  }
+
+  .footer-org-contact-info,
+  .footer-org-more-info,
+  .footer-org-media,
+  .footer-org-other {
+    flex: 1 1 11rem;
+  }
+}
+
 .footer-org-contact-info a {
   margin-bottom: 10px;
 }
@@ -588,7 +596,10 @@ h2 {
 
 // cta footer
 .footer-cta {
-  width: 21.5625rem;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 21.5625rem;
+  }
   height: 2.8125rem;
 }
 
@@ -702,15 +713,23 @@ h2 {
   margin-bottom: auto;
   text-decoration: none;
   color: var(--dark-gray);
-  font-size: 1.375rem;
+  font-size: var(--font-size-base-plus);
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-size-medium);
+  }
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
-}
 
-.arrow-icon {
-  margin-right: 10px;
-  flex-shrink: 0;
+  .arrow-icon {
+    margin-right: 10px;
+    flex-shrink: 0;
+    transition: transform 0.2s ease; // Add smooth transition
+  }
+
+  &:hover .arrow-icon {
+    transform: translateX(2px); // Move 2px right on hover
+  }
 }
 
 @media (max-width: 768px) {
@@ -725,3 +744,6 @@ h2 {
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
+
+
+
