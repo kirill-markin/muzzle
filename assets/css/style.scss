@@ -4,6 +4,7 @@ sitemap:
 ---
 
 // @import "{{ site.theme }}";
+
 :root {
   // Color variables
   --black: #1A1A1A;
@@ -27,7 +28,7 @@ sitemap:
 
 
 * {
-  font-family: "Neue Montreal", sans-serif !important;
+  font-family: Archivo, sans-serif !important;
 }
 
 
@@ -42,6 +43,9 @@ header {
   height: 2.5rem;
   padding: 0.3125rem;
   border-bottom: 1px solid var(--dark-gray);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 body{
@@ -326,7 +330,7 @@ h2 {
   }
 
   .media-mention {
-    margin: 10px 0;
+    border: 1px solid #232323;
     overflow: hidden;
     transition: transform 0.3s;
     display: flex;
@@ -335,8 +339,8 @@ h2 {
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
-      text-decoration-color: var(--dark-gray);
+      background-color: var(--white);
+      transform: scale(1.02);
     }
 
     .media-mention-thumbnail {
@@ -376,8 +380,8 @@ h2 {
           max-width: 100px;
           height: auto;
           margin-top: 0.94rem;
-          margin-right: 0px;
-          margin-left: auto;
+          // margin-right: 0px;
+          // margin-left: auto;
         }
       }
     }
@@ -408,6 +412,9 @@ h2 {
   font-weight: 600;
 }
 
+
+
+
 .social-links {
   display: flex;
   align-items: center;
@@ -420,11 +427,31 @@ h2 {
 
   img {
     border: none;
-    width: 2.1875rem;
-    height: 2.1875rem;
+    width: 2rem;
+    height: 2rem;
     flex-shrink: 0;
   }
 }
+
+.personal-contacts {
+  .social-links {
+    display: none;
+    margin-top: 1.15rem;
+  }
+  img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .personal-contacts {
+    .social-links{display: flex;}
+  }
+  header .social-links{display: none;}
+}
+
 
 .icon-hover {
   display: none;
@@ -736,13 +763,6 @@ h2 {
   .non-en-media-mentions {
     grid-template-columns: 1fr;
   }
-}
-
-.personal-contacts img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
 }
 
 
