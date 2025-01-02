@@ -14,6 +14,7 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/kirill-2024-01-21.webp
   website_logo_url: /data/webstie_logos/youtube.png
+  render-style: text-photo
 - title: "Conference Talk: AI web scraping - Data Collection reimagined with soax.com"
   url: https://youtu.be/QDFDTN30YOs?si=fpeSOig9h1el2zkK
   publisher: noah-conference.com
@@ -24,6 +25,7 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/noah-2023-12-14.webp
   website_logo_url: /data/webstie_logos/youtube.png
+  render-style: text-photo
 - title: "Conference Talk: How to handle a billion new records per day when migrating databases"
   url: https://verigram.ai/blog/Kazakhstan-AI-ML-community-is-delighted-with-VeriMeet
   publisher: verigram.ai
@@ -31,7 +33,7 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/verigram-2023-09-08.webp
   website_logo_url: /data/webstie_logos/verigram.png
-  render-style: featured-horizontal
+  render-style: text-photo
 - title: "Build with AI Custom ERP and CRM - No Code Required"
   url: https://youtu.be/Una8_vv6mlY?si=oaPzSTpdla7tfXmF
   publisher: ozma-io youtube channel
@@ -40,6 +42,7 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/ozma-2024-04-01.webp
   website_logo_url: /data/webstie_logos/youtube.png
+  render-style: text-photo
 - title: "Creating a voice-enabled Telegram Bot for GPT Chat without DevOps: a comprehensive guide"
   url: https://kirill-markin.medium.com/creating-a-voice-enabled-telegram-bot-for-gpt-chat-without-devops-a-comprehensive-guide-8a905241cb9c
   publisher: Medium
@@ -47,6 +50,7 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/medium-2023-06-22.webp
   website_logo_url: /data/webstie_logos/medium.png
+  render-style: featured-horizontal
 - title: "DIY Voice-Controlled GPT Chat: A Step-by-Step Guide for Beginners"
   url: https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979
   publisher: Medium
@@ -54,6 +58,7 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/medium-2023-06-08.webp
   website_logo_url: /data/webstie_logos/medium.png
+  render-style: featured-horizontal
 - title: "Where CRM is used? Discovering the Applications of CRM: Company Size, Function, and Industry"
   url: https://ozma.io/articles/where-crm-is-used-discovering-the-applications-of-crm-size-function-industry/
   publisher: Ozma Inc.
@@ -75,7 +80,6 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/ozma-2022-08-27.webp
   website_logo_url: /data/webstie_logos/ozma.svg
-  render-style: featured-horizontal
 
 # БИТАЯ ССЫЛКА
 # - title: "Hackathon Judge: ML TalentMatch"

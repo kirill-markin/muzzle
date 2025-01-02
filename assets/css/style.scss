@@ -33,7 +33,7 @@ sitemap:
 
 
 html {
-  background-color: var(--light-gray);;
+  background: radial-gradient(136.08% 136.08% at 50% -15.61%, #FFF 0%, #D6D6D6 100%);
 }
 
 header {
@@ -488,7 +488,6 @@ h2 {
 }  
 .mention-card-video {
   aspect-ratio: 16 / 9;
-  border: none !important;
   .media-info-title {
     color: #fff !important;
     z-index: 10;
@@ -510,8 +509,8 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.30;
-    background: black;
+    opacity: 0.75;
+    background: linear-gradient(180deg, #232323 0%, rgba(35, 35, 35, 0.00) 100%);
     mix-blend-mode: multiply;
     z-index: 2;
   }
@@ -525,7 +524,6 @@ h2 {
 .mention-card-featured-horizontal {
   aspect-ratio: 16 / 9;
   height: auto;
-  border: none !important;
   .media-featured-content {
     display: flex;
     flex-direction: column;
