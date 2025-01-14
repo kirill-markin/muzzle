@@ -381,7 +381,9 @@ h2 {
       min-height: 0;
       justify-content: flex-start;
       align-items: flex-start;
-      gap: 15px;
+      position: relative;
+      z-index: 2;
+
 
       .media-info-title {
         color: var(--dark-gray);
@@ -465,12 +467,20 @@ h2 {
 
 // media mentions card types
 .mention-card-text-photo {
+  @media screen and (min-width: 768px) {
+    min-height: 16rem;
+  }
   min-height: 10rem;
   .media-mention-thumbnail {
-    width: calc(100% + 2.5rem);
-    margin-left: -1.25rem;
-    margin-bottom: -4rem;
-    margin-top: 1.25rem;
+    // width: calc(100% + 2.5rem);
+    // margin-left: -1.25rem;
+    // margin-bottom: -4rem;
+    // margin-top: 1.25rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
   }
   .thumbnail-gradient {
     position: absolute;
@@ -484,6 +494,13 @@ h2 {
   .website-logo {
     z-index: 10;
     filter: invert(1);
+  }
+  .media-info-title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    gap: 15px;
   }
 }  
 .mention-card-video {
@@ -501,7 +518,7 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1;
+    z-index: 0;
   }
   .thumbnail-gradient {
     position: absolute;
@@ -512,7 +529,7 @@ h2 {
     opacity: 0.75;
     background: linear-gradient(180deg, #232323 0%, rgba(35, 35, 35, 0.00) 100%);
     mix-blend-mode: multiply;
-    z-index: 2;
+    z-index: 1;
   }
   .video-icon {
     position: absolute;

@@ -75,7 +75,7 @@ lang: en
                 {% endif %}
               </div>
               {% if mention.thumbnail_url %}
-                <img class="media-mention-thumbnail" src="{{ mention.thumbnail_url }}" alt="{{ mention.title }}">
+                <img class="media-mention-thumbnail" src="{{ mention.thumbnail_url }}" alt="{% if mention.language == 'en' %}{{ mention.title }}{% else %}{{ mention.alternative_title }}{% endif %}">
               {% endif %}
       
             {% elsif card_style == "mention-card-featured-horizontal" %}
@@ -99,7 +99,7 @@ lang: en
               </div>
               {% if mention.thumbnail_url %}
                 <div class="thumbnail-gradient"></div>
-                <img class="media-mention-thumbnail" src="{{ mention.thumbnail_url }}" alt="{{ mention.title }}">
+                <img class="media-mention-thumbnail" src="{{ mention.thumbnail_url }}" alt="{% if mention.language == 'en' %}{{ mention.title }}{% else %}{{ mention.alternative_title }}{% endif %}">
               {% endif %}
       
             {% else %}
@@ -121,11 +121,13 @@ lang: en
               </div>
       
               {% if mention.thumbnail_url %}
-                <img class="media-mention-thumbnail" src="{{ mention.thumbnail_url }}" alt="{{ mention.title }}">
-                {% if card_style == "mention-card-text-photo" %}
-                  <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
-                {% endif %}
+                <img class="media-mention-thumbnail" src="{{ mention.thumbnail_url }}" alt="{% if mention.language == 'en' %}{{ mention.title }}{% else %}{{ mention.alternative_title }}{% endif %}">
                 <div class="thumbnail-gradient"></div>
+                {% if mention.website_logo_url %}
+                  {% if card_style == "mention-card-text-photo" %}
+                    <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
+                  {% endif %}
+                {% endif %}
               {% endif %}
       
               {% if card_style == "mention-card-video" %}

@@ -78,7 +78,7 @@
   publisher: Ozma Inc.
   date: 2022-08-27
   language: en
-  thumbnail_url: /data/articles_thumbnails/ozma-2022-08-27.webp
+  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-2.png
   website_logo_url: /data/webstie_logos/ozma.svg
 
 # БИТАЯ ССЫЛКА
@@ -98,8 +98,8 @@
   date: 2024-03-14
   event: Epic AI Conference 2024
   event_url: https://epicgrowth.io/ai-conference
+  thumbnail_url: /data/articles_thumbnails/epicgrowth-2024-03-14.webp
   language: ru
-
 - title: "Conference Talk: Как прикрутить AI к вашему продукту: пример на ozma.io"
   alternative_title: "Conference Talk: How to Integrate AI into Your Product: An Example from ozma.io"
   url: https://epicgrowth.io/ai-conference#agenda
@@ -107,8 +107,9 @@
   date: 2024-03-12
   event: Epic AI Conference 2024
   event_url: https://epicgrowth.io/ai-conference
+  thumbnail_url: /data/articles_thumbnails/epicgrowth-2024-03-12.webp
   language: ru
-
+  render-style: featured-vertical
 - title: "Workshop: Как решить сложную большую задачу с помощью AI: пайплайны, агенты и другие шалости"
   alternative_title: "Workshop: How to Solve a Complex Big Problem with AI: Pipelines, Agents, and Other Tricks"
   url: https://youtu.be/DLLqjrj4AME?si=3JFw1azmqDLXFgS6
@@ -116,8 +117,9 @@
   date: 2024-03-21
   event: Podlodka Product Crew #5
   event_url: https://podlodka.io/productcrew
+  thumbnail_url: /data/articles_thumbnails/podlodka-2024-03-21.webp
   language: ru
-
+  render-style: featured-vertical
 - title: "Conference Talk: Агрегация и аналитика данных в масштабе ТОП-3 прокси-провайдера в мире: от сырых логов к инсайтам"
   alternative_title: "Conference Talk: Aggregation and Analytics of Data at the Scale of the Top 3 Proxy Providers in the World: From Raw Logs to Insights"
   url: https://matemarketing.ru/video?v=MTAwMTk4PzIjMzI5Nw
@@ -126,7 +128,6 @@
   event: Матемаркетинг 2023
   event_url: https://matemarketing.ru/mm23
   language: ru
-
 - title: "ML-гайд: сколько стоит, как без ML, что учить, если ты продакт / Кирилл Маркин, AI & Data Monkey"
   alternative_title: "ML-guide: How Much It Costs, How to Do Without ML, What to Study If You Are a Product Manager / Kirill Markin, AI & Data Monkey"
   url: https://youtu.be/-b1N4Si-CUQ?si=Pll8us45Eh5S0F7D
@@ -135,7 +136,8 @@
   type: Video
   language: ru
   website_logo_url: /data/webstie_logos/youtube.png
-
+  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-1.png
+  render-style: text-photo
 - title: "ML Product Day: Q&A session"
   alternative_title: "ML Product Day: Q&A session"
   url: https://youtu.be/wrW8N-G2L90?si=TY2UlYTXh5pOH65w
@@ -144,21 +146,22 @@
   type: Video
   language: ru
   website_logo_url: /data/webstie_logos/youtube.png
-
+  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-2.png
+  render-style: text-photo
 - title: "CRM-система: как сэкономить деньги и выбрать наилучший вариант"
   alternative_title: "CRM System: How to Save Money and Choose the Best Option"
   url: https://rb.ru/opinion/best-crm/
   publisher: Rusbase
   date: 2021-03-12
   language: ru
-
 - title: "Не повторять! Ошибки в общении с клиентами, которые роняют продажи"
   alternative_title: "Don't Repeat! Mistakes in Communication with Customers That Ruin Sales"
   url: https://e.gd.ru/1031609
   publisher: Журнал "Генеральный директор"
   date: 2022-07-12
   language: ru
-
+  render-style: featured-vertical
+  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-2.png
 - title: "Как с помощью ChatGPT автоматизировать техподдержку за 2 дня"
   alternative_title: "How to Automate Customer Support with ChatGPT in 2 Days"
   url: https://my.epicgrowth.io/programs/markin?category_id=135092
@@ -166,35 +169,32 @@
   date: 2023-06-08
   type: Video
   language: ru
-
+  render-style: featured-horizontal
+  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-1.png
 - title: "Грядущие продукты на основе Chat-GPT: что ожидать в наших приложениях и системах"
   alternative_title: "Upcoming Products Based on Chat-GPT: What to Expect in Our Applications and Systems"
   url: https://www.comnews.ru/digital-economy/content/227470/2023-07-16/2023-w28/gryaduschie-produkty-osnove-chat-gpt-chto-ozhidat-nashikh-prilozheniyakh-i-sistemakh
   publisher: COMNEWS
   date: 2023-07-18
   language: ru
-
 - title: "Как CRM облегчает жизнь отдела продаж"
   alternative_title: "How CRM Makes Life Easier for Sales Department"
   url: https://www.it-world.ru/it-news/market/194728.html
   publisher: it-world
   date: 2023-07-19
   language: ru
-
 - title: "Инцидент-менеджмент: как настроить процесс расследования без подключения data-аналитиков"
   alternative_title: "Incident Management: How to Set Up a Investigation Process Without Connecting Data Analysts"
   url: https://www.itweek.ru/management/article/detail.php?ID=226693
   publisher: itWeek
   date: 2023-06-30
   language: ru
-
 - title: "Лекции Технопарка. Программирование в управлении. История одного студента Бауманки"
   alternative_title: "Lectures of the Technopark. Programming in Management. The Story of One Student of Bauman"
   url: https://habr.com/ru/companies/vk/articles/250593/
   publisher: VK group
   date: 2015-02-15
   language: ru
-
 - title: 'Мастер-класс "Программирование в управлении. История одного студента Бауманки" (К. Маркин)'
   alternative_title: "Master Class 'Programming in Management. The Story of One Student of Bauman' (Kirill Markin)"
   url: https://www.youtube.com/watch?v=FYT9nm6ryGc
@@ -203,7 +203,8 @@
   type: Video
   language: ru
   website_logo_url: /data/webstie_logos/youtube.png
-
+  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-2.png
+  render-style: featured-horizontal
 - title: "ЗА ЖИЗНЬ: актер и IT-специалист о бомжевании и мнениях других людей"
   alternative_title: "FOR LIFE: Actor and IT Specialist on Homelessness and the Opinions of Others"
   url: https://youtu.be/VD-ZF4wNT-E
@@ -212,56 +213,54 @@
   type: Video
   language: ru
   website_logo_url: /data/webstie_logos/youtube.png
-
+  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-1.png
+  render-style: featured-horizontal
 - title: "Применение долгосрочной памяти в GPT-чатах для бизнеса: практические примеры и случаи использования"
   alternative_title: "Application of Long-Term Memory in GPT Chats for Business: Practical Examples and Cases of Use"
   url: https://digital-report.ru/primenenie-dolgosrochnoj-pamjati-v-gpt-chatah-dlja-biznesa-prakticheskie-primery-i-sluchai-ispolzovanija/
   publisher: digital-report.ru
   date: 2023-06-20
   language: ru
-
 - title: "Ошибки в общении с клиентами, которые роняют продажи"
   alternative_title: "Mistakes in Communication with Customers That Ruin Sales"
   url: https://www.kom-dir.ru/article/4267-oshibki-v-obshchenii-s-klientami
   publisher: Журнал "Коммерческий директор"
   date: 2023-08-29
   language: ru
-
 - title: "Эволюция названия стартапа: 4 шага к идеальному имени"
   alternative_title: "Evolution of a Startup Name: 4 Steps to the Perfect Name"
   url: https://www.novostiitkanala.ru/news/detail.php?ID=170421
   publisher: IT Channel News
   date: 2023-07-11
   language: ru
-
 - title: "Как сделать таск-трекер под себя на low-code конструкторе"
   alternative_title: "How to Make a Task Tracker for Yourself on a Low-Code Constructor"
   url: https://habr.com/ru/articles/673874/
   publisher: Habr
   date: 2022-07-12
   language: ru
-
 - title: "«Жизнь после диплома» — интервью с Кириллом Маркиным"
   alternative_title: "Life After Diploma: An Interview with Kirill Markin"
   url: https://vk.com/@bmstu1830-zhizn-posle-diploma-intervu-s-kirillom-markinym
   publisher: Bauman Moscow state technical University
   date: 2021-10-28
   language: ru
-
+  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-2.png
+  render-style: featured-vertical
 - title: "Голосовой чат GPT своими руками: пошаговое руководство для начинающих"
   alternative_title: "Voice Chat GPT with Your Own Hands: Step-by-Step Guide for Beginners"
   url: https://vc.ru/chatgpt/734427-golosovoy-chat-gpt-svoimi-rukami-poshagovoe-rukovodstvo-dlya-nachinayushchih
   publisher: vc.ru
   date: 2023-06-23
   language: ru
-
+  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-1.png
+  render-style: featured-horizontal
 - title: "Создание бота Telegram с голосовой поддержкой для чата GPT без DevOps: подробный гайд"
   alternative_title: "Creating a Telegram Bot with Voice Support for GPT Chat Without DevOps: A Detailed Guide"
   url: https://vc.ru/u/343006-kirill-markin/762087-sozdanie-bota-telegram-s-golosovoy-podderzhkoy-dlya-chata-gpt-bez-devops-podrobnyy-gayd
   publisher: vc.ru
   date: 2023-07-18
   language: ru
-
 - title: 'LOW CODE - тренд на "упрощенку"'
   alternative_title: "LOW CODE - Trend on 'Simplification'"
   url: https://www.facebook.com/watch/?v=2846719108881072&ref=sharing
@@ -269,14 +268,12 @@
   date: 2021-05-19
   type: Video
   language: ru
-
 - title: "Автоматизация процессов с помощью CRM: как проще всего это сделать?"
   alternative_title: "Automation of Processes with CRM: How to Do It the Simplest Way?"
   url: https://vc.ru/marketing/212774-avtomatizaciya-processov-s-pomoshyu-crm-kak-proshe-vsego-eto-sdelat
   publisher: VC.RU
   date: 2021-02-24
   language: ru
-
 - title: "ИИ-инструменты для агентов по недвижимости"
   alternative_title: "AI Tools for Real Estate Agents"
   url: https://www.youtube.com/live/utRAu4_f1mo?si=I2cyJL-ZqiV3dWrU
@@ -285,7 +282,6 @@
   type: Video
   language: ru
   website_logo_url: /data/webstie_logos/youtube.png
-
 - title: "CRM для школы актёрского мастерства Gogol School: пример внедрения ozma.io"
   alternative_title: "CRM for the Gogol School of Acting: An Example of Implementation of ozma.io"
   url: https://ozma.io/ru/articles/crm-dlya-shkoly-aktyorskogo-masterstva/
@@ -293,7 +289,8 @@
   date: 2022-02-21
   language: ru
   website_logo_url: /data/webstie_logos/ozma.svg
-
+  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-1.png
+  render-style: featured-vertical
 - title: "CRM для провайдера: пример внедрения ozma.io"
   alternative_title: "CRM for the Provider: An Example of Implementation of ozma.io"
   url: https://ozma.io/ru/articles/crm-dlya-provajdera/
