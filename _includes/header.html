@@ -1,12 +1,113 @@
 <header>
-  <div class="social-links">
-    {% for link in site.data.social_links %}
-      {% if link.header == true %}
-        <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
-          <img src="{{ link.social_logo_url_default }}" alt="{{ link.name }}" class="icon-default">
-          <img src="{{ link.social_logo_url_hover }}" alt="{{ link.name }}" class="icon-hover">
+  <div class="header-desktop-container">
+    <div class="left-column">
+      
+    </div>
+    <div class="right-column">
+      <a class="header-desktop-button header-services" href="/">Services</a>
+      <a class="header-desktop-button header-book-a-meeting" href="https://calendar.app.google/pgnsq3MDbKkVwviV8" target="_blank" rel="noopener noreferrer">Book a meeting</a>
+      <div class="header-desktop-button header-learn-more">
+        <div class="header-learn-more-text">
+          Learn more
+        </div>
+        <div class="header-learn-more-social-links">
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+              <g clip-path="url(#clip0_489_4332)">
+                <path d="M7.50258 6.08594C11.5524 6.08594 14.8352 9.39165 14.8352 13.4692C14.8352 17.5467 11.5522 20.8521 7.50258 20.8521C3.45297 20.8521 0.169678 17.5467 0.169678 13.4692C0.169678 9.39165 3.45272 6.08594 7.50258 6.08594ZM19.2127 6.51843C21.2376 6.51843 22.8792 9.63007 22.8792 13.4692H22.8794C22.8794 17.3073 21.2379 20.4199 19.213 20.4199C17.188 20.4199 15.5465 17.3073 15.5465 13.4692C15.5465 9.63106 17.1878 6.51843 19.2127 6.51843ZM24.8802 7.2424C25.5922 7.2424 26.1697 10.0302 26.1697 13.4692C26.1697 16.9072 25.5924 19.6959 24.8802 19.6959C24.1679 19.6959 23.5909 16.9079 23.5909 13.4692C23.5909 10.0304 24.1682 7.2424 24.8802 7.2424Z" fill="#232323"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_489_4332">
+                  <rect width="26" height="26" fill="white" transform="translate(0.169678 0.5)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+              <path d="M24.7851 11.0039C24.4562 9.51198 23.0934 8.54471 21.7417 8.84309C21.2809 8.9444 20.884 9.18168 20.5703 9.50643C18.7509 8.18523 16.2667 7.3123 13.4925 7.14715L14.8206 1.61814L18.7606 2.56046C18.8258 3.63741 19.7182 4.4909 20.8118 4.4909C21.9054 4.4909 22.8685 3.56938 22.8685 2.43415C22.8685 1.29892 21.947 0.377441 20.8118 0.377441C19.9888 0.377441 19.2797 0.861757 18.9521 1.56121L14.6777 0.538415C14.3418 0.457922 14.0046 0.664717 13.9227 1.00057L12.453 7.1194C9.3582 7.13605 6.56593 8.03121 4.56193 9.46482C4.4634 9.37323 4.35793 9.28856 4.24275 9.21362C3.0756 8.46837 1.46295 8.90831 0.641368 10.1948C-0.180216 11.4827 0.0987341 13.13 1.26588 13.8753C1.33527 13.9197 1.40606 13.9585 1.47822 13.9946C1.43104 14.2819 1.40605 14.5747 1.40605 14.8703C1.40605 19.1517 6.38969 22.6226 12.5377 22.6226C18.6857 22.6226 23.6693 19.1517 23.6693 14.8703C23.6693 14.5706 23.6429 14.2749 23.5944 13.9849C24.5422 13.4339 25.0585 12.2335 24.7879 11.0039H24.7851ZM6.82963 13.0745C6.82963 12.0989 7.62068 11.3078 8.59631 11.3078C9.57194 11.3078 10.363 12.0989 10.363 13.0745C10.363 14.0501 9.57194 14.8412 8.59631 14.8412C7.62068 14.8412 6.82963 14.0501 6.82963 13.0745ZM16.6415 18.6521C16.0988 19.1448 14.6 20.2939 12.4059 20.3147C12.3864 20.3147 12.3656 20.3147 12.3462 20.3147C10.1229 20.3147 8.60463 19.1545 8.05089 18.6521C7.87325 18.4911 7.86076 18.2163 8.02175 18.0401C8.18274 17.8624 8.45753 17.8499 8.63378 18.0109C9.11535 18.4495 10.4463 19.4668 12.3975 19.4487C14.2947 19.4307 15.5895 18.4384 16.0585 18.0123C16.2362 17.8513 16.5096 17.8638 16.6706 18.0415C16.8316 18.2191 16.8191 18.4925 16.6415 18.6535V18.6521ZM16.4277 14.8412C15.4521 14.8412 14.661 14.0501 14.661 13.0745C14.661 12.0989 15.4521 11.3078 16.4277 11.3078C17.4034 11.3078 18.1944 12.0989 18.1944 13.0745C18.1944 14.0501 17.4034 14.8412 16.4277 14.8412Z" fill="#232323"/>
+            </svg>
+          </a>
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+              <g clip-path="url(#clip0_489_4338)">
+                <path d="M13.0819 8.8875L20.7276 0H18.9158L12.2771 7.71689L6.97474 0H0.859098L8.8773 11.6693L0.859098 20.9892H2.67099L9.68168 12.8399L15.2814 20.9892H21.397L13.0815 8.8875H13.0819ZM10.6003 11.7721L9.7879 10.6101L3.32383 1.36396H6.10679L11.3234 8.8259L12.1358 9.9879L18.9167 19.6873H16.1337L10.6003 11.7726V11.7721Z" fill="#232323"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_489_4338">
+                  <rect width="20.5379" height="21" fill="white" transform="translate(0.859619)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-mobile">
+    <div class="header-mobile-container">
+      <div class="header-mobile-button-container">
+        <button class="header-mobile-button closed">
+          <div class="header-mobile-button-closed">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M14 12H4M18 17H4M20 7H4" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="header-mobile-button-open">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M6 6L18 18" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18 6L6 18" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="social-links">
+        {% for link in site.data.social_links %}
+          {% if link.header == true %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
+              <img src="{{ link.social_logo_url_default }}" alt="{{ link.name }}" class="icon-default">
+              <img src="{{ link.social_logo_url_hover }}" alt="{{ link.name }}" class="icon-hover">
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="header-mobile-menu-open hidden">
+      <div class="header-mobile-menu-section title">
+        Kirill Markin
+      </div>
+      <!-- <div class="header-mobile-menu-section button">
+        <a href="/">Services</a>
+      </div> -->
+      <div class="header-mobile-menu-section button">
+        <a class="header-mobile-book-a-meeting" href="https://calendar.app.google/pgnsq3MDbKkVwviV8" target="_blank" rel="noopener noreferrer">
+          Book a meeting
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4.22559 20L20 4M20 4V17M20 4H7" stroke="#353C2A" stroke-width="2"/>
+          </svg>
         </a>
-      {% endif %}
-    {% endfor %}
+      </div>
+      <div class="header-mobile-menu-section contacts">
+        Contacts
+        <div class="header-mobile-menu-section-contacts">
+          <a href="mailto:markinkirill@gmail.com" class="footer-email">
+              <svg class="header-social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 4.5H6C3.79086 4.5 2 6.29086 2 8.5V17.5C2 19.7091 3.79086 21.5 6 21.5H18C20.2091 21.5 22 19.7091 22 17.5V8.5C22 6.29086 20.2091 4.5 18 4.5ZM6 6.09H18C19.0657 6.09204 20.0025 6.79663 20.3 7.82L12.76 13.41C12.5534 13.612 12.2732 13.721 11.9843 13.7115C11.6955 13.7021 11.423 13.5751 11.23 13.36L3.72 7.83C4.01175 6.80973 4.9389 6.10216 6 6.09ZM3.59 17.5C3.59 18.831 4.66899 19.91 6 19.91H18C19.3271 19.9045 20.4 18.8271 20.4 17.5V9.47L13.6 14.47C13.1654 14.8746 12.5938 15.0997 12 15.1C11.3827 15.0902 10.7911 14.8514 10.34 14.43L3.59 9.43V17.5Z" fill="#232323"/>
+              </svg>
+              markinkirill@gmail.com
+          </a>
+          <a href="tel:+31 6 253 51137" class="footer-phone">
+              <svg class="header-social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.24 2.50222H16.74C18.1118 2.46192 19.4428 2.97191 20.4365 3.9186C21.4301 4.86529 22.0039 6.17004 22.03 7.54222V15.1322C21.9483 17.9531 19.6116 20.1827 16.79 20.1322H15.17C14.7628 20.1333 14.3775 20.3168 14.12 20.6322L12.59 22.5822C12.3337 22.8994 11.9478 23.0837 11.54 23.0837C11.1322 23.0837 10.7463 22.8994 10.49 22.5822L8.91 20.5922C8.6525 20.2768 8.2672 20.0933 7.86 20.0922H6.24C3.41843 20.1427 1.08174 17.9131 1 15.0922V7.50222C1.07637 4.67899 3.4163 2.44624 6.24 2.50222ZM16.75 18.6322C18.7585 18.6827 20.4301 17.1004 20.49 15.0922V7.54222C20.4301 5.52999 18.7523 3.94617 16.74 4.00222H6.24C4.22766 3.94617 2.54989 5.52999 2.49 7.54222V15.0922C2.54989 17.1044 4.22766 18.6883 6.24 18.6322H7.86C8.7271 18.6324 9.5473 19.0259 10.09 19.7022L11.49 21.4822L12.89 19.7022C13.4327 19.0259 14.2529 18.6324 15.12 18.6322H16.75Z" fill="#232323"/>
+                <path d="M7.74 9.46222C7.32579 9.46222 6.99 9.79801 6.99 10.2122V12.6122C6.99 13.0264 7.32579 13.3622 7.74 13.3622C8.15421 13.3622 8.49 13.0264 8.49 12.6122V10.2122C8.49 9.79801 8.15421 9.46222 7.74 9.46222Z" fill="#232323"/>
+                <path d="M11.49 9.46222C11.0758 9.46222 10.74 9.79801 10.74 10.2122V12.6122C10.74 13.0264 11.0758 13.3622 11.49 13.3622C11.9042 13.3622 12.24 13.0264 12.24 12.6122V10.2122C12.24 9.79801 11.9042 9.46222 11.49 9.46222Z" fill="#232323"/>
+                <path d="M15.24 9.46222C14.8258 9.46222 14.49 9.79801 14.49 10.2122V12.6122C14.49 13.0264 14.8258 13.3622 15.24 13.3622C15.6542 13.3622 15.99 13.0264 15.99 12.6122V10.2122C15.99 9.79801 15.6542 9.46222 15.24 9.46222Z" fill="#232323"/>
+              </svg>
+              +31 6 253 51137
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
+<script src="{{ '/assets/js/mobile-menu.js' | relative_url }}"></script>
