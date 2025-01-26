@@ -32,7 +32,7 @@
   social_logo_url_hover:
   footer_bottom: true
 - name: Twitter
-  url: https://twitter.com/kirill_markin_
+  url: https://x.com/kirill_markin_
   username: "@kirill_markin_"
   social_logo_url_default: /data/social_logos/xcom.png
   social_logo_url_hover: /data/social_logos/xcom_hover.png
@@ -73,6 +73,9 @@
   footer_bottom_green_line: true
   social_logo_url_default: /data/social_logos/reddit.png
   social_logo_url_hover: /data/social_logos/reddit_hover.png
+- name: Blog
+  url: https://articles.kirill-markin.com/
+  footer_bottom: true
 - name: Hacker News
   url: https://news.ycombinator.com/user?id=MarkinK
   username: "@MarkinK"
