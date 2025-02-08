@@ -154,3 +154,8 @@
 - name: Pinterest
   url: https://www.pinterest.com/kirillmarkinkira/
   username: "@kirillmarkinkira"
+- name: Bluesky
+  url: https://bsky.app/profile/kirill-markin.bsky.social
+  username: "@kirill-markin"
+  footer_bottom: true
+  footer_bottom_green_line: true
