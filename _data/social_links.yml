@@ -65,6 +65,7 @@
   username: "@kirill-markin"
   social_logo_url_default:
   social_logo_url_hover:
+  footer_bottom: true
 - name: Reddit
   url: https://www.reddit.com/user/Kirmark
   username: "@Kirmark"
