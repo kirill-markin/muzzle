@@ -14,7 +14,6 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/kirill-2024-01-21.webp
   website_logo_url: /data/webstie_logos/youtube.png
-  render-style: text-photo
 - title: "Conference Talk: AI web scraping - Data Collection reimagined with soax.com"
   url: https://youtu.be/QDFDTN30YOs?si=fpeSOig9h1el2zkK
   publisher: noah-conference.com
@@ -25,7 +24,6 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/noah-2023-12-14.webp
   website_logo_url: /data/webstie_logos/youtube.png
-  render-style: text-photo
 - title: "Conference Talk: How to handle a billion new records per day when migrating databases"
   url: https://verigram.ai/blog/Kazakhstan-AI-ML-community-is-delighted-with-VeriMeet
   publisher: verigram.ai
@@ -33,7 +31,6 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/verigram-2023-09-08.webp
   website_logo_url: /data/webstie_logos/verigram.png
-  render-style: text-photo
 - title: "Build with AI Custom ERP and CRM - No Code Required"
   url: https://youtu.be/Una8_vv6mlY?si=oaPzSTpdla7tfXmF
   publisher: ozma-io youtube channel
@@ -42,7 +39,6 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/ozma-2024-04-01.webp
   website_logo_url: /data/webstie_logos/youtube.png
-  render-style: text-photo
 - title: "Creating a voice-enabled Telegram Bot for GPT Chat without DevOps: a comprehensive guide"
   url: https://kirill-markin.medium.com/creating-a-voice-enabled-telegram-bot-for-gpt-chat-without-devops-a-comprehensive-guide-8a905241cb9c
   publisher: Medium
@@ -50,7 +46,6 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/medium-2023-06-22.webp
   website_logo_url: /data/webstie_logos/medium.png
-  render-style: featured-horizontal
 - title: "DIY Voice-Controlled GPT Chat: A Step-by-Step Guide for Beginners"
   url: https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979
   publisher: Medium
@@ -58,7 +53,6 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/medium-2023-06-08.webp
   website_logo_url: /data/webstie_logos/medium.png
-  render-style: featured-horizontal
 - title: "Where CRM is used? Discovering the Applications of CRM: Company Size, Function, and Industry"
   url: https://ozma.io/articles/where-crm-is-used-discovering-the-applications-of-crm-size-function-industry/
   publisher: Ozma Inc.
@@ -78,7 +72,6 @@
   publisher: Ozma Inc.
   date: 2022-08-27
   language: en
-  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-2.png
   website_logo_url: /data/webstie_logos/ozma.svg
 
 # БИТАЯ ССЫЛКА
@@ -109,7 +102,6 @@
   event_url: https://epicgrowth.io/ai-conference
   thumbnail_url: /data/articles_thumbnails/epicgrowth-2024-03-12.webp
   language: ru
-  render-style: featured-vertical
 - title: "Workshop: Как решить сложную большую задачу с помощью AI: пайплайны, агенты и другие шалости"
   alternative_title: "Workshop: How to Solve a Complex Big Problem with AI: Pipelines, Agents, and Other Tricks"
   url: https://youtu.be/DLLqjrj4AME?si=3JFw1azmqDLXFgS6
@@ -119,7 +111,6 @@
   event_url: https://podlodka.io/productcrew
   thumbnail_url: /data/articles_thumbnails/podlodka-2024-03-21.webp
   language: ru
-  render-style: featured-vertical
 - title: "Conference Talk: Агрегация и аналитика данных в масштабе ТОП-3 прокси-провайдера в мире: от сырых логов к инсайтам"
   alternative_title: "Conference Talk: Aggregation and Analytics of Data at the Scale of the Top 3 Proxy Providers in the World: From Raw Logs to Insights"
   url: https://matemarketing.ru/video?v=MTAwMTk4PzIjMzI5Nw
@@ -136,8 +127,6 @@
   type: Video
   language: ru
   website_logo_url: /data/webstie_logos/youtube.png
-  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-1.png
-  render-style: text-photo
 - title: "ML Product Day: Q&A session"
   alternative_title: "ML Product Day: Q&A session"
   url: https://youtu.be/wrW8N-G2L90?si=TY2UlYTXh5pOH65w
@@ -146,8 +135,6 @@
   type: Video
   language: ru
   website_logo_url: /data/webstie_logos/youtube.png
-  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-2.png
-  render-style: text-photo
 - title: "CRM-система: как сэкономить деньги и выбрать наилучший вариант"
   alternative_title: "CRM System: How to Save Money and Choose the Best Option"
   url: https://rb.ru/opinion/best-crm/
@@ -160,8 +147,6 @@
   publisher: Журнал "Генеральный директор"
   date: 2022-07-12
   language: ru
-  render-style: featured-vertical
-  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-2.png
 - title: "Как с помощью ChatGPT автоматизировать техподдержку за 2 дня"
   alternative_title: "How to Automate Customer Support with ChatGPT in 2 Days"
   url: https://my.epicgrowth.io/programs/markin?category_id=135092
@@ -169,8 +154,6 @@
   date: 2023-06-08
   type: Video
   language: ru
-  render-style: featured-horizontal
-  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-1.png
 - title: "Грядущие продукты на основе Chat-GPT: что ожидать в наших приложениях и системах"
   alternative_title: "Upcoming Products Based on Chat-GPT: What to Expect in Our Applications and Systems"
   url: https://www.comnews.ru/digital-economy/content/227470/2023-07-16/2023-w28/gryaduschie-produkty-osnove-chat-gpt-chto-ozhidat-nashikh-prilozheniyakh-i-sistemakh
@@ -203,8 +186,6 @@
   type: Video
   language: ru
   website_logo_url: /data/webstie_logos/youtube.png
-  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-2.png
-  render-style: featured-horizontal
 - title: "ЗА ЖИЗНЬ: актер и IT-специалист о бомжевании и мнениях других людей"
   alternative_title: "FOR LIFE: Actor and IT Specialist on Homelessness and the Opinions of Others"
   url: https://youtu.be/VD-ZF4wNT-E
@@ -213,8 +194,6 @@
   type: Video
   language: ru
   website_logo_url: /data/webstie_logos/youtube.png
-  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-1.png
-  render-style: featured-horizontal
 - title: "Применение долгосрочной памяти в GPT-чатах для бизнеса: практические примеры и случаи использования"
   alternative_title: "Application of Long-Term Memory in GPT Chats for Business: Practical Examples and Cases of Use"
   url: https://digital-report.ru/primenenie-dolgosrochnoj-pamjati-v-gpt-chatah-dlja-biznesa-prakticheskie-primery-i-sluchai-ispolzovanija/
@@ -245,16 +224,12 @@
   publisher: Bauman Moscow state technical University
   date: 2021-10-28
   language: ru
-  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-2.png
-  render-style: featured-vertical
 - title: "Голосовой чат GPT своими руками: пошаговое руководство для начинающих"
   alternative_title: "Voice Chat GPT with Your Own Hands: Step-by-Step Guide for Beginners"
   url: https://vc.ru/chatgpt/734427-golosovoy-chat-gpt-svoimi-rukami-poshagovoe-rukovodstvo-dlya-nachinayushchih
   publisher: vc.ru
   date: 2023-06-23
   language: ru
-  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-1.png
-  render-style: featured-horizontal
 - title: "Создание бота Telegram с голосовой поддержкой для чата GPT без DevOps: подробный гайд"
   alternative_title: "Creating a Telegram Bot with Voice Support for GPT Chat Without DevOps: A Detailed Guide"
   url: https://vc.ru/u/343006-kirill-markin/762087-sozdanie-bota-telegram-s-golosovoy-podderzhkoy-dlya-chata-gpt-bez-devops-podrobnyy-gayd
@@ -289,8 +264,6 @@
   date: 2022-02-21
   language: ru
   website_logo_url: /data/webstie_logos/ozma.svg
-  thumbnail_url: /data/articles_thumbnails/articles-screen-saver-1.png
-  render-style: featured-vertical
 - title: "CRM для провайдера: пример внедрения ozma.io"
   alternative_title: "CRM for the Provider: An Example of Implementation of ozma.io"
   url: https://ozma.io/ru/articles/crm-dlya-provajdera/
