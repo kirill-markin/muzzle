@@ -38,114 +38,7 @@ lang: en
     <div class="articles">
       <h2>Articles and mentions</h2>
 
-      <div class="media-mentions" id="media-mentions-container">
-        {% for mention in site.data.media_mentions %}
-          {% assign card_style = "mention-card-text" %}
-          {% if mention.render-style %}
-            {% assign card_style = "mention-card-" | append: mention.render-style %}
-          {% elsif mention.type == "Video" and mention.thumbnail_url %}
-            {% assign card_style = "mention-card-video" %}
-          {% elsif mention.thumbnail_url and mention.type != "Video" %}
-            {% assign card_style = "mention-card-text-photo" %}
-          {% endif %}
-      
-          <a href="{{ mention.url }}" target="_blank" rel="noopener noreferrer" class="media-mention {{ card_style }}">
-            {% if card_style == "mention-card-featured-vertical" %}
-              <div class="media-featured-content">
-                <div class="media-mention-ln">
-                  <div class="media-mention-ln-txt">[{{ mention.language }}]</div>
-                </div>
-                <div class="media-info">
-                  <div class="media-info-title">
-                    {% if mention.language == "en" %}
-                      {{ mention.title }}
-                    {% else %}
-                      {{ mention.alternative_title }}
-                    {% endif %}
-                  </div>
-                  {% if mention.description %}
-                    <div class="media-info-description">{{ mention.description }}</div>
-                  {% endif %}
-                </div>
-                {% if mention.website_logo_url %}
-                  <div class="media-info-bottom">
-                    <hr class="media-mention-divider">
-                    <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
-                  </div>
-                {% endif %}
-              </div>
-              {% if mention.thumbnail_url %}
-                <img class="media-mention-thumbnail" src="{{ mention.thumbnail_url }}" alt="{% if mention.language == 'en' %}{{ mention.title }}{% else %}{{ mention.alternative_title }}{% endif %}">
-              {% endif %}
-      
-            {% elsif card_style == "mention-card-featured-horizontal" %}
-              <div class="media-mention-ln">
-                <div class="media-mention-ln-txt">[{{ mention.language }}]</div>
-              </div>
-              <div class="media-featured-content">
-                <div class="media-info">
-                  <div class="media-info-title">
-                    {% if mention.language == "en" %}
-                      {{ mention.title }}
-                    {% else %}
-                      {{ mention.alternative_title }}
-                    {% endif %}
-                  </div>
-                </div>
-                <hr class="media-mention-divider">
-                {% if mention.website_logo_url %}
-                  <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
-                {% endif %}
-              </div>
-              {% if mention.thumbnail_url %}
-                <div class="thumbnail-gradient"></div>
-                <img class="media-mention-thumbnail" src="{{ mention.thumbnail_url }}" alt="{% if mention.language == 'en' %}{{ mention.title }}{% else %}{{ mention.alternative_title }}{% endif %}">
-              {% endif %}
-      
-            {% else %}
-              <div class="media-mention-ln">
-                <div class="media-mention-ln-txt">[{{ mention.language }}]</div>
-              </div>
-      
-              <div class="media-info">
-                <div class="media-info-title">
-                  {% if mention.language == "en" %}
-                    {{ mention.title }}
-                  {% else %}
-                    {{ mention.alternative_title }}
-                  {% endif %}
-                </div>
-                {% if mention.description and card_style != "mention-card-text-photo" %}
-                  <div class="media-info-description">{{ mention.description }}</div>
-                {% endif %}
-              </div>
-      
-              {% if mention.thumbnail_url %}
-                <img class="media-mention-thumbnail" src="{{ mention.thumbnail_url }}" alt="{% if mention.language == 'en' %}{{ mention.title }}{% else %}{{ mention.alternative_title }}{% endif %}">
-                <div class="thumbnail-gradient"></div>
-                {% if mention.website_logo_url %}
-                  {% if card_style == "mention-card-text-photo" %}
-                    <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
-                  {% endif %}
-                {% endif %}
-              {% endif %}
-      
-              {% if card_style == "mention-card-video" %}
-                <img class="video-icon" src="data/icons/video.svg" alt="Video Icon">
-              {% endif %}
-      
-              {% unless card_style == "mention-card-video" or card_style == "mention-card-text-photo" %}
-                {% if mention.website_logo_url %}
-                  <div class="media-info-bottom">
-                    <hr class="media-mention-divider">
-                    <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
-                  </div>
-                {% endif %}
-              {% endunless %}
-            {% endif %}
-          </a>
-        {% endfor %}
-      </div>
+      {% include media-mentions.html %}
 
     </div>
     <!-- <div class="other-language">
@@ -161,6 +54,5 @@ lang: en
       </div>
     </div> -->
     </div>
-  </div>
 
 </div>
