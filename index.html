@@ -9,29 +9,7 @@ lang: en
 <!-- MAIN CONTENT -->
 <div id="main-page-content">
   <div class="left-column">
-    <div class="personal-info">
-      <h1 class="personal-name">{{ site.data.personal_info.name }}</h1>
-    </div>
-    <div class="personal-contacts">
-      <div class="avatas-and-titils">
-        <img src="/data/Kirill-Markin.webp" alt="Picture of {{ site.data.personal_info.name }}" width="100%">
-        <div class="personal-titles">
-          <p>{{ site.data.personal_info.job_title }}</p>
-          <p>{{ site.data.personal_info.secondary_title }}</p>
-          <p class="tertiary-title">{{ site.data.personal_info.tertiary_title }}</p>
-        </div>
-      </div>
-      <div class="social-links">
-        {% for link in site.data.social_links %}
-          {% if link.avatar_contact == true %}
-            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
-              <img src="{{ link.social_logo_url_default }}" alt="{{ link.name }}" class="icon-default">
-              <img src="{{ link.social_logo_url_hover }}" alt="{{ link.name }}" class="icon-hover">
-            </a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
+    {% include personal-info.html %}
   </div>
 
   <div class="right-column">

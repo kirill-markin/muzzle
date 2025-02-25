@@ -1,0 +1,65 @@
+<div class="services">
+    <div class="services-header">
+        <h2>Services</h2>
+        <a href="/" class="services-back-button">
+            <img src="/data/icons/arrow.svg" alt="Arrow icon" class="arrow-icon" style="transform: rotate(180deg);">
+            <span>Back to main</span>
+        </a>
+    </div>
+    
+    <div class="services-menu">
+        <span>Categories</span>
+        <div class="services-menu-categories">
+            <button class="services-menu-category active" data-category="all">All</button>
+            {% assign categories = "" | split: "" %}
+            {% for service in site.data.services.services %}
+                {% unless categories contains service.category_id %}
+                    {% assign categories = categories | push: service.category_id %}
+                {% endunless %}
+            {% endfor %}
+            
+            {% for category in categories %}
+                <button class="services-menu-category" data-category="{{ category }}">
+                    {{ category | remove: 'for_' | capitalize }}
+                </button>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="services-list">
+        {% for service in site.data.services.services %}
+        <div class="service-card" data-category="{{ service.category_id }}">
+            <div class="service-card-category">
+                <span>{{ service.category_id | remove: 'for_' | capitalize }}</span>
+            </div>
+            <div class="service-card-image">
+                {% if service.logo_url != "" %}
+                <img src="{{ service.logo_url }}" alt="{{ service.name }}" class="service-image">
+                {% else %}
+                <img src="/data/articles_thumbnails/articles-screen-saver-1.png" alt="{{ service.name }}" class="service-image">
+                {% endif %}
+            </div>
+            <div class="service-card-content">
+                <h3>{{ service.name }}</h3>
+                <div class="service-description">
+                    {% assign paragraphs = service.description | newline_to_br | split: '<br />' %}
+                    {% assign first_paragraph = paragraphs | first %}
+                    <div class="service-short-description">
+                        {{ first_paragraph | markdownify }}
+                    </div>
+                    <div class="service-full-description" style="display: none;">
+                        {{ service.description | markdownify }}
+                    </div>
+                </div>
+                <div class="service-actions">
+                    <button class="service-button">Learn more</button>
+                    <div class="service-buttons" style="display: none;">
+                        <a href="{{ service.button_url }}" class="service-button">{{ service.button_text }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
