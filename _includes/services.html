@@ -2,7 +2,7 @@
     <div class="services-header">
         <h2>Services</h2>
         <a href="/" class="services-back-button">
-            <img src="/data/icons/arrow.svg" alt="Arrow icon" class="arrow-icon" style="transform: rotate(180deg);">
+            <img src="/data/icons/arrow.svg" alt="Arrow icon" class="arrow-icon">
             <span>Back to main</span>
         </a>
     </div>
@@ -63,3 +63,56 @@
     </div>
 
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Learn more button functionality
+    const learnMoreButtons = document.querySelectorAll('.service-button');
+    
+    learnMoreButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const card = this.closest('.service-card');
+            const shortDesc = card.querySelector('.service-short-description');
+            const fullDesc = card.querySelector('.service-full-description');
+            const serviceButtons = card.querySelector('.service-buttons');
+            
+            if (fullDesc.style.display === 'none') {
+                shortDesc.style.display = 'none';
+                fullDesc.style.display = 'block';
+                serviceButtons.style.display = 'block';
+                this.textContent = 'Show less';
+            } else {
+                shortDesc.style.display = 'block';
+                fullDesc.style.display = 'none';
+                serviceButtons.style.display = 'none';
+                this.textContent = 'Learn more';
+            }
+        });
+    });
+
+    // Category filtering functionality
+    const categoryButtons = document.querySelectorAll('.services-menu-category');
+    const serviceCards = document.querySelectorAll('.service-card');
+    
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            const selectedCategory = this.getAttribute('data-category');
+            
+            // Show/hide service cards based on category
+            serviceCards.forEach(card => {
+                if (selectedCategory === 'all' || card.getAttribute('data-category') === selectedCategory) {
+                    card.style.display = 'flex';  // or whatever display type you're using
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
