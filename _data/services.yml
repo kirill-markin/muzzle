@@ -10,7 +10,7 @@ services:
       ### Examples of Realized Projects:
       - **Ozma.io**: Kirill Markin, founder of Ozma.io, led the company to success with innovative solutions and strategic planning.
       - **R&D Leadership**: Kirill Markin has headed the R&D departments in several companies, launching new products from scratch, a process very similar to creating a startup.
-    logo_url: ""
+    logo_url: "/data/services_thumbnails/startup.png"
     promo_text: ""
     button_text: "Book a call"
     button_url: "____"
@@ -67,7 +67,7 @@ services:
     name: "Free 15-Minute Welcome Meeting"
     description: |
       Schedule a free 15-minute welcome meeting with me. Choose any convenient time slot, and I will be happy to meet you. Whether we decide to work together or simply get acquainted, this session is a great opportunity to connect.
-    logo_url: ""
+    logo_url: "/data/services_thumbnails/welcome.png"
     promo_text: ""
     button_text: "Book a call"
     button_url: "____"
