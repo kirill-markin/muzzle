@@ -1,10 +1,91 @@
 <div class="services">
     <div class="services-header">
-        <h2>Services</h2>
+        <div class="services-header-title">
+            <h2 class="services-title">Services</h2>
+            <span class="service-detail-title" style="display: none;"> / <span class="service-name"></span></span>
+        </div>
         <a href="/" class="services-back-button">
             <img src="/data/icons/arrow.svg" alt="Arrow icon" class="arrow-icon">
             <span>Back to main</span>
         </a>
+    </div>
+    
+    <!-- Pre-process service data with Jekyll -->
+    <div id="services-data" style="display: none;">
+        {% for service in site.data.services.services %}
+        <div class="service-data" data-service-id="{{ service.service_id }}">
+            <div class="service-name">{{ service.name }}</div>
+            {% assign paragraphs = service.description | newline_to_br | split: '<br />' %}
+            {% assign first_paragraph = paragraphs | first %}
+            <div class="service-first-paragraph">{{ first_paragraph | markdownify }}</div>
+            
+            <div class="service-features">
+                {% assign remaining_paragraphs = service.description | remove_first: first_paragraph | newline_to_br | split: '<br />' %}
+                {% assign in_feature_section = false %}
+                {% assign current_feature = "" %}
+                
+                {% for paragraph in remaining_paragraphs %}
+                    {% assign trimmed_paragraph = paragraph | strip %}
+                    {% if trimmed_paragraph contains '###' %}
+                        {% if in_feature_section %}
+                            <div class="feature-section" data-title="{{ current_feature }}">
+                                {{ feature_items }}
+                            </div>
+                        {% endif %}
+                        
+                        {% assign in_feature_section = true %}
+                        {% assign current_feature = trimmed_paragraph | remove: '###' | strip %}
+                        {% assign feature_items = "" %}
+                    {% elsif trimmed_paragraph contains '-' and in_feature_section %}
+                        {% assign item = trimmed_paragraph | remove_first: '-' | strip %}
+                        
+                        {% comment %}Check if item has bold title format{% endcomment %}
+                        {% if item contains '**' and item contains ':' %}
+                            {% assign parts = item | split: ':' %}
+                            {% assign title_part = parts | first %}
+                            {% assign desc_part = item | remove_first: title_part | remove_first: ':' | strip %}
+                            
+                            {% assign title = title_part | remove: '**' | strip %}
+                            
+                            {% capture formatted_item %}
+                            <div class="feature-item-data" data-has-title="true">
+                                <div class="feature-title-data">{{ title }}</div>
+                                <div class="feature-desc-data">{{ desc_part }}</div>
+                            </div>
+                            {% endcapture %}
+                            
+                            {% if feature_items != "" %}
+                                {% assign feature_items = feature_items | append: formatted_item %}
+                            {% else %}
+                                {% assign feature_items = formatted_item %}
+                            {% endif %}
+                        {% else %}
+                            {% capture formatted_item %}
+                            <div class="feature-item-data" data-has-title="false">
+                                <div class="feature-desc-data">{{ item }}</div>
+                            </div>
+                            {% endcapture %}
+                            
+                            {% if feature_items != "" %}
+                                {% assign feature_items = feature_items | append: formatted_item %}
+                            {% else %}
+                                {% assign feature_items = formatted_item %}
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                
+                {% if in_feature_section %}
+                    <div class="feature-section" data-title="{{ current_feature }}">
+                        {{ feature_items }}
+                    </div>
+                {% endif %}
+            </div>
+            
+            <div class="service-button-text">{{ service.button_text }}</div>
+            <div class="service-button-url">{{ service.button_url }}</div>
+        </div>
+        {% endfor %}
     </div>
     
     <div class="services-menu">
@@ -47,49 +128,196 @@
                     <div class="service-short-description">
                         {{ first_paragraph | markdownify }}
                     </div>
-                    <div class="service-full-description" style="display: none;">
-                        {{ service.description | markdownify }}
-                    </div>
                 </div>
                 <div class="service-actions">
-                    <button class="service-button">Learn more</button>
-                    <div class="service-buttons" style="display: none;">
-                        <a href="{{ service.button_url }}" class="service-button">{{ service.button_text }}</a>
-                    </div>
+                    <button class="service-button" data-service-id="{{ service.service_id }}">Learn more</button>
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
 
+    <div class="service-detail" style="display: none;">
+        <div class="service-detail-content">
+            <div class="service-detail-description">
+                <!-- First paragraph will be inserted here -->
+            </div>
+            <hr>
+            <div class="service-detail-features">
+                <!-- Features will be inserted here -->
+            </div>
+            <div class="service-detail-action">
+                <a href="#" class="service-detail-button" target="_blank">Contact</a>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> -->
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Learn more button functionality
     const learnMoreButtons = document.querySelectorAll('.service-button');
+    const servicesList = document.querySelector('.services-list');
+    const serviceDetail = document.querySelector('.service-detail');
+    const servicesTitle = document.querySelector('.services-title');
+    const serviceDetailTitle = document.querySelector('.service-detail-title');
+    const serviceNameSpan = document.querySelector('.service-name');
+    const servicesMenu = document.querySelector('.services-menu');
+    const backButton = document.querySelector('.services-back-button');
+    const backButtonText = backButton.querySelector('span');
+    
+    // Store the original back button attributes
+    const originalBackHref = backButton.getAttribute('href');
+    const originalBackText = backButtonText.textContent;
+    
+    // Function to show service list and hide detail view
+    function showServicesList() {
+        serviceDetail.style.display = 'none';
+        servicesList.style.display = 'grid';
+        serviceDetailTitle.style.display = 'none';
+        servicesTitle.classList.remove('active-service');
+        servicesMenu.style.display = 'flex';
+        
+        // Restore original back button
+        backButton.setAttribute('href', originalBackHref);
+        backButtonText.textContent = originalBackText;
+    }
+    
+    // Make services title clickable to go back to list
+    servicesTitle.addEventListener('click', function() {
+        if (serviceDetail.style.display !== 'none') {
+            showServicesList();
+        }
+    });
+    
+    // Make back button work like the title when in detail view
+    backButton.addEventListener('click', function(e) {
+        if (serviceDetail.style.display !== 'none') {
+            e.preventDefault(); // Prevent default link behavior
+            showServicesList();
+        }
+    });
     
     learnMoreButtons.forEach(button => {
         button.addEventListener('click', function() {
+            const serviceId = this.getAttribute('data-service-id');
             const card = this.closest('.service-card');
-            const shortDesc = card.querySelector('.service-short-description');
-            const fullDesc = card.querySelector('.service-full-description');
-            const serviceButtons = card.querySelector('.service-buttons');
+            const serviceName = card.querySelector('h3').textContent;
             
-            if (fullDesc.style.display === 'none') {
-                shortDesc.style.display = 'none';
-                fullDesc.style.display = 'block';
-                serviceButtons.style.display = 'block';
-                this.textContent = 'Show less';
-            } else {
-                shortDesc.style.display = 'block';
-                fullDesc.style.display = 'none';
-                serviceButtons.style.display = 'none';
-                this.textContent = 'Learn more';
-            }
+            // Find the service data
+            const serviceData = findServiceById(serviceId);
+            if (!serviceData) return;
+            
+            // Update service detail view
+            updateServiceDetailView(serviceData);
+            
+            // Update header
+            serviceNameSpan.textContent = serviceName;
+            serviceDetailTitle.style.display = 'inline';
+            
+            // Add underline and gray color to services title
+            servicesTitle.classList.add('active-service');
+            
+            // Change back button to go to services page
+            backButton.setAttribute('href', '#');
+            backButtonText.textContent = 'Back';
+            
+            // Hide list, show detail
+            servicesList.style.display = 'none';
+            serviceDetail.style.display = 'block';
+            // Hide the services menu
+            servicesMenu.style.display = 'none';
+            
+            // Scroll to the top of the page
+            window.scrollTo({
+                top: 0,
+            });
         });
     });
-
+    
+    function findServiceById(serviceId) {
+        // Get service data from the pre-processed HTML
+        return document.querySelector(`.service-data[data-service-id="${serviceId}"]`);
+    }
+    
+    function updateServiceDetailView(serviceElement) {
+        const detailDescription = document.querySelector('.service-detail-description');
+        const detailFeatures = document.querySelector('.service-detail-features');
+        const detailButton = document.querySelector('.service-detail-button');
+        
+        // Get pre-processed data
+        const firstParagraph = serviceElement.querySelector('.service-first-paragraph').innerHTML;
+        const featureSections = serviceElement.querySelectorAll('.feature-section');
+        const buttonText = serviceElement.querySelector('.service-button-text').textContent;
+        const buttonUrl = serviceElement.querySelector('.service-button-url').textContent;
+        
+        // Set first paragraph
+        detailDescription.innerHTML = firstParagraph;
+        
+        // Process features
+        let featuresHTML = '';
+        
+        featureSections.forEach(section => {
+            const title = section.getAttribute('data-title');
+            const featureItems = section.querySelectorAll('.feature-item-data');
+            
+            featuresHTML += `<h3>${title}</h3><div class="feature-grid">`;
+            
+            featureItems.forEach(item => {
+                const hasTitle = item.getAttribute('data-has-title') === 'true';
+                
+                if (hasTitle) {
+                    const title = item.querySelector('.feature-title-data').textContent;
+                    const description = item.querySelector('.feature-desc-data').textContent;
+                    
+                    featuresHTML += `
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M31 16C31 16.5523 31.4477 17 32 17C32.5523 17 33 16.5523 33 16H31ZM7 16C7 16.5523 7.44772 17 8 17C8.55228 17 9 16.5523 9 16H7ZM17 9C17.5523 9 18 8.55228 18 8C18 7.44772 17.5523 7 17 7V9ZM24 7C23.4477 7 23 7.44772 23 8C23 8.55228 23.4477 9 24 9V7ZM24 31C23.4477 31 23 31.4477 23 32C23 32.5523 23.4477 33 24 33V31ZM16 33C16.5523 33 17 32.5523 17 32C17 31.4477 16.5523 31 16 31V33ZM9 24C9 23.4477 8.55228 23 8 23C7.44772 23 7 23.4477 7 24H9ZM33 24C33 23.4477 32.5523 23 32 23C31.4477 23 31 23.4477 31 24H33ZM12.7801 21.4954L13.5593 20.8686L12.7801 21.4954ZM12.7801 18.5046L13.5593 19.1314L12.7801 18.5046ZM27.2199 21.4954L26.4407 20.8686L27.2199 21.4954ZM27.2199 18.5046L26.4407 19.1314L27.2199 18.5046ZM28 20H29H28ZM31 14V16H33V14H31ZM9 16V14H7V16H9ZM14 9H17V7H14V9ZM24 9H26V7H24V9ZM26 31H24V33H26V31ZM16 31H14V33H16V31ZM9 26V24H7V26H9ZM31 24V26H33V24H31ZM14 31C11.2386 31 9 28.7614 9 26H7C7 29.866 10.134 33 14 33V31ZM26 33C29.866 33 33 29.866 33 26H31C31 28.7614 28.7614 31 26 31V33ZM33 14C33 10.134 29.866 7 26 7V9C28.7614 9 31 11.2386 31 14H33ZM9 14C9 11.2386 11.2386 9 14 9V7C10.134 7 7 10.134 7 14H9ZM26.4407 20.8686C25.756 21.7199 24.7868 22.7731 23.6444 23.6061C22.4952 24.4441 21.2528 25 20 25V27C21.8398 27 23.4926 26.1921 24.8228 25.2221C26.1599 24.2471 27.2543 23.0481 27.9991 22.1222L26.4407 20.8686ZM20 25C18.7472 25 17.5048 24.4441 16.3556 23.6061C15.2132 22.7731 14.244 21.7199 13.5593 20.8686L12.0009 22.1222C12.7457 23.0481 13.8401 24.2471 15.1772 25.2221C16.5074 26.1921 18.1602 27 20 27V25ZM13.5593 19.1314C14.244 18.2801 15.2132 17.2269 16.3556 16.3939C17.5048 15.5559 18.7472 15 20 15V13C18.1602 13 16.5074 13.8079 15.1772 14.7779C13.8401 15.7529 12.7457 16.9519 12.0009 17.8778L13.5593 19.1314ZM20 15C21.2528 15 22.4952 15.5559 23.6444 16.3939C24.7868 17.2269 25.756 18.2801 26.4407 19.1314L27.9991 17.8778C27.2543 16.9519 26.1599 15.7529 24.8228 14.7779C23.4926 13.8079 21.8398 13 20 13V15ZM13.5593 20.8686C13.2809 20.5226 13.145 20.3492 13.0631 20.206C13.0073 20.1085 13 20.0657 13 20H11C11 20.9425 11.5383 21.5471 12.0009 22.1222L13.5593 20.8686ZM12.0009 17.8778C11.5383 18.4529 11 19.0575 11 20H13C13 19.9343 13.0073 19.8915 13.0631 19.794C13.145 19.6508 13.2809 19.4774 13.5593 19.1314L12.0009 17.8778ZM27.9991 22.1222C28.4618 21.5471 29 20.9425 29 20H27C27 20.0657 26.9927 20.1085 26.9369 20.206C26.855 20.3492 26.7191 20.5226 26.4407 20.8686L27.9991 22.1222ZM26.4407 19.1314C26.7191 19.4774 26.855 19.6508 26.9369 19.794C26.9927 19.8915 27 19.9343 27 20H29C29 19.0575 28.4618 18.4529 27.9991 17.8778L26.4407 19.1314ZM21.2651 20C21.2651 20.6841 20.705 21.25 20 21.25V23.25C21.7969 23.25 23.2651 21.8012 23.2651 20H21.2651ZM20 21.25C19.295 21.25 18.7349 20.6841 18.7349 20H16.7349C16.7349 21.8012 18.2031 23.25 20 23.25V21.25ZM18.7349 20C18.7349 19.3159 19.295 18.75 20 18.75V16.75C18.2031 16.75 16.7349 18.1988 16.7349 20H18.7349ZM20 18.75C20.705 18.75 21.2651 19.3159 21.2651 20H23.2651C23.2651 18.1988 21.7969 16.75 20 16.75V18.75Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="feature-title">${title}</div>
+                            <div class="feature-description">${description}</div>
+                        </div>
+                    `;
+                } else {
+                    // Check if the description contains markdown bold syntax
+                    const description = item.querySelector('.feature-desc-data').textContent;
+                    const boldTitleMatch = description.match(/^\*\*(.*?)\*\*\s*:\s*(.*)$/);
+                    
+                    if (boldTitleMatch) {
+                        const title = boldTitleMatch[1];
+                        const desc = boldTitleMatch[2];
+                        
+                        featuresHTML += `
+                            <div class="feature-item">
+                                <div class="feature-title">${title}</div>
+                                <div class="feature-description">${desc}</div>
+                            </div>
+                        `;
+                    } else {
+                        featuresHTML += `
+                            <div class="feature-item">
+                                <div class="feature-description">${description}</div>
+                            </div>
+                        `;
+                    }
+                }
+            });
+            
+            featuresHTML += '</div>';
+        });
+        
+        detailFeatures.innerHTML = featuresHTML;
+        
+        // Set button
+        detailButton.textContent = buttonText;
+        detailButton.href = buttonUrl;
+    }
+    
     // Category filtering functionality
     const categoryButtons = document.querySelectorAll('.services-menu-category');
     const serviceCards = document.querySelectorAll('.service-card');
@@ -115,4 +343,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Add CSS for the active service title
+document.head.insertAdjacentHTML('beforeend', `
+    <style>
+        .services-title.active-service {
+            text-decoration: underline;
+            color: #939393;
+            cursor: pointer;
+        }
+        
+        .services-title {
+            cursor: pointer;
+        }
+    </style>
+`);
 </script>
