@@ -171,6 +171,9 @@ lang: en
     
     // Инициализация Auth0
     const configureClient = async () => {
+        // Правильно импортируем Auth0
+        const { createAuth0Client } = auth0;
+        
         auth0Client = await createAuth0Client({
             domain: 'dev-7w4362if0qwpz4pc.us.auth0.com',
             clientId: 'fy4KqWv3ZGaMjZSgCwagUzWU2D8K97p6',
