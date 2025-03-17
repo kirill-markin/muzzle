@@ -163,44 +163,64 @@ lang: en
     </div>
 </div>
 
-<script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.min.js"></script>
+<div id="auth0-lock-container"></div>
+
+<script src="https://cdn.auth0.com/js/lock/12.0/lock.min.js"></script>
 <script>
-    let auth0 = null;
     const loading = document.getElementById('loading');
     const mainContainer = document.getElementById('main-container');
     
-    // Auth0 Initialization
-    const configureClient = async () => {
-        try {
-            auth0 = await createAuth0Client({
-                domain: 'dev-7w4362if0qwpz4pc.us.auth0.com',
-                clientId: 'fy4KqWv3ZGaMjZSgCwagUzWU2D8K97p6',
-                authorizationParams: {
-                    redirect_uri: window.location.origin + window.location.pathname
+    // Initialize Auth0 Lock
+    const lock = new Auth0Lock(
+        'fy4KqWv3ZGaMjZSgCwagUzWU2D8K97p6',
+        'dev-7w4362if0qwpz4pc.us.auth0.com',
+        {
+            auth: {
+                redirectUrl: window.location.origin + window.location.pathname,
+                responseType: 'token id_token',
+                params: {
+                    scope: 'openid email profile'
                 }
-            });
-        } catch (error) {
-            console.error("Auth0 client initialization error:", error);
-            throw error;
+            },
+            theme: {
+                logo: '', // Add your logo URL here
+                primaryColor: '#4285F4'
+            },
+            languageDictionary: {
+                title: 'Corporate Authentication'
+            },
+            allowedConnections: ['linkedin', 'google-oauth2'],
+            container: 'auth0-lock-container',
+            closable: true
         }
-    };
+    );
     
-    // Login handling - using redirect for better compatibility
-    const loginWithRedirect = async (provider) => {
-        try {
-            loading.classList.add('active');
+    // Setup the callback for Lock
+    lock.on('authenticated', function(authResult) {
+        // Save the tokens
+        localStorage.setItem('accessToken', authResult.accessToken);
+        localStorage.setItem('idToken', authResult.idToken);
+        
+        // Get user info
+        lock.getUserInfo(authResult.accessToken, function(error, profile) {
+            if (error) {
+                console.error("Error getting user info:", error);
+                return;
+            }
             
-            await auth0.loginWithRedirect({
-                authorizationParams: {
-                    connection: provider
-                }
-            });
-        } catch (error) {
-            console.error("Login error:", error);
-            alert("Authentication failed. " + (error.error_description || error.message));
-            loading.classList.remove('active');
-        }
-    };
+            // Save profile
+            localStorage.setItem('profile', JSON.stringify(profile));
+            
+            // Show user is logged in
+            showSuccessMessage(profile);
+        });
+    });
+    
+    // Show error in case of failure
+    lock.on('authorization_error', function(error) {
+        console.error('Authentication error', error);
+        alert('Authentication error: ' + error.error_description);
+    });
     
     // Show success message
     const showSuccessMessage = (user) => {
@@ -215,58 +235,43 @@ lang: en
         `;
     };
     
-    // Logout
-    window.logout = async () => {
-        try {
-            loading.classList.add('active');
-            await auth0.logout({
-                logoutParams: {
-                    returnTo: window.location.origin + window.location.pathname
-                }
-            });
-        } catch (error) {
-            console.error("Logout error:", error);
-            window.location.reload();
-        }
+    // Logout function
+    window.logout = function() {
+        localStorage.removeItem('accessToken');
+        localStorage.removeItem('idToken');
+        localStorage.removeItem('profile');
+        
+        // Redirect to Auth0 logout
+        window.location.href = `https://dev-7w4362if0qwpz4pc.us.auth0.com/v2/logout?client_id=fy4KqWv3ZGaMjZSgCwagUzWU2D8K97p6&returnTo=${encodeURIComponent(window.location.origin + window.location.pathname)}`;
     };
     
     // Initialize on page load
-    window.onload = async () => {
-        try {
-            loading.classList.add('active');
-            await configureClient();
-            
-            // Check if there is a callback from Auth0 login
-            const query = window.location.search;
-            if (query.includes("code=") && query.includes("state=")) {
-                // Process the login state
-                await auth0.handleRedirectCallback();
-                
-                // Clear the URL parameters
-                window.history.replaceState({}, document.title, window.location.pathname);
-                
-                console.log("Redirect callback handled");
-            }
-            
-            // Check if user is authenticated
-            const isAuthenticated = await auth0.isAuthenticated();
-            if (isAuthenticated) {
-                const user = await auth0.getUser();
-                showSuccessMessage(user);
-            } else {
-                // Add event handlers for login buttons
-                document.getElementById('linkedin-login').addEventListener('click', () => loginWithRedirect('linkedin'));
-                document.getElementById('google-login').addEventListener('click', () => loginWithRedirect('google-oauth2'));
-                document.querySelector('.get-started-btn').addEventListener('click', () => {
-                    // Scroll to social buttons when clicking 'Get Started'
-                    document.querySelector('.social-providers').scrollIntoView({ behavior: 'smooth' });
+    window.onload = function() {
+        // Check if user is logged in already
+        const idToken = localStorage.getItem('idToken');
+        const profile = localStorage.getItem('profile');
+        
+        if (idToken && profile) {
+            // User is logged in, show profile
+            showSuccessMessage(JSON.parse(profile));
+        } else {
+            // Add event handlers
+            document.getElementById('linkedin-login').addEventListener('click', function() {
+                lock.show({
+                    allowedConnections: ['linkedin']
                 });
-            }
-        } catch (error) {
-            console.error("Initialization error:", error);
-            alert("Failed to initialize: " + error.message);
-        } finally {
-            loading.classList.remove('active');
+            });
+            
+            document.getElementById('google-login').addEventListener('click', function() {
+                lock.show({
+                    allowedConnections: ['google-oauth2']
+                });
+            });
+            
+            document.querySelector('.get-started-btn').addEventListener('click', function() {
+                // Scroll to social buttons when clicking 'Get Started'
+                document.querySelector('.social-providers').scrollIntoView({ behavior: 'smooth' });
+            });
         }
     };
 </script>
