@@ -1,0 +1,262 @@
+---
+layout: main
+title: Login | Kirill Markin
+description: Login page for Kirill Markin's website
+lang: en
+---
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    body {
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+    
+    .container {
+        max-width: 500px;
+        width: 100%;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding: 40px;
+        text-align: center;
+    }
+    
+    h1 {
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    p {
+        color: #666;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+    
+    .get-started-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .get-started-btn {
+        background-color: #4285F4;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .get-started-btn:hover {
+        background-color: #3367D6;
+    }
+    
+    .social-providers {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .social-btn {
+        padding: 12px 20px;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        transition: opacity 0.2s;
+        font-size: 16px;
+    }
+    
+    .social-btn:hover {
+        opacity: 0.9;
+    }
+    
+    .linkedin {
+        background-color: #0077B5;
+    }
+    
+    .google {
+        background-color: #DB4437;
+    }
+    
+    .success-message {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .logout-btn {
+        padding: 8px 16px;
+        background: #4A4A4A;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    
+    .logout-btn:hover {
+        background: #333;
+    }
+    
+    .loading {
+        display: none;
+        margin: 20px 0;
+    }
+    
+    .loading.active {
+        display: block;
+    }
+    
+    .spinner {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-left-color: #3498db;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto;
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<div class="container" id="main-container">
+    <h1>Corporate Authentication</h1>
+    <p>Please sign in with your corporate email to access our services. We only accept business email addresses.</p>
+    
+    <div class="get-started-container">
+        <button class="get-started-btn">Get Started</button>
+    </div>
+    
+    <div class="social-providers">
+        <button id="linkedin-login" class="social-btn linkedin">Continue with LinkedIn</button>
+        <button id="google-login" class="social-btn google">Continue with Google</button>
+    </div>
+    
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Authenticating...</p>
+    </div>
+</div>
+
+<script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.min.js"></script>
+<script>
+    let auth0Client = null;
+    const loading = document.getElementById('loading');
+    const mainContainer = document.getElementById('main-container');
+    
+    // Инициализация Auth0
+    const configureClient = async () => {
+        auth0Client = await createAuth0Client({
+            domain: 'dev-7w4362if0qwpz4pc.us.auth0.com',
+            clientId: 'fy4KqWv3ZGaMjZSgCwagUzWU2D8K97p6',
+            authorizationParams: {
+                redirect_uri: window.location.origin + window.location.pathname
+            }
+        });
+    };
+    
+    // Обработка логина
+    const login = async (provider) => {
+        try {
+            loading.classList.add('active');
+            
+            await auth0Client.loginWithPopup({
+                authorizationParams: {
+                    connection: provider
+                }
+            });
+            
+            // Получение информации о пользователе
+            const user = await auth0Client.getUser();
+            console.log("User logged in:", user);
+            
+            // Показать сообщение об успехе
+            showSuccessMessage(user);
+        } catch (error) {
+            console.error("Login error:", error);
+            alert("Authentication failed. " + (error.error_description || error.message));
+        } finally {
+            loading.classList.remove('active');
+        }
+    };
+    
+    // Показать сообщение об успехе
+    const showSuccessMessage = (user) => {
+        mainContainer.innerHTML = `
+            <div class="success-message">
+                <h1>Welcome!</h1>
+                <p>Hello ${user.name || 'User'}, you have successfully signed in with your corporate email.</p>
+                <p>Email: ${user.email || 'Not provided'}</p>
+                ${user.picture ? `<img src="${user.picture}" alt="Profile" style="width:100px; height:100px; border-radius:50%; margin:20px 0;">` : ''}
+                <button onclick="logout()" class="logout-btn">Sign Out</button>
+            </div>
+        `;
+    };
+    
+    // Выход
+    window.logout = async () => {
+        try {
+            loading.classList.add('active');
+            await auth0Client.logout({
+                logoutParams: {
+                    returnTo: window.location.origin + window.location.pathname
+                }
+            });
+        } catch (error) {
+            console.error("Logout error:", error);
+            window.location.reload();
+        }
+    };
+    
+    // Инициализация при загрузке страницы
+    window.onload = async () => {
+        try {
+            loading.classList.add('active');
+            await configureClient();
+            
+            // Проверяем, авторизован ли пользователь
+            if (await auth0Client.isAuthenticated()) {
+                const user = await auth0Client.getUser();
+                showSuccessMessage(user);
+            }
+            
+            // Добавляем обработчики событий
+            document.getElementById('linkedin-login').addEventListener('click', () => login('linkedin'));
+            document.getElementById('google-login').addEventListener('click', () => login('google-oauth2'));
+            document.querySelector('.get-started-btn').addEventListener('click', () => {
+                // При клике на "Get Started" прокрутка к кнопкам соц. сетей
+                document.querySelector('.social-providers').scrollIntoView({ behavior: 'smooth' });
+            });
+        } catch (error) {
+            console.error("Initialization error:", error);
+            alert("Failed to initialize: " + error.message);
+        } finally {
+            loading.classList.remove('active');
+        }
+    };
+</script>
