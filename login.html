@@ -163,17 +163,16 @@ lang: en
     </div>
 </div>
 
-<script src="https://cdn.auth0.com/js/auth0-spa-js/2.1/auth0-spa-js.production.js"></script>
+<script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.min.js"></script>
 <script>
-    let auth0Client = null;
+    let auth0 = null;
     const loading = document.getElementById('loading');
     const mainContainer = document.getElementById('main-container');
     
     // Auth0 Initialization
     const configureClient = async () => {
         try {
-            // Import Auth0 from the global object
-            auth0Client = await createAuth0Client({
+            auth0 = await createAuth0Client({
                 domain: 'dev-7w4362if0qwpz4pc.us.auth0.com',
                 clientId: 'fy4KqWv3ZGaMjZSgCwagUzWU2D8K97p6',
                 authorizationParams: {
@@ -186,27 +185,19 @@ lang: en
         }
     };
     
-    // Login handling
-    const login = async (provider) => {
+    // Login handling - using redirect for better compatibility
+    const loginWithRedirect = async (provider) => {
         try {
             loading.classList.add('active');
             
-            await auth0Client.loginWithPopup({
+            await auth0.loginWithRedirect({
                 authorizationParams: {
                     connection: provider
                 }
             });
-            
-            // Get user information
-            const user = await auth0Client.getUser();
-            console.log("User logged in:", user);
-            
-            // Show success message
-            showSuccessMessage(user);
         } catch (error) {
             console.error("Login error:", error);
             alert("Authentication failed. " + (error.error_description || error.message));
-        } finally {
             loading.classList.remove('active');
         }
     };
@@ -228,7 +219,7 @@ lang: en
     window.logout = async () => {
         try {
             loading.classList.add('active');
-            await auth0Client.logout({
+            await auth0.logout({
                 logoutParams: {
                     returnTo: window.location.origin + window.location.pathname
                 }
@@ -245,19 +236,32 @@ lang: en
             loading.classList.add('active');
             await configureClient();
             
-            // Check if user is authenticated
-            if (await auth0Client.isAuthenticated()) {
-                const user = await auth0Client.getUser();
-                showSuccessMessage(user);
+            // Check if there is a callback from Auth0 login
+            const query = window.location.search;
+            if (query.includes("code=") && query.includes("state=")) {
+                // Process the login state
+                await auth0.handleRedirectCallback();
+                
+                // Clear the URL parameters
+                window.history.replaceState({}, document.title, window.location.pathname);
+                
+                console.log("Redirect callback handled");
             }
             
-            // Add event handlers
-            document.getElementById('linkedin-login').addEventListener('click', () => login('linkedin'));
-            document.getElementById('google-login').addEventListener('click', () => login('google-oauth2'));
-            document.querySelector('.get-started-btn').addEventListener('click', () => {
-                // Scroll to social buttons when clicking 'Get Started'
-                document.querySelector('.social-providers').scrollIntoView({ behavior: 'smooth' });
-            });
+            // Check if user is authenticated
+            const isAuthenticated = await auth0.isAuthenticated();
+            if (isAuthenticated) {
+                const user = await auth0.getUser();
+                showSuccessMessage(user);
+            } else {
+                // Add event handlers for login buttons
+                document.getElementById('linkedin-login').addEventListener('click', () => loginWithRedirect('linkedin'));
+                document.getElementById('google-login').addEventListener('click', () => loginWithRedirect('google-oauth2'));
+                document.querySelector('.get-started-btn').addEventListener('click', () => {
+                    // Scroll to social buttons when clicking 'Get Started'
+                    document.querySelector('.social-providers').scrollIntoView({ behavior: 'smooth' });
+                });
+            }
         } catch (error) {
             console.error("Initialization error:", error);
             alert("Failed to initialize: " + error.message);
