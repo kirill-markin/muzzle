@@ -89,18 +89,23 @@ const checkAuth0Session = async () => {
             return { isAuthenticated: false, user: null };
         }
         
-        try {
-            // Process the login state
-            const result = await client.handleRedirectCallback();
-            console.log("Redirect callback result:", result);
-            
-            // Clear the URL parameters
-            window.history.replaceState({}, document.title, window.location.pathname);
-            
-            console.log("Redirect callback handled successfully");
-        } catch (callbackError) {
-            console.error("Error handling redirect callback:", callbackError);
-            return { isAuthenticated: false, error: callbackError };
+        // Check if there are query parameters to process
+        const hasQueryParams = window.location.search.includes('code=') || window.location.search.includes('error=');
+        
+        if (hasQueryParams) {
+            try {
+                // Process the login state
+                const result = await client.handleRedirectCallback();
+                console.log("Redirect callback result:", result);
+                
+                // Clear the URL parameters
+                window.history.replaceState({}, document.title, window.location.pathname);
+                
+                console.log("Redirect callback handled successfully");
+            } catch (callbackError) {
+                console.error("Error handling redirect callback:", callbackError);
+                // Don't return here, continue checking authentication
+            }
         }
         
         // Check if user is authenticated
