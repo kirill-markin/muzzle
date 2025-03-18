@@ -89,23 +89,18 @@ const checkAuth0Session = async () => {
             return { isAuthenticated: false, user: null };
         }
         
-        // Check if there is a callback from Auth0 login
-        const query = window.location.search;
-        if (query.includes("code=") && query.includes("state=")) {
-            console.log("Callback detected, processing...");
-            try {
-                // Process the login state
-                const result = await client.handleRedirectCallback();
-                console.log("Redirect callback result:", result);
-                
-                // Clear the URL parameters
-                window.history.replaceState({}, document.title, window.location.pathname);
-                
-                console.log("Redirect callback handled successfully");
-            } catch (callbackError) {
-                console.error("Error handling redirect callback:", callbackError);
-                return { isAuthenticated: false, error: callbackError };
-            }
+        try {
+            // Process the login state
+            const result = await client.handleRedirectCallback();
+            console.log("Redirect callback result:", result);
+            
+            // Clear the URL parameters
+            window.history.replaceState({}, document.title, window.location.pathname);
+            
+            console.log("Redirect callback handled successfully");
+        } catch (callbackError) {
+            console.error("Error handling redirect callback:", callbackError);
+            return { isAuthenticated: false, error: callbackError };
         }
         
         // Check if user is authenticated
