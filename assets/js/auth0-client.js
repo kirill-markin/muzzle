@@ -89,6 +89,27 @@ const checkAuth0Session = async () => {
             return { isAuthenticated: false, user: null };
         }
         
+        // First check if user is already authenticated
+        // to avoid unnecessary redirect handling if already logged in
+        const isAuthenticated = await client.isAuthenticated();
+        
+        if (isAuthenticated) {
+            try {
+                const user = await client.getUser();
+                console.log("User is already authenticated:", user);
+                
+                // Clear URL parameters if they exist, even if already authenticated
+                if (window.location.search) {
+                    window.history.replaceState({}, document.title, window.location.pathname);
+                }
+                
+                return { isAuthenticated, user };
+            } catch (error) {
+                console.log("Error getting user info, but user is authenticated:", error);
+                return { isAuthenticated: true, user: null };
+            }
+        }
+        
         // Check if we have a callback from Auth0
         const query = window.location.search;
         const hasAuthParams = query.includes("code=") && query.includes("state=");
@@ -103,26 +124,38 @@ const checkAuth0Session = async () => {
                 window.history.replaceState({}, document.title, window.location.pathname);
                 
                 console.log("Redirect callback handled successfully");
+                
+                // Check authentication status again after processing callback
+                const isAuthenticatedAfterRedirect = await client.isAuthenticated();
+                
+                if (isAuthenticatedAfterRedirect) {
+                    const user = await client.getUser();
+                    console.log("User authenticated after redirect:", user);
+                    return { isAuthenticated: true, user };
+                }
             } catch (callbackError) {
-                // Log error but continue - don't throw
-                console.error("Error handling callback:", callbackError.message);
-                // Errors here are often just state mismatches that don't affect the end result
+                // Log but don't display as error for Invalid state
+                if (callbackError.message && callbackError.message.includes('Invalid state')) {
+                    console.log("Non-critical Auth0 callback issue (common during page refresh):", callbackError.message);
+                    
+                    // Check if user is authenticated despite the error
+                    const isAuthenticatedAfterError = await client.isAuthenticated();
+                    if (isAuthenticatedAfterError) {
+                        const user = await client.getUser();
+                        return { isAuthenticated: true, user };
+                    }
+                } else {
+                    // Other errors are logged normally
+                    console.error("Error handling callback:", callbackError.message);
+                }
             }
         }
         
-        // Check authentication status
-        const isAuthenticated = await client.isAuthenticated();
-        console.log("Is user authenticated:", isAuthenticated);
-        
-        if (isAuthenticated) {
-            try {
-                const user = await client.getUser();
-                console.log("User info:", user);
-                return { isAuthenticated, user };
-            } catch (error) {
-                console.log("Error getting user info, but user is authenticated:", error);
-                return { isAuthenticated: true, user: null };
-            }
+        // Re-check authentication status after all processing
+        const finalAuthCheck = await client.isAuthenticated();
+        if (finalAuthCheck) {
+            const user = await client.getUser();
+            return { isAuthenticated: true, user };
         }
         
         // User is not authenticated
