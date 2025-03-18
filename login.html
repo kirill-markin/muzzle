@@ -233,7 +233,7 @@ lang: en
     // Auth0 Initialization
     const configureClient = async () => {
         try {
-            auth0Client = await createAuth0Client({
+            auth0Client = await auth0.createAuth0Client({
                 domain: 'dev-7w4362if0qwpz4pc.us.auth0.com',
                 clientId: 'fy4KqWv3ZGaMjZSgCwagUzWU2D8K97p6',
                 authorizationParams: {
@@ -242,7 +242,7 @@ lang: en
             });
         } catch (error) {
             console.error("Auth0 client initialization error:", error);
-            console.log("If you're seeing 'createAuth0Client is not defined', refresh the page once.");
+            console.log("If you're seeing 'auth0.createAuth0Client is not defined', refresh the page once.");
         }
     };
     
