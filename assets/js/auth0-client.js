@@ -53,6 +53,13 @@ const loginWithAuth0Provider = async (provider) => {
             params.response_type = 'code';
         }
         
+        // Microsoft has specific requirements
+        if (provider === 'windowslive') {
+            console.log('Using Microsoft specific settings');
+            params.scope = 'openid email profile';
+            params.response_type = 'code';
+        }
+        
         await client.loginWithRedirect({
             authorizationParams: params
         });
