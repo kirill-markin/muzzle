@@ -7,3 +7,5 @@ twitter_username: kirill_markin_
 github:
   is_project_page: false
 gtm: GTM-NJZKH2L
+include:
+  - .well-known # verify for microsoft auth app
