@@ -90,7 +90,6 @@ const checkAuth0Session = async () => {
         }
         
         // First check if the user is already authenticated
-        // Do this before handling any callbacks to avoid state issues
         const isAuthenticated = await client.isAuthenticated();
         console.log("Is user authenticated:", isAuthenticated);
         
@@ -102,10 +101,12 @@ const checkAuth0Session = async () => {
         }
         
         // Only try to handle redirect if not already authenticated
-        // and if there are query parameters to process
-        const hasQueryParams = window.location.search.includes('code=');
+        // and if URL contains BOTH code and state parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const hasCode = urlParams.has('code');
+        const hasState = urlParams.has('state');
         
-        if (hasQueryParams) {
+        if (hasCode && hasState) {
             try {
                 // Process the login state
                 await client.handleRedirectCallback();
@@ -124,6 +125,8 @@ const checkAuth0Session = async () => {
                 console.error("Error handling redirect callback:", callbackError);
                 // Just log the error and continue checking authentication
             }
+        } else if (hasCode || hasState) {
+            console.log("Partial auth parameters found - not processing to avoid errors");
         }
         
         // If we reach here, the user is not authenticated
