@@ -237,7 +237,7 @@ lang: en
                 domain: 'dev-7w4362if0qwpz4pc.us.auth0.com',
                 clientId: 'fy4KqWv3ZGaMjZSgCwagUzWU2D8K97p6',
                 authorizationParams: {
-                    redirect_uri: window.location.origin + window.location.pathname
+                    redirect_uri: 'https://kirill-markin.com/login'
                 }
             });
         } catch (error) {
@@ -253,7 +253,9 @@ lang: en
             
             await auth0Client.loginWithRedirect({
                 authorizationParams: {
-                    connection: provider
+                    connection: provider,
+                    redirect_uri: 'https://kirill-markin.com/login',
+                    scope: 'openid profile email'
                 }
             });
         } catch (error) {
@@ -282,7 +284,7 @@ lang: en
             loading.classList.add('active');
             await auth0Client.logout({
                 logoutParams: {
-                    returnTo: window.location.origin + window.location.pathname
+                    returnTo: 'https://kirill-markin.com/login'
                 }
             });
         } catch (error) {
