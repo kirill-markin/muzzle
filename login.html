@@ -44,7 +44,7 @@ lang: en
         line-height: 1.5;
     }
     
-    .get-started-container {
+    .auth-container {
         position: relative;
         display: inline-block;
     }
@@ -53,39 +53,55 @@ lang: en
         background-color: #4285F4;
         color: white;
         border: none;
-        padding: 12px 24px;
-        border-radius: 4px;
+        padding: 12px 30px;
+        border-radius: 25px;
         font-size: 16px;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, transform 0.2s;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
     
     .get-started-btn:hover {
         background-color: #3367D6;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     
-    .social-providers {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
+    .providers-popup {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 12px;
+        display: none;
+        flex-direction: row;
         gap: 15px;
+        background: white;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        z-index: 10;
     }
     
-    .social-btn {
-        padding: 12px 20px;
-        border-radius: 4px;
-        color: white;
+    .auth-container:hover .providers-popup {
+        display: flex;
+    }
+    
+    .provider-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: none;
-        transition: opacity 0.2s;
-        font-size: 16px;
+        transition: transform 0.2s, box-shadow 0.2s;
     }
     
-    .social-btn:hover {
-        opacity: 0.9;
+    .provider-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     }
     
     .linkedin {
@@ -94,6 +110,28 @@ lang: en
     
     .google {
         background-color: #DB4437;
+    }
+    
+    .microsoft {
+        background-color: #00A4EF;
+    }
+    
+    .provider-icon {
+        width: 24px;
+        height: 24px;
+        fill: white;
+    }
+    
+    .triangle {
+        position: absolute;
+        top: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid white;
     }
     
     .success-message {
@@ -148,13 +186,26 @@ lang: en
     <h1>Corporate Authentication</h1>
     <p>Please sign in with your corporate email to access our services. We only accept business email addresses.</p>
     
-    <div class="get-started-container">
+    <div class="auth-container">
         <button class="get-started-btn">Get Started</button>
-    </div>
-    
-    <div class="social-providers">
-        <button id="linkedin-login" class="social-btn linkedin">Continue with LinkedIn</button>
-        <button id="google-login" class="social-btn google">Continue with Google</button>
+        <div class="providers-popup">
+            <div class="triangle"></div>
+            <button id="linkedin-login" class="provider-btn linkedin" title="Continue with LinkedIn">
+                <svg class="provider-icon" viewBox="0 0 24 24">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+            </button>
+            <button id="google-login" class="provider-btn google" title="Continue with Google">
+                <svg class="provider-icon" viewBox="0 0 24 24">
+                    <path d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"/>
+                </svg>
+            </button>
+            <button id="microsoft-login" class="provider-btn microsoft" title="Continue with Microsoft">
+                <svg class="provider-icon" viewBox="0 0 24 24">
+                    <path d="M11.4 24H0V12.6h11.4V24zM24 24H12.6V12.6H24V24zM11.4 11.4H0V0h11.4v11.4zM24 11.4H12.6V0H24v11.4z"/>
+                </svg>
+            </button>
+        </div>
     </div>
     
     <div class="loading" id="loading">
@@ -163,64 +214,44 @@ lang: en
     </div>
 </div>
 
-<div id="auth0-lock-container"></div>
-
-<script src="https://cdn.auth0.com/js/lock/12.0/lock.min.js"></script>
+<script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.min.js"></script>
 <script>
+    let auth0Client = null;
     const loading = document.getElementById('loading');
     const mainContainer = document.getElementById('main-container');
     
-    // Initialize Auth0 Lock
-    const lock = new Auth0Lock(
-        'fy4KqWv3ZGaMjZSgCwagUzWU2D8K97p6',
-        'dev-7w4362if0qwpz4pc.us.auth0.com',
-        {
-            auth: {
-                redirectUrl: window.location.origin + window.location.pathname,
-                responseType: 'token id_token',
-                params: {
-                    scope: 'openid email profile'
+    // Auth0 Initialization
+    const configureClient = async () => {
+        try {
+            auth0Client = await createAuth0Client({
+                domain: 'dev-7w4362if0qwpz4pc.us.auth0.com',
+                clientId: 'fy4KqWv3ZGaMjZSgCwagUzWU2D8K97p6',
+                authorizationParams: {
+                    redirect_uri: window.location.origin + window.location.pathname
                 }
-            },
-            theme: {
-                logo: '', // Add your logo URL here
-                primaryColor: '#4285F4'
-            },
-            languageDictionary: {
-                title: 'Corporate Authentication'
-            },
-            allowedConnections: ['linkedin', 'google-oauth2'],
-            container: 'auth0-lock-container',
-            closable: true
+            });
+        } catch (error) {
+            console.error("Auth0 client initialization error:", error);
+            console.log("If you're seeing 'createAuth0Client is not defined', refresh the page once.");
         }
-    );
+    };
     
-    // Setup the callback for Lock
-    lock.on('authenticated', function(authResult) {
-        // Save the tokens
-        localStorage.setItem('accessToken', authResult.accessToken);
-        localStorage.setItem('idToken', authResult.idToken);
-        
-        // Get user info
-        lock.getUserInfo(authResult.accessToken, function(error, profile) {
-            if (error) {
-                console.error("Error getting user info:", error);
-                return;
-            }
+    // Login handling - using redirect for better compatibility
+    const loginWithProvider = async (provider) => {
+        try {
+            loading.classList.add('active');
             
-            // Save profile
-            localStorage.setItem('profile', JSON.stringify(profile));
-            
-            // Show user is logged in
-            showSuccessMessage(profile);
-        });
-    });
-    
-    // Show error in case of failure
-    lock.on('authorization_error', function(error) {
-        console.error('Authentication error', error);
-        alert('Authentication error: ' + error.error_description);
-    });
+            await auth0Client.loginWithRedirect({
+                authorizationParams: {
+                    connection: provider
+                }
+            });
+        } catch (error) {
+            console.error("Login error:", error);
+            alert("Authentication failed. " + (error.error_description || error.message));
+            loading.classList.remove('active');
+        }
+    };
     
     // Show success message
     const showSuccessMessage = (user) => {
@@ -235,43 +266,55 @@ lang: en
         `;
     };
     
-    // Logout function
-    window.logout = function() {
-        localStorage.removeItem('accessToken');
-        localStorage.removeItem('idToken');
-        localStorage.removeItem('profile');
-        
-        // Redirect to Auth0 logout
-        window.location.href = `https://dev-7w4362if0qwpz4pc.us.auth0.com/v2/logout?client_id=fy4KqWv3ZGaMjZSgCwagUzWU2D8K97p6&returnTo=${encodeURIComponent(window.location.origin + window.location.pathname)}`;
+    // Logout
+    window.logout = async () => {
+        try {
+            loading.classList.add('active');
+            await auth0Client.logout({
+                logoutParams: {
+                    returnTo: window.location.origin + window.location.pathname
+                }
+            });
+        } catch (error) {
+            console.error("Logout error:", error);
+            window.location.reload();
+        }
     };
     
     // Initialize on page load
-    window.onload = function() {
-        // Check if user is logged in already
-        const idToken = localStorage.getItem('idToken');
-        const profile = localStorage.getItem('profile');
-        
-        if (idToken && profile) {
-            // User is logged in, show profile
-            showSuccessMessage(JSON.parse(profile));
-        } else {
-            // Add event handlers
-            document.getElementById('linkedin-login').addEventListener('click', function() {
-                lock.show({
-                    allowedConnections: ['linkedin']
-                });
-            });
+    window.onload = async () => {
+        try {
+            loading.classList.add('active');
+            await configureClient();
             
-            document.getElementById('google-login').addEventListener('click', function() {
-                lock.show({
-                    allowedConnections: ['google-oauth2']
-                });
-            });
+            // Check if there is a callback from Auth0 login
+            const query = window.location.search;
+            if (query.includes("code=") && query.includes("state=")) {
+                // Process the login state
+                await auth0Client.handleRedirectCallback();
+                
+                // Clear the URL parameters
+                window.history.replaceState({}, document.title, window.location.pathname);
+                
+                console.log("Redirect callback handled");
+            }
             
-            document.querySelector('.get-started-btn').addEventListener('click', function() {
-                // Scroll to social buttons when clicking 'Get Started'
-                document.querySelector('.social-providers').scrollIntoView({ behavior: 'smooth' });
-            });
+            // Check if user is authenticated
+            const isAuthenticated = await auth0Client.isAuthenticated();
+            if (isAuthenticated) {
+                const user = await auth0Client.getUser();
+                showSuccessMessage(user);
+            } else {
+                // Add event handlers for login buttons
+                document.getElementById('linkedin-login').addEventListener('click', () => loginWithProvider('linkedin'));
+                document.getElementById('google-login').addEventListener('click', () => loginWithProvider('google-oauth2'));
+                document.getElementById('microsoft-login').addEventListener('click', () => loginWithProvider('windowslive'));
+            }
+        } catch (error) {
+            console.error("Initialization error:", error);
+            console.log("If you're seeing errors, try refreshing the page once.");
+        } finally {
+            loading.classList.remove('active');
         }
     };
 </script>
