@@ -157,5 +157,7 @@
 - name: Bluesky
   url: https://bsky.app/profile/kirill-markin.bsky.social
   username: "@kirill-markin"
+  social_logo_url_default: /data/social_logos/bluesky.png
+  social_logo_url_hover: /data/social_logos/bluesky.png
   footer_bottom: true
   footer_bottom_green_line: true
