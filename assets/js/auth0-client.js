@@ -18,7 +18,10 @@ const configureAuth0Client = async () => {
                 redirect_uri: 'https://kirill-markin.com/login'
             },
             useRefreshTokens: true,
-            cacheLocation: 'localstorage'
+            cacheLocation: 'localstorage',
+            cookieDomain: 'kirill-markin.com',
+            useCookiesForTransactions: true,
+            legacySameSiteCookie: false
         });
         isAuth0Initialized = true;
         console.log("Auth0 client initialized successfully");
@@ -38,10 +41,15 @@ const loginWithAuth0Provider = async (provider) => {
             throw new Error("Auth0 client not initialized");
         }
         
+        // Generate a unique state value for this login attempt
+        const stateValue = Math.random().toString(36).substring(2);
+        localStorage.setItem('auth0_state', stateValue);
+        
         // Settings for different providers
         const params = {
             connection: provider,
-            redirect_uri: 'https://kirill-markin.com/login'
+            redirect_uri: 'https://kirill-markin.com/login',
+            state: stateValue
         };
         
         // LinkedIn has specific requirements
@@ -91,13 +99,24 @@ const checkAuth0Session = async () => {
         const query = window.location.search;
         if (query.includes("code=") && query.includes("state=")) {
             console.log("Callback detected, processing...");
+            
+            // Extract state parameter from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const returnedState = urlParams.get('state');
+            const savedState = localStorage.getItem('auth0_state');
+            
+            // Log state comparison for debugging
+            console.log("Returned state:", returnedState);
+            console.log("Saved state:", savedState);
+            
             try {
                 // Process the login state
                 const result = await client.handleRedirectCallback();
                 console.log("Redirect callback result:", result);
                 
-                // Clear the URL parameters
+                // Clear the URL parameters and saved state
                 window.history.replaceState({}, document.title, window.location.pathname);
+                localStorage.removeItem('auth0_state');
                 
                 console.log("Redirect callback handled successfully");
             } catch (callbackError) {
