@@ -122,55 +122,132 @@
     </div>
 </div>
 
+<script src="https://cdn.auth0.com/js/auth0-spa-js/2.1.2/auth0-spa-js.production.js"></script>
 <script>
     let auth0Client = null;
-
+    const loading = document.getElementById('loading');
+    const mainContainer = document.getElementById('main-container');
+    
     // Auth0 Initialization
     const configureClient = async () => {
         try {
+            console.log("Initializing Auth0 client...");
             auth0Client = await auth0.createAuth0Client({
                 domain: 'dev-7w4362if0qwpz4pc.us.auth0.com',
                 clientId: 'fy4KqWv3ZGaMjZSgCwagUzWU2D8K97p6',
                 authorizationParams: {
-                    redirect_uri: window.location.href // Use current page URL
+                    redirect_uri: window.location.href
                 },
                 useRefreshTokens: true,
                 cacheLocation: 'localstorage'
             });
+            console.log("Auth0 client initialized successfully");
         } catch (error) {
             console.error("Auth0 client initialization error:", error);
+            console.log("If you're seeing 'auth0.createAuth0Client is not defined', refresh the page once.");
         }
     };
-
-    // Login handling
+    
+    // Login handling - using redirect for better compatibility
     const loginWithProvider = async (provider) => {
         try {
+            loading.classList.add('active');
+            
+            // Settings for different providers
             const params = {
                 connection: provider,
-                redirect_uri: window.location.href // Use current page URL
+                redirect_uri: window.location.href
             };
-
+            
+            // LinkedIn has specific requirements
             if (provider === 'linkedin') {
+                console.log('Using LinkedIn specific settings');
                 params.scope = 'openid email';
                 params.response_type = 'code';
             }
-
+            
             await auth0Client.loginWithRedirect({
                 authorizationParams: params
             });
         } catch (error) {
             console.error("Login error:", error);
             alert("Authentication failed. " + (error.error_description || error.message));
+            loading.classList.remove('active');
         }
     };
-
+    
+    // Show success message
+    const showSuccessMessage = (user) => {
+        mainContainer.innerHTML = `
+            <div class="success-message">
+                <h1>Welcome!</h1>
+                <p>Hello ${user.name || 'User'}, you have successfully signed in with your corporate email.</p>
+                <p>Email: ${user.email || 'Not provided'}</p>
+                ${user.picture ? `<img src="${user.picture}" alt="Profile" style="width:100px; height:100px; border-radius:50%; margin:20px 0;">` : ''}
+                <button onclick="logout()" class="logout-btn">Sign Out</button>
+            </div>
+        `;
+    };
+    
+    // Logout
+    window.logout = async () => {
+        try {
+            loading.classList.add('active');
+            await auth0Client.logout({
+                logoutParams: {
+                    returnTo: window.location.href
+                }
+            });
+        } catch (error) {
+            console.error("Logout error:", error);
+            window.location.reload();
+        }
+    };
+    
     // Initialize on page load
     window.onload = async () => {
-        await configureClient();
-
-        // Add event handlers for login buttons
-        document.getElementById('linkedin-login-footer').addEventListener('click', () => loginWithProvider('linkedin'));
-        document.getElementById('google-login-footer').addEventListener('click', () => loginWithProvider('google-oauth2'));
-        document.getElementById('microsoft-login-footer').addEventListener('click', () => loginWithProvider('windowslive'));
+        try {
+            loading.classList.add('active');
+            await configureClient();
+            
+            // Check if there is a callback from Auth0 login
+            const query = window.location.search;
+            if (query.includes("code=") && query.includes("state=")) {
+                console.log("Callback detected, processing...");
+                try {
+                    // Process the login state
+                    const result = await auth0Client.handleRedirectCallback();
+                    console.log("Redirect callback result:", result);
+                    
+                    // Clear the URL parameters
+                    window.history.replaceState({}, document.title, window.location.pathname);
+                    
+                    console.log("Redirect callback handled successfully");
+                } catch (callbackError) {
+                    console.error("Error handling redirect callback:", callbackError);
+                    alert("Error during authentication callback: " + callbackError.message);
+                }
+            }
+            
+            // Check if user is authenticated
+            const isAuthenticated = await auth0Client.isAuthenticated();
+            console.log("Is user authenticated:", isAuthenticated);
+            
+            if (isAuthenticated) {
+                const user = await auth0Client.getUser();
+                console.log("User info:", user);
+                showSuccessMessage(user);
+            } else {
+                // Add event handlers for login buttons
+                document.getElementById('linkedin-login-footer').addEventListener('click', () => loginWithProvider('linkedin'));
+                document.getElementById('google-login-footer').addEventListener('click', () => loginWithProvider('google-oauth2'));
+                document.getElementById('microsoft-login-footer').addEventListener('click', () => loginWithProvider('windowslive'));
+            }
+        } catch (error) {
+            console.error("Initialization error:", error);
+            console.log("If you're seeing errors, try refreshing the page once.");
+        } finally {
+            loading.classList.remove('active');
+        }
     };
 </script> 
