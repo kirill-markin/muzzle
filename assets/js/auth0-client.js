@@ -89,7 +89,28 @@ const checkAuth0Session = async () => {
             return { isAuthenticated: false, user: null };
         }
         
-        // Check if user is authenticated - Auth0 will handle tokens and URL cleanup automatically
+        // Check if we have a callback from Auth0
+        const query = window.location.search;
+        const hasAuthParams = query.includes("code=") && query.includes("state=");
+        
+        // Handle redirect callback if present
+        if (hasAuthParams) {
+            try {
+                // Process the callback
+                await client.handleRedirectCallback();
+                
+                // Clear the URL parameters
+                window.history.replaceState({}, document.title, window.location.pathname);
+                
+                console.log("Redirect callback handled successfully");
+            } catch (callbackError) {
+                // Log error but continue - don't throw
+                console.error("Error handling callback:", callbackError.message);
+                // Errors here are often just state mismatches that don't affect the end result
+            }
+        }
+        
+        // Check authentication status
         const isAuthenticated = await client.isAuthenticated();
         console.log("Is user authenticated:", isAuthenticated);
         
