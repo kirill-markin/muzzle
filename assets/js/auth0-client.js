@@ -89,12 +89,7 @@ const checkAuth0Session = async () => {
             return { isAuthenticated: false, user: null };
         }
         
-        // Clean up the URL if there are query parameters without trying to handle them
-        if (window.location.search.includes('code=') || window.location.search.includes('state=')) {
-            window.history.replaceState({}, document.title, window.location.pathname);
-        }
-        
-        // Check if user is authenticated - Auth0 will handle tokens automatically
+        // Check if user is authenticated - Auth0 will handle tokens and URL cleanup automatically
         const isAuthenticated = await client.isAuthenticated();
         console.log("Is user authenticated:", isAuthenticated);
         
