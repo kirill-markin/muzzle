@@ -89,36 +89,45 @@ const checkAuth0Session = async () => {
             return { isAuthenticated: false, user: null };
         }
         
-        // Check if there are query parameters to process
-        const hasQueryParams = window.location.search.includes('code=') || window.location.search.includes('error=');
-        
-        if (hasQueryParams) {
-            try {
-                // Process the login state
-                const result = await client.handleRedirectCallback();
-                console.log("Redirect callback result:", result);
-                
-                // Clear the URL parameters
-                window.history.replaceState({}, document.title, window.location.pathname);
-                
-                console.log("Redirect callback handled successfully");
-            } catch (callbackError) {
-                console.error("Error handling redirect callback:", callbackError);
-                // Don't return here, continue checking authentication
-            }
-        }
-        
-        // Check if user is authenticated
+        // First check if the user is already authenticated
+        // Do this before handling any callbacks to avoid state issues
         const isAuthenticated = await client.isAuthenticated();
         console.log("Is user authenticated:", isAuthenticated);
         
         if (isAuthenticated) {
+            // User is already authenticated, get their info
             const user = await client.getUser();
             console.log("User info:", user);
             return { isAuthenticated, user };
         }
         
-        return { isAuthenticated, user: null };
+        // Only try to handle redirect if not already authenticated
+        // and if there are query parameters to process
+        const hasQueryParams = window.location.search.includes('code=');
+        
+        if (hasQueryParams) {
+            try {
+                // Process the login state
+                await client.handleRedirectCallback();
+                
+                // Clear the URL parameters
+                window.history.replaceState({}, document.title, window.location.pathname);
+                
+                // Check authentication status again after processing callback
+                const isAuthenticatedAfterRedirect = await client.isAuthenticated();
+                
+                if (isAuthenticatedAfterRedirect) {
+                    const user = await client.getUser();
+                    return { isAuthenticated: true, user };
+                }
+            } catch (callbackError) {
+                console.error("Error handling redirect callback:", callbackError);
+                // Just log the error and continue checking authentication
+            }
+        }
+        
+        // If we reach here, the user is not authenticated
+        return { isAuthenticated: false, user: null };
     } catch (error) {
         console.error("Authentication check error:", error);
         return { isAuthenticated: false, error };
