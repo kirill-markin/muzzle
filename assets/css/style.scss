@@ -377,7 +377,7 @@ h1 {
       border-right: 1px solid var(--dark-gray);
     }
 
-    .left-column, .footer-left-column {
+    .left-column {
       width: 25%;
       display: block;
     }
@@ -387,6 +387,11 @@ h1 {
       display: block;
     }
     
+    /* Full width for single column footer */
+    .single-column {
+      width: 100% !important;
+      border-left: none !important;
+    }
   }
   
   @media (max-width: 768px) {
@@ -453,14 +458,6 @@ h1 {
 }
 .footer-name-box, .footer-org {
   border-bottom: 1px solid var(--light-gray-secondary);
-}
-.footer-left-column {
-  border-right: 1px solid var(--light-gray-secondary);
-
-  hr {
-    margin-left: 1.25rem;
-    width: calc(100% - 1.25rem);
-  }
 }
 
 .personal-contacts {
@@ -811,12 +808,6 @@ h2 {
   // opacity: 0.4;
 }
 
-@media (max-width: 768px) {
-  .footer-left-column hr {
-    display: none;
-  }
-}
-
 .ozma-as-title-footer {
   color: inherit;
   text-decoration: underline;
@@ -958,24 +949,17 @@ h2 {
       flex-direction: column;
   }
 
-  .left-column, .right-column,
-  .footer-left-column, .footer-right-column {
+  .left-column, .right-column {
     width: 100%;
   }
 
-  .left-column, .footer-left-column {
+  .left-column {
     order: 1;
   }
 
-  .right-column, .footer-right-column {
+  .right-column {
     order: 2;
   }
-
-  .footer-left-column {
-    border-right: none;
-    border-bottom: 1px solid var(--light-gray-secondary);
-  }
-
 }
 
 
@@ -1519,4 +1503,107 @@ h2 {
   }
   
 
+}
+
+// Footer Styles
+.footer-top-section {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.footer-org-name.left-aligned {
+  text-align: left;
+  margin-left: 1.25rem;
+}
+
+.footer-white-line {
+  border-top: 1px solid var(--white);
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.footer-main-content {
+  display: flex;
+  flex-direction: row;
+  min-height: 250px;
+}
+.footer-roles-section {
+  width: 25%;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  
+  @media (max-width: 768px) {
+    padding-right: 0;
+  }
+}
+
+.footer-roles-section .footer-personal-titles {
+  padding: 0 0 0 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-roles-section .footer-cta {
+  padding-left: 1.25rem;
+  margin-top: 0;
+}
+
+.footer-roles-section .footer-button {
+  font-size: 1rem;
+  padding: 8px 15px;
+  width: auto;
+  max-width: 85%;
+}
+
+.footer-roles-section .question-button {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links-wrapper {
+  width: 75%;
+  display: flex;
+}
+
+.footer-org-info {
+  width: 100%;
+  border-left: 1px solid var(--light-gray-secondary);
+  padding-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .footer-main-content {
+    flex-direction: column;
+  }
+  
+  .footer-roles-section,
+  .footer-links-wrapper {
+    width: 100%;
+  }
+  
+  .footer-org-info {
+    border-left: none;
+    padding-left: 0;
+    padding: 0 1.25rem;
+  }
+  
+  .footer-roles-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-roles-section .footer-personal-titles {
+    text-align: center;
+    padding: 0;
+  }
+  
+  .footer-roles-section .footer-cta {
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .footer-org-name.left-aligned {
+    text-align: center;
+  }
 }
