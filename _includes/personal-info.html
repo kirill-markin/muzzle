@@ -18,12 +18,12 @@
         <p class="tertiary-title">{{ site.data.personal_info.tertiary_title }}</p>
         </div>
     </div>
-    <div class="social-links">
+    <div class="contact-bubbles">
         {% for link in site.data.social_links %}
         {% if link.avatar_contact == true %}
-            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
-            <img src="{{ link.social_logo_url_default }}" alt="{{ link.name }}" class="icon-default">
-            <img src="{{ link.social_logo_url_hover }}" alt="{{ link.name }}" class="icon-hover">
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="contact-bubble">
+                <span class="contact-type">{{ link.name }}</span>
+                <span class="contact-username">{{ link.username }}</span>
             </a>
         {% endif %}
         {% endfor %}

@@ -4,6 +4,7 @@
   social_logo_url_default: /data/social_logos/google.png
   social_logo_url_hover: /data/social_logos/google_hover.png
   avatar_contact: true
+  contact_bubble: true
   footer_bottom: true
   footer_bottom_green_line: true
   header: true
@@ -13,6 +14,7 @@
   social_logo_url_default: /data/social_logos/telegram.png
   social_logo_url_hover: /data/social_logos/telegram_hover.png
   avatar_contact: true
+  contact_bubble: true
   footer_bottom: true
   footer_bottom_green_line: true
   header: true
@@ -22,6 +24,7 @@
   social_logo_url_default: /data/social_logos/whatsapp.png
   social_logo_url_hover: /data/social_logos/whatsapp_hover.png
   avatar_contact: true
+  contact_bubble: true
   footer_bottom: true
   footer_bottom_green_line: true
   header: true
@@ -45,6 +48,7 @@
   social_logo_url_default: /data/social_logos/instagram.png
   social_logo_url_hover: /data/social_logos/instagram_hover.png
   avatar_contact: true
+  contact_bubble: true
   footer_bottom: true
   footer_bottom_green_line: true
   header: true
