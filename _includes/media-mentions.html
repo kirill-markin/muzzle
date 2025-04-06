@@ -50,10 +50,21 @@
       {% endif %}
     {% endif %}
 
+    {%- comment -%} Determine mention type for display {%- endcomment -%}
+    {% assign display_type = mention.type | default: "Article" %}
+    {% if mention.event %}
+      {% assign display_type = "Conference" %}
+    {% endif %}
+
     <a href="{{ mention.url }}" target="_blank" rel="noopener noreferrer" class="media-mention {{ card_style }} {{ size_class }}">
       {%- comment -%} Language indicator (common to all layouts) {%- endcomment -%}
       <div class="media-mention-ln">
         <div class="media-mention-ln-txt">[{{ mention.language }}]</div>
+      </div>
+
+      {%- comment -%} Type indicator (common to all layouts) {%- endcomment -%}
+      <div class="media-mention-type">
+        <div class="media-mention-type-txt">[{{ display_type }}]</div>
       </div>
 
       {%- comment -%} Layout-specific templates {%- endcomment -%}

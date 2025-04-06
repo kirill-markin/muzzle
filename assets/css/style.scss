@@ -603,6 +603,31 @@ h2 {
     }
   }
 
+  // Type indicator in bottom right
+  .media-mention-type {
+    padding: 2px 11px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    border-left: 1px solid var(--dark-gray);
+    border-top: 1px solid var(--dark-gray);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+    background: var(--white);
+
+    .media-mention-type-txt {
+      color: var(--dark-gray);
+      font-size: 12px;
+      font-family: Archivo;
+      font-weight: 400;
+      line-height: 13.20px;
+      word-wrap: break-word;
+    }
+  }
+
   // Common media info container
   .media-info {
     display: flex;
@@ -723,7 +748,7 @@ h2 {
     width: 60%;
     padding: 0.75rem;
     border: 1px solid var(--dark-gray);
-    z-index: 10;
+    z-index: 9;
     position: absolute;
     bottom: 1.25rem;
     left: 1.25rem;
@@ -747,6 +772,45 @@ h2 {
   
   &:hover {
     box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  // Mobile styles - make it look like other cards
+  @media screen and (max-width: 768px) {
+    padding: 0 !important;
+    aspect-ratio: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    .media-info-title {
+      padding: 1rem;
+    }
+    
+    .media-featured-content {
+      position: static;
+      width: 100%;
+      padding: 0;
+      border: none;
+      height: none;
+      order: 2;
+    }
+    
+    .media-mention-thumbnail {
+      position: static;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      order: 1;
+    }
+    
+    .website-logo {
+      align-self: flex-start;
+      padding: 0.4rem 1rem 1rem 1rem;
+    }
+
+    .media-mention-divider {
+      display: none;
+    }
   }
 }
 
