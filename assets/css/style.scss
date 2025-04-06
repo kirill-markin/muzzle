@@ -704,52 +704,6 @@ h2 {
   }
 }
 
-// 3. Video Card
-.mention-card-video {
-  grid-column: span 2;
-  @media screen and (max-width: 768px) {
-    grid-column: span 1;
-  }
-  aspect-ratio: 16 / 9;
-  padding: 0 !important;
-  
-  .media-info-title {
-    color: #fff !important;
-    z-index: 10;
-    max-width: 20rem;
-    font-size: 1.375rem;
-    position: absolute;
-    top: 1.25rem;
-    left: 1.25rem;
-  }
-  
-  .media-mention-thumbnail {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    z-index: 0;
-  }
-  
-  .video-icon {
-    position: absolute;
-    left: 1.25rem;
-    bottom: 1.25rem;
-    z-index: 10;
-  }
-  
-  .website-logo {
-    z-index: 10;
-    align-self: flex-start;
-  }
-  
-  &:hover {
-    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.15);
-  }
-}
-
 // 4. Featured Horizontal Card
 .mention-card-featured-horizontal {
   grid-column: span 2;

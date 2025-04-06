@@ -37,8 +37,10 @@
     {% if is_large %}
       {% assign size_class = "mention-card-large" %}
       {% if mention.type == "Video" %}
-        {% assign card_style = "mention-card-video" %}
+        {% assign card_style = "mention-card-featured-horizontal" %}
+        {% assign is_video = true %}
       {% else %}
+        {% assign is_video = false %}
         {% assign is_even_large = group | plus: position | modulo: 2 %}
         {% if is_even_large == 0 %}
           {% assign card_style = "mention-card-featured-horizontal" %}
@@ -47,6 +49,7 @@
         {% endif %}
       {% endif %}
     {% else %}
+      {% assign is_video = false %}
       {% if thumbnail %}
         {% assign card_style = "mention-card-text-photo" %}
       {% endif %}
@@ -54,7 +57,17 @@
 
     {%- comment -%} Override with explicit render style if provided {%- endcomment -%}
     {% if mention.render-style %}
-      {% assign card_style = "mention-card-" | append: mention.render-style %}
+      {% if mention.render-style == "video" %}
+        {% assign card_style = "mention-card-featured-horizontal" %}
+        {% assign is_video = true %}
+      {% else %}
+        {% assign card_style = "mention-card-" | append: mention.render-style %}
+        {% if mention.type == "Video" %}
+          {% assign is_video = true %}
+        {% else %}
+          {% assign is_video = false %}
+        {% endif %}
+      {% endif %}
     {% endif %}
 
     <a href="{{ mention.url }}" target="_blank" rel="noopener noreferrer" class="media-mention {{ card_style }} {{ size_class }}">
@@ -98,23 +111,7 @@
               <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
             {% endif %}
           </div>
-        
-        {% when "mention-card-video" %}
-
-          {% if thumbnail %}
-            <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
-          {% endif %}
           
-          <div class="media-info">
-            <div class="media-info-title">{{ display_title }}</div>
-          </div>
-          
-          <img class="video-icon" src="/data/icons/video.svg" alt="Video Icon">
-          
-          {% if mention.website_logo_url %}
-            <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
-          {% endif %}
-        
         {% when "mention-card-text-photo" %}
           {% if thumbnail %}
             <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
