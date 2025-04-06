@@ -1,8 +1,15 @@
-- name: Email
-  url: mailto:markinkirill@gmail.com
-  username: markinkirill@gmail.com
-  social_logo_url_default: /data/social_logos/google.png
-  social_logo_url_hover: /data/social_logos/google_hover.png
+- name: LinkedIn
+  url: https://www.linkedin.com/in/kirill-markin/
+  username: "@kirill-markin"
+  social_logo_url_default:
+  avatar_contact: true
+  social_logo_url_hover:
+  footer_bottom: true
+- name: WhatsApp
+  url: https://api.whatsapp.com/send?phone=31625351137
+  username: "+31 6 253 51137"
+  social_logo_url_default: /data/social_logos/whatsapp.png
+  social_logo_url_hover: /data/social_logos/whatsapp_hover.png
   avatar_contact: true
   contact_bubble: true
   footer_bottom: true
@@ -18,30 +25,16 @@
   footer_bottom: true
   footer_bottom_green_line: true
   header: true
-- name: WhatsApp
-  url: https://api.whatsapp.com/send?phone=31625351137
-  username: "+31 6 253 51137"
-  social_logo_url_default: /data/social_logos/whatsapp.png
-  social_logo_url_hover: /data/social_logos/whatsapp_hover.png
+- name: Email
+  url: mailto:markinkirill@gmail.com
+  username: markinkirill@gmail.com
+  social_logo_url_default: /data/social_logos/google.png
+  social_logo_url_hover: /data/social_logos/google_hover.png
   avatar_contact: true
   contact_bubble: true
   footer_bottom: true
   footer_bottom_green_line: true
   header: true
-- name: LinkedIn
-  url: https://www.linkedin.com/in/kirill-markin/
-  username: "@kirill-markin"
-  social_logo_url_default:
-  social_logo_url_hover:
-  footer_bottom: true
-- name: Twitter
-  url: https://x.com/kirill_markin_
-  username: "@kirill_markin_"
-  social_logo_url_default: /data/social_logos/xcom.png
-  social_logo_url_hover: /data/social_logos/xcom_hover.png
-  footer_bottom: true
-  avatar_learn_more: true
-  footer_bottom_green_line: true
 - name: Instagram
   url: https://www.instagram.com/kirill.markin.kira/
   username: "@kirill.markin.kira"
@@ -55,12 +48,6 @@
 - name: GitHub
   url: https://github.com/kirill-markin
   username: "@kirill-markin"
-  social_logo_url_default:
-  social_logo_url_hover:
-  footer_bottom: true
-- name: Facebook
-  url: https://www.facebook.com/kirill.markin.kira
-  username: "@kirill.markin.kira"
   social_logo_url_default:
   social_logo_url_hover:
   footer_bottom: true
@@ -78,6 +65,20 @@
   footer_bottom_green_line: true
   social_logo_url_default: /data/social_logos/reddit.png
   social_logo_url_hover: /data/social_logos/reddit_hover.png
+- name: Twitter
+  url: https://x.com/kirill_markin_
+  username: "@kirill_markin_"
+  social_logo_url_default: /data/social_logos/xcom.png
+  social_logo_url_hover: /data/social_logos/xcom_hover.png
+  footer_bottom: true
+  avatar_learn_more: true
+  footer_bottom_green_line: true
+- name: Facebook
+  url: https://www.facebook.com/kirill.markin.kira
+  username: "@kirill.markin.kira"
+  social_logo_url_default:
+  social_logo_url_hover:
+  footer_bottom: true
 - name: Blog
   url: https://articles.kirill-markin.com/
   footer_bottom: true

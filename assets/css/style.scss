@@ -431,6 +431,66 @@ h1 {
     // letter-spacing: 2px;
     // margin: 0;
     // line-height: 0.9;
+    position: relative;
+    color: var(--dark-gray);
+    // Removing the font-size override to keep original styling
+    font-weight: 400;
+    line-height: 81%;
+    text-transform: uppercase;
+    
+    &:hover {
+      animation: none; /* Disable any previous animations */
+      color: transparent;
+      
+      &::before, &::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: var(--dark-gray);
+      }
+      
+      /* Added a new pseudo-element specifically for multi-line text effect */
+      &::before {
+        animation: hacker-text-glitch 3s infinite linear alternate,
+                  name-scan-lines 3s infinite linear;
+        /* Removed clip-path to fix multi-line issues */
+        left: 1px;
+        text-shadow: 0.05em 0 0 rgba(0, 255, 255, 0.75), 
+                    -0.025em -0.05em 0 rgba(255, 0, 255, 0.75),
+                    0.025em 0.05em 0 rgba(0, 140, 255, 0.75);
+      }
+      
+      &::after {
+        animation: hacker-text-glitch 2s infinite linear alternate-reverse;
+        /* Removed clip-path to fix multi-line issues */
+        left: -1px;
+        text-shadow: 0.05em 0 0 rgba(0, 255, 255, 0.75), 
+                    -0.05em -0.025em 0 rgba(255, 0, 255, 0.75),
+                    0.025em 0.05em 0 rgba(0, 140, 255, 0.75);
+      }
+      
+      /* Random glitch block effect */
+      &:before, &:after {
+        z-index: 2;
+      }
+      
+      /* Add a separate pseudo-element for glitch blocks */
+      &:after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        z-index: 1;
+        animation: hacker-text-glitch 2s infinite linear alternate-reverse,
+                  glitch-blocks 4s steps(1) infinite;
+      }
+    }
   }
 
   .personal-titles p {
@@ -2363,5 +2423,129 @@ h2 {
   
   header .social-links {
     display: none;
+  }
+}
+
+// Hacker-style text glitch animation
+@keyframes hacker-text-glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(0, 255, 255, 0.75), -0.025em -0.05em 0 rgba(255, 0, 255, 0.75),
+                 0.025em 0.05em 0 rgba(0, 140, 255, 0.75);
+    transform: translate(0, 0) skew(0deg);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(0, 255, 255, 0.75), -0.025em -0.05em 0 rgba(255, 0, 255, 0.75),
+                 0.025em 0.05em 0 rgba(0, 140, 255, 0.75);
+    transform: translate(-1px, 0) skew(0deg);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(0, 255, 255, 0.75), 0.025em 0.025em 0 rgba(255, 0, 255, 0.75),
+                -0.05em -0.05em 0 rgba(0, 140, 255, 0.75);
+    transform: translate(1px, 0) skew(-5deg);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(0, 255, 255, 0.75), 0.025em 0.025em 0 rgba(255, 0, 255, 0.75),
+                -0.05em -0.05em 0 rgba(0, 140, 255, 0.75);
+    transform: translate(0, 0) skew(0deg);
+  }
+  50% {
+    text-shadow: 0.05em 0.025em 0 rgba(0, 255, 255, 0.75), 0.05em 0 0 rgba(255, 0, 255, 0.75),
+                 0 -0.05em 0 rgba(0, 140, 255, 0.75);
+    transform: translate(-2px, 0) skew(3deg);
+  }
+  74% {
+    text-shadow: 0.05em 0.025em 0 rgba(0, 255, 255, 0.75), 0.05em 0 0 rgba(255, 0, 255, 0.75),
+                 0 -0.05em 0 rgba(0, 140, 255, 0.75);
+    transform: translate(0, 0) skew(0deg);
+  }
+  75% {
+    text-shadow: -0.05em -0.025em 0 rgba(0, 255, 255, 0.75), -0.025em -0.025em 0 rgba(255, 0, 255, 0.75),
+                 -0.025em -0.025em 0 rgba(0, 140, 255, 0.75);
+    transform: translate(1px, -1px) skew(-3deg);
+  }
+  85% {
+    text-shadow: 0.075em 0.035em 0 rgba(0, 255, 255, 0.75), 0 0 0 rgba(255, 0, 255, 0.75),
+                0.075em -0.05em 0 rgba(0, 140, 255, 0.75);
+    transform: translate(-1px, 0) skew(0deg);
+  }
+  100% {
+    text-shadow: 0.075em 0.035em 0 rgba(0, 255, 255, 0.75), 0 0 0 rgba(255, 0, 255, 0.75),
+                0.075em -0.05em 0 rgba(0, 140, 255, 0.75);
+    transform: translate(0, 0) skew(0deg);
+  }
+}
+
+/* Scan lines animation for the name */
+@keyframes name-scan-lines {
+  0%, 100% {
+    background: linear-gradient(
+      0deg,
+      transparent 0%,
+      rgba(0, 255, 255, 0.05) 0.5%,
+      transparent 1%,
+      transparent 10%,
+      rgba(255, 0, 255, 0.05) 10.5%,
+      transparent 11%,
+      transparent 30%,
+      rgba(0, 140, 255, 0.05) 30.5%,
+      transparent 31%,
+      transparent 70%,
+      rgba(0, 255, 255, 0.05) 70.5%,
+      transparent 71%
+    );
+    background-size: 100% 100%;
+  }
+  50% {
+    background: linear-gradient(
+      0deg,
+      transparent 0%,
+      rgba(0, 255, 255, 0.05) 0.5%,
+      transparent 1%,
+      transparent 20%,
+      rgba(255, 0, 255, 0.05) 20.5%,
+      transparent 21%,
+      transparent 40%,
+      rgba(0, 140, 255, 0.05) 40.5%,
+      transparent 41%,
+      transparent 60%,
+      rgba(255, 0, 255, 0.05) 60.5%,
+      transparent 61%,
+      transparent 80%,
+      rgba(0, 255, 255, 0.05) 80.5%,
+      transparent 81%
+    );
+    background-size: 100% 100%;
+  }
+}
+
+/* Randomly appearing blocks for glitch effect */
+@keyframes glitch-blocks {
+  0%, 5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 
+  60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100% {
+    box-shadow: none;
+  }
+  2% {
+    box-shadow: 0.4em 0 0 rgba(255, 0, 255, 0.75), -0.1em -0.2em 0 rgba(0, 255, 255, 0.75);
+  }
+  13% {
+    box-shadow: -0.1em -0.25em 0 rgba(0, 140, 255, 0.75), 0.4em 0 0 rgba(255, 0, 255, 0.75);
+  }
+  27% {
+    box-shadow: 0.4em 0 0 rgba(255, 0, 255, 0.75), 0.2em 0.1em 0 rgba(0, 255, 255, 0.75);
+  }
+  42% {
+    box-shadow: -0.2em 0 0 rgba(0, 140, 255, 0.75), -0.3em -0.1em 0 rgba(255, 0, 255, 0.75);
+  }
+  58% {
+    box-shadow: 0.3em 0.1em 0 rgba(0, 255, 255, 0.75), 0.4em 0 0 rgba(0, 140, 255, 0.75);
+  }
+  72% {
+    box-shadow: -0.2em -0.1em 0 rgba(255, 0, 255, 0.75), 0.1em 0.2em 0 rgba(0, 255, 255, 0.75);
+  }
+  87% {
+    box-shadow: 0.3em 0.1em 0 rgba(0, 140, 255, 0.75), -0.4em 0 0 rgba(255, 0, 255, 0.75);
+  }
+  93% {
+    box-shadow: 0.1em 0.4em 0 rgba(0, 255, 255, 0.75), -0.4em -0.3em 0 rgba(0, 140, 255, 0.75);
   }
 }
