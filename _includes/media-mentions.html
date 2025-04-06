@@ -86,6 +86,9 @@
           {% endif %}
         
         {% when "mention-card-featured-horizontal" %}
+          {% if thumbnail %}
+            <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
+          {% endif %}
           <div class="media-featured-content">
             <div class="media-info">
               <div class="media-info-title">{{ display_title }}</div>
@@ -95,39 +98,35 @@
               <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
             {% endif %}
           </div>
+        
+        {% when "mention-card-video" %}
+
           {% if thumbnail %}
             <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
           {% endif %}
-        
-        {% when "mention-card-video" %}
+          
           <div class="media-info">
             <div class="media-info-title">{{ display_title }}</div>
           </div>
           
-          {% if thumbnail %}
-            <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
-            <div class="thumbnail-gradient"></div>
-          {% endif %}
-          
           <img class="video-icon" src="/data/icons/video.svg" alt="Video Icon">
+          
           {% if mention.website_logo_url %}
             <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
           {% endif %}
         
         {% when "mention-card-text-photo" %}
+          {% if thumbnail %}
+            <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
+          {% endif %}
+
           <div class="media-info">
             <div class="media-info-title">{{ display_title }}</div>
           </div>
           
-          {% if thumbnail %}
-            <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
-            <div class="thumbnail-gradient"></div>
-          {% endif %}
-          
           {% if mention.website_logo_url %}
             <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
           {% endif %}
-        
         {% else %} <!-- Default case for mention-card-text -->
           <div class="media-info">
             <div class="media-info-title">{{ display_title }}</div>

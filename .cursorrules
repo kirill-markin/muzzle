@@ -44,4 +44,7 @@ The website has different article/media mention layout types:
 ### Media Assets:
 
 - Thumbnails stored in: `data/articles_thumbnails/`
-- Website logos stored in: `data/webstie_logos/` 
+- Website logos stored in: `data/webstie_logos/`
+- **IMPORTANT:** All thumbnails MUST be in 16:9 aspect ratio
+- For square images, use: `convert image.png -resize WIDTHxHEIGHT^ -gravity center -extent WIDTHxHEIGHT image-16x9.png`
+- Check aspect ratio with: `identify image.png` 
