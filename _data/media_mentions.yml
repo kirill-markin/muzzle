@@ -64,14 +64,6 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/medium-2023-06-22.webp
   website_logo_url: /data/webstie_logos/medium.png
-- title: "DIY Voice-Controlled GPT Chat: A Step-by-Step Guide for Beginners"
-  url: https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979
-  publisher: Medium
-  date: 2023-06-08
-  type: Article
-  language: en
-  thumbnail_url: /data/articles_thumbnails/medium-2023-06-08.webp
-  website_logo_url: /data/webstie_logos/medium.png
 - title: "Where CRM is used? Discovering the Applications of CRM: Company Size, Function, and Industry"
   url: https://ozma.io/articles/where-crm-is-used-discovering-the-applications-of-crm-size-function-industry/
   publisher: Ozma Inc.
@@ -80,6 +72,14 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/ozma-2023-06-04.webp
   website_logo_url: /data/webstie_logos/ozma.svg
+- title: "DIY Voice-Controlled GPT Chat: A Step-by-Step Guide for Beginners"
+  url: https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979
+  publisher: Medium
+  date: 2023-06-08
+  type: Article
+  language: en
+  thumbnail_url: /data/articles_thumbnails/medium-2023-06-08.webp
+  website_logo_url: /data/webstie_logos/medium.png
 - title: "CRM in Excel — Benefits and Differences"
   url: https://ozma.io/articles/crm-in-excel-benefits-and-differences/
   publisher: Ozma Inc.
@@ -95,17 +95,15 @@
   type: Article
   language: en
   website_logo_url: /data/webstie_logos/ozma.svg
-
-# БИТАЯ ССЫЛКА
-# - title: "Hackathon Judge: ML TalentMatch"
-#   alternative_title: "Hackathon Judge: ML TalentMatch"
-#   url: https://www.zavodit.ru/ru/calendar/event/46
-#   publisher: sense-group.ru
-#   date: 2024-02-28
-#   type: Event
-#   language: ru
-#   thumbnail_url: /data/articles_thumbnails/sense-group-2024-02-28.webp
-
+- title: "CRM-система: как сэкономить деньги и выбрать наилучший вариант"
+  alternative_title: "CRM System: How to Save Money and Choose the Best Option"
+  url: https://rb.ru/opinion/best-crm/
+  publisher: Rusbase
+  date: 2021-03-12
+  type: Article
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/rusbase-2021-03-12.webp
+  website_logo_url: /data/webstie_logos/rusbase.png
 - title: "Как мотивировать сотрудников использовать AI инструменты в работе"
   alternative_title: "How to Motivate Employees to Use AI Tools in Their Work"
   url: https://epicgrowth.io/ai-conference#agenda
@@ -161,13 +159,6 @@
   type: Video
   language: ru
   website_logo_url: /data/webstie_logos/youtube.png
-- title: "CRM-система: как сэкономить деньги и выбрать наилучший вариант"
-  alternative_title: "CRM System: How to Save Money and Choose the Best Option"
-  url: https://rb.ru/opinion/best-crm/
-  publisher: Rusbase
-  date: 2021-03-12
-  type: Article
-  language: ru
 - title: "Не повторять! Ошибки в общении с клиентами, которые роняют продажи"
   alternative_title: "Don't Repeat! Mistakes in Communication with Customers That Ruin Sales"
   url: https://e.gd.ru/1031609
@@ -182,6 +173,15 @@
   date: 2023-06-08
   type: Video
   language: ru
+# БИТАЯ ССЫЛКА
+# - title: "Hackathon Judge: ML TalentMatch"
+#   alternative_title: "Hackathon Judge: ML TalentMatch"
+#   url: https://www.zavodit.ru/ru/calendar/event/46
+#   publisher: sense-group.ru
+#   date: 2024-02-28
+#   type: Event
+#   language: ru
+#   thumbnail_url: /data/articles_thumbnails/sense-group-2024-02-28.webp
 - title: "Грядущие продукты на основе Chat-GPT: что ожидать в наших приложениях и системах"
   alternative_title: "Upcoming Products Based on Chat-GPT: What to Expect in Our Applications and Systems"
   url: https://www.comnews.ru/digital-economy/content/227470/2023-07-16/2023-w28/gryaduschie-produkty-osnove-chat-gpt-chto-ozhidat-nashikh-prilozheniyakh-i-sistemakh
