@@ -27,15 +27,8 @@
           </div>
         </button>
       </div>
-      <div class="social-links">
-        {% for link in site.data.social_links %}
-          {% if link.header == true %}
-            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
-              <img src="{{ link.social_logo_url_default }}" alt="{{ link.name }}" class="icon-default">
-              <img src="{{ link.social_logo_url_hover }}" alt="{{ link.name }}" class="icon-hover">
-            </a>
-          {% endif %}
-        {% endfor %}
+      <div class="mobile-blog-link">
+        <a href="https://articles.kirill-markin.com/" target="_blank" rel="noopener noreferrer" class="header-mobile-blog-button">Blog</a>
       </div>
     </div>
     <div class="header-mobile-menu-open hidden">
