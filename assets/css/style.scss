@@ -691,7 +691,7 @@ h2 {
   .media-mention-thumbnail {
     width: 100%;
     object-fit: contain;
-    max-height: 9.1rem;
+    max-height: 50%;
 
     // Mobile
     @media screen and (max-width: 768px) {
