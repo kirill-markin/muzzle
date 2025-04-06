@@ -73,46 +73,13 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/kirill-2024-09-04.webp
   website_logo_url: /data/webstie_logos/youtube.png
-- title: "Creating a\u00A0voice-enabled Telegram Bot for\u00A0GPT Chat without DevOps"
-  url: https://kirill-markin.medium.com/creating-a-voice-enabled-telegram-bot-for-gpt-chat-without-devops-a-comprehensive-guide-8a905241cb9c
-  publisher: Medium
-  date: 2023-06-22
+- title: "Как\u00A0сделать таск-трекер под\u00A0себя на\u00A0low-code конструкторе"
+  alternative_title: "How to\u00A0Make a\u00A0Task Tracker for\u00A0Yourself on\u00A0a\u00A0Low-Code Constructor"
+  url: https://habr.com/ru/articles/673874/
+  publisher: Habr
+  date: 2022-07-12
   type: Article
-  language: en
-  thumbnail_url: /data/articles_thumbnails/medium-2023-06-22.webp
-  website_logo_url: /data/webstie_logos/medium.png
-- title: "Where CRM is\u00A0used? Discovering the\u00A0Applications of\u00A0CRM: Company Size, Function, and\u00A0Industry"
-  url: https://ozma.io/articles/where-crm-is-used-discovering-the-applications-of-crm-size-function-industry/
-  publisher: Ozma Inc.
-  date: 2023-06-04
-  type: Article
-  language: en
-  thumbnail_url: /data/articles_thumbnails/ozma-2023-06-04.webp
-  website_logo_url: /data/webstie_logos/ozma.svg
-- title: "DIY Voice-Controlled GPT Chat: A\u00A0Step-by-Step Guide for\u00A0Beginners"
-  url: https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979
-  publisher: Medium
-  date: 2023-06-08
-  type: Article
-  language: en
-  thumbnail_url: /data/articles_thumbnails/medium-2023-06-08.webp
-  website_logo_url: /data/webstie_logos/medium.png
-- title: "CRM in\u00A0Excel — Benefits and\u00A0Differences"
-  url: https://ozma.io/articles/crm-in-excel-benefits-and-differences/
-  publisher: Ozma Inc.
-  date: 2022-10-03
-  type: Article
-  language: en
-  thumbnail_url: /data/articles_thumbnails/ozma-2022-10-03.webp
-  website_logo_url: /data/webstie_logos/ozma.svg
-- title: "Custom CRM from\u00A0scratch on\u00A0low-code platform ozma.io"
-  url: https://ozma.io/articles/custom-crm-from-scratch-on-low-code-platform-ozma-io/
-  publisher: Ozma Inc.
-  date: 2022-08-27
-  type: Article
-  language: en
-  thumbnail_url: /data/articles_thumbnails/ozma-2022-08-27.webp
-  website_logo_url: /data/webstie_logos/ozma.svg
+  language: ru
 - title: "Как\u00A0мотивировать сотрудников использовать AI инструменты в\u00A0работе"
   alternative_title: "How to\u00A0Motivate Employees to\u00A0Use AI Tools in\u00A0Their Work"
   url: https://epicgrowth.io/ai-conference#agenda
@@ -256,13 +223,6 @@
   date: 2023-07-11
   type: Article
   language: ru
-- title: "Как\u00A0сделать таск-трекер под\u00A0себя на\u00A0low-code конструкторе"
-  alternative_title: "How to\u00A0Make a\u00A0Task Tracker for\u00A0Yourself on\u00A0a\u00A0Low-Code Constructor"
-  url: https://habr.com/ru/articles/673874/
-  publisher: Habr
-  date: 2022-07-12
-  type: Article
-  language: ru
 - title: "«Жизнь после диплома» — интервью с\u00A0Кириллом Маркиным"
   alternative_title: "Life After Diploma: An\u00A0Interview with\u00A0Kirill Markin"
   url: https://vk.com/@bmstu1830-zhizn-posle-diploma-intervu-s-kirillom-markinym
@@ -284,29 +244,6 @@
   date: 2023-07-18
   type: Article
   language: ru
-- title: 'LOW CODE - тренд на\u00A0"упрощенку"'
-  alternative_title: "LOW CODE - Trend on\u00A0'Simplification'"
-  url: https://www.facebook.com/watch/?v=2846719108881072&ref=sharing
-  publisher: TAGES
-  date: 2021-05-19
-  type: Video
-  language: ru
-- title: "Автоматизация процессов с\u00A0помощью CRM: как\u00A0проще всего это\u00A0сделать?"
-  alternative_title: "Automation of\u00A0Processes with\u00A0CRM: How to\u00A0Do It\u00A0the\u00A0Simplest Way?"
-  url: https://vc.ru/marketing/212774-avtomatizaciya-processov-s-pomoshyu-crm-kak-proshe-vsego-eto-sdelat
-  publisher: VC.RU
-  date: 2021-02-24
-  type: Article
-  language: ru
-- title: "ИИ-инструменты для\u00A0агентов по\u00A0недвижимости"
-  alternative_title: "AI Tools for\u00A0Real Estate Agents"
-  url: https://www.youtube.com/live/utRAu4_f1mo?si=I2cyJL-ZqiV3dWrU
-  publisher: Youtube
-  date: 2024-02-06
-  type: Video
-  language: ru
-  thumbnail_url: /data/articles_thumbnails/youtube-2024-02-06.webp
-  website_logo_url: /data/webstie_logos/fedor-youtube-channel.png
 - title: "CRM для\u00A0школы актёрского мастерства Gogol School: пример внедрения ozma.io"
   alternative_title: "CRM for\u00A0the\u00A0Gogol School of\u00A0Acting: An\u00A0Example of\u00A0Implementation of\u00A0ozma.io"
   url: https://ozma.io/ru/articles/crm-dlya-shkoly-aktyorskogo-masterstva/
@@ -322,4 +259,67 @@
   date: 2022-02-21
   type: Case Study
   language: ru
+  website_logo_url: /data/webstie_logos/ozma.svg
+- title: "ИИ-инструменты для\u00A0агентов по\u00A0недвижимости"
+  alternative_title: "AI Tools for\u00A0Real Estate Agents"
+  url: https://www.youtube.com/live/utRAu4_f1mo?si=I2cyJL-ZqiV3dWrU
+  publisher: Youtube
+  date: 2024-02-06
+  type: Video
+  language: ru
+  thumbnail_url: /data/articles_thumbnails/youtube-2024-02-06.webp
+  website_logo_url: /data/webstie_logos/fedor-youtube-channel.png
+- title: 'LOW CODE - тренд на\u00A0"упрощенку"'
+  alternative_title: "LOW CODE - Trend on\u00A0'Simplification'"
+  url: https://www.facebook.com/watch/?v=2846719108881072&ref=sharing
+  publisher: TAGES
+  date: 2021-05-19
+  type: Video
+  language: ru
+- title: "Автоматизация процессов с\u00A0помощью CRM: как\u00A0проще всего это\u00A0сделать?"
+  alternative_title: "Automation of\u00A0Processes with\u00A0CRM: How to\u00A0Do It\u00A0the\u00A0Simplest Way?"
+  url: https://vc.ru/marketing/212774-avtomatizaciya-processov-s-pomoshyu-crm-kak-proshe-vsego-eto-sdelat
+  publisher: VC.RU
+  date: 2021-02-24
+  type: Article
+  language: ru
+- title: "Creating a\u00A0voice-enabled Telegram Bot for\u00A0GPT Chat without DevOps"
+  url: https://kirill-markin.medium.com/creating-a-voice-enabled-telegram-bot-for-gpt-chat-without-devops-a-comprehensive-guide-8a905241cb9c
+  publisher: Medium
+  date: 2023-06-22
+  type: Article
+  language: en
+  thumbnail_url: /data/articles_thumbnails/medium-2023-06-22.webp
+  website_logo_url: /data/webstie_logos/medium.png
+- title: "DIY Voice-Controlled GPT Chat: A\u00A0Step-by-Step Guide for\u00A0Beginners"
+  url: https://kirill-markin.medium.com/diy-voice-controlled-gpt-chat-a-step-by-step-guide-for-beginners-5535330a7979
+  publisher: Medium
+  date: 2023-06-08
+  type: Article
+  language: en
+  thumbnail_url: /data/articles_thumbnails/medium-2023-06-08.webp
+  website_logo_url: /data/webstie_logos/medium.png
+- title: "Where CRM is\u00A0used? Discovering the\u00A0Applications of\u00A0CRM: Company Size, Function, and\u00A0Industry"
+  url: https://ozma.io/articles/where-crm-is-used-discovering-the-applications-of-crm-size-function-industry/
+  publisher: Ozma Inc.
+  date: 2023-06-04
+  type: Article
+  language: en
+  thumbnail_url: /data/articles_thumbnails/ozma-2023-06-04.webp
+  website_logo_url: /data/webstie_logos/ozma.svg
+- title: "CRM in\u00A0Excel — Benefits and\u00A0Differences"
+  url: https://ozma.io/articles/crm-in-excel-benefits-and-differences/
+  publisher: Ozma Inc.
+  date: 2022-10-03
+  type: Article
+  language: en
+  thumbnail_url: /data/articles_thumbnails/ozma-2022-10-03.webp
+  website_logo_url: /data/webstie_logos/ozma.svg
+- title: "Custom CRM from\u00A0scratch on\u00A0low-code platform ozma.io"
+  url: https://ozma.io/articles/custom-crm-from-scratch-on-low-code-platform-ozma-io/
+  publisher: Ozma Inc.
+  date: 2022-08-27
+  type: Article
+  language: en
+  thumbnail_url: /data/articles_thumbnails/ozma-2022-08-27.webp
   website_logo_url: /data/webstie_logos/ozma.svg
