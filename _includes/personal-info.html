@@ -2,10 +2,15 @@
     <h1 class="personal-name">{{ site.data.personal_info.name }}</h1>
 </div>
 <div class="personal-contacts">
+    <!-- Скрытый чекбокс для отслеживания чередования -->
+    <input type="checkbox" id="toggle-state" class="toggle-state" hidden>
+    
     <div class="avatas-and-titils">
         <div class="profile-image-container">
+            <label for="toggle-state" class="toggle-trigger"></label>
             <img src="/data/Kirill-Markin.webp" alt="Picture of {{ site.data.personal_info.name }}" class="profile-image main-image" width="100%">
-            <img src="/data/kirill-devil.webp" alt="Glitch effect" class="profile-image glitch-image" width="100%">
+            <img src="/data/kirill-angel.webp" alt="Angel glitch effect" class="profile-image angel-image" width="100%">
+            <img src="/data/kirill-devil.webp" alt="Devil glitch effect" class="profile-image devil-image" width="100%">
         </div>
         <div class="personal-titles">
         <p class="main-title">{{ site.data.personal_info.job_title }}</p>
