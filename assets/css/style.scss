@@ -632,32 +632,38 @@ h1 {
     transform: scale(1);
     filter: none;
   }
-  // Start returning quickly
+  // Super fast return - compressed timeframe
   48% {
     opacity: 0.2;
     transform: scale(1.004) translateX(-1px);
     filter: url('#profile-noise-filter');
   }
-  60% {
+  51% {
     opacity: 0.4;
     transform: scale(1.008) translateX(1px);
     filter: url('#hacker-digital-corruption');
   }
-  70% {
+  54% {
     opacity: 0.6;
     transform: scale(1.01) translateY(-1px);
     filter: brightness(0.95) contrast(1.2);
   }
-  80% {
+  57% {
     opacity: 0.8;
     transform: scale(1.008) translateX(-1px);
     filter: url('#glitch-filter');
   }
-  90% {
+  60% {
     opacity: 0.9;
     transform: scale(1.004) translateX(1px);
     filter: brightness(1.05);
   }
+  65% {
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+  }
+  // Stay normal for the rest of the animation
   100% {
     opacity: 1;
     transform: scale(1);
@@ -712,32 +718,38 @@ h1 {
     transform: scale(1);
     filter: none;
   }
-  // Start disappearing quickly
+  // Ultra fast disappearance
   48% {
     opacity: 0.8;
     transform: scale(1.004) translateX(1px);
     filter: url('#profile-noise-filter');
   }
-  60% {
+  51% {
     opacity: 0.6;
     transform: scale(1.008) translateX(-1px);
     filter: url('#glitch-filter');
   }
-  70% {
+  54% {
     opacity: 0.4;
     transform: scale(1.01) translateY(1px);
     filter: brightness(0.95) contrast(1.15) saturate(1.1);
   }
-  80% {
+  57% {
     opacity: 0.2;
     transform: scale(1.008) translateX(1px);
     filter: brightness(1.1) contrast(1.2);
   }
-  90% {
+  60% {
     opacity: 0.1;
     transform: scale(1.004) translateX(-1px);
     filter: url('#scan-lines');
   }
+  65% {
+    opacity: 0;
+    transform: scale(1);
+    filter: none;
+  }
+  // Stay hidden for the rest of the animation
   100% {
     opacity: 0;
     transform: scale(1);
