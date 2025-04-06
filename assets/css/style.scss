@@ -236,7 +236,7 @@ header {
 
     .social-links {
       display: none!important;
-      
+
       margin-right: 4px;
     }
 
@@ -1013,6 +1013,9 @@ h2 {
   font-weight: 500;
   line-height: 81%;
   font-size: var(--font-size-large);
+  @media screen and (max-width: 768px) {
+    font-size: calc(var(--font-size-large) - 0.3rem);
+  }
 }
 
 .book-meeting-button {
