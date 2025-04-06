@@ -507,12 +507,10 @@ h2 {
   }
   color: var(--black);
   font-size: var(--font-size-medium);
-  @media screen and (min-width: 768px) {
-    font-size: var(--font-size-large);
-  }
   font-style: normal;
   font-weight: 500;
   line-height: 81%;
+  font-size: var(--font-size-large);
 }
 
 .book-meeting-button {
