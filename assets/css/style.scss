@@ -704,11 +704,8 @@ h2 {
   .media-info {
     padding: 1rem;
     height: 27%;
+    max-height: 70px;
     overflow: hidden;
-
-    .media-info-title {
-
-    }  
   }
   
   .media-mention-thumbnail {
