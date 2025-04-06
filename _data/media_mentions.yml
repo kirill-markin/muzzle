@@ -80,24 +80,26 @@
   date: 2022-07-12
   type: Article
   language: ru
+  thumbnail_url: /data/articles_thumbnails/habr-2022-07-12.webp
+  website_logo_url: /data/webstie_logos/habr.svg
 - title: "Как\u00A0мотивировать сотрудников использовать AI инструменты в\u00A0работе"
   alternative_title: "How to\u00A0Motivate Employees to\u00A0Use AI Tools in\u00A0Their Work"
-  url: https://epicgrowth.io/ai-conference#agenda
+  url: https://web.archive.org/web/20240617095343/https://epicgrowth.io/ai-conference#agenda
   publisher: epicgrowth.io
   date: 2024-03-14
   type: Panel Discussion
   event: Epic AI Conference 2024
-  event_url: https://epicgrowth.io/ai-conference
+  event_url: https://web.archive.org/web/20240617095343/https://epicgrowth.io/ai-conference#agenda
   thumbnail_url: /data/articles_thumbnails/epicgrowth-2024-03-14.webp
   language: ru
 - title: "Как\u00A0прикрутить AI к\u00A0вашему продукту: пример на\u00A0ozma.io"
   alternative_title: "How to\u00A0Integrate AI into\u00A0Your Product: An\u00A0Example from\u00A0ozma.io"
-  url: https://epicgrowth.io/ai-conference#agenda
+  url: https://web.archive.org/web/20240617095343/https://epicgrowth.io/ai-conference#agenda
   publisher: epicgrowth.io
   date: 2024-03-12
   type: Conference Talk
   event: Epic AI Conference 2024
-  event_url: https://epicgrowth.io/ai-conference
+  event_url: https://web.archive.org/web/20240617095343/https://epicgrowth.io/ai-conference#agenda
   thumbnail_url: /data/articles_thumbnails/epicgrowth-2024-03-12.webp
   language: ru
 - title: "Как\u00A0решить сложную большую задачу с\u00A0помощью AI: пайплайны, агенты и\u00A0другие шалости"
