@@ -297,7 +297,8 @@
   date: 2024-02-06
   type: Video
   language: ru
-  website_logo_url: /data/webstie_logos/youtube.png
+  thumbnail_url: /data/articles_thumbnails/youtube-2024-02-06.webp
+  website_logo_url: /data/webstie_logos/fedor-youtube-channel.png
 - title: "CRM для\u00A0школы актёрского мастерства Gogol School: пример внедрения ozma.io"
   alternative_title: "CRM for\u00A0the\u00A0Gogol School of\u00A0Acting: An\u00A0Example of\u00A0Implementation of\u00A0ozma.io"
   url: https://ozma.io/ru/articles/crm-dlya-shkoly-aktyorskogo-masterstva/
