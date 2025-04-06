@@ -71,6 +71,8 @@ header {
       line-height: 100%;
       text-transform: uppercase;
       border-right: 1px solid var(--dark-gray);
+      position: relative;
+      overflow: hidden;
     }
     .header-desktop-button:last-child {
       border-right: none;
@@ -78,38 +80,50 @@ header {
     .header-desktop-button:hover {
       background-color: var(--dark-gray);
       color: var(--light-gray);
+      animation: clean-glitch-effect 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: 10;
+      }
+      
+      &::before {
+        animation: tech-noise-scanlines 0.8s steps(5) both;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent 0%, 
+          rgba(32, 128, 32, 0.02) 0.2%, 
+          rgba(0, 255, 0, 0.05) 0.3%,
+          transparent 0.5%
+        );
+        background-size: 100% 2px;
+        mix-blend-mode: screen;
+        opacity: 0;
+      }
+      
+      &::after {
+        animation: tech-rgb-shift 0.8s steps(3) both;
+        background-color: transparent;
+        mix-blend-mode: exclusion;
+        opacity: 0;
+      }
     }
 
-    .header-learn-more-text {
-      padding: 0.56rem 2.25rem;
+    // Specific hover styles for Blog button
+    .header-blog:hover {
+      background-color: #ff00ff; // Neon pink background
     }
-    .header-learn-more-social-links {
-      display: none;
-      flex: 1;
-      background-color: var(--green);
-      height: 100%;
-      align-items: center;
-      justify-content: space-evenly;
-    }
-    .header-learn-more:hover .header-learn-more-social-links {
-      display: flex;
-      border: 1px solid var(--green);
-      a {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      a:hover {
-        svg path {
-          fill: var(--black);
-        }
-      }
-    }
-    .header-learn-more:hover .header-learn-more-text {
-      background-color: var(--dark-gray);
-      cursor: default;
-      font-weight: 300;
+
+    // Specific hover styles for Book a meeting button
+    .header-book-a-meeting:hover {
+      background-color: #00ffff; // Neon blue/cyan background
+      color: #000000; // Black text for better readability on neon blue
     }
   }
 }
