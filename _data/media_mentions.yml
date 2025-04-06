@@ -40,6 +40,14 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/ozma-2024-04-01.webp
   website_logo_url: /data/webstie_logos/youtube.png
+- title: "Merged pull request<br>to\u00A0openai-cua-sample-app"
+  url: https://github.com/openai/openai-cua-sample-app/pull/11
+  publisher: openai
+  date: 2024-04-01
+  type: Contribution
+  language: en
+  thumbnail_url: /data/articles_thumbnails/openai-2024-04-01.webp
+  website_logo_url: /data/webstie_logos/openai.png
 - title: "Write article as\u00A0programmer: IDE Cursor and\u00A0LLM magic"
   url: https://youtu.be/ySA8_aVqu5I?si=muBLOwv3Smjltt3u
   publisher: Kirill Markin
