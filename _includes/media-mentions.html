@@ -32,28 +32,22 @@
       {% assign alt_text = mention.alternative_title | escape %}
       {% assign display_title = mention.alternative_title %}
     {% endif %}
-    
+
     {%- comment -%} Determine card style based on type and position {%- endcomment -%}
     {% if is_large %}
       {% assign size_class = "mention-card-large" %}
-      {% if mention.type == "Video" %}
-        {% assign card_style = "mention-card-featured-horizontal" %}
-        {% assign is_video = true %}
-      {% else %}
-        {% assign is_video = false %}
-        {% assign card_style = "mention-card-featured-horizontal" %}
-      {% endif %}
-    {% else %}
+      {% assign card_style = "mention-card-featured-horizontal" %}
+      {% assign is_video = mention.type == "Video" %}
+    {% elsif thumbnail %}
       {% assign is_video = false %}
-      {% if thumbnail %}
-        {% assign card_style = "mention-card-text-photo" %}
-      {% endif %}
+      {% assign card_style = "mention-card-text-photo" %}
     {% endif %}
 
     {%- comment -%} Determine mention type for display {%- endcomment -%}
-    {% assign display_type = mention.type | default: "Article" %}
-    {% if mention.event %}
-      {% assign display_type = "Conference" %}
+    {% if mention.type %}
+      {% assign display_type = mention.type %}
+    {% else %}
+      {% assign display_type = nil %}
     {% endif %}
 
     <a href="{{ mention.url }}" target="_blank" rel="noopener noreferrer" class="media-mention {{ card_style }} {{ size_class }}">
@@ -63,9 +57,11 @@
       </div>
 
       {%- comment -%} Type indicator (common to all layouts) {%- endcomment -%}
-      <div class="media-mention-type">
-        <div class="media-mention-type-txt">[{{ display_type }}]</div>
-      </div>
+      {% if display_type %}
+        <div class="media-mention-type">
+          <div class="media-mention-type-txt">[{{ display_type }}]</div>
+        </div>
+      {% endif %}
 
       {%- comment -%} Layout-specific templates {%- endcomment -%}
       {% case card_style %}
