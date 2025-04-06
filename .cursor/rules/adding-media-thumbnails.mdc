@@ -24,34 +24,48 @@ Media mentions are stored in `_data/media_mentions.yml` with the following struc
 
 ## Image Requirements
 
-- **Location**: All thumbnails should be stored in `data/articles_thumbnails/`
-- **Format**: WebP format preferred for best compression/quality balance
-- **Dimensions**: 520×297 pixels (16:9 aspect ratio)
-- **Naming Convention**: Use `publisher-YYYY-MM-DD.webp` format
+- **Location**: 
+  - Thumbnails → `data/articles_thumbnails/`
+  - Website logos → `data/webstie_logos/`
+- **Format**: WebP format preferred for thumbnails, PNG/SVG for logos
+- **Dimensions**: 520×297 pixels (16:9 aspect ratio) for thumbnails
+- **Naming Convention**: 
+  - Thumbnails → `publisher-YYYY-MM-DD.webp` 
+  - Logos → descriptive name reflecting the source (e.g., `fedor-youtube-channel.png`)
 - **Quality**: Use 100% quality for best appearance
 
 ## Step-by-Step Process
 
-### 1. Check the existing thumbnails
+### 1. Check the existing thumbnails and logos
 
 ```bash
 ls -la data/articles_thumbnails/
+ls -la data/webstie_logos/
 ```
 
-### 2. Analyze your source image
+### 2. For YouTube videos, fetch the thumbnail
 
 ```bash
-identify -format "%wx%h" source-image.png
+# Get thumbnail URL
+curl -s "https://www.youtube.com/watch?v=VIDEO_ID" | grep -o 'og:image" content="[^"]*' | cut -d\" -f3
+
+# Download thumbnail
+curl -s -o /tmp/youtube-thumbnail.jpg "THUMBNAIL_URL"
 ```
 
-This will show you the dimensions of your source image.
-
-### 3. Process the image
-
-For best results, use ImageMagick with these options:
+### 3. Analyze your source image
 
 ```bash
-magick source-image.png -resize 520x297^ -gravity center -extent 520x297 -quality 100 data/articles_thumbnails/publisher-YYYY-MM-DD.webp
+identify -format "%wx%h" /tmp/youtube-thumbnail.jpg
+```
+
+### 4. Process the image
+
+For best results with YouTube thumbnails:
+
+```bash
+# Standard resize with proper 16:9 aspect ratio
+magick /tmp/youtube-thumbnail.jpg -resize 520x297^ -gravity center -extent 520x297 -quality 100 data/articles_thumbnails/youtube-YYYY-MM-DD.webp
 ```
 
 This command:
@@ -61,43 +75,66 @@ This command:
 - Sets maximum quality (`-quality 100`)
 - Saves in WebP format
 
-### 4. Verify the processed image
+### 5. Verify the processed image
 
 ```bash
-identify -verbose data/articles_thumbnails/publisher-YYYY-MM-DD.webp | grep Quality
-ls -la data/articles_thumbnails/publisher-YYYY-MM-DD.webp
+# Check dimensions - MUST be exactly 520x297 for proper display
+identify -format "%wx%h" data/articles_thumbnails/youtube-YYYY-MM-DD.webp
+
+# Check quality
+identify -verbose data/articles_thumbnails/youtube-YYYY-MM-DD.webp | grep Quality
+
+# Check file size
+ls -la data/articles_thumbnails/youtube-YYYY-MM-DD.webp
 ```
 
-### 5. Update the YAML file
+### 6. Update the YAML file
 
-Edit `_data/media_mentions.yml` to add the `thumbnail_url` property for your media mention:
+Edit `_data/media_mentions.yml` to add both the thumbnail and logo URLs:
 
 ```yaml
-- title: "Your Article Title"
+- title: "Your Video Title"
   # ... other properties ...
-  thumbnail_url: /data/articles_thumbnails/publisher-YYYY-MM-DD.webp
+  thumbnail_url: /data/articles_thumbnails/youtube-YYYY-MM-DD.webp
+  website_logo_url: /data/webstie_logos/appropriate-logo.png
 ```
 
 ## Troubleshooting
 
-### Invalid Aspect Ratio
+### Background Issues
 
-If your source image doesn't match the 16:9 aspect ratio:
+If the thumbnail has unwanted background elements:
 
-1. Option 1: Crop the image manually before processing
-2. Option 2: Use the method above with `-resize WIDTHxHEIGHT^` and `-extent WIDTHxHEIGHT` which will automatically crop to fill the frame
+```bash
+# Make background transparent (useful for some cases)
+magick source-image.jpg -background none -fuzz 10% -fill none -draw "color 0,0 floodfill" -resize 520x297^ -gravity center -extent 520x297 -quality 100 output.webp
 
-### Image Too Small
+# Alternative: Force a specific background color
+magick source-image.jpg -background "#000000" -resize 520x297^ -gravity center -extent 520x297 -quality 100 output.webp
+```
 
-If your source image is smaller than 520×297:
-- Upscaling will reduce quality
-- Consider using `-resize` without the `^` operator to maintain aspect ratio and add padding if needed
+### Image Aspect Ratio Issues
 
-### File Size Optimization
+If your source image has a very different aspect ratio than 16:9:
 
-If the WebP file is too large:
-- Reduce quality to 90-95 for minimal visual difference: `-quality 90`
-- Consider additional optimizations like: `-define webp:lossless=false -define webp:method=6`
+```bash
+# First extend to proper aspect ratio with padding
+magick source-image.png -gravity center -background "#000000" -extent 1280x720 -resize 520x297 -quality 100 output.webp
+```
+
+### Visual Verification
+
+Always check the final result on the website to ensure:
+1. The thumbnail displays correctly without stretching/squeezing
+2. The image is centered properly on the subject
+3. No unwanted elements appear at the edges
+
+### Logo Handling
+
+When using custom logos:
+1. Use descriptive filenames that indicate the source
+2. Maintain consistent styling with other logos
+3. Ensure proper transparency for non-rectangular logos
 
 ## Example Workflow
 
