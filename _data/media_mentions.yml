@@ -6,6 +6,14 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/reddit-2025-02-08.webp
   website_logo_url: /data/webstie_logos/reddit.png
+- title: "How to Work with Jupyter Notebooks via LLM in Cursor IDE?"
+  url: https://youtu.be/eOSfeBIBzr0?si=kbJlYFZQtdDR8Ipo
+  publisher: Youtube
+  date: 2025-02-18
+  type: Video
+  language: en
+  thumbnail_url: /data/articles_thumbnails/youtube-2025-02-18.webp
+  website_logo_url: /data/webstie_logos/youtube.png
 - title: "Write article as programmer: IDE Cursor and LLM magic"
   url: https://youtu.be/ySA8_aVqu5I?si=muBLOwv3Smjltt3u
   publisher: Kirill Markin
