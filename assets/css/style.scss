@@ -2603,3 +2603,44 @@ h2 {
   left: 0;
   object-fit: contain;
 }
+
+.articles-heading {
+  position: relative;
+}
+
+.articles-heading .glitch-letter {
+  position: relative;
+  display: inline-block;
+}
+
+.articles-heading:hover .glitch-letter {
+  color: transparent;
+}
+
+.articles-heading:hover .glitch-letter::before,
+.articles-heading:hover .glitch-letter::after {
+  content: 's';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--dark-gray);
+}
+
+.articles-heading:hover .glitch-letter::before {
+  animation: hacker-text-glitch 3s infinite linear alternate;
+  left: 1px;
+  text-shadow: 0.05em 0 0 rgba(0, 255, 255, 0.75), 
+              -0.025em -0.05em 0 rgba(255, 0, 255, 0.75),
+              0.025em 0.05em 0 rgba(0, 140, 255, 0.75);
+}
+
+.articles-heading:hover .glitch-letter::after {
+  animation: hacker-text-glitch 2s infinite linear alternate-reverse,
+            glitch-blocks 4s steps(1) infinite;
+  left: -1px;
+  text-shadow: 0.05em 0 0 rgba(0, 255, 255, 0.75), 
+              -0.05em -0.025em 0 rgba(255, 0, 255, 0.75),
+              0.025em 0.05em 0 rgba(0, 140, 255, 0.75);
+}
