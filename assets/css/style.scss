@@ -547,125 +547,53 @@ h2 {
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
+}
 
-  .mention-card-large {
-    grid-column: span 2;
-    @media screen and (max-width: 768px) {
-      grid-column: span 1;
-    }
-  }
-
-  .mention-card-small {
+// Card size classes
+.mention-card-large {
+  grid-column: span 2;
+  @media screen and (max-width: 768px) {
     grid-column: span 1;
   }
+}
 
-  // Ensure all card types respect the grid
-  .mention-card-text,
-  .mention-card-text-photo {
-    grid-column: span 1;
+.mention-card-small {
+  grid-column: span 1;
+}
+
+// Base media mention styles
+.media-mention {
+  border: 1px solid var(--dark-gray);
+  overflow: hidden;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  position: relative;
+  padding: 1.25rem;
+
+  &:hover {
+    background-color: var(--white);
+    transform: scale(1.01);
   }
-  
-  .mention-card-video,
-  .mention-card-featured-vertical,
-  .mention-card-featured-horizontal {
-    grid-column: span 2;
-    @media screen and (max-width: 768px) {
-      grid-column: span 1;
-    }
-  }
 
-  .media-mention {
-    border: 1px solid var(--dark-gray);
-    overflow: hidden;
-    transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    position: relative;
-    padding: 1.25rem;
+  // Common language indicator
+  .media-mention-ln {
+    width: 1.25rem;
+    height: 1rem;
+    padding: 2px 11px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    border-left: 1px solid var(--dark-gray);
+    border-bottom: 1px solid var(--dark-gray);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+    background: var(--white);
 
-    &:hover {
-      background-color: var(--white);
-      transform: scale(1.01);
-    }
-
-    .media-mention-thumbnail {
-      object-fit: cover;
-    }
-
-    .media-info {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      flex: 1;
-      min-height: 0;
-      justify-content: flex-start;
-      align-items: flex-start;
-      position: relative;
-      z-index: 2;
-
-      .media-info-title {
-        color: var(--dark-gray);
-        font-size: var(--font-size-medium);
-        font-size: clamp(var(--font-size-small), 2.5vw, var(--font-size-medium));
-        font-weight: 400;
-        line-height: 24.20px;
-        @media screen and (min-width: 768px) {
-          line-height: var(--font-size-base-plus); // 1.125rem
-        }
-        word-wrap: break-word;
-        align-self: stretch;
-      }
-
-      .media-info-description {
-        color: #646464;
-        font-size: var(--font-size-small);
-        font-size: clamp(8px, 2.5vw, var(--font-size-small));
-        font-family: Archivo;
-        font-weight: 400;
-        line-height: 17.60px;
-        word-wrap: break-word;
-        align-self: stretch;
-      }
-
-      .media-info-bottom {
-        margin-top: auto;
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 16px;
-        width: 100%;
-
-        .media-mention-divider {
-          border-top: 1px solid black;
-          width: 100%;
-          margin: 0px;
-        }
-      }
-    }
-
-    .website-logo {
-      max-width: 100px;
-      height: auto;
-      margin-top: 0.94rem;
-    }
-
-    .media-mention-ln {
-      width: 1.25rem;
-      height: 1rem;
-      padding: 2px 11px;
-      right: 0;
-      top: 0;
-      position: absolute;
-      border-left: 1px solid var(--dark-gray);
-      border-bottom: 1px solid var(--dark-gray);
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-    }
-  
     .media-mention-ln-txt {
       color: var(--dark-gray);
       font-size: 12px;
@@ -675,6 +603,290 @@ h2 {
       word-wrap: break-word;
     }
   }
+
+  // Common media info container
+  .media-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex: 1;
+    min-height: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+
+    .media-info-title {
+      color: var(--dark-gray);
+      font-size: var(--font-size-medium);
+      font-size: clamp(var(--font-size-small), 2.5vw, var(--font-size-medium));
+      font-weight: 400;
+      line-height: 24.20px;
+      @media screen and (min-width: 768px) {
+        line-height: var(--font-size-base-plus); // 1.125rem
+      }
+      word-wrap: break-word;
+      align-self: stretch;
+    }
+
+    .media-info-description {
+      color: #646464;
+      font-size: var(--font-size-small);
+      font-size: clamp(8px, 2.5vw, var(--font-size-small));
+      font-family: Archivo;
+      font-weight: 400;
+      line-height: 17.60px;
+      word-wrap: break-word;
+      align-self: stretch;
+    }
+
+    .media-info-bottom {
+      margin-top: auto;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 16px;
+      width: 100%;
+
+      .media-mention-divider {
+        border-top: 1px solid black;
+        width: 100%;
+        margin: 0px;
+      }
+    }
+  }
+
+  // Common website logo
+  .website-logo {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    z-index: 10;
+    max-height: 30px;
+    height: auto;
+    width: auto;
+    max-width: none;
+    object-fit: contain;
+  }
+
+  // Common thumbnail gradient
+  .thumbnail-gradient {
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+// Media mention specific card styles
+// Each type is completely separated and self-contained
+
+// 1. Text Card (Base card, text only)
+.mention-card-text {
+  grid-column: span 1;
+  // Uses base styles only
+}
+
+// 2. Text-Photo Card
+.mention-card-text-photo {
+  grid-column: span 1;
+  @media screen and (min-width: 768px) {
+    min-height: 16rem;
+  }
+  min-height: 10rem;
+  
+  .media-info-title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    gap: 15px;
+  }
+
+  .media-mention-thumbnail {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+  }
+  
+  .thumbnail-gradient {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFFFFF 100%);
+  }
+  
+  .website-logo {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    z-index: 10;
+  }
+}
+
+// 3. Video Card
+.mention-card-video {
+  grid-column: span 2;
+  @media screen and (max-width: 768px) {
+    grid-column: span 1;
+  }
+  aspect-ratio: 16 / 9;
+  padding: 0 !important;
+  
+  .media-info-title {
+    color: #fff !important;
+    z-index: 10;
+    max-width: 20rem;
+    font-size: 1.375rem;
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+  }
+  
+  .media-mention-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .thumbnail-gradient {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    mix-blend-mode: overlay;
+  }
+  
+  .video-icon {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 10;
+  }
+  
+  .website-logo {
+    position: absolute;
+    left: 1.25rem;
+    top: 1.25rem;
+    z-index: 10;
+    align-self: flex-start;
+  }
+  
+  &:hover {
+    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// 4. Featured Horizontal Card
+.mention-card-featured-horizontal {
+  grid-column: span 2;
+  @media screen and (max-width: 768px) {
+    grid-column: span 1;
+  }
+  aspect-ratio: 16 / 9;
+  height: auto;
+  padding: 0 !important;
+  
+  .media-featured-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    width: 60%;
+    padding: 0.75rem;
+    border: 1px solid var(--dark-gray);
+    z-index: 10;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+  }
+  
+  .media-mention-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  // Removing gradient for featured horizontal cards since they have a separate white content box
+  .thumbnail-gradient {
+    display: none;
+  }
+  
+  .website-logo {
+    position: static;
+    max-height: 25px;
+  }
+  
+  &:hover {
+    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// 5. Featured Vertical Card
+.mention-card-featured-vertical {
+  grid-column: span 2;
+  @media screen and (max-width: 768px) {
+    grid-column: span 1;
+  }
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: flex !important;
+  flex-direction: row !important;
+  padding: 0 !important;
+  min-height: 0;
+  overflow: hidden;
+
+  .media-featured-content {
+    padding: 1.25rem;
+    position: relative;
+    width: 50% !important;
+    border-right: 1px solid var(--dark-gray);
+  }
+  
+  .media-mention-thumbnail {
+    width: 50% !important;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  &:hover {
+    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Articles section buttons
+.articles button {
+  display: block;
+  width: 100%;
+  margin-top: 2.5rem;
+  text-align: left;
+  font-size: var(--font-size-medium);
+  background-color: transparent;
+  color: var(--black);
+  border: 0px solid var(--black);
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: font-weight 0.2s;
+  font-weight: 400;
+}
+
+.articles button:hover {
+  font-weight: 600;
 }
 
 .social-links {
@@ -1013,160 +1225,6 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
-
-// media mentions card types
-.mention-card-text-photo {
-  @media screen and (min-width: 768px) {
-    min-height: 16rem;
-  }
-  min-height: 10rem;
-  .media-mention-thumbnail {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 55%;
-  }
-  .thumbnail-gradient {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(180deg, rgba(35, 35, 35, 0.00) 0%, #232323 100%);
-    z-index: 2;
-  }
-  .website-logo {
-    z-index: 10;
-    filter: invert(1);
-  }
-  .media-info-title {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    gap: 15px;
-  }
-}  
-
-.mention-card-video {
-  aspect-ratio: 16 / 9;
-  .media-info-title {
-    color: #fff !important;
-    z-index: 10;
-    max-width: 20rem;
-    font-size: 1.375rem;
-  }
-  .media-mention-thumbnail {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-  }
-  .thumbnail-gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.75;
-    background: linear-gradient(180deg, #232323 0%, rgba(35, 35, 35, 0.00) 100%);
-    mix-blend-mode: multiply;
-    z-index: 1;
-  }
-  .video-icon {
-    position: absolute;
-    left: 1.25rem;
-    bottom: 1.25rem;
-    z-index: 10;
-  }
-}
-
-.mention-card-featured-horizontal {
-  aspect-ratio: 16 / 9;
-  height: auto;
-  .media-featured-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: white;
-    width: 60%;
-    padding: 1.25rem;
-    border: 1px solid var(--dark-gray);
-    z-index: 10;
-  }
-  .media-mention-thumbnail {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-  }
-  .thumbnail-gradient {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(35, 35, 35, 0.3);
-    z-index: 2;
-  }
-}
-
-.mention-card-featured-vertical {
-  aspect-ratio: 16 / 9;
-  height: auto;
-  display: flex !important;
-  flex-direction: row !important;
-  padding: 0 !important;
-  min-height: 0;
-  overflow: hidden;
-
-  .media-featured-content {
-    padding: 1.25rem;
-    position: relative;
-    width: 50% !important;
-    border-right: 1px solid var(--dark-gray);
-  }
-  .media-mention-thumbnail {
-    width: 50% !important;
-    object-fit: cover;
-    object-position: right;
-  }
-}
-
-.mention-card-video:hover,
-.mention-card-featured-horizontal:hover,
-.mention-card-featured-vertical:hover {
-  box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.15);
-}
-
-.articles button {
-  display: block;
-  width: 100%;
-  margin-top: 2.5rem;
-  text-align: left;
-  font-size: var(--font-size-medium);
-  background-color: transparent;
-  color: var(--black);
-  border: 0px solid var(--black);
-  border-radius: 5px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: font-weight 0.2s;
-  font-weight: 400;
-}
-
-.articles button:hover {
-  font-weight: 600;
-}
-
 
 // Services page
 
