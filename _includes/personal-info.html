@@ -22,7 +22,13 @@
         {% for link in site.data.social_links %}
         {% if link.avatar_contact == true %}
             <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="contact-bubble">
+                {% if link.social_logo_url_default %}
+                <span class="contact-logo">
+                    <img src="{{ link.social_logo_url_default }}" alt="{{ link.name }} logo" class="social-logo">
+                </span>
+                {% else %}
                 <span class="contact-type">{{ link.name }}</span>
+                {% endif %}
                 <span class="contact-username">{{ link.username }}</span>
             </a>
         {% endif %}

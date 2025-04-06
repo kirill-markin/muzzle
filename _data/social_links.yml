@@ -1,9 +1,9 @@
 - name: LinkedIn
   url: https://www.linkedin.com/in/kirill-markin/
   username: "@kirill-markin"
-  social_logo_url_default:
+  social_logo_url_default: /data/social_logos/linkedin.png
+  social_logo_url_hover: /data/social_logos/linkedin_hover.png
   avatar_contact: true
-  social_logo_url_hover:
   footer_bottom: true
 - name: WhatsApp
   url: https://api.whatsapp.com/send?phone=31625351137
@@ -28,7 +28,7 @@
 - name: Email
   url: mailto:markinkirill@gmail.com
   username: markinkirill@gmail.com
-  social_logo_url_default: /data/social_logos/google.png
+  social_logo_url_default: /data/social_logos/gmail.png
   social_logo_url_hover: /data/social_logos/google_hover.png
   avatar_contact: true
   contact_bubble: true
