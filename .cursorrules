@@ -14,7 +14,6 @@ The website has different article/media mention layout types:
 1. **mention-card-text** - Basic text card without thumbnail
 2. **mention-card-text-photo** - Card with text and photo/thumbnail
 3. **mention-card-featured-horizontal** - Large horizontal featured card with content area at bottom left
-4. **mention-card-featured-vertical** - Large vertical featured card with content and image side by side
 
 ### Key Files:
 
@@ -37,7 +36,7 @@ The website has different article/media mention layout types:
 - Each layout type has completely independent CSS with clear comments
 - To override the automatic layout selection, use the `render-style` field in the YAML data:
   ```yaml
-  render-style: featured-vertical  # or text, text-photo, featured-horizontal
+  render-style: text-photo  # or text, featured-horizontal
   ```
 
 ### Media Assets:

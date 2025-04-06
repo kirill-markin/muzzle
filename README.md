@@ -20,7 +20,6 @@ The website has these media mention layouts:
 1. **mention-card-text** - Basic text card without thumbnail
 2. **mention-card-text-photo** - Card with text and photo/thumbnail
 3. **mention-card-featured-horizontal** - Large horizontal featured card with content area at bottom left
-4. **mention-card-featured-vertical** - Large vertical featured card with content and image side by side
 
 ## Media Requirements
 

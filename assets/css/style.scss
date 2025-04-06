@@ -750,38 +750,6 @@ h2 {
   }
 }
 
-// 5. Featured Vertical Card
-.mention-card-featured-vertical {
-  grid-column: span 2;
-  @media screen and (max-width: 768px) {
-    grid-column: span 1;
-  }
-  aspect-ratio: 16 / 9;
-  height: auto;
-  display: flex !important;
-  flex-direction: row !important;
-  padding: 0 !important;
-  min-height: 0;
-  overflow: hidden;
-
-  .media-featured-content {
-    padding: 1.25rem;
-    position: relative;
-    width: 50% !important;
-    border-right: 1px solid var(--dark-gray);
-  }
-  
-  .media-mention-thumbnail {
-    width: 50% !important;
-    object-fit: contain;
-    object-position: bottom;
-  }
-  
-  &:hover {
-    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.15);
-  }
-}
-
 // Articles section buttons
 .articles button {
   display: block;

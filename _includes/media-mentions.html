@@ -41,32 +41,12 @@
         {% assign is_video = true %}
       {% else %}
         {% assign is_video = false %}
-        {% assign is_even_large = group | plus: position | modulo: 2 %}
-        {% if is_even_large == 0 %}
-          {% assign card_style = "mention-card-featured-horizontal" %}
-        {% else %}
-          {% assign card_style = "mention-card-featured-vertical" %}
-        {% endif %}
+        {% assign card_style = "mention-card-featured-horizontal" %}
       {% endif %}
     {% else %}
       {% assign is_video = false %}
       {% if thumbnail %}
         {% assign card_style = "mention-card-text-photo" %}
-      {% endif %}
-    {% endif %}
-
-    {%- comment -%} Override with explicit render style if provided {%- endcomment -%}
-    {% if mention.render-style %}
-      {% if mention.render-style == "video" %}
-        {% assign card_style = "mention-card-featured-horizontal" %}
-        {% assign is_video = true %}
-      {% else %}
-        {% assign card_style = "mention-card-" | append: mention.render-style %}
-        {% if mention.type == "Video" %}
-          {% assign is_video = true %}
-        {% else %}
-          {% assign is_video = false %}
-        {% endif %}
       {% endif %}
     {% endif %}
 
@@ -79,7 +59,10 @@
       {%- comment -%} Layout-specific templates {%- endcomment -%}
       {% case card_style %}
         
-        {% when "mention-card-featured-vertical" %}
+        {% when "mention-card-featured-horizontal" %}
+          {% if thumbnail %}
+            <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
+          {% endif %}
           <div class="media-featured-content">
             <div class="media-info">
               <div class="media-info-title">{{ display_title }}</div>
@@ -88,30 +71,11 @@
               {% endif %}
             </div>
             {% if mention.website_logo_url %}
-              <div class="media-info-bottom">
-                <hr class="media-mention-divider">
-                <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
-              </div>
-            {% endif %}
-          </div>
-          {% if thumbnail %}
-            <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
-          {% endif %}
-        
-        {% when "mention-card-featured-horizontal" %}
-          {% if thumbnail %}
-            <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
-          {% endif %}
-          <div class="media-featured-content">
-            <div class="media-info">
-              <div class="media-info-title">{{ display_title }}</div>
-            </div>
-            {% if mention.website_logo_url %}
               <hr class="media-mention-divider">
               <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
             {% endif %}
           </div>
-          
+        
         {% when "mention-card-text-photo" %}
           {% if thumbnail %}
             <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
