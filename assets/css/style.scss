@@ -480,11 +480,269 @@ h1 {
       gap: 0.9375rem;
       width: 100%;
       .personal-titles p:first-child {margin-top: 0;}
-      img {
+      
+      .profile-image-container {
         width: 6.5625rem;
         height: 6.5625rem;
       }
     }
+  }
+  
+  // Profile image glitch effect
+  .profile-image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    
+    .profile-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .main-image {
+      position: relative;
+      z-index: 2;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+    
+    .glitch-image {
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    // Updated effect to match the media mentions glitch style
+    &:hover {
+      animation: clean-glitch-effect 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      
+      .main-image {
+        animation: profile-glitch-transition 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation-iteration-count: 1;
+      }
+      
+      .glitch-image {
+        animation: profile-glitch-reveal 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation-iteration-count: 1;
+      }
+      
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: 10;
+      }
+      
+      &::before {
+        animation: tech-noise-scanlines 1.6s steps(8) both;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent 0%, 
+          rgba(32, 128, 32, 0.02) 0.2%, 
+          rgba(0, 255, 0, 0.05) 0.3%,
+          transparent 0.5%
+        );
+        background-size: 100% 2px;
+        mix-blend-mode: screen;
+        opacity: 0;
+      }
+      
+      &::after {
+        animation: tech-rgb-shift 1.6s steps(6) both;
+        background-color: transparent;
+        mix-blend-mode: exclusion;
+        opacity: 0;
+      }
+    }
+    
+    // Reset animation when no longer hovering
+    &:not(:hover) {
+      .main-image {
+        animation: none;
+        opacity: 1;
+      }
+      
+      .glitch-image {
+        animation: none;
+        opacity: 0;
+      }
+      
+      &::before, &::after {
+        animation: none;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+// New profile animations with single transition cycle
+@keyframes profile-glitch-transition {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+  }
+  5% {
+    opacity: 0.9;
+    transform: scale(1.004) translateX(1px);
+    filter: brightness(1.05);
+  }
+  10% {
+    opacity: 0.8;
+    transform: scale(1.008) translateX(-1px);
+    filter: contrast(1.1);
+  }
+  15% {
+    opacity: 0.7;
+    transform: scale(1.01) translateY(1px);
+    filter: url('#data-corruption');
+  }
+  20% {
+    opacity: 0.6;
+    transform: scale(1.01) translateY(-1px);
+    filter: brightness(0.95) contrast(1.2);
+  }
+  25% {
+    opacity: 0.4;
+    transform: scale(1.008) translateX(1px);
+    filter: url('#hacker-digital-corruption');
+  }
+  30% {
+    opacity: 0.2;
+    transform: scale(1.004);
+    filter: brightness(1.05) contrast(1.1);
+  }
+  40% {
+    opacity: 0;
+    transform: scale(1);
+    filter: none;
+  }
+  // Stay hidden for a while (shortened period)
+  55% {
+    opacity: 0;
+    transform: scale(1);
+    filter: none;
+  }
+  // Start returning
+  60% {
+    opacity: 0.2;
+    transform: scale(1.004) translateX(-1px);
+    filter: url('#profile-noise-filter');
+  }
+  70% {
+    opacity: 0.4;
+    transform: scale(1.008) translateX(1px);
+    filter: url('#hacker-digital-corruption');
+  }
+  80% {
+    opacity: 0.6;
+    transform: scale(1.01) translateY(-1px);
+    filter: brightness(0.95) contrast(1.2);
+  }
+  90% {
+    opacity: 0.8;
+    transform: scale(1.008) translateX(-1px);
+    filter: url('#glitch-filter');
+  }
+  95% {
+    opacity: 0.9;
+    transform: scale(1.004) translateX(1px);
+    filter: brightness(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+  }
+}
+
+@keyframes profile-glitch-reveal {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+    filter: none;
+  }
+  5% {
+    opacity: 0.1;
+    transform: scale(1.004) translateX(-1px);
+    filter: brightness(1.05);
+  }
+  10% {
+    opacity: 0.2;
+    transform: scale(1.008) translateX(1px);
+    filter: url('#scan-lines');
+  }
+  15% {
+    opacity: 0.3;
+    transform: scale(1.01) translateY(-1px);
+    filter: brightness(1.1) contrast(1.2);
+  }
+  20% {
+    opacity: 0.4;
+    transform: scale(1.01) translateY(1px);
+    filter: url('#glitch-filter');
+  }
+  25% {
+    opacity: 0.5;
+    transform: scale(1.008) translateX(-1px);
+    filter: brightness(0.95) contrast(1.15) saturate(1.1);
+  }
+  30% {
+    opacity: 0.8;
+    transform: scale(1.004);
+    filter: url('#profile-noise-filter');
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+    filter: brightness(1.05);
+  }
+  // Stay visible for a while (shortened period)
+  55% {
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+  }
+  // Start disappearing
+  60% {
+    opacity: 0.8;
+    transform: scale(1.004) translateX(1px);
+    filter: url('#profile-noise-filter');
+  }
+  70% {
+    opacity: 0.6;
+    transform: scale(1.008) translateX(-1px);
+    filter: url('#glitch-filter');
+  }
+  80% {
+    opacity: 0.4;
+    transform: scale(1.01) translateY(1px);
+    filter: brightness(0.95) contrast(1.15) saturate(1.1);
+  }
+  90% {
+    opacity: 0.2;
+    transform: scale(1.008) translateX(1px);
+    filter: brightness(1.1) contrast(1.2);
+  }
+  95% {
+    opacity: 0.1;
+    transform: scale(1.004) translateX(-1px);
+    filter: url('#scan-lines');
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+    filter: none;
   }
 }
 
@@ -564,7 +822,7 @@ h2 {
 .media-mention {
   border: 1px solid var(--dark-gray);
   overflow: hidden;
-  transition: transform 0.3s;
+  transition: none;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -572,7 +830,47 @@ h2 {
 
   &:hover {
     background-color: var(--white);
-    transform: scale(1.01);
+    animation: clean-glitch-effect 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      z-index: 10;
+    }
+    
+    &::before {
+      animation: tech-noise-scanlines 0.8s steps(5) both;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent 0%, 
+        rgba(32, 128, 32, 0.02) 0.2%, 
+        rgba(0, 255, 0, 0.05) 0.3%,
+        transparent 0.5%
+      );
+      background-size: 100% 2px;
+      mix-blend-mode: screen;
+      opacity: 0;
+    }
+    
+    &::after {
+      animation: tech-rgb-shift 0.8s steps(3) both;
+      background-color: transparent;
+      mix-blend-mode: exclusion;
+      opacity: 0;
+    }
+    
+    .media-mention-thumbnail {
+      animation: clean-glitch-image 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    
+    .media-info {
+      animation: tech-text-glitch 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
   }
 
   // Common language indicator
@@ -1604,5 +1902,187 @@ h2 {
   
   .footer-org-name.left-aligned {
     text-align: center;
+  }
+}
+
+// Glitch animations with clean scale
+@keyframes clean-glitch-effect {
+  0% {
+    transform: scale(1);
+    filter: none;
+  }
+  3% {
+    transform: scale(1.004);
+    filter: none;
+  }
+  5% {
+    transform: scale(1.008);
+    filter: brightness(1.05);
+  }
+  10% {
+    transform: scale(1.01);
+    filter: brightness(1.1) contrast(1.15);
+  }
+  15% {
+    transform: scale(1.01);
+    filter: url('#data-corruption');
+  }
+  20% {
+    transform: scale(1.01);
+    filter: brightness(0.95) contrast(1.2);
+  }
+  25% {
+    transform: scale(1.01);
+    filter: url('#hacker-digital-corruption');
+  }
+  30% {
+    transform: scale(1.01);
+    filter: brightness(1.05) contrast(1.1);
+  }
+  100% {
+    transform: scale(1.01);
+    filter: none;
+  }
+}
+
+@keyframes clean-glitch-image {
+  0% {
+    filter: none;
+  }
+  5% {
+    filter: brightness(1.05);
+  }
+  8% {
+    filter: url('#scan-lines');
+  }
+  15% {
+    filter: brightness(1.1) contrast(1.2);
+  }
+  18% {
+    filter: url('#glitch-filter');
+  }
+  25% {
+    filter: brightness(0.95) contrast(1.15) saturate(1.1);
+  }
+  30% {
+    filter: url('#profile-noise-filter');
+  }
+  40% {
+    filter: brightness(1.05);
+  }
+  100% {
+    filter: none;
+  }
+}
+
+@keyframes tech-text-glitch {
+  0%, 100% {
+    text-shadow: none;
+    color: inherit;
+  }
+  10% {
+    text-shadow: 0.5px 0 #00ffaa, -0.5px 0 #ff2222;
+    color: inherit;
+  }
+  15% {
+    text-shadow: -0.5px 0 #00ffaa, 0.5px 0 #ff2222;
+    color: #323232;
+  }
+  18% {
+    text-shadow: 0 0 8px #00ff00, 0 0 10px #ffffff;
+    color: #1a1a1a;
+  }
+  25% {
+    text-shadow: 0.75px 0 #0088ff, -0.75px 0 #ff0000;
+    color: #0e0e0e;
+  }
+  35% {
+    text-shadow: none;
+    color: inherit;
+  }
+}
+
+@keyframes tech-noise-scanlines {
+  0%, 100% { 
+    opacity: 0; 
+    background-position: 0 0;
+    transform: translateY(0);
+  }
+  10% { 
+    opacity: 0.4; 
+    background-position: 0 10%;
+    transform: translateY(-1px);
+  }
+  15% { 
+    opacity: 0.5; 
+    background-position: 0 -5%;
+    transform: translateY(1px);
+  }
+  20% { 
+    opacity: 0.45; 
+    background-position: 0 -10%;
+    transform: translateY(-2px);
+  }
+  25% { 
+    opacity: 0.6; 
+    background-position: 0 20%;
+    transform: translateY(0);
+  }
+  30% { 
+    opacity: 0.4; 
+    background-position: 0 -15%;
+    transform: translateY(1px);
+  }
+  35% { 
+    opacity: 0.5; 
+    background-position: 0 10%;
+    transform: translateY(-1px);
+  }
+  40% { 
+    opacity: 0; 
+    transform: translateY(0);
+  }
+}
+
+@keyframes tech-rgb-shift {
+  0%, 100% { 
+    opacity: 0; 
+  }
+  10% { 
+    opacity: 0.5;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.1) -10%,
+      transparent 20%,
+      transparent 80%,
+      rgba(0, 0, 255, 0.1) 110%
+    );
+  }
+  15% { 
+    opacity: 0.4;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 255, 0, 0.1) -5%,
+      transparent 30%,
+      transparent 70%,
+      rgba(255, 0, 0, 0.1) 105%
+    );
+  }
+  20% { 
+    opacity: 0.5;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 255, 0.1) 0%,
+      transparent 40%,
+      transparent 60%,
+      rgba(0, 255, 0, 0.1) 100%
+    );
+  }
+  30% { 
+    opacity: 0.3;
+    background: none;
+  }
+  40% { 
+    opacity: 0; 
   }
 }
