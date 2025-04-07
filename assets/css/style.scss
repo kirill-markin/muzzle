@@ -475,75 +475,75 @@ h1 {
 }
 
 .personal-name {
-    // font-size: 52px;
-    // font-weight: 300;
-    // text-transform: uppercase;
-    // letter-spacing: 2px;
-    // margin: 0;
-    // line-height: 0.9;
-    position: relative;
-    color: var(--dark-gray);
-    // Removing the font-size override to keep original styling
-    font-weight: 400;
-    line-height: 81%;
-    text-transform: uppercase;
+  // font-size: 52px;
+  // font-weight: 300;
+  // text-transform: uppercase;
+  // letter-spacing: 2px;
+  // margin: 0;
+  // line-height: 0.9;
+  position: relative;
+  color: var(--dark-gray);
+  // Removing the font-size override to keep original styling
+  font-weight: 400;
+  line-height: 81%;
+  text-transform: uppercase;
+  
+  &:hover {
+    animation: none; /* Disable any previous animations */
+    color: transparent;
     
-    &:hover {
-      animation: none; /* Disable any previous animations */
-      color: transparent;
-      
-      &::before, &::after {
-        content: attr(data-text);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        color: var(--dark-gray);
-      }
-      
-      /* Added a new pseudo-element specifically for multi-line text effect */
-      &::before {
-        animation: hacker-text-glitch 3s infinite linear alternate,
-                  name-scan-lines 3s infinite linear;
-        /* Removed clip-path to fix multi-line issues */
-        left: 1px;
-        text-shadow: 0.05em 0 0 rgba(0, 255, 255, 0.75), 
-                    -0.025em -0.05em 0 rgba(255, 0, 255, 0.75),
-                    0.025em 0.05em 0 rgba(0, 140, 255, 0.75);
-      }
-      
-      &::after {
-        animation: hacker-text-glitch 2s infinite linear alternate-reverse;
-        /* Removed clip-path to fix multi-line issues */
-        left: -1px;
-        text-shadow: 0.05em 0 0 rgba(0, 255, 255, 0.75), 
-                    -0.05em -0.025em 0 rgba(255, 0, 255, 0.75),
-                    0.025em 0.05em 0 rgba(0, 140, 255, 0.75);
-      }
-      
-      /* Random glitch block effect */
-      &:before, &:after {
-        z-index: 2;
-      }
-      
-      /* Add a separate pseudo-element for glitch blocks */
-      &:after {
-        content: attr(data-text);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        z-index: 1;
-        animation: hacker-text-glitch 2s infinite linear alternate-reverse,
-                  glitch-blocks 4s steps(1) infinite;
-      }
+    &::before, &::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: var(--dark-gray);
+    }
+    
+    /* Added a new pseudo-element specifically for multi-line text effect */
+    &::before {
+      animation: hacker-text-glitch 3s infinite linear alternate,
+                name-scan-lines 3s infinite linear;
+      /* Removed clip-path to fix multi-line issues */
+      left: 1px;
+      text-shadow: 0.05em 0 0 rgba(0, 255, 255, 0.75), 
+                  -0.025em -0.05em 0 rgba(255, 0, 255, 0.75),
+                  0.025em 0.05em 0 rgba(0, 140, 255, 0.75);
+    }
+    
+    &::after {
+      animation: hacker-text-glitch 2s infinite linear alternate-reverse;
+      /* Removed clip-path to fix multi-line issues */
+      left: -1px;
+      text-shadow: 0.05em 0 0 rgba(0, 255, 255, 0.75), 
+                  -0.05em -0.025em 0 rgba(255, 0, 255, 0.75),
+                  0.025em 0.05em 0 rgba(0, 140, 255, 0.75);
+    }
+    
+    /* Random glitch block effect */
+    &:before, &:after {
+      z-index: 2;
+    }
+    
+    /* Add a separate pseudo-element for glitch blocks */
+    &:after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      z-index: 1;
+      animation: hacker-text-glitch 2s infinite linear alternate-reverse,
+                glitch-blocks 4s steps(1) infinite;
     }
   }
+}
 
-  .personal-titles p {
+.personal-titles p {
   text-transform: uppercase;
   margin-bottom: 0px;
   font-size: var(--font-size-medium);
