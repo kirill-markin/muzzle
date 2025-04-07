@@ -12,3 +12,17 @@
 
 <!-- Facebook verification -->
 <meta name="facebook-domain-verification" content="rpifi31ud2vorjq461mtqwdjltvbao" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{{ site.url }}/assets/images/social-preview.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:image" content="{{ site.url }}/assets/images/social-preview.jpg">
