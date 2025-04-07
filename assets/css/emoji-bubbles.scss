@@ -29,7 +29,7 @@ sass:
   // Individual emoji containers
   .emoji-container {
     position: fixed; // Fixed position relative to viewport
-    bottom: 20px;
+    bottom: 10px; // Closer to bottom edge (was 20px)
     width: 50px;
     height: 50px;
     display: flex;
@@ -47,19 +47,19 @@ sass:
     
     // Angel emoji (right corner)
     &.angel {
-      right: 20px;
+      right: 10px; // Closer to right edge (was 20px)
     }
     
     // Devil emoji (left corner)
     &.devil {
-      left: 20px;
+      left: 10px; // Closer to left edge (was 20px)
     }
 
     // The emoji itself
     > span {
       display: block;
       font-size: 2.8rem;
-      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.3));
+      filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.5)) drop-shadow(0 1px 3px rgba(0, 0, 0, 0.3)); // Enhanced shadow
     }
 
     // Message bubble - HIDDEN BY DEFAULT
@@ -154,18 +154,19 @@ sass:
 @media (min-width: 768px) {
   .emoji-bubbles {
     .emoji-container {
-      bottom: 30px; // Position a bit higher on desktop
+      bottom: 15px; // Closer to bottom edge on desktop (was 30px)
       
       &.angel {
-        right: 30px; // Position a bit more to the right on desktop
+        right: 15px; // Closer to right edge on desktop (was 30px)
       }
       
       &.devil {
-        left: 30px; // Position a bit more to the left on desktop
+        left: 15px; // Closer to left edge on desktop (was 30px)
       }
       
       > span {
-        font-size: 3rem; // Slightly larger emojis on desktop
+        font-size: 3.2rem; // Slightly larger emojis on desktop
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)); // Even stronger shadow on desktop
       }
       
       .message-bubble {
