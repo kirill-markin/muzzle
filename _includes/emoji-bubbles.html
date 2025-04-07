@@ -1,0 +1,22 @@
+<!-- Emoji Bubbles -->
+<div class="emoji-bubbles">
+  <!-- Hidden radio buttons -->
+  <input type="radio" id="emoji-reset" name="emoji-state" checked class="emoji-radio">
+  <input type="radio" id="emoji-angel" name="emoji-state" class="emoji-radio">
+  <input type="radio" id="emoji-devil" name="emoji-state" class="emoji-radio">
+  
+  <!-- Angel Emoji (Right Corner) -->
+  <label for="emoji-angel" class="emoji-container angel">
+    <div class="message-bubble">You're doing great! Take a moment to appreciate how far you've come. 😇</div>
+    <span role="img" aria-label="Angel emoji">😇</span>
+  </label>
+  
+  <!-- Devil Emoji (Left Corner) -->
+  <label for="emoji-devil" class="emoji-container devil">
+    <div class="message-bubble">Hey! Stop doomscrolling and get back to work! 😈</div>
+    <span role="img" aria-label="Devil emoji">😈</span>
+  </label>
+  
+  <!-- Overlay - IMPORTANT: Put this last in the DOM to ensure it's above everything -->
+  <label for="emoji-reset" class="emoji-overlay"></label>
+</div> 

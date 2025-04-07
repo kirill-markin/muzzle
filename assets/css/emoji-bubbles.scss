@@ -1,0 +1,174 @@
+---
+sitemap:
+  exclude: 'yes'
+sass:
+  sass_dir: assets/css
+---
+
+/* 
+* Emoji bubbles styles for both mobile and desktop
+* Devil and Angel fixed position emojis with message bubbles
+*/
+
+// Container for both emojis
+.emoji-bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  pointer-events: none; // Container doesn't catch clicks
+  
+  // Hidden radio buttons
+  .emoji-radio {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  // Individual emoji containers
+  .emoji-container {
+    position: fixed; // Fixed position relative to viewport
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: auto; // Make emojis clickable
+    background-color: transparent;
+    transition: transform 0.2s;
+    z-index: 10001; // Very high z-index
+    
+    &:active {
+      transform: scale(0.95);
+    }
+    
+    // Angel emoji (right corner)
+    &.angel {
+      right: 20px;
+    }
+    
+    // Devil emoji (left corner)
+    &.devil {
+      left: 20px;
+    }
+
+    // The emoji itself
+    > span {
+      display: block;
+      font-size: 2.8rem;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.3));
+    }
+
+    // Message bubble - HIDDEN BY DEFAULT
+    .message-bubble {
+      position: absolute;
+      bottom: 60px;
+      background-color: white;
+      border-radius: 20px;
+      padding: 12px 15px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      font-size: 0.9rem;
+      width: max-content;
+      max-width: 200px;
+      opacity: 0; // Hidden by default
+      transform: translateY(20px);
+      transition: opacity 0.3s, transform 0.3s;
+      pointer-events: none;
+      color: #333;
+      z-index: 10001; // Same as emoji to stay above overlay
+      
+      // Bubble pointer
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid white;
+      }
+    }
+    
+    // Angel message position
+    &.angel .message-bubble {
+      right: 0;
+      
+      &:after {
+        right: 15px;
+      }
+    }
+    
+    // Devil message position
+    &.devil .message-bubble {
+      left: 0;
+      
+      &:after {
+        left: 15px;
+      }
+    }
+  }
+  
+  // Overlay for catching clicks outside emojis
+  // IMPORTANT: This is positioned AFTER the emoji containers in the DOM
+  .emoji-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    pointer-events: none; // Initially not clickable
+    z-index: 10000; // Just below emojis but above everything else
+    cursor: pointer;
+  }
+  
+  // Make overlay clickable ONLY when a bubble is showing
+  #emoji-angel:checked ~ .emoji-overlay,
+  #emoji-devil:checked ~ .emoji-overlay {
+    pointer-events: auto;
+  }
+  
+  // Show angel bubble ONLY when angel radio is checked
+  #emoji-angel:checked ~ .emoji-container.angel .message-bubble {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  // Show devil bubble ONLY when devil radio is checked
+  #emoji-devil:checked ~ .emoji-container.devil .message-bubble {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Responsive adjustments for desktop
+@media (min-width: 768px) {
+  .emoji-bubbles {
+    .emoji-container {
+      bottom: 30px; // Position a bit higher on desktop
+      
+      &.angel {
+        right: 30px; // Position a bit more to the right on desktop
+      }
+      
+      &.devil {
+        left: 30px; // Position a bit more to the left on desktop
+      }
+      
+      > span {
+        font-size: 3rem; // Slightly larger emojis on desktop
+      }
+      
+      .message-bubble {
+        max-width: 250px; // Wider bubbles on desktop
+        font-size: 1rem; // Slightly larger text on desktop
+      }
+    }
+  }
+} 
