@@ -414,43 +414,47 @@ h1 {
 
 /* main-page-content  container */
 #main-page-content, .footer-column-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  /* Responsive layout for the resume page */
-  @media (min-width: 768px) {
+  display: flex;
+  justify-content: space-between;
+}
 
-    .left-column {
-      border-right: 1px solid var(--dark-gray);
-    }
+/* Responsive layout for the resume page */
+@media (min-width: 768px) {
 
-    .left-column {
-      width: 25%;
-      display: block;
-    }
-  
-    .right-column {
-      width: 75%;
-      display: block;
-    }
-    
-    /* Full width for single column footer */
-    .single-column {
-      width: 100% !important;
-      border-left: none !important;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .left-column, .right-column {
-      width: 100%;
-    }
+  .left-column {
+    border-right: 1px solid var(--dark-gray);
   }
 
-.personal-info, .personal-contacts {
-  // border-right: 1px solid #232323;
+  .left-column {
+    width: 25%;
+    display: block;
+  }
+
+  .right-column {
+    width: 75%;
+    display: block;
+  }
+  
+  /* Full width for single column footer */
+  .single-column {
+    width: 100% !important;
+    border-left: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-column, .right-column {
+    width: 100%;
+  }
+}
+
+.personal-info {
   padding: 20px;
+}
+
+.personal-contacts {
+  // border-right: 1px solid #232323;
+  padding: 20px 20px 0 20px;
 }
 .personal-info {
     border-bottom: 1px solid var(--dark-gray);
