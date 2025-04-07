@@ -40,6 +40,18 @@ sass:
     background-color: transparent;
     transition: transform 0.2s ease;
     z-index: 10001; // Very high z-index
+    outline: none; // Remove default outline
+    -webkit-tap-highlight-color: transparent; // Remove tap highlight on mobile
+    user-select: none; // Prevent selection
+    
+    // Remove any focus styles
+    &:focus, &:active {
+      outline: none;
+      border: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      box-shadow: none;
+    }
     
     &:active {
       transform: scale(0.95);
@@ -60,6 +72,8 @@ sass:
       display: block;
       font-size: 2.8rem;
       filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.5)) drop-shadow(0 1px 3px rgba(0, 0, 0, 0.3)); // Enhanced shadow
+      -webkit-tap-highlight-color: transparent; // Remove tap highlight on emoji too
+      user-select: none; // Prevent selection
     }
 
     // Message bubble - HIDDEN BY DEFAULT
@@ -79,6 +93,7 @@ sass:
       pointer-events: none;
       color: #333;
       z-index: 10001; // Same as emoji to stay above overlay
+      -webkit-tap-highlight-color: transparent; // Remove tap highlight on bubble too
       
       // Bubble pointer
       &:after {
@@ -128,6 +143,7 @@ sass:
     cursor: pointer;
     transition: background-color 0.2s ease; // Smooth transition
     -webkit-tap-highlight-color: transparent; // Remove tap highlight on mobile
+    outline: none; // Remove default outline
   }
   
   // Make overlay clickable ONLY when a bubble is showing
