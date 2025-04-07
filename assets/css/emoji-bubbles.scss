@@ -38,7 +38,7 @@ sass:
     cursor: pointer;
     pointer-events: auto; // Make emojis clickable
     background-color: transparent;
-    transition: transform 0.2s;
+    transition: transform 0.2s ease;
     z-index: 10001; // Very high z-index
     
     &:active {
@@ -75,7 +75,7 @@ sass:
       max-width: 200px;
       opacity: 0; // Hidden by default
       transform: translateY(20px);
-      transition: opacity 0.3s, transform 0.3s;
+      transition: opacity 0.3s ease, transform 0.3s ease;
       pointer-events: none;
       color: #333;
       z-index: 10001; // Same as emoji to stay above overlay
@@ -122,16 +122,19 @@ sass:
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    background-color: transparent;
+    background-color: transparent; // Fully transparent
     pointer-events: none; // Initially not clickable
     z-index: 10000; // Just below emojis but above everything else
     cursor: pointer;
+    transition: background-color 0.2s ease; // Smooth transition
+    -webkit-tap-highlight-color: transparent; // Remove tap highlight on mobile
   }
   
   // Make overlay clickable ONLY when a bubble is showing
   #emoji-angel:checked ~ .emoji-overlay,
   #emoji-devil:checked ~ .emoji-overlay {
     pointer-events: auto;
+    // No background color change to avoid flicker
   }
   
   // Show angel bubble ONLY when angel radio is checked
