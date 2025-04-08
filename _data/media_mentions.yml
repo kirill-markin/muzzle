@@ -16,8 +16,8 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/openai-2024-04-01.webp
   website_logo_url: /data/webstie_logos/openai.png
-  achievement_value: "1 PR"
-  achievement_label: "merged"
+  achievement_value: "merged"
+  achievement_label: ""
 - title: "AI web\u00A0scraping - Data Collection reimagined"
   url: https://youtu.be/QDFDTN30YOs?si=fpeSOig9h1el2zkK
   publisher: noah-conference.com
@@ -36,6 +36,8 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/youtube-2025-02-18.webp
   website_logo_url: /data/webstie_logos/youtube.png
+  achievement_value: "2,600"
+  achievement_label: "views"
 - title: "How to\u00A0handle a\u00A0billion new\u00A0records per\u00A0day"
   url: https://verigram.ai/blog/Kazakhstan-AI-ML-community-is-delighted-with-VeriMeet
   publisher: verigram.ai
@@ -52,6 +54,8 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/kirill-2024-01-21.webp
   website_logo_url: /data/webstie_logos/youtube.png
+  achievement_value: "5,000"
+  achievement_label: "views"
 - title: "Build with\u00A0AI Custom ERP and\u00A0CRM - No\u00A0Code Required"
   url: https://youtu.be/Una8_vv6mlY?si=oaPzSTpdla7tfXmF
   publisher: ozma-io youtube channel
