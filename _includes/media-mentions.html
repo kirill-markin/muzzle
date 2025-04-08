@@ -173,7 +173,15 @@
             </div>
             {% if mention.website_logo_url %}
               <hr class="media-mention-divider">
-              <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
+              <div class="logo-achievement-container">
+                <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
+                {% if mention.achievement_value and mention.achievement_label %}
+                <div class="achievement-badge">
+                  <div class="achievement-value">{{ mention.achievement_value }}</div>
+                  <div class="achievement-label">{{ mention.achievement_label }}</div>
+                </div>
+                {% endif %}
+              </div>
             {% endif %}
           </div>
         
@@ -187,7 +195,15 @@
           </div>
           
           {% if mention.website_logo_url %}
-            <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
+            <div class="logo-achievement-container">
+              <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
+              {% if mention.achievement_value and mention.achievement_label %}
+              <div class="achievement-badge">
+                <div class="achievement-value">{{ mention.achievement_value }}</div>
+                <div class="achievement-label">{{ mention.achievement_label }}</div>
+              </div>
+              {% endif %}
+            </div>
           {% endif %}
         {% else %} <!-- Default case for mention-card-text -->
           <div class="media-info">
@@ -200,7 +216,15 @@
           {% if mention.website_logo_url %}
             <div class="media-info-bottom">
               <hr class="media-mention-divider">
-              <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
+              <div class="logo-achievement-container">
+                <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
+                {% if mention.achievement_value and mention.achievement_label %}
+                <div class="achievement-badge">
+                  <div class="achievement-value">{{ mention.achievement_value }}</div>
+                  <div class="achievement-label">{{ mention.achievement_label }}</div>
+                </div>
+                {% endif %}
+              </div>
             </div>
           {% endif %}
           
