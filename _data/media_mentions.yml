@@ -6,6 +6,8 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/reddit-2025-02-08.webp
   website_logo_url: /data/webstie_logos/cursor.png
+  achievement_value: "54,000"
+  achievement_label: "views"
 - title: "Merged pull request<br>to\u00A0<b>Computer Using Agent Sample App</b>"
   url: https://github.com/openai/openai-cua-sample-app/pull/11
   publisher: openai
@@ -14,6 +16,8 @@
   language: en
   thumbnail_url: /data/articles_thumbnails/openai-2024-04-01.webp
   website_logo_url: /data/webstie_logos/openai.png
+  achievement_value: "1 PR"
+  achievement_label: "merged"
 - title: "AI web\u00A0scraping - Data Collection reimagined"
   url: https://youtu.be/QDFDTN30YOs?si=fpeSOig9h1el2zkK
   publisher: noah-conference.com
