@@ -1184,10 +1184,10 @@ h2 {
     height: 1rem;
     padding: 2px 11px;
     right: 0;
-    top: 0;
+    bottom: 0;
     position: absolute;
     border-left: 1px solid var(--dark-gray);
-    border-bottom: 1px solid var(--dark-gray);
+    border-top: 1px solid var(--dark-gray);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1205,14 +1205,14 @@ h2 {
     }
   }
 
-  // Type indicator in bottom right
+  // Type indicator in top right
   .media-mention-type {
     padding: 2px 11px;
     right: 0;
-    bottom: 0;
+    top: 0;
     position: absolute;
     border-left: 1px solid var(--dark-gray);
-    border-top: 1px solid var(--dark-gray);
+    border-bottom: 1px solid var(--dark-gray);
     display: inline-flex;
     justify-content: center;
     align-items: center;
