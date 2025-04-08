@@ -5,7 +5,7 @@
   type: Article
   language: en
   thumbnail_url: /data/articles_thumbnails/reddit-2025-02-08.webp
-  website_logo_url: /data/webstie_logos/reddit.png
+  website_logo_url: /data/webstie_logos/cursor.png
 - title: "Merged pull request<br>to\u00A0<b>Computer Using Agent Sample App</b>"
   url: https://github.com/openai/openai-cua-sample-app/pull/11
   publisher: openai
