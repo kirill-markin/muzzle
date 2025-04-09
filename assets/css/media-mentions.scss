@@ -7,6 +7,8 @@ sitemap:
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    max-width: 100%;
+    overflow: hidden;
 
     @media screen and (max-width: 1200px) {
         grid-template-columns: repeat(3, 1fr);
@@ -32,12 +34,14 @@ sitemap:
     text-decoration: none;
     transition: none;
     height: 100%;
+    max-width: 100%;
 
     // Default card (non-wide)
     .thumbnail-container {
         position: relative;
         width: 100%;
         max-height: 50%;
+        overflow: hidden;
 
         @media screen and (max-width: 768px) {
             max-height: none;
@@ -68,9 +72,11 @@ sitemap:
 
     &.wide-with-thumbnail {
         aspect-ratio: 16 / 9;
+        max-width: 100%;
 
         .thumbnail-container {
             position: static;
+            max-width: 100%;
         }
 
         .thumbnail {
@@ -81,9 +87,7 @@ sitemap:
             height: 100%;
             object-fit: cover;
             z-index: 1;
-            /* Explicit dimensions for wide thumbnails */
-            width: 100%;
-            height: 100%;
+            max-width: 100%;
         }
 
         .content {
@@ -119,12 +123,15 @@ sitemap:
             height: auto;
             display: flex;
             flex-direction: column;
+            max-width: 100%;
 
             .thumbnail-container {
                 position: static;
                 order: 1;
                 aspect-ratio: 16 / 9;
                 height: auto;
+                max-width: 100%;
+                overflow: hidden;
             }
 
             .thumbnail {
@@ -132,9 +139,7 @@ sitemap:
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                /* Explicit dimensions for mobile wide thumbnails */
-                width: 100%;
-                height: 100%;
+                max-width: 100%;
             }
 
             .content {
@@ -278,15 +283,14 @@ sitemap:
         overflow: hidden;
         aspect-ratio: 16 / 9;
         position: relative;
+        max-width: 100%;
     }
 
     .thumbnail {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        /* Explicit dimensions for thumbnails (Google recommendation) */
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
     }
 
     // Content container
