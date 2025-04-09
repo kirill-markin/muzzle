@@ -131,6 +131,7 @@
   event_url: https://podlodka.io/productcrew
   thumbnail_url: /data/articles_thumbnails/podlodka-2024-03-21.webp
   language: ru
+  website_logo_url: /data/webstie_logos/podlodka.png
   is_video: true
 - title: "Агрегация и\u00A0аналитика данных в\u00A0масштабе ТОП-3 прокси-провайдера в\u00A0мире"
   alternative_title: "Aggregation and\u00A0Analytics of\u00A0Data at\u00A0the\u00A0Scale of\u00A0the\u00A0Top 3 Proxy Providers in\u00A0the\u00A0World"
