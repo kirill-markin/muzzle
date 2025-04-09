@@ -130,7 +130,10 @@
     {% endif %}
 
     {%- comment -%} Determine if content is a video {%- endcomment -%}
-    {% assign is_video = mention.type == "Video" %}
+    {% assign is_video = false %}
+    {% if mention.type == "Video" %}
+      {% assign is_video = true %}
+    {% endif %}
 
     <a href="{{ mention.url }}" target="_blank" rel="noopener noreferrer" 
        class="media-mention {% if is_large %}wide{% endif %} {% if is_video %}video{% endif %} {% if is_large %}wide-with-thumbnail{% endif %}">
