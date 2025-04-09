@@ -176,6 +176,8 @@
   date: 2023-06-08
   type: Video
   language: ru
+  thumbnail_url: /data/articles_thumbnails/epicgrowth-2023-06-08.webp
+  website_logo_url: /data/webstie_logos/epicgrowth-platform.png
   is_video: true
 # БИТАЯ ССЫЛКА
 # - title: "Hackathon Judge: ML TalentMatch"
