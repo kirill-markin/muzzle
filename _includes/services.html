@@ -36,40 +36,42 @@
                         {% assign in_feature_section = true %}
                         {% assign current_feature = trimmed_paragraph | remove: '###' | strip %}
                         {% assign feature_items = "" %}
-                    {% elsif trimmed_paragraph contains '-' and in_feature_section %}
-                        {% assign item = trimmed_paragraph | remove_first: '-' | strip %}
-                        
-                        {% comment %}Check if item has bold title format{% endcomment %}
-                        {% if item contains '**' and item contains ':' %}
-                            {% assign parts = item | split: ':' %}
-                            {% assign title_part = parts | first %}
-                            {% assign desc_part = item | remove_first: title_part | remove_first: ':' | strip %}
+                    {% elsif in_feature_section %}
+                        {% assign trimmed_paragraph = trimmed_paragraph | strip %}
+                        {% if trimmed_paragraph != "" %}
+                            {% assign item = trimmed_paragraph | markdownify %}
                             
-                            {% assign title = title_part | remove: '**' | strip %}
-                            
-                            {% capture formatted_item %}
-                            <div class="feature-item-data" data-has-title="true">
-                                <div class="feature-title-data">{{ title }}</div>
-                                <div class="feature-desc-data">{{ desc_part }}</div>
-                            </div>
-                            {% endcapture %}
-                            
-                            {% if feature_items != "" %}
-                                {% assign feature_items = feature_items | append: formatted_item %}
+                            {% assign has_title = false %}
+                            {% if item contains '<strong>' %}
+                                {% assign has_title = true %}
+                                {% assign item_parts = item | split: '</strong>' %}
+                                {% assign title_part = item_parts | first | append: '</strong>' %}
+                                {% assign desc_part = item_parts[1] | strip %}
+                                
+                                {% capture formatted_item %}
+                                <div class="feature-item-data" data-has-title="true">
+                                    <div class="feature-title-data">{{ title_part | remove: '<p>' | remove: '</p>' | remove: '<strong>' | remove: '</strong>' }}</div>
+                                    <div class="feature-desc-data">{{ desc_part }}</div>
+                                </div>
+                                {% endcapture %}
+                                
+                                {% if feature_items != "" %}
+                                    {% assign feature_items = feature_items | append: formatted_item %}
+                                {% else %}
+                                    {% assign feature_items = formatted_item %}
+                                {% endif %}
                             {% else %}
-                                {% assign feature_items = formatted_item %}
-                            {% endif %}
-                        {% else %}
-                            {% capture formatted_item %}
-                            <div class="feature-item-data" data-has-title="false">
-                                <div class="feature-desc-data">{{ item }}</div>
-                            </div>
-                            {% endcapture %}
-                            
-                            {% if feature_items != "" %}
-                                {% assign feature_items = feature_items | append: formatted_item %}
-                            {% else %}
-                                {% assign feature_items = formatted_item %}
+                                {% capture formatted_item %}
+                                <div class="feature-item-data" data-has-title="false">
+                                    <div class="feature-desc-data">{{ item }}</div>
+                                </div>
+                                {% endcapture %}
+                                
+                                {% if feature_items != "" %}
+                                    {% assign feature_items = feature_items | append: formatted_item %}
+                                {% else %}
+                                    {% assign feature_items = formatted_item %}
+                                {% endif %}
                             {% endif %}
                         {% endif %}
                     {% endif %}
@@ -167,6 +169,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const servicesMenu = document.querySelector('.services-menu');
     const backButton = document.querySelector('.services-back-button');
     const backButtonText = backButton.querySelector('span');
+    const categoryButtons = document.querySelectorAll('.services-menu-category');
+    const serviceCards = document.querySelectorAll('.service-card');
     
     // Store the original back button attributes
     const originalBackHref = backButton.getAttribute('href');
@@ -183,6 +187,64 @@ document.addEventListener('DOMContentLoaded', function() {
         // Restore original back button
         backButton.setAttribute('href', originalBackHref);
         backButtonText.textContent = originalBackText;
+    }
+    
+    // Function to update URL with category parameter
+    function updateURLWithCategory(category) {
+        const url = new URL(window.location);
+        
+        if (category === 'all') {
+            url.searchParams.delete('category');
+        } else {
+            url.searchParams.set('category', category);
+        }
+        
+        window.history.pushState({}, '', url);
+    }
+    
+    // Function to filter services by category
+    function filterServicesByCategory(category) {
+        // Remove active class from all buttons
+        categoryButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to matching category button
+        const targetButton = Array.from(categoryButtons).find(btn => 
+            btn.getAttribute('data-category') === category
+        );
+        
+        if (targetButton) {
+            targetButton.classList.add('active');
+            
+            // Show/hide service cards based on category
+            serviceCards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Update URL
+            updateURLWithCategory(category);
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Check URL parameters on page load
+    function checkURLParameters() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const categoryParam = urlParams.get('category');
+        
+        if (categoryParam) {
+            // Try to apply the filter, if it fails (invalid category) clean up the URL
+            const success = filterServicesByCategory(categoryParam);
+            if (!success) {
+                // Category doesn't exist, reset to 'all' and clean up URL
+                filterServicesByCategory('all');
+            }
+        }
     }
     
     // Make services title clickable to go back to list
@@ -319,43 +381,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Category filtering functionality
-    const categoryButtons = document.querySelectorAll('.services-menu-category');
-    const serviceCards = document.querySelectorAll('.service-card');
-    
     categoryButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Remove active class from all buttons
-            categoryButtons.forEach(btn => btn.classList.remove('active'));
-            
-            // Add active class to clicked button
-            this.classList.add('active');
-            
             const selectedCategory = this.getAttribute('data-category');
-            
-            // Show/hide service cards based on category
-            serviceCards.forEach(card => {
-                if (selectedCategory === 'all' || card.getAttribute('data-category') === selectedCategory) {
-                    card.style.display = 'flex';  // or whatever display type you're using
-                } else {
-                    card.style.display = 'none';
-                }
-            });
+            filterServicesByCategory(selectedCategory);
         });
     });
+    
+    // Initialize: check URL parameters on page load
+    checkURLParameters();
 });
-
-// Add CSS for the active service title
-document.head.insertAdjacentHTML('beforeend', `
-    <style>
-        .services-title.active-service {
-            text-decoration: underline;
-            color: #939393;
-            cursor: pointer;
-        }
-        
-        .services-title {
-            cursor: pointer;
-        }
-    </style>
-`);
 </script>
