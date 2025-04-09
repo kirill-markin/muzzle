@@ -129,9 +129,9 @@
       {% assign display_type = nil %}
     {% endif %}
 
-    {%- comment -%} Determine if content is a video {%- endcomment -%}
+    {%- comment -%} Determine if content is a video by using explicit is_video flag from YAML {%- endcomment -%}
     {% assign is_video = false %}
-    {% if mention.type == "Video" %}
+    {% if mention.is_video %}
       {% assign is_video = true %}
     {% endif %}
 
