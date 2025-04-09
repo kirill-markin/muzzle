@@ -1,0 +1,138 @@
+---
+layout: index
+title: Meeting Booking Options with Kirill Markin
+description: Select your preferred meeting option with Kirill Markin. Choose meeting timing and duration.
+lang: en
+---
+
+<div class="booking-options-container">
+  <h1>BOOKING OPTIONS</h1>
+  <p>Please select your preferred meeting type:</p>
+  
+  <div class="booking-methods">
+    <a href="/meet/short/" class="booking-method">
+      <div class="booking-method-logo">
+        <img src="/assets/images/booking/calendar-icon.svg" alt="Short Meeting" class="booking-logo">
+      </div>
+      <div class="booking-method-details">
+        <h2>15-Minute Welcome Meeting</h2>
+        <p>Free introduction call to discuss your needs and how we can work together</p>
+      </div>
+    </a>
+    
+    <a href="/meet/all/" class="booking-method">
+      <div class="booking-method-logo">
+        <img src="/assets/images/booking/calendar-full-icon.svg" alt="All durations" class="booking-logo">
+      </div>
+      <div class="booking-method-details">
+        <h2>All durations</h2>
+        <p>Choose from all available consultation options and time slots</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<style>
+  .booking-options-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    min-height: 70vh;
+  }
+  
+  .booking-options-container h1 {
+    color: var(--black);
+    font-size: var(--font-size-large);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 81%;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .booking-options-container p {
+    color: var(--dark-gray);
+    font-size: var(--font-size-medium);
+    margin-bottom: 2rem;
+  }
+  
+  .booking-methods {
+    margin-top: 2rem;
+  }
+  
+  .booking-method {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid var(--dark-gray);
+    border-radius: 0;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    min-height: 100px;
+  }
+  
+  .booking-method:hover {
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    animation: clean-glitch-effect 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  
+  .booking-method-logo {
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .booking-logo {
+    width: 40px;
+    height: auto;
+    border: none;
+    transition: filter 0.3s ease;
+  }
+  
+  .booking-method:hover .booking-logo {
+    filter: brightness(0) invert(1);
+  }
+  
+  .booking-method-details h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--dark-gray);
+  }
+  
+  .booking-method:hover .booking-method-details h2 {
+    color: var(--light-gray);
+  }
+  
+  .booking-method-details p {
+    margin: 0;
+    color: var(--light-gray-tertiary);
+    font-size: var(--font-size-base);
+  }
+  
+  .booking-method:hover .booking-method-details p {
+    color: var(--light-gray);
+  }
+  
+  @media (max-width: 768px) {
+    .booking-options-container h1 {
+      font-size: calc(var(--font-size-large) - 0.3rem);
+    }
+    
+    .booking-method {
+      padding: 1rem;
+    }
+    
+    .booking-method-logo {
+      margin-right: 1rem;
+    }
+  }
+</style> 
