@@ -170,6 +170,8 @@ sitemap:
         max-width: 100%;
         transition: transform 0.3s ease;
         font-family: 'Archivo', sans-serif;
+        text-decoration: none;
+        cursor: pointer;
 
         // Type indicator (category)
         .service-card-category {
@@ -234,6 +236,7 @@ sitemap:
                 margin: 0;
                 margin-bottom: 0.5rem;
                 word-wrap: break-word;
+                text-decoration: none;
             }
 
             .service-description {
@@ -251,6 +254,7 @@ sitemap:
                     overflow: hidden;
                     max-height: 10.4rem; /* 8 lines (1.3rem × 8) */
                     margin-top: 0;
+                    text-decoration: none;
                 }
             }
 
