@@ -1,16 +1,16 @@
 <header>
   <div class="header-desktop-container">
     <div class="left-column">
-      {% unless page.url == "/" %}
-      <a href="/" class="header-desktop-button header-logo">MEDIA MENTIONS</a>
+      {% unless page.url == "/"  %}
+      <a href="/" class="header-desktop-button header-logo">MAIN</a>
       {% endunless %}
     </div>
     <div class="right-column">
       <!-- TODO: finish services and show the button -->
-      <a class="header-desktop-button header-services" style="display: none;">Services</a>
+      <a class="header-desktop-button header-services" href="/services/">Services</a>
       <a class="header-desktop-button header-pay" href="/pay/" style="display: none;">Pay</a>
       <a class="header-desktop-button header-blog" href="https://articles.kirill-markin.com/" target="_blank" rel="noopener noreferrer">Blog</a>
-      <a class="header-desktop-button header-book-a-meeting" href="https://calendar.app.google/pgnsq3MDbKkVwviV8" target="_blank" rel="noopener noreferrer">Talk to Kirill</a>
+      <a class="header-desktop-button header-book-a-meeting" href="/meet/short/" rel="noopener noreferrer">Talk to Kirill</a>
     </div>
   </div>
   <div class="header-mobile">
@@ -46,7 +46,7 @@
         <a href="/pay/">Pay</a>
       </div>
       <div class="header-mobile-menu-section button">
-        <a class="header-mobile-book-a-meeting" href="https://calendar.app.google/pgnsq3MDbKkVwviV8" target="_blank" rel="noopener noreferrer">
+        <a class="header-mobile-book-a-meeting" href="/meet/short/" target="_blank" rel="noopener noreferrer">
           Talk with Kirill
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M4.22559 20L20 4M20 4V17M20 4H7" stroke="#353C2A" stroke-width="2"/>

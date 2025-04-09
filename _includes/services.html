@@ -113,7 +113,7 @@
 
     <div class="services-list">
         {% for service in site.data.services.services %}
-        <a href="{{ service.button_url }}" class="service-card" data-category="{{ service.category_id }}" target="_blank">
+        <a href="{{ service.button_url }}" class="service-card" data-category="{{ service.category_id }}" {% if service.button_url contains 'http' or service.button_url contains 'https' %}target="_blank"{% endif %}>
             <div class="service-card-category">
                 <span class="current-category">{{ service.category_id | remove: 'for_' | capitalize }}</span>
             </div>
@@ -148,7 +148,7 @@
                 <!-- Features will be inserted here -->
             </div>
             <div class="service-detail-action">
-                <a href="#" class="service-detail-button" target="_blank">Contact</a>
+                <a href="#" class="service-detail-button" id="service-detail-button">Contact</a>
             </div>
         </div>
     </div>
@@ -169,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const backButton = document.querySelector('.services-back-button');
     const backButtonText = backButton.querySelector('span');
     const categoryButtons = document.querySelectorAll('.services-menu-category');
+    const serviceDetailButton = document.getElementById('service-detail-button');
     
     // Store the original back button attributes
     const originalBackHref = backButton.getAttribute('href');
@@ -185,6 +186,15 @@ document.addEventListener('DOMContentLoaded', function() {
         // Restore original back button
         backButton.setAttribute('href', originalBackHref);
         backButtonText.textContent = originalBackText;
+    }
+    
+    // Function to set target attribute for service detail button
+    function setServiceDetailButtonTarget(url) {
+        if (url && (url.startsWith('http://') || url.startsWith('https://'))) {
+            serviceDetailButton.setAttribute('target', '_blank');
+        } else {
+            serviceDetailButton.removeAttribute('target');
+        }
     }
     
     // Function to update URL with category parameter
