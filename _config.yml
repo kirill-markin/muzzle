@@ -14,6 +14,7 @@ include:
 exclude:
   - temp
   - temp/**/*
+  - login.html  # Exclude login page from production builds
 
 # Prevent Liquid from processing markdown files in temp directory
 liquid:
