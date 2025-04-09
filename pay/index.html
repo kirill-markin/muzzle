@@ -1,0 +1,130 @@
+---
+layout: index
+title: Payment Options for Kirill Markin's Services
+description: Select your preferred payment method for Kirill Markin's professional services. Currently supporting Stripe for secure credit card, Apple Pay and Google Pay payments.
+lang: en
+---
+
+<div class="payment-options-container">
+  <h1>PAYMENT OPTIONS</h1>
+  <p>Please select your preferred payment method:</p>
+  
+  <div class="payment-methods">
+    <a href="/pay/stripe/" class="payment-method">
+      <div class="payment-method-logo">
+        <img src="/assets/images/payment/stripe-logo.svg" alt="Stripe" class="stripe-logo">
+      </div>
+      <div class="payment-method-details">
+        <h2>Pay with Stripe</h2>
+        <p>Secure payments via credit card, Apple Pay, and Google Pay</p>
+      </div>
+    </a>
+    
+    <!-- Additional payment methods can be added here in the future -->
+  </div>
+</div>
+
+<style>
+  .payment-options-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    min-height: 70vh;
+  }
+  
+  .payment-options-container h1 {
+    color: var(--black);
+    font-size: var(--font-size-large);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 81%;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .payment-options-container p {
+    color: var(--dark-gray);
+    font-size: var(--font-size-medium);
+    margin-bottom: 2rem;
+  }
+  
+  .payment-methods {
+    margin-top: 2rem;
+  }
+  
+  .payment-method {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid var(--dark-gray);
+    border-radius: 0;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    min-height: 100px;
+  }
+  
+  .payment-method:hover {
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    animation: clean-glitch-effect 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  
+  .payment-method-logo {
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .stripe-logo {
+    width: 60px;
+    height: auto;
+    border: none;
+    transition: filter 0.3s ease;
+  }
+  
+  .payment-method:hover .stripe-logo {
+    filter: brightness(0) invert(1);
+  }
+  
+  .payment-method-details h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--dark-gray);
+  }
+  
+  .payment-method:hover .payment-method-details h2 {
+    color: var(--light-gray);
+  }
+  
+  .payment-method-details p {
+    margin: 0;
+    color: var(--light-gray-tertiary);
+    font-size: var(--font-size-base);
+  }
+  
+  .payment-method:hover .payment-method-details p {
+    color: var(--light-gray);
+  }
+  
+  @media (max-width: 768px) {
+    .payment-options-container h1 {
+      font-size: calc(var(--font-size-large) - 0.3rem);
+    }
+    
+    .payment-method {
+      padding: 1rem;
+    }
+    
+    .payment-method-logo {
+      margin-right: 1rem;
+    }
+  }
+</style> 
