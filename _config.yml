@@ -9,3 +9,13 @@ github:
 gtm: GTM-NJZKH2L
 include:
   - .well-known # verify for microsoft auth app
+
+# Exclude temp directory from Liquid processing
+exclude:
+  - temp
+  - temp/**/*
+
+# Prevent Liquid from processing markdown files in temp directory
+liquid:
+  strict_filters: true
+  error_mode: warn
