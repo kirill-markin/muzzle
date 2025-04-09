@@ -94,10 +94,12 @@
         <span>Categories</span>
         <div class="services-menu-categories">
             <button class="services-menu-category active" data-category="all">All</button>
+            <!-- <button class="services-menu-category" data-category="for_all">For All</button> -->
             {% assign categories = "" | split: "" %}
             {% for service in site.data.services.services %}
-                {% unless categories contains service.category_id %}
-                    {% assign categories = categories | push: service.category_id %}
+                {% assign category = service.category_id %}
+                {% unless categories contains category or category == "for_all" %}
+                    {% assign categories = categories | push: category %}
                 {% endunless %}
             {% endfor %}
             
@@ -113,7 +115,7 @@
         {% for service in site.data.services.services %}
         <div class="service-card" data-category="{{ service.category_id }}">
             <div class="service-card-category">
-                <span>{{ service.category_id | remove: 'for_' | capitalize }}</span>
+                <span class="current-category">{{ service.category_id | remove: 'for_' | capitalize }}</span>
             </div>
             <div class="service-card-image">
                 {% if service.logo_url != "" %}
@@ -214,14 +216,65 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (targetButton) {
             targetButton.classList.add('active');
+
+            // Get the services list container
+            const servicesList = document.querySelector('.services-list');
+
+            // Define sorting order with weights
+            const categoryOrder = {
+                'for_all': 1,
+                'for_people': 2,
+                'for_business': 3,
+                'for_journalists': 4
+            };
             
-            // Show/hide service cards based on category
+            // First, collect the visible cards and their sort order
+            const visibleCards = [];
+            
             serviceCards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.style.display = 'flex';
+                // Get category span
+                const currentCategorySpan = card.querySelector('.current-category');
+                const cardCategory = card.getAttribute('data-category');
+                
+                // Determine if card should be visible
+                const isVisible = (
+                    category === 'all' || 
+                    cardCategory === category || 
+                    cardCategory === 'for_all'
+                );
+                
+                if (isVisible) {
+                    // Set display to none initially (we'll add them back in sorted order)
+                    card.style.display = 'none';
+                    
+                    // Store card with its sorting information
+                    visibleCards.push({
+                        element: card,
+                        // Always prioritize "for_all" category, regardless of the selected filter
+                        sortOrder: cardCategory === 'for_all' ? 0 : 
+                                  (category === 'all' ? categoryOrder[cardCategory] || 999 : 1),
+                        originalIndex: Array.from(servicesList.children).indexOf(card) // Keep original position for stable sort
+                    });
                 } else {
                     card.style.display = 'none';
                 }
+            });
+            
+            // Sort the visible cards
+            visibleCards.sort((a, b) => {
+                // First by category order
+                if (a.sortOrder !== b.sortOrder) {
+                    return a.sortOrder - b.sortOrder;
+                }
+                // Then by original index for stable sort
+                return a.originalIndex - b.originalIndex;
+            });
+            
+            // Apply the new order
+            // Show cards in the new sorted order
+            visibleCards.forEach(card => {
+                card.element.style.display = 'flex';
+                servicesList.appendChild(card.element); // Move to the end in sorted order
             });
             
             // Update URL
