@@ -7,3 +7,6 @@ _site
 # Cache files
 .jekyll-cache
 .sass-cache
+
+# Temp files
+temp/
