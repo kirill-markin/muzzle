@@ -207,30 +207,45 @@ header {
     margin-right: 4px;
   }
 
-  .mobile-blog-link {
+  .mobile-right-buttons-container {
     display: flex;
-    height: 100%;
-    align-items: center;
+    flex: 1;
     justify-content: flex-end;
-    padding-right: 16px;
-    padding-left: 16px;
-    border-left: 1px solid var(--dark-gray);
+    align-items: center;
 
-    &:hover {
-      background-color: #ff00ff;
-    }
-    
-      .header-mobile-blog-button {
+    .mobile-button {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 16px;
+      padding-left: 16px;
+      border-left: 1px solid var(--dark-gray);
+
+      a {
         color: var(--dark-gray);
         text-decoration: none;
-        font-size: var(--font-size-base);
-        text-transform: uppercase;
-        font-weight: 300;
+      }
+    }
 
+    .mobile-blog-link {
+      &:hover {
+        background-color: #ff00ff;
+      }
+      
+      .header-mobile-blog-button {
         &:hover {
-          color: var(--white);
+          color: rgb(0, 229, 255);
         }
       }
+    }
+
+    .mobile-book-a-meeting-link {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 .header-mobile-menu-open {
