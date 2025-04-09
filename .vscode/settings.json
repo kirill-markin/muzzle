@@ -1,9 +1,6 @@
 {
   "files.associations": {
-    "*.scss": "scss",
-    "assets/css/*.scss": "scss"
-  },
-  "[scss]": {
-    "editor.formatOnSave": true,
+    "*.scss": "jekyll",
+    "assets/css/*.scss": "jekyll"
   }
 } 
