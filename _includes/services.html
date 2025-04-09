@@ -225,62 +225,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Get the services list container
             const servicesList = document.querySelector('.services-list');
-
-            // Define sorting order with weights
-            const categoryOrder = {
-                'for_all': 1,
-                'for_people': 2,
-                'for_business': 3,
-                'for_journalists': 4
-            };
             
-            // First, collect the visible cards and their sort order
-            const visibleCards = [];
-            
+            // Simply show/hide cards based on category without reordering
             serviceCards.forEach(card => {
-                // Get category span
-                const currentCategorySpan = card.querySelector('.current-category');
                 const cardCategory = card.getAttribute('data-category');
                 
                 // Determine if card should be visible
                 const isVisible = (
-                    category === 'all' || 
-                    cardCategory === category || 
-                    cardCategory === 'for_all'
+                    category === 'all' ? true : cardCategory === category
                 );
                 
-                if (isVisible) {
-                    // Set display to none initially (we'll add them back in sorted order)
-                    card.style.display = 'none';
-                    
-                    // Store card with its sorting information
-                    visibleCards.push({
-                        element: card,
-                        // Always prioritize "for_all" category, regardless of the selected filter
-                        sortOrder: cardCategory === 'for_all' ? 0 : 
-                                  (category === 'all' ? categoryOrder[cardCategory] || 999 : 1),
-                        originalIndex: Array.from(servicesList.children).indexOf(card) // Keep original position for stable sort
-                    });
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-            
-            // Sort the visible cards
-            visibleCards.sort((a, b) => {
-                // First by category order
-                if (a.sortOrder !== b.sortOrder) {
-                    return a.sortOrder - b.sortOrder;
-                }
-                // Then by original index for stable sort
-                return a.originalIndex - b.originalIndex;
-            });
-            
-            // Apply the new order
-            // Show cards in the new sorted order
-            visibleCards.forEach(card => {
-                card.element.style.display = 'flex';
-                servicesList.appendChild(card.element); // Move to the end in sorted order
+                // Show or hide the card based on the filter
+                card.style.display = isVisible ? 'flex' : 'none';
             });
             
             // Update URL
