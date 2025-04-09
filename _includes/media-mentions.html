@@ -98,7 +98,6 @@
 <div class="media-mentions" id="media-mentions-container">
   {% for mention in site.data.media_mentions %}
     {% assign index = forloop.index0 %}
-    {% assign group = index | divided_by: 6 %}
     {% assign position = index | modulo: 6 %}
     
     {%- comment -%} Determine if card should be large based on position {%- endcomment -%}
@@ -107,10 +106,6 @@
       {% assign is_large = true %}
     {% endif %}
 
-    {%- comment -%} Smart card type selection {%- endcomment -%}
-    {% assign card_style = "mention-card-text" %}
-    {% assign size_class = "mention-card-small" %}
-    
     {%- comment -%} Determine thumbnail URL with fallback {%- endcomment -%}
     {% assign thumbnail = mention.thumbnail_url %}
     {% unless thumbnail %}
@@ -118,23 +113,13 @@
       {% assign thumbnail = "/data/articles_thumbnails/articles-screen-saver-" | append: placeholder_num | append: ".png" %}
     {% endunless %}
 
-    {%- comment -%} Prepare alt text {%- endcomment -%}
+    {%- comment -%} Prepare alt text and display title {%- endcomment -%}
     {% if mention.language == "en" %}
       {% assign alt_text = mention.title | escape %}
       {% assign display_title = mention.title %}
     {% else %}
       {% assign alt_text = mention.alternative_title | escape %}
       {% assign display_title = mention.alternative_title %}
-    {% endif %}
-
-    {%- comment -%} Determine card style based on type and position {%- endcomment -%}
-    {% if is_large %}
-      {% assign size_class = "mention-card-large" %}
-      {% assign card_style = "mention-card-featured-horizontal" %}
-      {% assign is_video = mention.type == "Video" %}
-    {% elsif thumbnail %}
-      {% assign is_video = false %}
-      {% assign card_style = "mention-card-text-photo" %}
     {% endif %}
 
     {%- comment -%} Determine mention type for display {%- endcomment -%}
@@ -144,91 +129,51 @@
       {% assign display_type = nil %}
     {% endif %}
 
-    <a href="{{ mention.url }}" target="_blank" rel="noopener noreferrer" class="media-mention {{ card_style }} {{ size_class }}">
-      {%- comment -%} Language indicator (common to all layouts) {%- endcomment -%}
-      <div class="media-mention-ln">
-        <div class="media-mention-ln-txt">[{{ mention.language }}]</div>
+    {%- comment -%} Determine if content is a video {%- endcomment -%}
+    {% assign is_video = mention.type == "Video" %}
+
+    <a href="{{ mention.url }}" target="_blank" rel="noopener noreferrer" 
+       class="media-mention {% if is_large %}wide{% endif %} {% if is_video %}video{% endif %} {% if is_large %}wide-with-thumbnail{% endif %}">
+      
+      {%- comment -%} Language indicator {%- endcomment -%}
+      <div class="language">
+        <div class="text">[{{ mention.language }}]</div>
       </div>
 
-      {%- comment -%} Type indicator (common to all layouts) {%- endcomment -%}
+      {%- comment -%} Type indicator {%- endcomment -%}
       {% if display_type %}
-        <div class="media-mention-type">
-          <div class="media-mention-type-txt">[{{ display_type }}]</div>
+        <div class="type">
+          <div class="text">[{{ display_type }}]</div>
         </div>
       {% endif %}
-
-      {%- comment -%} Layout-specific templates {%- endcomment -%}
-      {% case card_style %}
+      
+      {%- comment -%} Thumbnail (always present) {%- endcomment -%}
+      <div class="thumbnail-container">
+        <img class="thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}" width="640" height="360" loading="lazy">
+      </div>
+      
+      {%- comment -%} Content area {%- endcomment -%}
+      <div class="content">
+        <div class="title">{{ display_title }}</div>
+        {% if mention.description and is_large %}
+          <div class="description">{{ mention.description }}</div>
+        {% endif %}
         
-        {% when "mention-card-featured-horizontal" %}
-          {% if thumbnail %}
-            <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
-          {% endif %}
-          <div class="media-featured-content">
-            <div class="media-info">
-              <div class="media-info-title">{{ display_title }}</div>
-              {% if mention.description %}
-                <div class="media-info-description">{{ mention.description }}</div>
-              {% endif %}
-            </div>
-            {% if mention.website_logo_url %}
-              <hr class="media-mention-divider">
-              <div class="logo-achievement-container">
-                <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
-                {% if mention.achievement_value and mention.achievement_label %}
-                <div class="achievement-badge">
-                  <div class="achievement-value">{{ mention.achievement_value }}</div>
-                  <div class="achievement-label">{{ mention.achievement_label }}</div>
-                </div>
-                {% endif %}
-              </div>
-            {% endif %}
-          </div>
-        
-        {% when "mention-card-text-photo" %}
-          {% if thumbnail %}
-            <img class="media-mention-thumbnail" src="{{ thumbnail }}" alt="{{ alt_text }}">
-          {% endif %}
-
-          <div class="media-info">
-            <div class="media-info-title">{{ display_title }}</div>
-          </div>
-          
-          {% if mention.website_logo_url %}
-            <div class="logo-achievement-container">
-              <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
+        {% if mention.website_logo_url %}
+          <div class="footer">
+            <hr class="divider">
+            <div class="logo-container">
+              <img class="logo" src="{{ mention.website_logo_url }}" alt="Website Logo" width="auto" height="25" loading="lazy">
               {% if mention.achievement_value and mention.achievement_label %}
-              <div class="achievement-badge">
-                <div class="achievement-value">{{ mention.achievement_value }}</div>
-                <div class="achievement-label">{{ mention.achievement_label }}</div>
-              </div>
+                <div class="achievement">
+                  <div class="value">{{ mention.achievement_value }}</div>
+                  <div class="label">{{ mention.achievement_label }}</div>
+                </div>
               {% endif %}
             </div>
-          {% endif %}
-        {% else %} <!-- Default case for mention-card-text -->
-          <div class="media-info">
-            <div class="media-info-title">{{ display_title }}</div>
-            {% if mention.description %}
-              <div class="media-info-description">{{ mention.description }}</div>
-            {% endif %}
           </div>
-          
-          {% if mention.website_logo_url %}
-            <div class="media-info-bottom">
-              <hr class="media-mention-divider">
-              <div class="logo-achievement-container">
-                <img class="website-logo" src="{{ mention.website_logo_url }}" alt="Website Logo">
-                {% if mention.achievement_value and mention.achievement_label %}
-                <div class="achievement-badge">
-                  <div class="achievement-value">{{ mention.achievement_value }}</div>
-                  <div class="achievement-label">{{ mention.achievement_label }}</div>
-                </div>
-                {% endif %}
-              </div>
-            </div>
-          {% endif %}
-          
-      {% endcase %}
+        {% endif %}
+      </div>
     </a>
   {% endfor %}
 </div>
